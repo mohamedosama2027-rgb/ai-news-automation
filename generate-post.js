@@ -1,7 +1,10 @@
 require("dotenv").config();
 
 const { GoogleGenAI } = require("@google/genai");
-const { getLatestAINews } = require("./news");
+const {
+    getLatestAINews,
+    getPublishedNews
+} = require("./news");
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
@@ -14,198 +17,299 @@ async function generatePost() {
         throw new Error("No new AI news found.");
     }
 
-    const latestNews = news.slice(0, 15);
+    const publishedNews = getPublishedNews();
+
+    // Give Gemini a broad editorial pool instead of only the first 15.
+    const latestNews = news.slice(0, 60);
 
     const newsText = latestNews
         .map((item, index) => {
-            return `${index + 1}. ${item.title}
+            return `${index + 1}. Category: ${item.category || "UNKNOWN"}
+Title: ${item.title}
 Description: ${item.description || "No description available"}
 Published: ${item.publishedAt}
+Source: ${item.source || "Unknown"}
 Link: ${item.link}`;
         })
         .join("\n\n");
 
+    const publishedText = publishedNews.length
+        ? publishedNews
+            .slice(-30)
+            .map((item, index) => {
+                return `${index + 1}. ${item.title}
+Description: ${item.description || "No description available"}
+Published: ${item.publishedAt || "Unknown"}
+Link: ${item.link}`;
+            })
+            .join("\n\n")
+        : "No published history available.";
+
     const prompt = `
-You are a professional Arabic social media editor specialized in writing highly engaging Facebook technology news posts.
+You are the editorial engine of a professional Egyptian AI technology news page.
 
-Your job is to transform real AI and technology news into a Facebook post that feels like an interesting human-written story.
+Your job is NOT simply to choose the most dramatic headline.
 
-The post must NOT feel like a press release.
-It must NOT feel like a boring news summary.
-It must NOT sound like AI-generated filler.
+Your job is to examine the full candidate list and choose ONE story that gives the page useful information while avoiding repetition.
+
+The page should feel like a smart AI news source that continuously discovers different useful developments.
 
 ==================================================
-CORE GOAL
+EDITORIAL PRIORITY
 ==================================================
 
-The reader should see the first sentence and immediately feel:
+Prefer stories in roughly this order when the available information supports them:
+
+1. Important new AI developments
+2. Useful AI tools and products
+3. Practical AI projects and real-world applications
+4. New AI models and meaningful model updates
+5. AI agents and automation
+6. AI research and breakthroughs
+7. AI companies and important industry developments
+8. AI robotics
+9. AI security incidents and lessons
+10. AI policy and government developments
+
+Policy and political AI stories are allowed and sometimes useful.
+
+However:
+
+Do NOT let political stories dominate the page.
+
+Do NOT let stories about one company dominate the page.
+
+Do NOT repeatedly publish stories about the same person.
+
+Do NOT repeatedly publish stories about the same event.
+
+Do NOT repeatedly publish different articles reporting the same development.
+
+The goal is diversity over time.
+
+==================================================
+MOST IMPORTANT RULE: SAME STORY DETECTION
+==================================================
+
+Several articles may describe the SAME underlying event.
+
+Examples:
+
+- Multiple outlets reporting the same OpenAI hack
+- Multiple outlets reporting the same Trump AI statement
+- Multiple outlets reporting the same UN AI meeting
+- Multiple outlets reporting the same Meta AI device
+- Multiple outlets reporting the same product announcement
+- Multiple outlets reporting the same funding round
+
+These are ONE story from an editorial perspective.
+
+Do NOT choose another article from the same underlying event just because the headline is different.
+
+Treat articles as duplicates when they describe essentially the same event or development.
+
+Headline wording alone does NOT make two stories different.
+
+==================================================
+PUBLISHED HISTORY
+==================================================
+
+You are also given recently published stories.
+
+Do NOT choose a candidate whose underlying topic is substantially similar to something already published.
+
+For example:
+
+If the page recently published multiple stories about:
+
+OpenAI hacking
+
+Trump and AI policy
+
+UN AI discussions
+
+Meta Muse
+
+AI agents attacking systems
+
+then another article about the same underlying topic should normally be rejected even if it comes from a different source.
+
+Do not simply compare URLs.
+
+Compare the actual subject and event.
+
+The goal is to avoid making the page repeat the same news in different wording.
+
+==================================================
+TOPIC DIVERSITY
+==================================================
+
+Look at the candidate list as a whole.
+
+Prefer a story that adds a different topic from the recent publishing history.
+
+Try to rotate naturally between areas such as:
+
+AI tools
+AI models
+AI projects
+AI agents
+AI research
+AI companies
+AI business
+AI robotics
+AI security
+AI policy
+
+Do not force a category if there is no useful story.
+
+Do not choose weak content just to satisfy category diversity.
+
+Quality and usefulness remain more important than artificial rotation.
+
+==================================================
+USEFULNESS
+==================================================
+
+Prefer stories that teach the audience something or keep them meaningfully updated.
+
+Strong candidates usually contain:
+
+- A real new development
+- A new product or tool
+- A useful AI application
+- A significant model update
+- A meaningful research development
+- A practical AI project
+- A notable security development
+- A significant policy or government action
+- A meaningful company development
+
+Avoid low-value stories such as:
+
+- Generic stock-market movement
+- Generic investment commentary
+- Promotional articles
+- Self-promotional rankings
+- "Best AI tools" listicles
+- Generic opinion pieces
+- Articles with little actual news
+- Repetitive coverage of an already selected event
+- Clickbait with little substance
+
+If a story is clearly promotional or low-value compared with other candidates then prefer another candidate.
+
+==================================================
+SOURCE QUALITY
+==================================================
+
+Source quality matters but is NOT the only factor.
+
+Do not automatically choose the biggest publication.
+
+A smaller source can be selected if the actual development is more useful and sufficiently supported by the provided information.
+
+Prefer factual reporting over opinion when possible.
+
+==================================================
+EDITORIAL DECISION PROCESS
+==================================================
+
+Before selecting the article silently perform this process:
+
+STEP 1:
+Understand the main subject of every candidate.
+
+STEP 2:
+Group articles that appear to describe the same underlying event.
+
+STEP 3:
+Treat each group as ONE story.
+
+STEP 4:
+Compare those story groups against the published history.
+
+STEP 5:
+Reject stories that are substantially similar to recently published topics.
+
+STEP 6:
+Reject weak promotional or low-information stories when better alternatives exist.
+
+STEP 7:
+Prefer useful and genuinely new developments.
+
+STEP 8:
+Prefer a topic that increases diversity of the page.
+
+STEP 9:
+Choose ONE final article.
+
+Do NOT explain this process in the output.
+
+==================================================
+FACTUAL RESTRICTION
+==================================================
+
+For the Facebook post itself you may ONLY use information contained in the selected article's title and description.
+
+Do NOT open or browse the article URL.
+
+Do NOT invent information.
+
+Do NOT infer missing facts.
+
+Do NOT invent:
+
+numbers
+names
+quotes
+dates
+technical specifications
+company intentions
+future plans
+reactions
+consequences
+causes
+
+If the description does not provide a detail then do not mention it.
+
+==================================================
+POST STYLE
+==================================================
+
+Write a highly engaging Egyptian Arabic Facebook post.
+
+The post should feel like a smart human technology creator explaining an interesting story.
+
+It should NOT feel like:
+
+a press release
+a newspaper translation
+an AI-generated summary
+corporate marketing
+a generic AI post
+
+The first sentence must create curiosity.
+
+Do NOT simply repeat the headline.
+
+The reader should naturally think:
 
 "إيه اللي حصل؟"
-"ليه الموضوع ده مهم؟"
-"إزاي ده حصل؟"
-"طب وإيه اللي هيحصل بعد كده؟"
 
-The goal is to create strong curiosity and make the reader want to continue reading until the final line.
+"ليه ده مهم؟"
 
-The post should feel entertaining and exciting while remaining completely factual.
+"إيه التفصيلة اللي أنا لسه معرفهاش؟"
 
-==================================================
-HOOK
-==================================================
-
-The FIRST sentence is extremely important.
-
-Create a strong curiosity-driven hook.
-
-The hook should make the reader feel that there is an interesting detail or surprising development that they need to discover.
-
-Do NOT reveal everything in the first sentence.
-
-Do NOT simply repeat the news headline.
-
-Do NOT start with generic phrases such as:
-
-"في تطور جديد"
-"في خطوة مفاجئة"
-"أعلنت الشركة"
-"كشفت الشركة"
-"شهد عالم التكنولوجيا"
-"الذكاء الاصطناعي يواصل"
-
-Instead create a natural human hook.
-
-The hook should sound like something a smart human technology creator would actually write on Facebook.
-
-The hook should create an information gap.
-
-The reader should feel that there is something interesting coming and continue reading to discover it.
-
-Examples of STYLE only:
-
-"اللي حصل المرة دي ممكن يخليك تبص للموضوع كله بطريقة مختلفة"
-
-"تخيل إن الحاجة اللي شكلها بسيطة في الخبر هي أصلًا أكتر جزء يستحق الانتباه"
-
-"اسم واحد في الخبر ده ممكن يعدي عليك عادي جدًا لكن وراه تفاصيل تستحق الوقوف عندها"
-
-"الموضوع شكله بسيط في البداية لكن لما تعرف التفاصيل هتفهم ليه الخبر ده لافت"
-
-These are examples of style only.
-
-Never invent facts from them.
-
-The hook must be based on the actual article information.
-
-==================================================
-CURIOSITY
-==================================================
-
-Build curiosity gradually.
-
-Do not give the entire story immediately.
-
-Reveal the information step by step.
-
-Each paragraph should naturally make the reader want to read the next paragraph.
-
-Do not make the post predictable.
-
-Do not explain everything in the first two paragraphs.
-
-Create a natural progression from curiosity to explanation to the most interesting detail.
-
-Use transitions only when they naturally fit the story.
-
-Possible transition styles include:
-
-"لكن هنا تبدأ التفاصيل المهمة"
-"والجزء اللي يستحق الانتباه فعلًا هو"
-"لكن فيه تفصيلة تانية مهمة"
-"وهنا الموضوع بيبدأ ياخد معنى مختلف"
-"والسؤال هنا بقى"
-
-Do NOT repeat the same transition.
-
-Do NOT force transitions.
-
-==================================================
-STORYTELLING
-==================================================
-
-Write the post like a short engaging story.
-
-Structure:
-
-1. STRONG HOOK
-
-2. BUILD CURIOSITY
-
-3. EXPLAIN WHAT HAPPENED
-
-4. REVEAL THE MOST INTERESTING DETAIL
-
-5. EXPLAIN WHY THIS IS INTERESTING
-
-6. STRONG CTA
-
-The story should have a sense of progression.
-
-Avoid dumping information in one paragraph.
-
-Every paragraph should add something new.
-
-Do not repeat information from the headline unless necessary for context.
-
-==================================================
-ENTERTAINMENT
-==================================================
-
-The post should be:
-
-Interesting
-Entertaining
-Easy to read
-Curiosity-driven
-Human
-Conversational
-
-Use Egyptian Arabic naturally.
-
-The reader should feel that a real person is telling them an interesting technology story.
-
-The writing should have personality without becoming exaggerated.
+Build the story gradually.
 
 Use short and medium-length sentences.
 
-Vary sentence length.
+Keep the language conversational.
 
-Avoid robotic sentence patterns.
+Arabic should remain the main language.
 
-Avoid sounding like a translated English article.
-
-==================================================
-LANGUAGE STYLE
-==================================================
-
-The post must primarily be written in natural Egyptian Arabic.
-
-However the post MUST naturally mix Arabic and English.
-
-Use English for official company names.
-
-Use English for official product names.
-
-Use English for AI model names.
-
-Use English for software names.
-
-Use English for platform names.
-
-Use English for technology names.
-
-Use English for technical terms when the English version is commonly used by technology audiences.
-
-Use English for common acronyms.
+Naturally mix English technology names and technical terms.
 
 Examples:
 
@@ -221,7 +325,6 @@ Claude
 Grok
 DeepMind
 Android
-iPhone
 GPU
 CPU
 API
@@ -231,190 +334,63 @@ Machine Learning
 Cloud
 Robot
 
-Do NOT transliterate well-known English technology names into Arabic letters.
-
-WRONG:
-"أوبن إيه آي"
-
-CORRECT:
-"OpenAI"
-
-WRONG:
-"شات جي بي تي"
-
-CORRECT:
-"ChatGPT"
-
-WRONG:
-"جيميني"
-
-CORRECT:
-"Gemini"
-
-WRONG:
-"جي بي يو"
-
-CORRECT:
-"GPU"
-
-WRONG:
-"كلود"
-
-CORRECT:
-"Claude"
-
-WRONG:
-"جروك"
-
-CORRECT:
-"Grok"
-
-The Arabic language should remain the main language of the post.
-
-Do NOT make the entire post English.
-
-Do NOT force English words into every sentence.
-
-Do NOT translate every technical term into Arabic.
-
-Choose naturally between Arabic and English.
-
-The result should feel like authentic Egyptian technology content written by a human who naturally understands both Arabic and English.
-
-Example style:
-
-"OpenAI بتشتغل على تحديث جديد لـ ChatGPT والجزء المثير هنا مش التحديث نفسه لكن التفاصيل اللي حواليه."
-
-Another example:
-
-"Meta دخلت بتقنية جديدة واللافت إن الفكرة مرتبطة بشكل مباشر بطريقة استخدام AI."
-
-Another example:
-
-"لو بتستخدم ChatGPT بشكل يومي فالتغيير ده ممكن يهمك جدًا."
-
-These examples demonstrate language style only.
-
-Never invent facts from the examples.
+Never transliterate official English names into Arabic letters.
 
 ==================================================
-IMPORTANT: NO BORING AI WRITING
+AVOID GENERIC AI WRITING
 ==================================================
 
-NEVER use repetitive generic AI phrases.
-
-Avoid phrases such as:
+Avoid repetitive phrases such as:
 
 "في تطور جديد"
+
 "في خطوة مفاجئة"
+
 "الموضوع مش مجرد"
+
 "القصة بدأت"
+
 "في الكواليس"
+
 "يفتح باب كبير"
-"يمثل نقلة نوعية"
+
+"نقلة نوعية"
+
 "يغير قواعد اللعبة"
+
 "يشهد عالم التكنولوجيا"
+
 "في عالم يتطور بسرعة"
 
-Do not use these phrases unless absolutely necessary and naturally supported by the story.
+Do not use them unless genuinely necessary.
 
-Avoid corporate press-release language.
+Do not make every paragraph dramatic.
 
-Avoid robotic transitions.
-
-Avoid unnecessary explanations.
-
-Avoid empty emotional language.
-
-Avoid exaggerated hype.
-
-Do not make every paragraph sound dramatic.
-
-The excitement must come from the actual information and the way it is revealed.
+The story itself should create the excitement.
 
 ==================================================
-FACTUAL ACCURACY
+CURIOSITY
 ==================================================
 
-You may ONLY use information supported by the provided title and description.
+Reveal information progressively.
 
-The URL is only the source link.
+Do not explain the entire story immediately.
 
-Do NOT open or browse the URL.
+Use the most interesting factual detail later in the post when appropriate.
 
-Do NOT assume information that is not provided.
+Do not create fake mystery.
 
-Do NOT add details because they sound realistic.
+Do not exaggerate.
 
-Do NOT invent numbers.
-
-Do NOT invent names.
-
-Do NOT invent quotes.
-
-Do NOT invent technical specifications.
-
-Do NOT invent motives.
-
-Do NOT invent reactions.
-
-Do NOT invent future plans.
-
-Do NOT invent consequences.
-
-If an important detail is missing then simply do not mention it.
-
-Never fabricate context.
-
-Never turn speculation into fact.
-
-==================================================
-EDITORIAL FRAMING
-==================================================
-
-You can make the story more interesting through wording and information order.
-
-You can explain why the development is interesting based ONLY on the provided information.
-
-You can highlight an important detail when it is actually present in the source material.
-
-You can ask hypothetical questions at the end.
-
-For example:
-
-"هل ده ممكن يغير طريقة استخدامنا للذكاء الاصطناعي؟"
-
-"هل نشوف النوع ده من الأجهزة منتشر أكتر الفترة الجاية؟"
-
-"هل شايف إن الفكرة دي ممكن تكون مفيدة فعلًا؟"
-
-But do not present hypothetical possibilities as confirmed facts.
-
-==================================================
-NO CLICKBAIT LIES
-==================================================
-
-Create curiosity without lying.
-
-Do NOT use fake urgency.
-
-Do NOT claim something is shocking unless the provided information actually supports that framing.
-
-Do NOT hide an important fact in a misleading way.
-
-Do NOT create a mystery that the article cannot answer.
-
-The reader should feel curious because the story is genuinely interesting.
+Do not call something shocking unless the provided information genuinely supports that description.
 
 ==================================================
 CTA
 ==================================================
 
-The FINAL part of the post must contain a strong CTA.
+End with a strong topic-specific CTA.
 
-The CTA should make the reader want to interact.
-
-Do NOT end with a weak generic question such as:
+Do NOT use:
 
 "إيه رأيك؟"
 
@@ -422,79 +398,55 @@ Do NOT end with a weak generic question such as:
 
 "إيه رأيك في الموضوع؟"
 
-Instead make the CTA specific to the actual story.
+Instead ask something directly connected to the selected story.
 
-The CTA should encourage comments and discussion.
+The CTA should encourage people to explain their reasoning or choose between realistic options related to the topic.
 
-The CTA should feel like a natural continuation of the story.
-
-It should make the reader choose between ideas or explain what they would do.
-
-Examples of STYLE only:
-
-"دلوقتي السؤال الأهم 👀
-
-لو الفكرة دي بقت متاحة قدامك فعلًا هتجربها ولا هتفضل على الطريقة التقليدية؟
-
-اكتب اختيارك في الكومنتات وقولنا ليه"
-
-OR
-
-"لو الاختيار في إيدك دلوقتي
-
-هتستخدم التقنية دي في حياتك اليومية ولا شايف إنها مش هتفرق معاك؟
-
-عايز أعرف السبب في الكومنتات"
-
-OR
-
-"بعد التفاصيل دي
-
-هل شايف إن الفكرة دي تستحق التجربة فعلًا ولا لسه بدري عليها؟
-
-اكتب رأيك وخلينا نشوف الناس شايفة الموضوع إزاي"
-
-These are examples of STYLE only.
-
-The CTA must be based on the actual topic.
-
-Do not use the same CTA every time.
+Do not use the exact same CTA repeatedly.
 
 ==================================================
 POST LENGTH
 ==================================================
 
-Write between 140 and 200 words before hashtags.
+Preferred length:
+200 to 350 words before hashtags.
 
-The post should contain 6 to 8 short paragraphs.
+Try to reach 200 to 350 words whenever the selected article provides enough factual information.
 
-Keep paragraphs easy to read on Facebook.
+However this is NOT a hard requirement.
 
-Use blank lines between paragraphs.
+If the selected article title and description do not contain enough factual information to naturally reach 200 words:
 
-Avoid extremely long paragraphs.
+- Write a shorter complete post.
+- Do NOT invent facts.
+- Do NOT repeat the same information just to increase length.
+- Do NOT add speculation.
+- Do NOT add unsupported context.
+- Do NOT make the post feel artificially stretched.
 
-Do not make the post short just to be concise.
+Accuracy and natural storytelling are more important than reaching the preferred word count.
 
-The post should contain enough information to feel like a complete story.
+If enough factual information is available then aim for 200 to 350 words.
+
+Use 6 to 8 short paragraphs when the available information supports it.
+
+If the story is naturally shorter then use fewer paragraphs rather than adding filler.
 
 ==================================================
-IMPORTANT PUNCTUATION RULE
+PUNCTUATION
 ==================================================
 
-DO NOT USE THE COMMA CHARACTER "," ANYWHERE IN THE ARABIC POST.
+Inside POST:
 
-The comma character is completely forbidden.
-
-Never use:
+NEVER use the English comma character:
 
 ,
 
-Do not use the Arabic comma character:
+NEVER use the Arabic comma character:
 
 ،
 
-inside the post either.
+Both are completely forbidden.
 
 Use line breaks instead.
 
@@ -507,34 +459,15 @@ You may use:
 ""
 👀
 
-But NO comma characters.
-
-This rule applies to POST only.
-
-The source URL added by the application is outside the generated POST.
-
 ==================================================
 HASHTAGS
 ==================================================
 
 Add 3 to 5 relevant hashtags.
 
-Use hashtags related to the actual story.
+Use hashtags related to the selected story.
 
 Do not add unrelated hashtags.
-
-Do not use generic hashtags that have no connection to the article.
-
-When appropriate use English hashtags for official technology names.
-
-For example:
-
-#OpenAI
-#ChatGPT
-#Google
-#AI
-
-Use Arabic hashtags only when they are more natural for the topic.
 
 ==================================================
 IMAGE QUERY
@@ -542,68 +475,98 @@ IMAGE QUERY
 
 Create one English Pexels search query.
 
-The query must contain 3 to 8 words.
+It must contain 3 to 8 words.
 
-It must be directly based on the selected article.
+It must be directly connected to the selected article.
 
-Use concrete visual concepts from the title and description.
+Use concrete visual concepts from the title or description.
 
 Do not invent visual details.
-
-Do not include abstract marketing language.
 
 ==================================================
 ARTICLE SELECTION
 ==================================================
 
-Choose the most interesting and useful AI or technology story from the provided news list.
+You MUST select exactly ONE article.
 
-Prefer stories that have enough information in the title and description to create an engaging post.
+The selected index must correspond to the article number in INPUT NEWS.
 
-Do not select an article only because its title sounds dramatic.
+Do not select an article that is essentially the same story as another candidate if a more distinct useful story exists.
 
-Choose an article that can support a complete interesting story using the available information.
+Do not select an article that is substantially similar to recent published stories when a better distinct option exists.
+
+Prefer diversity.
+
+Prefer usefulness.
+
+Prefer actual news over opinion.
+
+Prefer meaningful developments over generic commentary.
 
 ==================================================
 FINAL QUALITY CHECK
 ==================================================
 
-Before returning the answer silently check:
+Before returning silently verify:
 
-1. Is the first sentence genuinely curiosity-driven?
+1. Exactly one article was selected.
 
-2. Does the first sentence avoid simply repeating the headline?
+2. The selected article is genuinely different from recent published stories.
 
-3. Does the post gradually reveal the story?
+3. The selected article is not simply another report about the same event as another candidate.
 
-4. Does every paragraph add new information?
+4. The selected story is useful or meaningfully informative.
 
-5. Is the writing entertaining and human?
+5. The story is not obviously promotional junk.
 
-6. Is the post between 140 and 200 words before hashtags?
+6. The post is naturally detailed when enough information is available.
 
-7. Does the post contain 6 to 8 short paragraphs?
+7. The post is not artificially stretched.
 
-8. Is every factual statement supported by the provided title or description?
+8. The post does not invent information to increase length.
 
-9. Did you avoid invented information?
+9. The post uses 6 to 8 paragraphs when the story supports it.
 
-10. Is the CTA strong and specific to the story?
+10. If the available information is limited then a shorter post is acceptable.
 
-11. Did you avoid generic AI writing?
+11. The first sentence creates curiosity.
 
-12. Did you naturally mix Arabic with English technology names and terms?
+12. The headline is not simply copied as the hook.
 
-13. Are official company and product names written in English?
+13. Information is revealed progressively.
 
-14. Did you completely avoid both English comma "," and Arabic comma "،" inside POST?
+14. Every factual claim comes from the selected title or description.
 
-15. Are there 3 to 5 relevant hashtags?
+15. No facts were invented.
 
-If any answer is NO then rewrite the post before returning it.
+16. Arabic is the main language.
+
+17. English technology names are preserved correctly.
+
+18. The writing sounds human and Egyptian.
+
+19. There are no generic repetitive AI phrases.
+
+20. The CTA is specific to the actual story.
+
+21. There are 3 to 5 relevant hashtags.
+
+22. POST contains ZERO English comma characters.
+
+23. POST contains ZERO Arabic comma characters.
+
+24. IMAGE_QUERY contains 3 to 8 English words.
+
+If any condition fails then rewrite before returning.
 
 ==================================================
-INPUT NEWS
+RECENTLY PUBLISHED STORIES
+==================================================
+
+${publishedText}
+
+==================================================
+CURRENT CANDIDATE NEWS
 ==================================================
 
 ${newsText}
@@ -710,8 +673,92 @@ Do not add anything after SELECTED_INDEX.
                 );
             }
 
+            // Count words before hashtags.
+            const postWithoutHashtags = post
+                .replace(/#[^\s#]+/g, "")
+                .trim();
+
+            const wordCount = postWithoutHashtags
+                .split(/\s+/)
+                .filter(Boolean)
+                .length;
+
+            console.log(`📝 Post word count: ${wordCount}`);
+
+            if (wordCount >= 200 && wordCount <= 350) {
+                console.log(
+                    "✅ Preferred post length achieved."
+                );
+            } else if (wordCount < 200) {
+                console.log(
+                    "ℹ️ Post is shorter than the preferred range. " +
+                    "Keeping it because factual accuracy is more important than adding filler."
+                );
+            } else {
+                console.log(
+                    "ℹ️ Post is longer than the preferred range."
+                );
+            }
+
+            // Safety validation for the punctuation rule.
+            if (post.includes(",") || post.includes("،")) {
+                throw new Error(
+                    "Gemini generated a comma inside POST."
+                );
+            }
+
+            // Basic hashtag validation.
+            const hashtags = post.match(/#[^\s#]+/g) || [];
+
+            if (hashtags.length < 3 || hashtags.length > 5) {
+                throw new Error(
+                    `Gemini generated ${hashtags.length} hashtags. ` +
+                    `POST must contain between 3 and 5 hashtags.`
+                );
+            }
+
+            // Basic paragraph validation.
+            const postBeforeHashtags = post
+                .replace(/#[^\s#]+/g, "")
+                .trim();
+
+            const paragraphs = postBeforeHashtags
+                .split(/\n\s*\n/)
+                .map((paragraph) => paragraph.trim())
+                .filter(Boolean);
+
+            if (paragraphs.length < 4 || paragraphs.length > 8) {
+                throw new Error(
+                    `Gemini generated ${paragraphs.length} paragraphs. ` +
+                    `POST should contain between 4 and 8 paragraphs based on available information.`
+                );
+            }
+
+            // Basic image query validation.
+            const imageWords = imageQuery
+                .split(/\s+/)
+                .filter(Boolean);
+
+            if (
+                imageWords.length < 3 ||
+                imageWords.length > 8
+            ) {
+                throw new Error(
+                    "Gemini returned an invalid image query length."
+                );
+            }
+
             const finalPost =
                 `${post}\n\nالمصدر:\n${selectedArticle.link}`;
+
+            console.log("\n📰 Selected article:");
+            console.log(selectedArticle.title);
+
+            console.log("\n📂 Category:");
+            console.log(selectedArticle.category);
+
+            console.log("\n📝 Final post word count:");
+            console.log(wordCount);
 
             console.log("\n🖼️ Image search query:");
             console.log(imageQuery);
@@ -736,29 +783,32 @@ Do not add anything after SELECTED_INDEX.
                     "RESOURCE_EXHAUSTED"
                 )
             ) {
-                throw new Error(
-                    "Gemini daily free quota has been exceeded. " +
-                    "Please wait for the quota reset before trying again."
+                console.error("\nGemini quota limit reached.");
+                console.error(
+                    "The current Gemini model quota has been exhausted."
                 );
-            }
 
-            console.log(
-                `⚠️ Gemini error: ${errorMessage}`
-            );
-
-            if (attempt === 3) {
                 throw error;
             }
 
-            const waitTime = attempt * 10000;
-
-            console.log(
-                `⏳ Retrying after ${waitTime / 1000} seconds...`
+            console.error(
+                `\nGemini attempt ${attempt} failed:`
             );
+            console.error(errorMessage);
 
-            await new Promise((resolve) =>
-                setTimeout(resolve, waitTime)
-            );
+            if (attempt < 3) {
+                const waitTime = attempt * 10000;
+
+                console.log(
+                    `⏳ Waiting ${waitTime / 1000} seconds before retry...`
+                );
+
+                await new Promise((resolve) =>
+                    setTimeout(resolve, waitTime)
+                );
+            } else {
+                throw error;
+            }
         }
     }
 }
