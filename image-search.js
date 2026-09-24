@@ -13,6 +13,13 @@ async function searchImage(query) {
         throw new Error("Image search query is missing.");
     }
 
+    const configuredPerPage = Number(
+        process.env.PEXELS_PER_PAGE || 12
+    );
+    const perPage = Number.isFinite(configuredPerPage)
+        ? Math.min(24, Math.max(6, Math.floor(configuredPerPage)))
+        : 12;
+
     console.log(`🔎 Searching Pexels for: ${query}`);
 
     const response = await axios.get(
@@ -23,7 +30,7 @@ async function searchImage(query) {
             },
             params: {
                 query: query.trim(),
-                per_page: 80,
+                per_page: perPage,
                 orientation: "landscape"
             }
         }

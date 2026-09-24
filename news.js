@@ -9,6 +9,12 @@ const PUBLISHED_FILE = path.join(__dirname, "published-news.json");
 const MAX_TOTAL_CANDIDATES = 60;
 const MAX_PER_CATEGORY = 8;
 const MIN_PER_CATEGORY = 2;
+const configuredMaxPosts = Number(
+    process.env.MAX_POSTS_PER_RUN || 4
+);
+const MAX_POSTS_PER_RUN = Number.isFinite(configuredMaxPosts)
+    ? Math.max(1, Math.floor(configuredMaxPosts))
+    : 4;
 
 /*
  * These categories get first opportunity during
@@ -1411,6 +1417,14 @@ async function fetchGoogleNews(query) {
                 /<description>([\s\S]*?)<\/description>/
             )?.[1] || "";
 
+        const mediaUrl =
+            item.match(
+                /<(?:media:content|enclosure)[^>]+url=["']([^"']+)["'][^>]*type=["']video\//i
+            )?.[1] ||
+            item.match(
+                /<(?:media:content|enclosure)[^>]+type=["']video\/[^"']*["'][^>]+url=["']([^"']+)["']/i
+            )?.[1] || "";
+
         const sourceMatch =
             item.match(
                 /<source[^>]*url=["']([^"']+)["'][^>]*>([\s\S]*?)<\/source>/i
@@ -1427,12 +1441,17 @@ async function fetchGoogleNews(query) {
             link: decodeXml(link),
             publishedAt: decodeXml(pubDate),
             description: decodeXml(description),
+            videoUrl: decodeXml(mediaUrl),
             sourceUrl: decodeXml(sourceUrl),
             sourceName: decodeXml(sourceName)
         });
     }
 
     return items;
+}
+
+function getMaxPostsPerRun() {
+    return MAX_POSTS_PER_RUN;
 }
 
 function isRecent(article) {
@@ -1683,5 +1702,6 @@ function markNewsAsPublished(article) {
 module.exports = {
     getLatestAINews,
     getPublishedNews,
-    markNewsAsPublished
+    markNewsAsPublished,
+    getMaxPostsPerRun
 };

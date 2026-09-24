@@ -178,7 +178,7 @@ async function evaluateImages(article, images) {
         );
     }
 
-    const acceptedImages = evaluations
+    const stronglyRelevantImages = evaluations
         .filter((evaluation) => {
             return (
                 evaluation.accept &&
@@ -191,6 +191,21 @@ async function evaluateImages(article, images) {
             (a, b) =>
                 b.finalScore - a.finalScore
         );
+
+    const acceptedImages = stronglyRelevantImages.length
+        ? stronglyRelevantImages
+        : evaluations
+            .filter((evaluation) => {
+                return (
+                    evaluation.relevance >= 5 &&
+                    evaluation.editorial >= 7 &&
+                    evaluation.misleading <= 2
+                );
+            })
+            .sort(
+                (a, b) =>
+                    b.finalScore - a.finalScore
+            );
 
     if (!acceptedImages.length) {
         return {

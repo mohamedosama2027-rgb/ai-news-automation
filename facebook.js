@@ -4,7 +4,7 @@ const axios = require("axios");
 const fs = require("fs");
 const FormData = require("form-data");
 
-async function publishToFacebook(message, imagePath) {
+async function publishToFacebook(message, imagePath, videoUrl) {
 
     const pageId = process.env.FACEBOOK_PAGE_ID;
     const accessToken =
@@ -22,16 +22,32 @@ async function publishToFacebook(message, imagePath) {
         );
     }
 
-    if (!imagePath) {
+    if (!imagePath && !videoUrl) {
         throw new Error(
-            "Image path is missing."
+            "Image path or video URL is missing."
         );
     }
 
-    if (!fs.existsSync(imagePath)) {
+    if (imagePath && !fs.existsSync(imagePath)) {
         throw new Error(
             `Image file not found: ${imagePath}`
         );
+    }
+
+    if (videoUrl) {
+        const response = await axios.post(
+            `https://graph.facebook.com/v23.0/${pageId}/videos`,
+            null,
+            {
+                params: {
+                    file_url: videoUrl,
+                    description: message,
+                    access_token: accessToken
+                }
+            }
+        );
+
+        return response.data;
     }
 
     const form = new FormData();

@@ -3,7 +3,8 @@ require("dotenv").config();
 const { GoogleGenAI } = require("@google/genai");
 const {
     getLatestAINews,
-    getPublishedNews
+    getPublishedNews,
+    getMaxPostsPerRun
 } = require("./news");
 
 const ai = new GoogleGenAI({
@@ -20,7 +21,15 @@ async function generatePost() {
     const publishedNews = getPublishedNews();
 
     // Give Gemini a broad editorial pool instead of only the first 15.
-    const latestNews = news.slice(0, 60);
+    const latestNews = news.slice(0, 80);
+    const requestedPosts = getMaxPostsPerRun();
+
+    if (latestNews.length < requestedPosts) {
+        throw new Error(
+            `Only ${latestNews.length} candidate news articles are available. ` +
+            `${requestedPosts} are required for this run.`
+        );
+    }
 
     const newsText = latestNews
         .map((item, index) => {
@@ -50,7 +59,7 @@ You are the editorial engine of a professional Egyptian AI technology news page.
 
 Your job is NOT simply to choose the most dramatic headline.
 
-Your job is to examine the full candidate list and choose ONE story that gives the page useful information while avoiding repetition.
+Your job is to examine the full candidate list and choose up to ${requestedPosts} stories that give the page useful information while avoiding repetition.
 
 The page should feel like a smart AI news source that continuously discovers different useful developments.
 
@@ -242,7 +251,7 @@ STEP 8:
 Prefer a topic that increases diversity of the page.
 
 STEP 9:
-Choose ONE final article.
+Choose exactly ${requestedPosts} final articles. Each selected article MUST have a different CATEGORY value from the candidate list. Prefer the strongest article in each distinct field such as industry, medicine, commerce, policy, software development, research, security, robotics, tools, models, or agents. Do not select multiple articles from the same category or the same underlying event.
 
 Do NOT explain this process in the output.
 
@@ -277,37 +286,36 @@ If the description does not provide a detail then do not mention it.
 POST STYLE
 ==================================================
 
-Write a highly engaging Egyptian Arabic Facebook post.
+Write a detailed Egyptian Arabic Facebook post that follows this exact editorial shape:
 
-The post should feel like a smart human technology creator explaining an interesting story.
+1. HOOK HEADLINE:
+Start with one standalone headline-like sentence. It must be specific to the story and create curiosity. It may include a factual number or a strong contrast when the source supports it. Do not copy the source headline word for word.
 
-It should NOT feel like:
+2. CONTEXT:
+Use one or two substantial paragraphs to explain what happened and why the reader should care. Introduce the people, organization, product, research, or event using only facts in the title and description.
 
-a press release
-a newspaper translation
-an AI-generated summary
-corporate marketing
-a generic AI post
+3. FACTUAL BULLETS:
+Use one or more lines beginning with ✴️ for the concrete details, numbers, capabilities, sequence of events, or direct outcomes that are supported by the source. Each line must add a different fact. Do not use ✴️ as decoration or repeat the same sentence.
 
-The first sentence must create curiosity.
+4. ANALYSIS:
+Use lines beginning with ⏺️ when the source provides broader context, comparison, trend, limitation, or implication. Explain why the details matter without inventing consequences. For a short story where no supported analysis exists, omit ⏺️ rather than speculate.
 
-Do NOT simply repeat the headline.
+5. HUMAN CONCLUSION:
+Use a paragraph beginning with 👋 to explain the central lesson or tension in a thoughtful human voice. It must be an evidence-based interpretation of the provided facts and must not become generic motivational writing.
 
-The reader should naturally think:
+6. PRACTICAL RESULT:
+Use a paragraph beginning with ✅ when the source mentions a solution, tool, method, response, next step, or practical consequence. Omit it if the source does not support one.
 
-"إيه اللي حصل؟"
+7. ENDING:
+End the editorial text with 3 to 5 relevant hashtags. Do NOT write a source link, "المصدر", or "الرابط في التعليقات" inside POST. The program adds the source link exactly once after the post.
 
-"ليه ده مهم؟"
+The first line must feel like the examples: a news hook with a clear subject and a memorable detail. The middle must be information-dense rather than a short summary. Preserve the progression from what happened to the details to why it matters.
 
-"إيه التفصيلة اللي أنا لسه معرفهاش؟"
+The post should feel like a smart Egyptian technology creator explaining an important story in depth. It must not feel like a press release, a newspaper translation, an AI summary, corporate marketing, or generic filler.
 
-Build the story gradually.
+Use the symbols as editorial labels with the exact visual characters ✴️ ⏺️ ✅ 👋. Do not replace them with bullets, hyphens, or other emoji.
 
-Use short and medium-length sentences.
-
-Keep the language conversational.
-
-Arabic should remain the main language.
+Arabic should remain the main language. Naturally mix official English technology names and technical terms without transliterating them.
 
 Naturally mix English technology names and technical terms.
 
@@ -383,6 +391,29 @@ Do not create fake mystery.
 Do not exaggerate.
 
 Do not call something shocking unless the provided information genuinely supports that description.
+
+==================================================
+STYLE FIDELITY EXAMPLE
+==================================================
+
+Use this structure as a template, not as text to copy:
+
+[Specific curiosity headline with a factual detail]
+
+[What happened and the essential context in a complete paragraph]
+
+✴️ [Concrete fact or number]
+✴️ [Another concrete fact]
+✴️ [Another supported detail]
+
+⏺️ [Why the facts matter or what broader context the source supports]
+
+👋 [The human and technical meaning of the story based on the facts]
+
+✅ [The practical response or solution when the source provides one]
+
+#[relevant hashtag]
+#[relevant hashtag]
 
 ==================================================
 CTA
@@ -487,7 +518,9 @@ Do not invent visual details.
 ARTICLE SELECTION
 ==================================================
 
-You MUST select exactly ONE article.
+You MUST select exactly ${requestedPosts} articles.
+
+Selections must be ranked from most urgent and useful to least urgent. Never select two articles describing the same event. Prefer distinct categories and concepts. The first selection is the one to publish first.
 
 The selected index must correspond to the article number in INPUT NEWS.
 
@@ -509,7 +542,7 @@ FINAL QUALITY CHECK
 
 Before returning silently verify:
 
-1. Exactly one article was selected.
+1. Exactly ${requestedPosts} articles were selected.
 
 2. The selected article is genuinely different from recent published stories.
 
@@ -575,16 +608,18 @@ ${newsText}
 FINAL OUTPUT
 ==================================================
 
-Return ONLY this exact format:
+Return ONLY this exact format for each selected article. Number blocks consecutively starting at 1:
 
-POST:
+POST_1:
 [Arabic Facebook post]
 
-IMAGE_QUERY:
+IMAGE_QUERY_1:
 [English Pexels search query]
 
-SELECTED_INDEX:
+SELECTED_INDEX_1:
 [number]
+
+Repeat the three fields for POST_2, POST_3 and so on when selecting more than one article.
 
 Do not add explanations.
 
@@ -592,7 +627,7 @@ Do not add analysis.
 
 Do not add anything before POST.
 
-Do not add anything after SELECTED_INDEX.
+Do not add anything after the last SELECTED_INDEX_N.
 `;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -610,163 +645,117 @@ Do not add anything after SELECTED_INDEX.
 
             const text = response.text.trim();
 
-            const selectedMatch = text.match(
-                /SELECTED_INDEX:\s*(\d+)/i
-            );
+            const posts = [];
+            const selectedIndexes = new Set();
+            const selectedCategories = new Set();
 
-            const imageQueryMatch = text.match(
-                /IMAGE_QUERY:\s*([\s\S]*?)(?=\n\s*SELECTED_INDEX:)/i
-            );
+            for (let number = 1; number <= requestedPosts; number++) {
+                const postMatch = text.match(
+                    new RegExp(`POST_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*IMAGE_QUERY_${number}:)`, "i")
+                );
+                const imageQueryMatch = text.match(
+                    new RegExp(`IMAGE_QUERY_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*SELECTED_INDEX_${number}:)`, "i")
+                );
+                const selectedMatch = text.match(
+                    new RegExp(`SELECTED_INDEX_${number}:\\s*(\\d+)`, "i")
+                );
 
-            const postMatch = text.match(
-                /POST:\s*([\s\S]*?)(?=\n\s*IMAGE_QUERY:)/i
-            );
+                if (!postMatch && !imageQueryMatch && !selectedMatch) {
+                    continue;
+                }
 
-            if (!selectedMatch) {
+                if (!postMatch || !imageQueryMatch || !selectedMatch) {
+                    throw new Error(`Gemini returned an incomplete post block ${number}.`);
+                }
+
+                const selectedIndex = Number(selectedMatch[1]);
+                const post = postMatch[1].trim();
+                const imageQuery = imageQueryMatch[1].trim();
+
+                if (selectedIndex < 1 || selectedIndex > latestNews.length) {
+                    throw new Error("Gemini returned an invalid selected article index.");
+                }
+
+                if (selectedIndexes.has(selectedIndex)) {
+                    throw new Error("Gemini selected the same article more than once.");
+                }
+
+                if (!post || !imageQuery) {
+                    throw new Error(`Gemini returned an empty value in post block ${number}.`);
+                }
+
+                if (post.includes(",") || post.includes("،")) {
+                    throw new Error("Gemini generated a comma inside POST.");
+                }
+
+                const hashtags = post.match(/#[^\s#]+/g) || [];
+                if (hashtags.length < 3 || hashtags.length > 5) {
+                    throw new Error(`Gemini generated ${hashtags.length} hashtags in post ${number}.`);
+                }
+
+                if (!post.includes("✴️") || !post.includes("👋")) {
+                    throw new Error(
+                        `Gemini did not follow the required editorial markers in post ${number}.`
+                    );
+                }
+
+                const postBeforeHashtags = post.replace(/#[^\s#]+/g, "").trim();
+                const paragraphs = postBeforeHashtags
+                    .split(/\n\s*\n/)
+                    .map(paragraph => paragraph.trim())
+                    .filter(Boolean);
+
+                if (paragraphs.length < 4 || paragraphs.length > 8) {
+                    throw new Error(`Gemini generated ${paragraphs.length} paragraphs in post ${number}.`);
+                }
+
+                const imageWords = imageQuery.split(/\s+/).filter(Boolean);
+                if (imageWords.length < 3 || imageWords.length > 8) {
+                    throw new Error(`Gemini returned an invalid image query for post ${number}.`);
+                }
+
+                const article = latestNews[selectedIndex - 1];
+                if (selectedCategories.has(article.category)) {
+                    throw new Error(
+                        `Gemini selected more than one article from category ${article.category}.`
+                    );
+                }
+
+                const postWithoutSourceLine = post
+                    .split(/\r?\n/)
+                    .filter(line => {
+                        return !/^\s*(المصدر|الرابط في التعليقات)\s*:?.*$/i.test(
+                            line.trim()
+                        );
+                    })
+                    .join("\n")
+                    .trim();
+                const postBody = postWithoutSourceLine
+                    .replace(/#[^\s#]+/g, "")
+                    .trim();
+                const finalPost = `${postBody}\n\nالمصدر:\n${article.link}\n\n${hashtags.join(" ")}`;
+
+                selectedIndexes.add(selectedIndex);
+                selectedCategories.add(article.category);
+                posts.push({
+                    post: finalPost,
+                    imageQuery,
+                    article,
+                    rank: number
+                });
+            }
+
+            if (posts.length !== requestedPosts) {
                 throw new Error(
-                    "Gemini did not return SELECTED_INDEX."
+                    `Gemini returned ${posts.length} post(s); exactly ${requestedPosts} are required.`
                 );
             }
 
-            if (!imageQueryMatch) {
-                throw new Error(
-                    "Gemini did not return IMAGE_QUERY."
-                );
-            }
-
-            if (!postMatch) {
-                throw new Error(
-                    "Gemini did not return POST."
-                );
-            }
-
-            const selectedIndex = Number(
-                selectedMatch[1]
-            );
-
-            if (
-                selectedIndex < 1 ||
-                selectedIndex > latestNews.length
-            ) {
-                throw new Error(
-                    "Gemini returned an invalid selected article index."
-                );
-            }
-
-            const selectedArticle =
-                latestNews[selectedIndex - 1];
-
-            const post = postMatch[1].trim();
-
-            const imageQuery =
-                imageQueryMatch[1].trim();
-
-            if (!post) {
-                throw new Error(
-                    "Gemini returned an empty post."
-                );
-            }
-
-            if (!imageQuery) {
-                throw new Error(
-                    "Gemini returned an empty image query."
-                );
-            }
-
-            // Count words before hashtags.
-            const postWithoutHashtags = post
-                .replace(/#[^\s#]+/g, "")
-                .trim();
-
-            const wordCount = postWithoutHashtags
-                .split(/\s+/)
-                .filter(Boolean)
-                .length;
-
-            console.log(`📝 Post word count: ${wordCount}`);
-
-            if (wordCount >= 200 && wordCount <= 350) {
-                console.log(
-                    "✅ Preferred post length achieved."
-                );
-            } else if (wordCount < 200) {
-                console.log(
-                    "ℹ️ Post is shorter than the preferred range. " +
-                    "Keeping it because factual accuracy is more important than adding filler."
-                );
-            } else {
-                console.log(
-                    "ℹ️ Post is longer than the preferred range."
-                );
-            }
-
-            // Safety validation for the punctuation rule.
-            if (post.includes(",") || post.includes("،")) {
-                throw new Error(
-                    "Gemini generated a comma inside POST."
-                );
-            }
-
-            // Basic hashtag validation.
-            const hashtags = post.match(/#[^\s#]+/g) || [];
-
-            if (hashtags.length < 3 || hashtags.length > 5) {
-                throw new Error(
-                    `Gemini generated ${hashtags.length} hashtags. ` +
-                    `POST must contain between 3 and 5 hashtags.`
-                );
-            }
-
-            // Basic paragraph validation.
-            const postBeforeHashtags = post
-                .replace(/#[^\s#]+/g, "")
-                .trim();
-
-            const paragraphs = postBeforeHashtags
-                .split(/\n\s*\n/)
-                .map((paragraph) => paragraph.trim())
-                .filter(Boolean);
-
-            if (paragraphs.length < 4 || paragraphs.length > 8) {
-                throw new Error(
-                    `Gemini generated ${paragraphs.length} paragraphs. ` +
-                    `POST should contain between 4 and 8 paragraphs based on available information.`
-                );
-            }
-
-            // Basic image query validation.
-            const imageWords = imageQuery
-                .split(/\s+/)
-                .filter(Boolean);
-
-            if (
-                imageWords.length < 3 ||
-                imageWords.length > 8
-            ) {
-                throw new Error(
-                    "Gemini returned an invalid image query length."
-                );
-            }
-
-            const finalPost =
-                `${post}\n\nالمصدر:\n${selectedArticle.link}`;
-
-            console.log("\n📰 Selected article:");
-            console.log(selectedArticle.title);
-
-            console.log("\n📂 Category:");
-            console.log(selectedArticle.category);
-
-            console.log("\n📝 Final post word count:");
-            console.log(wordCount);
-
-            console.log("\n🖼️ Image search query:");
-            console.log(imageQuery);
+            console.log(`✅ Gemini selected ${posts.length} diverse post(s).`);
 
             return {
-                post: finalPost,
-                imageQuery,
-                article: selectedArticle
+                ...posts[0],
+                posts
             };
 
         } catch (error) {

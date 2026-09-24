@@ -20,93 +20,45 @@ async function main() {
         const result = await generatePost();
 
         console.log("\n📰 Generated post:\n");
-        console.log(result.post);
+        const posts = result.posts || [result];
+        const delayMs = Math.max(0, Number(process.env.POST_DELAY_MS || 0));
 
-        console.log("\n📌 Selected article:");
-        console.log(result.article.title);
-        console.log(result.article.link);
+        for (let index = 0; index < posts.length; index++) {
+            const current = posts[index];
 
-        console.log("\n🔎 Image query:");
-        console.log(result.imageQuery);
+            console.log(`\n📰 Post ${index + 1}/${posts.length}: ${current.article.title}`);
+            console.log("🔎 Image query:", current.imageQuery);
 
-        // =================================
-        // STEP 2: Select editorial image
-        // =================================
+            let imageSelection = { selectedImage: null, imagePath: null };
+            if (!current.article.videoUrl) {
+                console.log("\n🖼️ Selecting editorial image...");
+                imageSelection = await selectImage(
+                    current.article,
+                    current.imageQuery
+                );
+            } else {
+                console.log("🎥 Related video found. Giving it priority.");
+            }
 
-        console.log("\n🖼️ Step 2: Selecting image...");
+            if (!current.article.videoUrl && !imageSelection.selectedImage) {
+                console.log("❌ No acceptable media found. Skipping article.");
+                continue;
+            }
 
-        const imageSelection = await selectImage(
-            result.article,
-            result.imageQuery
-        );
-
-        if (!imageSelection.selectedImage) {
-            console.log(
-                "\n❌ No acceptable image found."
+            const facebookResult = await publishToFacebook(
+                current.post,
+                imageSelection.imagePath,
+                current.article.videoUrl
             );
 
-            console.log(
-                "🚫 Article will NOT be published."
-            );
+            console.log("✅ Published successfully!", facebookResult);
+            markNewsAsPublished(current.article);
 
-            console.log(
-                "🚫 Article will NOT be marked as published."
-            );
-
-            return;
+            if (delayMs > 0 && index < posts.length - 1) {
+                console.log(`⏳ Waiting ${delayMs / 1000} seconds before next post...`);
+                await new Promise(resolve => setTimeout(resolve, delayMs));
+            }
         }
-
-        console.log(
-            "\n✅ Acceptable image selected."
-        );
-
-        console.log(
-            "Image path:",
-            imageSelection.imagePath
-        );
-
-        // =================================
-        // STEP 3: Publish to Facebook
-        // =================================
-
-        console.log(
-            "\n📘 Step 3: Publishing post + image to Facebook..."
-        );
-
-        const facebookResult =
-            await publishToFacebook(
-                result.post,
-                imageSelection.imagePath
-            );
-
-        console.log(
-            "\n✅ Published successfully!"
-        );
-
-        console.log(
-            "Facebook response:",
-            facebookResult
-        );
-
-        // =================================
-        // STEP 4: Mark article as published
-        // =================================
-
-        console.log(
-            "\n💾 Step 4: Saving published article..."
-        );
-
-        markNewsAsPublished(
-            result.article
-        );
-
-        console.log(
-            "✅ Article saved."
-        );
-
-        console.log(
-            "This article will not be selected again."
-        );
 
         // =================================
         // FINISHED
