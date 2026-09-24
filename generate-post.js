@@ -1,0 +1,140 @@
+require("dotenv").config();
+
+const { GoogleGenAI } = require("@google/genai");
+const { getLatestAINews } = require("./news");
+
+const ai = new GoogleGenAI({
+    apiKey: process.env.GEMINI_API_KEY
+});
+
+async function generatePost() {
+    const news = await getLatestAINews();
+
+    if (!news.length) {
+        throw new Error("No new AI news found.");
+    }
+
+    const latestNews = news.slice(0, 15);
+
+    const newsText = latestNews
+        .map((item, index) => {
+            return `${index + 1}. ${item.title}
+Published: ${item.publishedAt}
+Link: ${item.link}`;
+        })
+        .join("\n\n");
+
+    const prompt = `
+You are an AI technology content writer.
+
+Here are recent AI news articles from the last 7 days:
+
+${newsText}
+
+Your task:
+
+1. Select ONE news article.
+2. Write a professional Facebook post in Arabic.
+3. Use ONLY information available in the provided title and metadata.
+4. Do NOT invent facts.
+5. Start with an engaging hook.
+6. Explain briefly what happened and why it matters.
+7. End with a question encouraging people to comment.
+8. Add 3-5 relevant hashtags.
+9. Put the original article URL at the very end.
+
+IMPORTANT:
+At the very end of your response, add this exact line:
+
+SELECTED_INDEX: X
+
+Replace X with the number of the article you selected.
+
+Return ONLY the final Facebook post followed by the SELECTED_INDEX line.
+`;
+
+    for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+            console.log(`🤖 Gemini attempt ${attempt}/3...`);
+
+            const response = await ai.models.generateContent({
+                model: "gemini-3.5-flash-lite",
+                contents: prompt
+            });
+
+            if (!response.text) {
+                throw new Error("Gemini returned an empty response.");
+            }
+
+            const text = response.text.trim();
+
+            const match = text.match(/SELECTED_INDEX:\s*(\d+)/i);
+
+            if (!match) {
+                throw new Error(
+                    "Gemini did not return SELECTED_INDEX."
+                );
+            }
+
+            const selectedIndex = Number(match[1]);
+
+            if (
+                selectedIndex < 1 ||
+                selectedIndex > latestNews.length
+            ) {
+                throw new Error(
+                    "Gemini returned an invalid selected article index."
+                );
+            }
+
+            const selectedArticle =
+                latestNews[selectedIndex - 1];
+
+            const post = text
+                .replace(
+                    /SELECTED_INDEX:\s*\d+/i,
+                    ""
+                )
+                .trim();
+
+            return {
+                post,
+                article: selectedArticle
+            };
+
+        } catch (error) {
+            const errorMessage = error.message || "";
+
+            if (
+                errorMessage.includes("GenerateRequestsPerDayPerModel-FreeTier") ||
+                errorMessage.includes("generate_content_free_tier_requests") ||
+                errorMessage.includes("RESOURCE_EXHAUSTED")
+            ) {
+                throw new Error(
+                    "Gemini daily free quota has been exceeded. " +
+                    "Please wait for the quota reset before trying again."
+                );
+            }
+
+            console.log(`⚠️ Gemini error: ${errorMessage}`);
+
+            if (attempt === 3) {
+                throw error;
+            }
+
+            const waitTime = attempt * 10000;
+
+            console.log(
+                `⏳ Retrying after ${waitTime / 1000} seconds...`
+            );
+
+            await new Promise((resolve) =>
+                setTimeout(resolve, waitTime)
+            );
+        }
+    }
+}
+
+module.exports = {
+    generatePost
+};
