@@ -1,4 +1,4 @@
-const { getLatestAINews } = require("./news");
+const { getLatestAINews } = require("../src/news");
 
 async function test() {
     try {

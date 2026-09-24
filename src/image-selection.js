@@ -329,6 +329,8 @@ async function selectImage(article, imageQuery) {
     const imagePath =
         path.join(
             __dirname,
+            "..",
+            "data",
             "selected-news-image.jpg"
         );
 

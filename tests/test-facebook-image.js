@@ -1,6 +1,7 @@
 require("dotenv").config();
 
-const { publishToFacebook } = require("./facebook");
+const path = require("path");
+const { publishToFacebook } = require("../src/facebook");
 
 async function main() {
     try {
@@ -8,7 +9,7 @@ async function main() {
 
         const result = await publishToFacebook(
             "اختبار نشر صورة من AI News Automation 🤖",
-            "E:\\automation\\selected-news-image.jpg"
+            path.join(__dirname, "..", "data", "selected-news-image.jpg")
         );
 
         console.log("\n✅ Published successfully!");

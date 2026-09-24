@@ -4,7 +4,7 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
-const PUBLISHED_FILE = path.join(__dirname, "published-news.json");
+const PUBLISHED_FILE = path.join(__dirname, "..", "data", "published-news.json");
 
 const MAX_TOTAL_CANDIDATES = 60;
 const MAX_PER_CATEGORY = 8;

@@ -52,6 +52,8 @@ IMPORTANT:
 
     const outputPath = path.join(
         __dirname,
+        "..",
+        "data",
         "generated-news-image.png"
     );
 

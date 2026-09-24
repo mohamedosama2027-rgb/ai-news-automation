@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Run automation
-        run: node index.js
+        run: npm start
 
       - name: Save published news
         if: success()
@@ -40,15 +40,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -f published-news.json ]; then
-            git add -f published-news.json
+          if [ -f data/published-news.json ]; then
+            git add -f data/published-news.json
 
             if git diff --cached --quiet; then
-              echo "No changes to published-news.json"
+              echo "No changes to data/published-news.json"
             else
               git commit -m "Update published news"
               git push
             fi
           else
-            echo "published-news.json does not exist"
+            echo "data/published-news.json does not exist"
           fi

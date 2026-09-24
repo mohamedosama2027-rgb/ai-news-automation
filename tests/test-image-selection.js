@@ -2,8 +2,8 @@ require("dotenv").config();
 
 const axios = require("axios");
 const { GoogleGenAI } = require("@google/genai");
-const { generatePost } = require("./generate-post");
-const { searchImage } = require("./image-search");
+const { generatePost } = require("../src/generate-post");
+const { searchImage } = require("../src/image-search");
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
@@ -372,6 +372,8 @@ async function test() {
 
         const outputPath = path.join(
             __dirname,
+            "..",
+            "data",
             "selected-news-image.jpg"
         );
 

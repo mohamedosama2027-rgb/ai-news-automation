@@ -3,3 +3,6 @@ node_modules/
 *.log
 selected-news-image.jpg
 published-news.json
+data/generated-news-image.png
+data/selected-news-image.jpg
+data/published-news.json

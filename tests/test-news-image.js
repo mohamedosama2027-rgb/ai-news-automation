@@ -1,5 +1,5 @@
-const { generatePost } = require("./generate-post");
-const { searchImage } = require("./image-search");
+const { generatePost } = require("../src/generate-post");
+const { searchImage } = require("../src/image-search");
 
 async function test() {
     try {

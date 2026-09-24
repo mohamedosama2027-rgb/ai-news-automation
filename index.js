@@ -1,9 +1,9 @@
 require("dotenv").config();
 
-const { generatePost } = require("./generate-post");
-const { selectImage } = require("./image-selection");
-const { publishToFacebook } = require("./facebook");
-const { markNewsAsPublished } = require("./news");
+const { generatePost } = require("./src/generate-post");
+const { selectImage } = require("./src/image-selection");
+const { publishToFacebook } = require("./src/facebook");
+const { markNewsAsPublished } = require("./src/news");
 
 async function main() {
     try {

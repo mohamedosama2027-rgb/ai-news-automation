@@ -1,4 +1,4 @@
-const { searchImage } = require("./image-search");
+const { searchImage } = require("../src/image-search");
 
 async function test() {
     try {
