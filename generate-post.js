@@ -1,4 +1,3 @@
-```js
 require("dotenv").config();
 
 const { GoogleGenAI } = require("@google/genai");
@@ -28,7 +27,9 @@ Link: ${item.link}`;
     const prompt = `
 You are a strict AI technology news editor.
 
-You are given a list of recent AI news articles.
+Here are recent AI news articles from the last 7 days:
+
+${newsText}
 
 Your job is to:
 
@@ -41,7 +42,7 @@ Your job is to:
 7. Do NOT claim that you read the original article.
 8. If the available information is limited, keep the post short rather than guessing.
 9. Start with an engaging but factual hook.
-10. Briefly explain what the title says and why the topic may matter, without introducing new factual claims.
+10. Briefly explain what the title says without introducing new factual claims.
 11. End with a simple question encouraging comments.
 12. Add 3-5 relevant hashtags.
 13. Put the exact original article URL at the very end.
@@ -56,10 +57,6 @@ SELECTED_INDEX: X
 Replace X with the number of the article you selected.
 
 Return ONLY the final Facebook post followed by the SELECTED_INDEX line.
-
-Here are the articles:
-
-${newsText}
 `;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -147,4 +144,3 @@ ${newsText}
 module.exports = {
     generatePost
 };
-```
