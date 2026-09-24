@@ -76,64 +76,6 @@
     "publishedAtSystem": "2026-09-24T05:28:45.887Z"
   },
   {
-    "title": "OpenAI agents attack the 'first' government hack by autonomous AI, researchers say - ABC News & Headlines – Australian Broadcasting Corporation",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZE9MeXh6UXNMWFNoRkVZMzd0UGQ2Q3RDSWI2bFpkQ3l6cE1ha21RdzNaamRMRmdWRnJJU2E2TTNwTV82Mkl6em93TWF5eHBUdTVRQW9FczdqYkZGcm13ckxzTTEyY1dWLVhsLUVOS1pvUXQ5VTJVME16RjgzWGxfb3dGRDQtMUxCd1dINUE1SHQxUWVwVE9JM3p6QnBIcFRhdkp6bm83bw?oc=5",
-    "category": "AI_SECURITY",
-    "publishedAt": "Thu, 24 Sep 2026 00:42:50 GMT",
-    "sourceUrl": "https://www.abc.net.au",
-    "sourceName": "ABC News & Headlines – Australian Broadcasting Corporation",
-    "topicFingerprint": {
-      "entities": [
-        "australia",
-        "openai"
-      ],
-      "events": [
-        "HACK",
-        "POLICY",
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "agents",
-        "attack",
-        "australian",
-        "autonomous",
-        "blank",
-        "broadcasting",
-        "color",
-        "corporation",
-        "first",
-        "government",
-        "headlines"
-      ]
-    }
-  },
-  {
-    "title": "Scientific Papers Can Now Become AI Agents - HPCwire",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMFoxUEQxMkpSUTVTV1lJVFd5Q1Bma0dSZzhvZWRaVnRsMTBEOHEwQ3ZqZmxMRmtFbUFNZnVoTDVHcGhiZVZDbnNwd2pQTTNObXVuWlpSZVFQeWZ0cnZqbjRLSEtDaWRFTFBLTWZXbm5sN1RXcnJLSG02d3hPblN1TlFCNkdhSVRyS2Etb1dSOXlFWnRv?oc=5",
-    "category": "AI_AGENTS",
-    "publishedAt": "Wed, 23 Sep 2026 16:55:51 GMT",
-    "sourceUrl": "https://www.hpcwire.com",
-    "sourceName": "HPCwire",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "agents",
-        "become",
-        "blank",
-        "color",
-        "hpcwire",
-        "papers",
-        "scientific",
-        "target"
-      ]
-    }
-  },
-  {
     "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later - WIRED",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlJCOTJCX1F5ZDh3NkQxRDktY2t0QzJ2X3lNZkVucHBpTldzLUNZbHN5SGZoSG5tVjlaei1tMnVzVnhtNDBVd2JXdnY2WFlkOTVRc0dUbmh6dGt5LXpsMEF0TnFHSkxJQW1GWnpRYjRDQVRxbUcxckMtZ0pHOHYweFM4dzhadmJ3NUhzMk10VW1TY2tHOEJQTEVWS3dwNHY3NjVxRFl5N0hJSzNIM21NVVVMdEg?oc=5",
     "category": "AI_SECURITY",
@@ -162,178 +104,6 @@
         "later",
         "months",
         "openai"
-      ]
-    }
-  },
-  {
-    "title": "Figure’s Billion-Dollar Physical AI Bet Delivered A 6X Jump In Robot Chore Success - Forbes",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSy1sNEsyU0tkbXJ4UUZyN2lTRmNKa2FUaVhTYkxRdms1ZHlsRFl6anplUE1CR2VLQTNEM2ZtNmlwY0d4Vk1wUkI2NlptcVVkblFfdjBTWk15ZHBwbHRDaS1yb0Fha0ppcXBxTXBQNUV3aEZXeFpWRkswbDlaVmZEWmZ4QllFeEVWbFVNeFBoYlRWZWYzakNER0FOWDA3ZWExSVgtS2RwdGYwcDhEWC1EQjgtWnQ3S1FWblpMRXR3U29jRFN2Rll0TmhxTnFtS3Rp?oc=5",
-    "category": "AI_ROBOTICS",
-    "publishedAt": "Mon, 21 Sep 2026 23:13:21 GMT",
-    "sourceUrl": "https://www.forbes.com",
-    "sourceName": "Forbes",
-    "topicFingerprint": {
-      "entities": [
-        "figure"
-      ],
-      "events": [
-        "POLICY",
-        "ROBOT"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "billion-dollar",
-        "blank",
-        "chore",
-        "color",
-        "delivered",
-        "figure",
-        "forbes",
-        "physical",
-        "robot",
-        "success",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "‘Extreme concern’ over first known AI hack of a government system - CNN",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcTdiLThTZ01pMEVNUm9GV2FoaFB2VGt4bE1jOUtsWmZnMm5tV3Q1aEZlc0lJbkJXTkhMd3pfY3REWXJkbVVhS1VvYWZkU2ZERThaYzM3S1dKYTlmbjFFMHU4QTRXTjNGN25laE5PZDFjMU80c3FrbnU2LThxYTBONjZ3?oc=5",
-    "category": "AI_COMPANIES",
-    "publishedAt": "Wed, 23 Sep 2026 23:19:23 GMT",
-    "sourceUrl": "https://www.cnn.com",
-    "sourceName": "CNN",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "HACK",
-        "POLICY"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "blank",
-        "color",
-        "concern",
-        "extreme",
-        "first",
-        "government",
-        "known",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "Bill Ackman Calls AI’s Rare-Disease Breakthrough ‘Incredible’ After Model Finds Drug Combination for Dying Patient - Benzinga",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU21WeUtOLXVlcnZYMjEyYTFsS3g2UnBPTGdVR3hnM25MYk9XVVlxam1kLUNNNS05LWU5VTRxX09LeHc4MHNRMlJjQlJVUUtkOVFPMG1uaFVaY082cUNkS2VFR3RVREphRkRNRUdYQXNfSzNVc3ZwOTRDVTRzaFp4U19TNWZPZTRXbk05Z1czcWlVWWx0d2t5Ulp0b0sxWE5kOUQtbF9kbi05SmhNQWZj?oc=5",
-    "category": "AI_MODELS",
-    "publishedAt": "Thu, 24 Sep 2026 04:44:44 GMT",
-    "sourceUrl": "https://www.benzinga.com",
-    "sourceName": "Benzinga",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "MODEL",
-        "POLICY",
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "ackman",
-        "benzinga",
-        "blank",
-        "breakthrough",
-        "calls",
-        "color",
-        "combination",
-        "dying",
-        "finds",
-        "incredible",
-        "model"
-      ]
-    }
-  },
-  {
-    "title": "Microchip acquires edge AI leader Hailo - Jon Peddie Research",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1yN0F0QlNFNTNwcWlINHpiamtCa1ZWeWxyazZrejdGcXhfc2didEdOUXdHLWphQjFCQTNCSjA3UWdyZGRUc1NpZEVKMV9kSmFJeXFMNjk1Nlc1S0Q5YzE5Tzk5ZU1NbVVfcjNMOE5pblRCYWZDY2NtRFJ6QQ?oc=5",
-    "category": "AI_TOOLS",
-    "publishedAt": "Thu, 24 Sep 2026 14:22:18 GMT",
-    "sourceUrl": "https://www.jonpeddie.com",
-    "sourceName": "Jon Peddie Research",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "ACQUISITION",
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "acquires",
-        "blank",
-        "color",
-        "hailo",
-        "leader",
-        "microchip",
-        "peddie",
-        "research",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "Launch of UK’s ‘largest AI supercomputer’ delayed by power supply problems - The Guardian",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV3VSZTJnOXg4YS1KM3hjeElfZzNtNjJDSHNISFNiajQ3M091VUozal9CeFBwX3Z2S25JekQyTHk1czlBTFlhcFkwcEFvdTZfalhTbC1OZkR3TWxndDk2cTRrNGdZWFlwbURCcGhHNUdMSXdTNmRsZUpZTFVmSWdHeHVWdmJoZFB2WWhfUWVNV3A4R1BtNXFDQQ?oc=5",
-    "category": "AI_POLICY",
-    "publishedAt": "Thu, 24 Sep 2026 21:37:00 GMT",
-    "sourceUrl": "https://www.theguardian.com",
-    "sourceName": "The Guardian",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "LAUNCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "blank",
-        "color",
-        "delayed",
-        "guardian",
-        "largest",
-        "launch",
-        "power",
-        "problems",
-        "supercomputer",
-        "supply",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "Qualcomm to acquire PickNik Robotics and keep MoveIt open-source - The Robot Report",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV3RrQmxZV1B0S3MxUVl1V0V2eFBzbklkWlVoUUF3NFoyZndqSVlEbUZSYnVJNTNpNktHalBTNVFSTFhXUHVxZkdLUjhqN1B1WVNBUU1EQVA5enFtdVFyTHNLQlhnOVlRMDVsMFNGaXZ1dHdpVHZ1OWtZdVFqYWZyZE9tTGpSckRFRkpZUlpZUXVUclNx?oc=5",
-    "category": "AI_ROBOTICS",
-    "publishedAt": "Wed, 23 Sep 2026 11:38:13 GMT",
-    "sourceUrl": "https://www.therobotreport.com",
-    "sourceName": "The Robot Report",
-    "topicFingerprint": {
-      "entities": [
-        "qualcomm"
-      ],
-      "events": [
-        "ACQUISITION",
-        "ROBOT"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "acquire",
-        "blank",
-        "color",
-        "moveit",
-        "open-source",
-        "picknik",
-        "qualcomm",
-        "robot",
-        "robotics",
-        "target"
       ]
     }
   },
@@ -368,168 +138,56 @@
     }
   },
   {
-    "title": "Autonomous AI hacks raise thorny questions of legal accountability - AP News",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSkFxcnNNRzRiNC1tWHI2MGxDTXlnblNyb212bmRPTHUwMGIyME8zSDhveDJhX0p1ZmNEQjFHcFFObkxibXhYSXBEN1NYNl9GNUdhNU9FOGhfYVdSc19majd4c1JadW0yU1U5WXRGVER3OElZdllhaUhMZnJfQWZiaTJSUXE5b0JqMzd2QlRmUXVWbjB2dVVz?oc=5",
-    "category": "AI_SECURITY",
-    "publishedAt": "Thu, 24 Sep 2026 15:46:00 GMT",
-    "sourceUrl": "https://apnews.com",
-    "sourceName": "AP News",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "HACK"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "accountability",
-        "autonomous",
-        "blank",
-        "color",
-        "hacks",
-        "legal",
-        "questions",
-        "raise",
-        "target",
-        "thorny"
-      ]
-    }
-  },
-  {
-    "title": "Databricks’ Latest Acquisition Brings Spreadsheet Startup Into Its $190 Billion AI Push - Benzinga",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWUVHaDJmOS1FQ05vNURwZUpoN2lwQmZlMHo1aG1fWXFpTUtUbEV1TDlnNWZ0ako1RnN5dUNTbkxkODJQTFNrNFUyWXMwX0lQZmZ2eEpfSlJjdFVScEVtYks5NkJNUndYTWJBYUNXTnlVbldrVDRmdTdNeVRGTTM2YnhXQ0tPVFVNMXp1UDV5X0NPSXV0NkpMeXc3NmdQQmVjdVRheTRkRnJLQU43eThxY29SbTBuN3hrdXloZUZHaVRYUWRsakFqOXdtanRLQnlFcmt5aFlUM3J5RWVUbkJ4aVVfVQ?oc=5",
-    "category": "AI_PROJECTS",
-    "publishedAt": "Thu, 24 Sep 2026 17:58:02 GMT",
-    "sourceUrl": "https://www.benzinga.com",
-    "sourceName": "Benzinga",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "ACQUISITION",
-        "POLICY"
-      ],
-      "specificWords": [
-        "190",
-        "6f6f6f",
-        "acquisition",
-        "benzinga",
-        "billion",
-        "blank",
-        "brings",
-        "color",
-        "databricks",
-        "spreadsheet",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "AI labs are cutting model costs - and it could help them slow down safely - Axios",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1UUHN6bVJZZ2Y0c1oxemMtMXdMTnh1VnRzaHE5XzlGVnBjUGxvbWtOWVNrVEpEUTROWHI3VHpNT0pvSlRydjBSV3dPSFItNlRpWEdISkN3cWFOeTB3MHpGa3ByZklQdi1pSWo0NlZpSkFCcTFSa3UxUw?oc=5",
-    "category": "AI_MODELS",
-    "publishedAt": "Wed, 23 Sep 2026 12:02:38 GMT",
-    "sourceUrl": "https://www.axios.com",
-    "sourceName": "Axios",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "MODEL",
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "axios",
-        "blank",
-        "color",
-        "costs",
-        "cutting",
-        "model",
-        "safely",
-        "target"
-      ]
-    }
-  },
-  {
-    "title": "New research: Tech buyers expect more from “AI-powered” - TechInformed",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPR0NpRkl5TEVBMmRWZ1BIQkpLSzAyZ3R5N2swZ3lCck1oenNZT3pCZmQ3ajkyQktoVzlra2xNSE85M1BteUhhWFRKSzVqeWlNdEV4anVGWmdaZ1hzZTJvdXJmclZHM1JLWVYxcm1SeGJlemVaTURfMjZKVDNZdjdwd0JVQk8?oc=5",
-    "category": "AI_PROJECTS",
-    "publishedAt": "Thu, 24 Sep 2026 16:13:23 GMT",
-    "sourceUrl": "https://techinformed.com",
-    "sourceName": "TechInformed",
-    "topicFingerprint": {
-      "entities": [],
-      "events": [
-        "ACQUISITION",
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "ai-powered",
-        "blank",
-        "buyers",
-        "color",
-        "expect",
-        "research",
-        "target",
-        "techinformed"
-      ]
-    }
-  },
-  {
-    "title": "Ex-DeepMind Researcher Who Worked On AlphaGo Seeks Funds for Startup Working on AI Reasoning - Bloomberg",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWFFBbXYyY0loMV92c25XUUhPaXRuZ2lrRl9DZlJ1Rnc5cFJZLXRPRmJoWVZDMUk4OUdGclF4NTk0TVZkY2ZudkVIY0FlblNpNVU0LW1NV1Jnek0tbjRFUTlDWUVqWHphM0gxVFZaMnoyNUNGQVRRdk1NNE0wX0VJM1N1UHB1ZUpvT0pRUjBuZDFZMlR5MGpqTlZ5UGFpZkNVb3lNdzE5S2l6V3hMY2Njd3ZxREktUUJ4aXR2cTZTaUVEbk92?oc=5",
-    "category": "AI_BUSINESS",
-    "publishedAt": "Thu, 24 Sep 2026 11:21:26 GMT",
-    "sourceUrl": "https://www.bloomberg.com",
-    "sourceName": "Bloomberg",
-    "topicFingerprint": {
-      "entities": [
-        "google"
-      ],
-      "events": [
-        "RESEARCH"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "alphago",
-        "blank",
-        "bloomberg",
-        "color",
-        "ex-deepmind",
-        "funds",
-        "reasoning",
-        "researcher",
-        "seeks",
-        "target",
-        "worked"
-      ]
-    }
-  },
-  {
-    "title": "Bird.com secures $450m financing as it launches communications infrastructure for AI agents - BeBeez International",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMC1YN3ZmcE04SzRUZzNwVmxIRENGQTFjVWFXQlZ2SUxrckotWWdwQmk5eTBLbWd4U2wydTJCb0dfWXppM0V0SHFpeGhyeC1RazZ2NDRKa0Q3SWY5dUJjZG5oa21ybDQtQlJPUmwzeDNlS0JZYzh1VlM3THJKUHJJenpCTEI0dmUtVHJhaFJmekNERG9JaWg1cG81QWkwVzlhZnNKa2wydG5uakFFVGZNTWI1MFlfcnFQRFlFNw?oc=5",
+    "title": "Scientific Papers Can Now Become AI Agents - HPCwire",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMFoxUEQxMkpSUTVTV1lJVFd5Q1Bma0dSZzhvZWRaVnRsMTBEOHEwQ3ZqZmxMRmtFbUFNZnVoTDVHcGhiZVZDbnNwd2pQTTNObXVuWlpSZVFQeWZ0cnZqbjRLSEtDaWRFTFBLTWZXbm5sN1RXcnJLSG02d3hPblN1TlFCNkdhSVRyS2Etb1dSOXlFWnRv?oc=5",
     "category": "AI_AGENTS",
-    "publishedAt": "Wed, 23 Sep 2026 15:37:47 GMT",
-    "sourceUrl": "https://bebeez.eu",
-    "sourceName": "BeBeez International",
+    "publishedAt": "Wed, 23 Sep 2026 16:55:51 GMT",
+    "sourceUrl": "https://www.hpcwire.com",
+    "sourceName": "HPCwire",
     "topicFingerprint": {
       "entities": [],
       "events": [
-        "FUNDING",
-        "LAUNCH"
+        "RESEARCH"
       ],
       "specificWords": [
-        "450m",
         "6f6f6f",
         "agents",
-        "bebeez",
+        "become",
         "blank",
         "color",
-        "communications",
-        "financing",
-        "infrastructure",
-        "international",
-        "launches",
-        "secures"
+        "hpcwire",
+        "papers",
+        "scientific",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "AI drug discovery startup Basecamp Research raises $140M - SiliconANGLE",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYl9NV2IxVS1waXo1bDVtSjc2a1JJeVctVDlub2xISE5HY3lieUpGcHFfbWs3ekI1dWZ2MnNOdzVmdUIzeTFqNnF0djM4S1ZDdnI3c1drTElxekpQVGZBRFBwdTFxbm1wdzVmRmlwRUVkWWJkZktKNHRfTm5CVHVQUEl6SkFQNHVQdi1NbWM1emYzcXhmLUdR?oc=5",
+    "category": "AI_BUSINESS",
+    "publishedAt": "Wed, 23 Sep 2026 20:42:00 GMT",
+    "sourceUrl": "https://siliconangle.com",
+    "sourceName": "SiliconANGLE",
+    "topicFingerprint": {
+      "entities": [
+        "basecamp_research"
+      ],
+      "events": [
+        "FUNDING",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "140m",
+        "6f6f6f",
+        "basecamp",
+        "blank",
+        "color",
+        "discovery",
+        "raises",
+        "research",
+        "siliconangle",
+        "target"
       ]
     }
   }
