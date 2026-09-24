@@ -1,3 +1,4 @@
+```js
 require("dotenv").config();
 
 const { GoogleGenAI } = require("@google/genai");
@@ -25,25 +26,29 @@ Link: ${item.link}`;
         .join("\n\n");
 
     const prompt = `
-You are an AI technology content writer.
+You are a strict AI technology news editor.
 
-Here are recent AI news articles from the last 7 days:
+You are given a list of recent AI news articles.
 
-${newsText}
+Your job is to:
 
-Your task:
-
-1. Select ONE news article.
+1. Select ONE article.
 2. Write a professional Facebook post in Arabic.
-3. Use ONLY information available in the provided title and metadata.
-4. Do NOT invent facts.
-5. Start with an engaging hook.
-6. Explain briefly what happened and why it matters.
-7. End with a question encouraging people to comment.
-8. Add 3-5 relevant hashtags.
-9. Put the original article URL at the very end.
+3. Use ONLY facts explicitly present in the provided article title, publication date, and URL.
+4. NEVER add facts, numbers, names, quotes, causes, consequences, locations, organizations, or details that are not explicitly present in the provided data.
+5. Do NOT use your own knowledge.
+6. Do NOT browse the internet.
+7. Do NOT claim that you read the original article.
+8. If the available information is limited, keep the post short rather than guessing.
+9. Start with an engaging but factual hook.
+10. Briefly explain what the title says and why the topic may matter, without introducing new factual claims.
+11. End with a simple question encouraging comments.
+12. Add 3-5 relevant hashtags.
+13. Put the exact original article URL at the very end.
 
 IMPORTANT:
+The Facebook post must contain NO factual information that cannot be directly verified from the provided data.
+
 At the very end of your response, add this exact line:
 
 SELECTED_INDEX: X
@@ -51,6 +56,10 @@ SELECTED_INDEX: X
 Replace X with the number of the article you selected.
 
 Return ONLY the final Facebook post followed by the SELECTED_INDEX line.
+
+Here are the articles:
+
+${newsText}
 `;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -138,3 +147,4 @@ Return ONLY the final Facebook post followed by the SELECTED_INDEX line.
 module.exports = {
     generatePost
 };
+```
