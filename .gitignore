@@ -1,3 +1,5 @@
 node_modules/
 .env
 *.log
+selected-news-image.jpg
+published-news.json

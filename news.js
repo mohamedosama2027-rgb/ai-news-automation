@@ -20,7 +20,7 @@ function getPublishedNews() {
         );
     } catch (error) {
         console.error(
-            "⚠️ Could not read published-news.json"
+            "Could not read published-news.json"
         );
 
         return [];
@@ -60,8 +60,14 @@ async function getLatestAINews() {
         })
         .map((item) => ({
             title: item.title,
+            description:
+                item.contentSnippet ||
+                item.content ||
+                item.description ||
+                "",
             link: item.link,
-            publishedAt: item.pubDate
+            publishedAt: item.pubDate,
+            source: item.creator || item.author || ""
         }))
         .filter((item) => {
             return !publishedLinks.has(item.link);
