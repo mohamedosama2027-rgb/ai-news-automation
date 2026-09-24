@@ -74,5 +74,121 @@
     "source": "The Washington Post",
     "publishedAt": "Thu, 24 Sep 2026 04:56:02 GMT",
     "publishedAtSystem": "2026-09-24T05:28:45.887Z"
+  },
+  {
+    "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later - WIRED",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlJCOTJCX1F5ZDh3NkQxRDktY2t0QzJ2X3lNZkVucHBpTldzLUNZbHN5SGZoSG5tVjlaei1tMnVzVnhtNDBVd2JXdnY2WFlkOTVRc0dUbmh6dGt5LXpsMEF0TnFHSkxJQW1GWnpRYjRDQVRxbUcxckMtZ0pHOHYweFM4dzhadmJ3NUhzMk10VW1TY2tHOEJQTEVWS3dwNHY3NjVxRFl5N0hJSzNIM21NVVVMdEg?oc=5",
+    "category": "AI_SECURITY",
+    "publishedAt": "Thu, 24 Sep 2026 10:46:00 GMT",
+    "sourceUrl": "https://www.wired.com",
+    "sourceName": "WIRED",
+    "topicFingerprint": {
+      "entities": [
+        "australia",
+        "openai"
+      ],
+      "events": [
+        "HACK",
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agent",
+        "australia",
+        "blank",
+        "color",
+        "found",
+        "government",
+        "hacked",
+        "health",
+        "later",
+        "months",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model - the-decoder.com",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWGU4UmEtZTZsd0xiNG1SNVVUaUlaYkVXYmVwZHJUNndVRi11QVhRQ0ZtY1NxVHUzMGxabGRucThpQXVuMzUyLWViNzhGWEJwcHlMX1lVa3FyRV9JLWZpeGNNaUMwaE9CMnBwX2ZBRlhFR1ZVd2RMYUtRSGdOV1hiNk1HRkdiN1RCanJFTkRmT3dWd1UyYXc?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Thu, 24 Sep 2026 17:02:46 GMT",
+    "sourceUrl": "https://the-decoder.com",
+    "sourceName": "the-decoder.com",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "MODEL",
+        "RESEARCH",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "action",
+        "black",
+        "blank",
+        "color",
+        "forest",
+        "launches",
+        "model",
+        "robotics",
+        "target",
+        "the-decoder"
+      ]
+    }
+  },
+  {
+    "title": "Scientific Papers Can Now Become AI Agents - HPCwire",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMFoxUEQxMkpSUTVTV1lJVFd5Q1Bma0dSZzhvZWRaVnRsMTBEOHEwQ3ZqZmxMRmtFbUFNZnVoTDVHcGhiZVZDbnNwd2pQTTNObXVuWlpSZVFQeWZ0cnZqbjRLSEtDaWRFTFBLTWZXbm5sN1RXcnJLSG02d3hPblN1TlFCNkdhSVRyS2Etb1dSOXlFWnRv?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Wed, 23 Sep 2026 16:55:51 GMT",
+    "sourceUrl": "https://www.hpcwire.com",
+    "sourceName": "HPCwire",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "become",
+        "blank",
+        "color",
+        "hpcwire",
+        "papers",
+        "scientific",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "AI drug discovery startup Basecamp Research raises $140M - SiliconANGLE",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYl9NV2IxVS1waXo1bDVtSjc2a1JJeVctVDlub2xISE5HY3lieUpGcHFfbWs3ekI1dWZ2MnNOdzVmdUIzeTFqNnF0djM4S1ZDdnI3c1drTElxekpQVGZBRFBwdTFxbm1wdzVmRmlwRUVkWWJkZktKNHRfTm5CVHVQUEl6SkFQNHVQdi1NbWM1emYzcXhmLUdR?oc=5",
+    "category": "AI_BUSINESS",
+    "publishedAt": "Wed, 23 Sep 2026 20:42:00 GMT",
+    "sourceUrl": "https://siliconangle.com",
+    "sourceName": "SiliconANGLE",
+    "topicFingerprint": {
+      "entities": [
+        "basecamp_research"
+      ],
+      "events": [
+        "FUNDING",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "140m",
+        "6f6f6f",
+        "basecamp",
+        "blank",
+        "color",
+        "discovery",
+        "raises",
+        "research",
+        "siliconangle",
+        "target"
+      ]
+    }
   }
 ]
