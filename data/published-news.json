@@ -190,5 +190,119 @@
         "target"
       ]
     }
+  },
+  {
+    "title": "Qualcomm to acquire PickNik Robotics and keep MoveIt open-source - The Robot Report",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV3RrQmxZV1B0S3MxUVl1V0V2eFBzbklkWlVoUUF3NFoyZndqSVlEbUZSYnVJNTNpNktHalBTNVFSTFhXUHVxZkdLUjhqN1B1WVNBUU1EQVA5enFtdVFyTHNLQlhnOVlRMDVsMFNGaXZ1dHdpVHZ1OWtZdVFqYWZyZE9tTGpSckRFRkpZUlpZUXVUclNx?oc=5",
+    "category": "AI_ROBOTICS",
+    "publishedAt": "Wed, 23 Sep 2026 11:38:13 GMT",
+    "sourceUrl": "https://www.therobotreport.com",
+    "sourceName": "The Robot Report",
+    "topicFingerprint": {
+      "entities": [
+        "qualcomm"
+      ],
+      "events": [
+        "ACQUISITION",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "acquire",
+        "blank",
+        "color",
+        "moveit",
+        "open-source",
+        "picknik",
+        "qualcomm",
+        "robot",
+        "robotics",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "DataSnipper Unveils Alwin: The AI Agent Automating End-to-End Audit Procedures - FF News",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTGs0cTFsLW1DRkNXVTVXQ1Q3MUNHbUloV3Fjb1hVcXRGV1JuNHRxU3RxdldycG90SVpUVTIycDVtU2drMGlCdVVkaGljTHZOb01faTd6ZE8yWEFMQ1NXVjZ4eXpFYlZ2XzVVYXlOWG9oRnpUclMtM0duVGFwZnJ2ZDJMcXRpeHluOFVlX3JGbV9nbjFWXzk1VUFFel9oeUJYNklxT3gyUWNyTnZYa1k0R0tFcw?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Thu, 24 Sep 2026 15:04:23 GMT",
+    "sourceUrl": "https://ffnews.com",
+    "sourceName": "FF News",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agent",
+        "alwin",
+        "audit",
+        "automating",
+        "blank",
+        "color",
+        "datasnipper",
+        "end-to-end",
+        "procedures",
+        "target",
+        "unveils"
+      ]
+    }
+  },
+  {
+    "title": "New bill would create federal investigative body for AI-driven hacks - CyberScoop",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWk92MlRmQzllMzR3TDlSb2hkMENkZTFUSGNEd0Q3NXhKdWtSZzBrVVZNN0pfYVJrdnlTWHlDQ0g5RktaN2RYbllHQ1ZFMkNGMHE1blFOWjlJeWtfUHhkVER5eTFINmtRVWZvX0hzeWMyRDMzbTIzSURxYzNWUWRwQnlfUks1YWZVY093ZnV0STBiUEVUQ2RB?oc=5",
+    "category": "AI_SECURITY",
+    "publishedAt": "Thu, 24 Sep 2026 18:12:07 GMT",
+    "sourceUrl": "https://cyberscoop.com",
+    "sourceName": "CyberScoop",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "HACK",
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "ai-driven",
+        "blank",
+        "color",
+        "create",
+        "cyberscoop",
+        "federal",
+        "hacks",
+        "investigative",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Breast Cancer Research Foundation debuts $100M venture fund, backs AI mammogram startup first - Dealroom",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRFZuei1HX3liRnQ5WUdnWFZGaExvb3N1WjVUTUxYdlFFU25JcUwwcGVnZjhYajE1ZlBucEV5STBUbEI2UGZjSGV5cVB3MUVSTHhFWHROU0NsVVRkUUgwVTB4UXFFUFZHNC15MTJMWmttUUwtRGJTM2VNVU55V3lONldpUmdtdzY1LTgzOGRGV25RcEZqOHJtUjNtUVFzcDN4Mm5JSG5LTmhCZU1ucWtabEdCSWdZZWFyTzlZZXd1NWZlb1k?oc=5",
+    "category": "AI_BUSINESS",
+    "publishedAt": "Thu, 24 Sep 2026 07:29:14 GMT",
+    "sourceUrl": "https://app.dealroom.co",
+    "sourceName": "Dealroom",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "100m",
+        "6f6f6f",
+        "backs",
+        "blank",
+        "breast",
+        "cancer",
+        "color",
+        "dealroom",
+        "debuts",
+        "first",
+        "foundation",
+        "mammogram"
+      ]
+    }
   }
 ]
