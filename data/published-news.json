@@ -968,7 +968,13 @@
         "rewriting",
         "robot"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:43:47.464Z"
   },
   {
     "title": "Dextr AI Raises $6.7 Mn To Build AI Agents For Hospitality Industry - Inc42",
@@ -1131,7 +1137,8 @@
         "valuation",
         "years"
       ]
-    }
+    },
+    "performanceCheckedAt": "2026-09-25T23:42:11.311Z"
   },
   {
     "title": "How OpenAI’s Rogue A.I. Agents Tried to Trick a Robot Detector - The New York Times",
@@ -1170,7 +1177,13 @@
         "trick",
         "tried"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:42:11.406Z"
   },
   {
     "title": "Aikido Security Releases Altar-1: An Open-Weight Security Model Pruned From GLM-5.3 to 328 GB - MarkTechPost",
@@ -1208,7 +1221,13 @@
         "pruned",
         "releases"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:42:11.407Z"
   },
   {
     "title": "Anthropic’s New AI Lets Lab Machines Talk To Each Other To Automate Research: Report - NDTV Profit",
@@ -1322,6 +1341,118 @@
         "target",
         "times",
         "wrecking"
+      ]
+    }
+  },
+  {
+    "title": "Yale researchers develop AI model to detect heart condition - Yale Daily News",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOLVVsZF82aWRXRkpKYlNlZmRkTjlRUjFvR2hGMjFBUnlpOWpDQ3NBU2NtdTRmNTNvTUtoM1ktNkpUbUd2UDE2NG1WbVZsVHNLMUJaUDNiaEFlWmlIeEpyRXZ0QXhLQVhiVjlLaDR4RnkxdkFUVm10cl9DeERGbjRWSjF6aDE5NTZ2VkZvTkhmLTh3V0JVZ2tkT0xITGszMGl6RnhnTURPZmxRSG1lUGt5M0ZRbC00UQ?oc=5\" target=\"_blank\">Yale researchers develop AI model to detect heart condition</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yale Daily News</font>",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOLVVsZF82aWRXRkpKYlNlZmRkTjlRUjFvR2hGMjFBUnlpOWpDQ3NBU2NtdTRmNTNvTUtoM1ktNkpUbUd2UDE2NG1WbVZsVHNLMUJaUDNiaEFlWmlIeEpyRXZ0QXhLQVhiVjlLaDR4RnkxdkFUVm10cl9DeERGbjRWSjF6aDE5NTZ2VkZvTkhmLTh3V0JVZ2tkT0xITGszMGl6RnhnTURPZmxRSG1lUGt5M0ZRbC00UQ?oc=5",
+    "resourceLinks": [],
+    "category": "AI_MODELS",
+    "facebookPostId": "1277980028738225_122101285257487454",
+    "facebookPublishedAt": "2026-09-25T23:46:06.799Z",
+    "publishedAt": "Fri, 25 Sep 2026 06:51:22 GMT",
+    "sourceUrl": "https://yaledailynews.com",
+    "sourceName": "Yale Daily News",
+    "imageId": 18799044,
+    "imageUrl": "https://images.pexels.com/photos/18799044/pexels-photo-18799044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/portrait-of-a-humanoid-robot-18799044/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "condition",
+        "daily",
+        "detect",
+        "develop",
+        "heart",
+        "model",
+        "researchers",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal - TechCrunch",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQV2FBcUhqaE1QdUl6M2ZJQ3ZhM1dhOGg0R0RzeGhCaFZYYVpmazh5dVpjb1p1THhmbC1EV1FBVk4xa3J6MzVzZ2lsWWN5YldLTXBXYXA4dFJjb1NqYXpWLW0xc3QydlRxWnJ0RGlfUlI0UE9pQXFqTzhxMTVQd250ZmRMT3JqdWZGYnJRemU1RGFkcjNuSVpGVVk2a2hVejh6eTIzQw?oc=5\" target=\"_blank\">Anthropic to pay Akamai $11.6 billion over seven years in cloud deal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TechCrunch</font>",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV2FBcUhqaE1QdUl6M2ZJQ3ZhM1dhOGg0R0RzeGhCaFZYYVpmazh5dVpjb1p1THhmbC1EV1FBVk4xa3J6MzVzZ2lsWWN5YldLTXBXYXA4dFJjb1NqYXpWLW0xc3QydlRxWnJ0RGlfUlI0UE9pQXFqTzhxMTVQd250ZmRMT3JqdWZGYnJRemU1RGFkcjNuSVpGVVk2a2hVejh6eTIzQw?oc=5",
+    "resourceLinks": [],
+    "category": "AI_SECURITY",
+    "facebookPostId": "1277980028738225_122101285437487454",
+    "facebookPublishedAt": "2026-09-25T23:46:15.275Z",
+    "publishedAt": "Fri, 25 Sep 2026 19:13:38 GMT",
+    "sourceUrl": "https://techcrunch.com",
+    "sourceName": "TechCrunch",
+    "imageId": 37730212,
+    "imageUrl": "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/data-center-server-racks-with-active-equipment-37730212/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "akamai",
+        "anthropic",
+        "billion",
+        "blank",
+        "cloud",
+        "color",
+        "seven",
+        "target",
+        "techcrunch",
+        "years"
+      ]
+    }
+  },
+  {
+    "title": "Hacks by autonomous AI agents raise thorny questions of legal accountability - PBS",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOQmJFa201dzhreXJVQkNRZHdVWGw2RVNwZFRmb0pZbXA3dXRHMzdrZ1FEUUJPNHdraHQxWVo0eGpGRm1OYnROTjV2Y2h0ZmNJWG5yVjlIYXVBN21pVTByMHp4Q1dmWVdGWW1vdUFpNXppeG92c2FRb3pvYlB1ZVptT2ZHdDJfeXQ4UnhOVVk1aUVpTG1MU19WVkxHWUY5dHRQU1lLSkRjSjFsYkg0RnZsa0xqa9IBuAFBVV95cUxOMGhiRDBVMEtUUlBhSWlKRExkUlFMalVzM0dHTXpvdW9qWUllaTR5LXl6dzJtQW9WNWRxbHMwRktqcUJBT2RVVzZvaXhMY2tEQUdaVm9pRzhTX2FjQzRiZWFGX1NUcmlYc0pVbjV0RjFTa2p1RGdReGRQV0xlWThuUzFjZUdkYV9NLVlOd0hDX2VzbGFDQUpMTW9sbWJsaXM2a1R5aDdySmZ6TU9sU3BjVzZRbTk4ODFx?oc=5\" target=\"_blank\">Hacks by autonomous AI agents raise thorny questions of legal accountability</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PBS</font>",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQmJFa201dzhreXJVQkNRZHdVWGw2RVNwZFRmb0pZbXA3dXRHMzdrZ1FEUUJPNHdraHQxWVo0eGpGRm1OYnROTjV2Y2h0ZmNJWG5yVjlIYXVBN21pVTByMHp4Q1dmWVdGWW1vdUFpNXppeG92c2FRb3pvYlB1ZVptT2ZHdDJfeXQ4UnhOVVk1aUVpTG1MU19WVkxHWUY5dHRQU1lLSkRjSjFsYkg0RnZsa0xqa9IBuAFBVV95cUxOMGhiRDBVMEtUUlBhSWlKRExkUlFMalVzM0dHTXpvdW9qWUllaTR5LXl6dzJtQW9WNWRxbHMwRktqcUJBT2RVVzZvaXhMY2tEQUdaVm9pRzhTX2FjQzRiZWFGX1NUcmlYc0pVbjV0RjFTa2p1RGdReGRQV0xlWThuUzFjZUdkYV9NLVlOd0hDX2VzbGFDQUpMTW9sbWJsaXM2a1R5aDdySmZ6TU9sU3BjVzZRbTk4ODFx?oc=5",
+    "resourceLinks": [],
+    "category": "AI_TOOLS",
+    "facebookPostId": "1277980028738225_122101285707487454",
+    "facebookPublishedAt": "2026-09-25T23:46:25.031Z",
+    "publishedAt": "Fri, 25 Sep 2026 23:02:57 GMT",
+    "sourceUrl": "https://www.pbs.org",
+    "sourceName": "PBS",
+    "imageId": 3949101,
+    "imageUrl": "https://images.pexels.com/photos/3949101/pexels-photo-3949101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-holding-a-tablet-3949101/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "HACK"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "accountability",
+        "agents",
+        "autonomous",
+        "blank",
+        "color",
+        "hacks",
+        "legal",
+        "questions",
+        "raise",
+        "target",
+        "thorny"
       ]
     }
   }
