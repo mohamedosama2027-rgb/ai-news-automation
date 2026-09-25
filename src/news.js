@@ -787,6 +787,28 @@ function isDuplicateStory(articleA, articleB) {
         return true;
     }
 
+    const fingerprintA = articleA.topicFingerprint ||
+        createTopicFingerprint(articleA);
+    const fingerprintB = articleB.topicFingerprint ||
+        createTopicFingerprint(articleB);
+    const sharedEntities = intersectionSize(
+        new Set(fingerprintA.entities || []),
+        new Set(fingerprintB.entities || [])
+    );
+    const sharedEvents = intersectionSize(
+        new Set(fingerprintA.events || []),
+        new Set(fingerprintB.events || [])
+    );
+    const specificWordsA = new Set(fingerprintA.specificWords || []);
+    const specificWordsB = new Set(fingerprintB.specificWords || []);
+
+    if (
+        (sharedEntities > 0 || sharedEvents > 0) &&
+        overlap(specificWordsA, specificWordsB) >= 0.55
+    ) {
+        return true;
+    }
+
     return (
         isSameEntityAndEvent(articleA, articleB) ||
         calculateStorySimilarity(articleA, articleB) >= 0.80
@@ -929,9 +951,21 @@ function readPublishedNews() {
             )
         );
 
-        return Array.isArray(data)
-            ? data
-            : [];
+        if (!Array.isArray(data)) {
+            return [];
+        }
+
+        const unique = [];
+
+        for (let index = data.length - 1; index >= 0; index--) {
+            const article = data[index];
+
+            if (!unique.some(existing => isDuplicateStory(article, existing))) {
+                unique.push(article);
+            }
+        }
+
+        return unique.reverse();
     } catch (error) {
         console.error(
             "Could not read published-news.json:",
