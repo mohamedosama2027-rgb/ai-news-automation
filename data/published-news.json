@@ -514,5 +514,100 @@
         "worldwide"
       ]
     }
+  },
+  {
+    "title": "Factory Access May Define Korea’s Physical AI Edge More Than Just Better Models - KoreaTechDesk",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1taEk2Vk01U2lDY3FOXy1SSU1lT3NYVGRDNUx6a19POVZqbnA5MGVUdGdJQXVuOVBZYnZoMTBraUdtOHk3Mm1EU211ZGtFdUdUby1SR1NOcFA2QmlDSHhfWjJPMVBNWlp1anVXQ3pFM3A0ejY4OU5US0RVdXM?oc=5",
+    "category": "AI_MANUFACTURING",
+    "publishedAt": "Wed, 23 Sep 2026 22:49:53 GMT",
+    "sourceUrl": "https://koreatechdesk.com",
+    "sourceName": "KoreaTechDesk",
+    "imageId": 32778341,
+    "imagePexelsUrl": "https://www.pexels.com/photo/advanced-robotic-automation-in-laboratory-32778341/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "access",
+        "better",
+        "blank",
+        "color",
+        "define",
+        "factory",
+        "korea",
+        "koreatechdesk",
+        "models",
+        "physical",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Toyota orders workers to train humanoid robots but says humans won’t be replaced - Ars Technica",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRjhxNGxjcU5OeWFVNTRHRVNPZDQ5d0pBYnFDXzBVM3BvbDM4dE1rUDFvUmNZZnB1QUNFZndzQzY2Y0JMajRJYnVrTmFvQmxvX1l4TXJkX3JmY1B3RUFKNDRCZG9iZkRYZzN5b3FaN2x2UmxwblRwbEdCZVhwdlNtSmNlTGRWaW1odjdLZmd0cTJGREExMnNROHBOdGtKTFlmd1BYMXREXzcyQlk?oc=5",
+    "category": "AI_ROBOTICS",
+    "publishedAt": "Tue, 22 Sep 2026 17:06:16 GMT",
+    "sourceUrl": "https://arstechnica.com",
+    "sourceName": "Ars Technica",
+    "imageId": 19319639,
+    "imagePexelsUrl": "https://www.pexels.com/photo/boston-dynamics-robot-in-a-car-factory-19319639/",
+    "topicFingerprint": {
+      "entities": [
+        "toyota"
+      ],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "humanoid",
+        "humans",
+        "orders",
+        "replaced",
+        "robots",
+        "target",
+        "technica",
+        "toyota",
+        "train"
+      ]
+    }
+  },
+  {
+    "title": "Google Nears Release of Flagship Gemini 4 AI Model - The Information",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNXh3OWdvQ3NBQ240aUxVR2NOd0hsMTZITHFpQjFuZlhQMU5ZeWpfaHdNd21lZVlyRzZzcUo5OUhJVEcwVnlFWjkwSENSdkdqb1NMMUFMaWE0a2lwbkw2Z25rMFBUYXZWOTk4VEU0dnRhTWk5YkQ5bkx3VmROWV9pYm5FRVZ0MnlKV0Rqell0LWU?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Thu, 24 Sep 2026 02:15:00 GMT",
+    "sourceUrl": "https://www.theinformation.com",
+    "sourceName": "The Information",
+    "imageId": 34804017,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-computer-screen-with-code-and-menu-options-34804017/",
+    "topicFingerprint": {
+      "entities": [
+        "google"
+      ],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "flagship",
+        "gemini",
+        "google",
+        "information",
+        "model",
+        "nears",
+        "release",
+        "target"
+      ]
+    }
   }
 ]
