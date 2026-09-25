@@ -1209,5 +1209,120 @@
         "releases"
       ]
     }
+  },
+  {
+    "title": "Anthropic’s New AI Lets Lab Machines Talk To Each Other To Automate Research: Report - NDTV Profit",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSkMwT2FfVzIwZFYxRTZ0Q1RvM1BHRFc2Q1M1dHR4SWthaFRqOWx4Zl9EOFdqMFhlVmdZY00waS1udzN3OFNtR0ZYODBBUjhOQml4SHlpbUNVTFRzbkFqbFplN1NXN0t4clBOYjI2YUZQZ2RkSVlmcXMzZEVOWXNxYklZR0ZFU3BmVnpfM0JOM01rRHJJenFidlpuRF9URnlFVDExdmo0NXU0eUNKWFU3Z3ZoTUhURnhYY2laTGJPUjhBTEhWQzgxT0h30gHSAUFVX3lxTE5Fc3o4Sk0zay1tYzhpMHJ1SGVhcUNVVGMyNWtTdmMzS0V6VFhYX3ZLUVZ6WnRRWVJKcnQwXzU2Y2UyaTZRUFFTcmlnVDZmVjdpbEt2eEtPcTJoM1hFdlRET0x3SjMyV1BackVfRFJwVDRJVVpiaFUtYWR6UThUT0JRQmtKSkJ1UmZVOTNDUlNzSkxyXzIxSlZZNUExamlyVlNnWEVib2pfZXVuNjUtMjFMektCYWZNUnZXTlBfYmhXdkxmMVlJQnp6QnAxVDAzbWN0dw?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Fri, 25 Sep 2026 10:52:09 GMT",
+    "sourceUrl": "https://www.ndtvprofit.com",
+    "sourceName": "NDTV Profit",
+    "imageId": 8439001,
+    "imagePexelsUrl": "https://www.pexels.com/photo/scientists-testing-a-device-8439001/",
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "anthropic",
+        "automate",
+        "blank",
+        "color",
+        "machines",
+        "other",
+        "profit",
+        "research",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Microsoft revamps Copilot with code generation, agentic AI tools - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORFppWUc2LTE4NzBfY2prVG11cG9PQ1VyaFB6QkYzVGoyLWV5alVORkZraFREc3FBbmIxTThVay1nQnZZRXhvQ1JyQXpQeU1uY3NmYkt4eWtlSlZvZF8yR3o0LUtRZGFXWFkzdVdBTXJveUdqNG1PTTdHS25wQ0xOR0R3dWNCZFQ3Snlwcjc0S0FHYXg3RkhsMWFoMW5GX0hWWFFFQUJzZnptVjJXUUhR?oc=5",
+    "category": "AI_TOOLS",
+    "publishedAt": "Fri, 25 Sep 2026 13:51:28 GMT",
+    "sourceUrl": "https://www.reuters.com",
+    "sourceName": "Reuters",
+    "imageId": 89724,
+    "imagePexelsUrl": "https://www.pexels.com/photo/imac-turend-on-89724/",
+    "topicFingerprint": {
+      "entities": [
+        "microsoft"
+      ],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "agentic",
+        "blank",
+        "color",
+        "copilot",
+        "generation",
+        "microsoft",
+        "reuters",
+        "revamps",
+        "target",
+        "tools"
+      ]
+    }
+  },
+  {
+    "title": "Can AI help bridge the public health gap? - Ateneo de Manila University",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fUElQTElqQnpkNklUQ0JnMFMzVFR6M3czRFJGX2FYMld1UGhHNWkxenNHcEVNSC03NndDTGZzOHNlVHlTbjExMEx1VkVFdGZ4bXJVeUkyTlE3RWZULUFNUEVCN2s4a2dQS0psYjRVeC1GU3BPVkp4Qk85YXg?oc=5",
+    "category": "AI_HEALTH",
+    "publishedAt": "Fri, 25 Sep 2026 07:20:27 GMT",
+    "sourceUrl": "https://www.ateneo.edu",
+    "sourceName": "Ateneo de Manila University",
+    "imageId": 6019019,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-white-robot-6019019/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "ateneo",
+        "blank",
+        "bridge",
+        "color",
+        "health",
+        "manila",
+        "public",
+        "target",
+        "university"
+      ]
+    }
+  },
+  {
+    "title": "AI wrecking ball fractures billable-hour fee model - Financial Times",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVXl6QlBpdmo1RlUwakJIRFNVTWxUS2xLZzlESTdQVFhBUVNrTEljUUhkeGJRSmVCTXFoZU9JdWVqUEVQQUpQN2lWYmV6M1FYVmJlaHk2dkk0RS1LcEdQQjNtUzdVSFRCckhmdFhJS2VxX1U0Si15U3BEbGNSWktHRjl6bHQ?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Fri, 25 Sep 2026 04:00:54 GMT",
+    "sourceUrl": "https://www.ft.com",
+    "sourceName": "Financial Times",
+    "imageId": 8111894,
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-in-black-blazer-sitting-on-chair-8111894/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "POLICY",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "billable-hour",
+        "blank",
+        "color",
+        "financial",
+        "fractures",
+        "model",
+        "target",
+        "times",
+        "wrecking"
+      ]
+    }
   }
 ]
