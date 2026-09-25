@@ -26,6 +26,21 @@ const CATEGORY_PRIORITY = [
     "AI_AGENTS",
     "AI_SECURITY",
     "AI_ROBOTICS",
+    "AI_HEALTH",
+    "AI_SCIENCE",
+    "AI_MANUFACTURING",
+    "AI_TRANSPORT",
+    "AI_AEROSPACE",
+    "AI_ENERGY",
+    "AI_CLIMATE",
+    "AI_AGRICULTURE",
+    "AI_FINANCE",
+    "AI_EDUCATION",
+    "AI_GOVERNMENT",
+    "AI_CONSTRUCTION",
+    "AI_TRAVEL",
+    "AI_CONSUMER",
+    "AI_FRONTIER_TECH",
     "AI_MODELS",
     "AI_TOOLS",
     "AI_PROJECTS",
@@ -49,7 +64,37 @@ const CATEGORIES = {
     AI_SECURITY:
         "AI cybersecurity OR AI security OR AI hacking",
     AI_POLICY:
-        "AI regulation OR AI policy OR AI law OR artificial intelligence government"
+        "AI regulation OR AI policy OR AI law OR artificial intelligence government",
+    AI_HEALTH:
+        "AI healthcare OR medical AI OR AI diagnosis OR medical robotics OR health technology",
+    AI_SCIENCE:
+        "AI science OR scientific discovery OR laboratory technology OR research technology",
+    AI_MANUFACTURING:
+        "AI manufacturing OR industrial automation OR factory robotics OR smart factory",
+    AI_TRANSPORT:
+        "AI transportation OR self-driving OR autonomous vehicle OR mobility technology",
+    AI_AEROSPACE:
+        "AI aerospace OR aviation technology OR space technology OR aircraft innovation",
+    AI_ENERGY:
+        "AI energy OR battery technology OR renewable technology OR nuclear technology",
+    AI_CLIMATE:
+        "AI climate technology OR climate tech OR carbon capture technology OR sustainability technology",
+    AI_AGRICULTURE:
+        "AI agriculture OR farming technology OR agricultural robotics OR food technology",
+    AI_FINANCE:
+        "AI finance OR fintech technology OR banking technology OR payments innovation",
+    AI_EDUCATION:
+        "AI education OR learning technology OR classroom technology OR edtech innovation",
+    AI_GOVERNMENT:
+        "government technology OR public sector AI OR digital government OR civic technology",
+    AI_CONSTRUCTION:
+        "AI construction OR construction robotics OR building technology OR smart buildings",
+    AI_TRAVEL:
+        "AI travel technology OR tourism technology OR hotel technology OR airport innovation",
+    AI_CONSUMER:
+        "consumer technology OR smart home OR wearable technology OR retail technology",
+    AI_FRONTIER_TECH:
+        "technology breakthrough OR deep tech OR semiconductor innovation OR quantum technology"
 };
 
 const CATEGORY_ORDER = Object.keys(CATEGORIES);
@@ -894,19 +939,6 @@ function removePreviouslyPublishedTopics(
     return remaining;
 }
 
-/*
- * Important change:
- *
- * We only perform aggressive story deduplication when
- * the articles belong to the same category.
- *
- * Cross-category duplicates are handled later during
- * editorial selection where category diversity is known.
- *
- * This prevents a strong research article from being
- * deleted simply because a model/company article mentions
- * the same entity.
- */
 function removeObviousStoryDuplicates(articles) {
     const kept = [];
 
@@ -917,19 +949,13 @@ function removeObviousStoryDuplicates(articles) {
         let duplicate = false;
 
         for (const existing of kept) {
-            if (
-                article.category !==
-                existing.category
-            ) {
-                continue;
-            }
-
-            if (
+            const sameEntityAndEvent =
                 isSameEntityAndEvent(
                     article,
                     existing
-                )
-            ) {
+                );
+
+            if (sameEntityAndEvent) {
                 duplicate = true;
                 entityEventRemoved++;
                 break;
@@ -939,7 +965,7 @@ function removeObviousStoryDuplicates(articles) {
                 calculateStorySimilarity(
                     article,
                     existing
-                ) >= 0.85
+                ) >= 0.80
             ) {
                 duplicate = true;
                 similarityRemoved++;
