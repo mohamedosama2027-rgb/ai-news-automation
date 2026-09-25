@@ -395,5 +395,124 @@
         "secures"
       ]
     }
+  },
+  {
+    "title": "Breaking News: Google is planning to launch an experimental satellite into orbit in Big Tech’s first move toward A.I. data centers in space. - facebook.com",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQczViT04xeUdaT1hacUdfejYxZXd2dXczWlRCa3M1SUtkMGJkSmdwXzlsRElwaUs1WHg4Q2tyVFdvNENKMzc5TkV4NFhud2RRYkRsSnJ1WmNSZjd3WXM2UmlhLXg0a0pGbEgxX2txdVRjYVFYaG1NUU1ER0IyMGZrUE1pSjlNV2xLbzZzRGZrX01WdElqamphdUxRZmVhZU4zTm8zdEEyNU5QQ0h6TVpoM2pDUmpRcTBDanZTakhpYU93TzR5X2dYTnFoeGZvNHUzVElR?oc=5",
+    "category": "AI_COMPANIES",
+    "publishedAt": "Thu, 24 Sep 2026 13:21:48 GMT",
+    "sourceUrl": "https://www.facebook.com",
+    "sourceName": "facebook.com",
+    "topicFingerprint": {
+      "entities": [
+        "google",
+        "meta"
+      ],
+      "events": [
+        "LAUNCH",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "breaking",
+        "centers",
+        "color",
+        "experimental",
+        "facebook",
+        "first",
+        "google",
+        "launch",
+        "orbit",
+        "planning"
+      ]
+    }
+  },
+  {
+    "title": "Toyota Sees AI, Automation Playing Bigger Role In Future Manufacturing - 6.4 Billion Dollars, 40,000 Robots - NDTV",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVWZ2WVNLczRWUnhJV1Q5VzB1WEZrNUhGR0x6QzdvVUhpNE5PMEE0TG4yMHVEZzNfODhxUjliT2RhV1dXQlkxdXVTTG5LN1Y5QWU3ZkY4NWdtM054QkcwOFNJdGxpdXpSTmZpMnZTV3J5b2plb2R2N0FhY0xCYjVDdUozS1BuMHh4d2lOdi1YbVFmOWJiSDlVdWtqZ0Rjam16X0htTUlsYUdjQmY5aDd4R3lPdTVBNlFvdHF5OVBJd1g4Z3NfU29BckpncXlvVEVWeS1QZXlUWXo1QQ?oc=5",
+    "category": "AI_MANUFACTURING",
+    "publishedAt": "Thu, 24 Sep 2026 05:32:39 GMT",
+    "sourceUrl": "https://www.ndtv.com",
+    "sourceName": "NDTV",
+    "topicFingerprint": {
+      "entities": [
+        "toyota"
+      ],
+      "events": [
+        "POLICY",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "000",
+        "6f6f6f",
+        "automation",
+        "bigger",
+        "billion",
+        "blank",
+        "color",
+        "dollars",
+        "manufacturing",
+        "playing",
+        "robots",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Kodiak AI and DTL Transport Complete First Autonomous Trucking Deliveries Under New California DMV Permit - Taiwan News",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44dm00RHRnOG9vbE5mS2hOQjBiNVFwSXI1R1VWamg0bERjODE4Vl80TWFJXzZTVW9YNTd0SFRrb3Fac0ZsQ0RiTlE1UzJKdmdZRFNMa2diRFc?oc=5",
+    "category": "AI_TRANSPORT",
+    "publishedAt": "Thu, 24 Sep 2026 13:00:00 GMT",
+    "sourceUrl": "https://www.taiwannews.com.tw",
+    "sourceName": "Taiwan News",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "autonomous",
+        "blank",
+        "california",
+        "color",
+        "complete",
+        "deliveries",
+        "first",
+        "kodiak",
+        "permit",
+        "taiwan",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "EXCLUSIVE: Anthropic, OpenEvidence partner to bring medical AI worldwide - reuters.com",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLVV5RE9jdGNuVXUycl9fTjJ1Ty1tVzZ2U1MxcWtaZDhXOG5qc29yTENvLVJtZ19PM09MQng5azRmbU5kNG40dUtBcVcxN0U1eGZNUkZwaXA0amt6R25qak9za19YTTNKVHFDVGg0VVVzN3V2VjFHdnBHN3BpUmtQR3BUdThUd3FqbXJIOHZLVE1kbVVRV005bDJmM3o3N2Z2Z3Bvd2NYZjhSLUdpYUhZ?oc=5",
+    "category": "AI_HEALTH",
+    "publishedAt": "Tue, 22 Sep 2026 21:31:00 GMT",
+    "sourceUrl": "https://www.reuters.com",
+    "sourceName": "reuters.com",
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "PARTNERSHIP"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "anthropic",
+        "blank",
+        "bring",
+        "color",
+        "exclusive",
+        "medical",
+        "openevidence",
+        "partner",
+        "reuters",
+        "target",
+        "worldwide"
+      ]
+    }
   }
 ]
