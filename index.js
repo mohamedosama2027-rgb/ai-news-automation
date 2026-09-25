@@ -52,7 +52,10 @@ async function main() {
             );
 
             console.log("✅ Published successfully!", facebookResult);
-            markNewsAsPublished(current.article);
+            markNewsAsPublished(
+                current.article,
+                imageSelection.selectedImage
+            );
 
             if (delayMs > 0 && index < posts.length - 1) {
                 console.log(`⏳ Waiting ${delayMs / 1000} seconds before next post...`);

@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const axios = require("axios");
 
-async function searchImage(query) {
+async function searchImage(query, page = 1) {
     const apiKey = process.env.PEXELS_API_KEY;
 
     if (!apiKey) {
@@ -31,6 +31,7 @@ async function searchImage(query) {
             params: {
                 query: query.trim(),
                 per_page: perPage,
+                page,
                 orientation: "landscape"
             }
         }

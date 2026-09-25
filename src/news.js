@@ -1698,7 +1698,7 @@ async function getLatestAINews() {
     return allArticles;
 }
 
-function markNewsAsPublished(article) {
+function markNewsAsPublished(article, selectedImage = null) {
     const publishedNews =
         readPublishedNews();
 
@@ -1713,6 +1713,10 @@ function markNewsAsPublished(article) {
             article.sourceUrl || "",
         sourceName:
             article.sourceName || "",
+        imageId:
+            selectedImage?.id || null,
+        imagePexelsUrl:
+            selectedImage?.pexelsUrl || null,
         topicFingerprint:
             createTopicFingerprint(
                 article

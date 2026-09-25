@@ -3,6 +3,7 @@ require("dotenv").config();
 const axios = require("axios");
 const { GoogleGenAI } = require("@google/genai");
 const { searchImage } = require("./image-search");
+const { getPublishedNews } = require("./news");
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
@@ -233,8 +234,35 @@ async function selectImage(article, imageQuery) {
     console.log("\n🔎 Searching Pexels...");
     console.log("Query:", imageQuery);
 
-    const images =
+    let images =
         await searchImage(imageQuery);
+
+    const publishedImages = getPublishedNews();
+    const usedImageIds = new Set(
+        publishedImages
+            .map(item => String(item.imageId || ""))
+            .filter(Boolean)
+    );
+    const usedImageUrls = new Set(
+        publishedImages
+            .map(item => item.imagePexelsUrl || "")
+            .filter(Boolean)
+    );
+
+    const filterUnusedImages = candidates =>
+        candidates.filter(image =>
+            !usedImageIds.has(String(image.id)) &&
+            !usedImageUrls.has(image.pexelsUrl)
+        );
+
+    images = filterUnusedImages(images);
+
+    if (!images.length) {
+        console.log("⚠️ First Pexels page contains only previously used images. Trying page 2...");
+        images = filterUnusedImages(
+            await searchImage(imageQuery, 2)
+        );
+    }
 
     if (!images.length) {
         return {
