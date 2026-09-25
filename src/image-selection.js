@@ -2,7 +2,10 @@ require("dotenv").config();
 
 const axios = require("axios");
 const { GoogleGenAI } = require("@google/genai");
-const { searchImage } = require("./image-search");
+const {
+    searchImage,
+    searchArticleImage
+} = require("./image-search");
 const { getPublishedNews } = require("./news");
 
 const ai = new GoogleGenAI({
@@ -237,6 +240,14 @@ async function selectImage(article, imageQuery) {
     let images =
         await searchImage(imageQuery);
 
+    const articleImage =
+        await searchArticleImage(article.link);
+
+    if (articleImage) {
+        console.log("📰 Original article image found and added for evaluation.");
+        images = [articleImage, ...images];
+    }
+
     const publishedImages = getPublishedNews();
     const usedImageIds = new Set(
         publishedImages
@@ -336,7 +347,7 @@ async function selectImage(article, imageQuery) {
 
     console.log(
         "\nPexels URL:",
-        image.pexelsUrl
+        image.pexelsUrl || image.photographerUrl
     );
 
     console.log(

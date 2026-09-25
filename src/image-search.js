@@ -2,6 +2,55 @@ require("dotenv").config();
 
 const axios = require("axios");
 
+function decodeHtml(value = "") {
+    return value
+        .replace(/&amp;/g, "&")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">");
+}
+
+async function searchArticleImage(articleUrl) {
+    if (!articleUrl) {
+        return null;
+    }
+
+    try {
+        const response = await axios.get(articleUrl, {
+            timeout: 12000,
+            maxRedirects: 5,
+            headers: {
+                "User-Agent": "Mozilla/5.0 (compatible; AI-News-Automation/1.0)"
+            }
+        });
+
+        const html = response.data;
+        const imageUrl =
+            html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)?.[1] ||
+            html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i)?.[1];
+
+        if (!imageUrl || !/^https?:\/\//i.test(imageUrl)) {
+            return null;
+        }
+
+        return {
+            id: `article:${imageUrl}`,
+            url: decodeHtml(imageUrl),
+            photographer: "Article source",
+            photographerUrl: response.request?.res?.responseUrl || articleUrl,
+            pexelsUrl: null,
+            alt: "Original article image",
+            width: null,
+            height: null,
+            isArticleImage: true
+        };
+    } catch (error) {
+        console.log("⚠️ Could not fetch the article image. Falling back to Pexels.");
+        return null;
+    }
+}
+
 async function searchImage(query, page = 1) {
     const apiKey = process.env.PEXELS_API_KEY;
 
@@ -61,5 +110,6 @@ async function searchImage(query, page = 1) {
 }
 
 module.exports = {
-    searchImage
+    searchImage,
+    searchArticleImage
 };

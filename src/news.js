@@ -15,6 +15,12 @@ const configuredMaxPosts = Number(
 const MAX_POSTS_PER_RUN = Number.isFinite(configuredMaxPosts)
     ? Math.max(1, Math.floor(configuredMaxPosts))
     : 4;
+const configuredNewsAgeHours = Number(
+    process.env.NEWS_MAX_AGE_HOURS || 24
+);
+const NEWS_MAX_AGE_HOURS = Number.isFinite(configuredNewsAgeHours)
+    ? Math.max(6, configuredNewsAgeHours)
+    : 24;
 
 /*
  * These categories get first opportunity during
@@ -1575,7 +1581,7 @@ function isRecent(article) {
 
     return (
         ageHours >= -2 &&
-        ageHours <= 72
+        ageHours <= NEWS_MAX_AGE_HOURS
     );
 }
 
