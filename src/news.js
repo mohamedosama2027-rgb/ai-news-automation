@@ -538,6 +538,32 @@ function getSourceHostname(article) {
     );
 }
 
+function canonicalizeUrl(link = "") {
+    try {
+        const url = new URL(link.trim());
+        const removableParams = [
+            "utm_source",
+            "utm_medium",
+            "utm_campaign",
+            "utm_content",
+            "utm_term",
+            "gclid",
+            "fbclid",
+            "ocid",
+            "ved"
+        ];
+
+        for (const parameter of removableParams) {
+            url.searchParams.delete(parameter);
+        }
+
+        url.hash = "";
+        return url.toString().replace(/\/$/, "");
+    } catch (_) {
+        return link.trim().replace(/\/$/, "");
+    }
+}
+
 function getSourceScore(article) {
     const hostname = getSourceHostname(article);
 
@@ -726,6 +752,47 @@ function isSameEntityAndEvent(articleA, articleB) {
     return overlap(specificA, specificB) >= 0.55;
 }
 
+function isSameHeadline(articleA, articleB) {
+    const titleA = getWords(articleA.title || "");
+    const titleB = getWords(articleB.title || "");
+
+    if (titleA.size < 4 || titleB.size < 4) {
+        return false;
+    }
+
+    const meaningfulA = new Set(
+        [...titleA].filter(word => !GENERIC_MARKERS.has(word))
+    );
+    const meaningfulB = new Set(
+        [...titleB].filter(word => !GENERIC_MARKERS.has(word))
+    );
+
+    return (
+        meaningfulA.size >= 3 &&
+        meaningfulB.size >= 3 &&
+        overlap(meaningfulA, meaningfulB) >= 0.72
+    );
+}
+
+function isDuplicateStory(articleA, articleB) {
+    if (
+        canonicalizeUrl(articleA.link) &&
+        canonicalizeUrl(articleA.link) ===
+            canonicalizeUrl(articleB.link)
+    ) {
+        return true;
+    }
+
+    if (isSameHeadline(articleA, articleB)) {
+        return true;
+    }
+
+    return (
+        isSameEntityAndEvent(articleA, articleB) ||
+        calculateStorySimilarity(articleA, articleB) >= 0.80
+    );
+}
+
 function createTopicFingerprint(article) {
     const text =
         `${article.title || ""} ${article.description || ""}`;
@@ -883,8 +950,8 @@ function isSameUrl(article, published) {
     return (
         article.link &&
         published.link &&
-        article.link.trim() ===
-            published.link.trim()
+        canonicalizeUrl(article.link) ===
+            canonicalizeUrl(published.link)
     );
 }
 
@@ -907,21 +974,7 @@ function removePreviouslyPublishedTopics(
                         return true;
                     }
 
-                    if (
-                        isSameEntityAndEvent(
-                            article,
-                            published
-                        )
-                    ) {
-                        return true;
-                    }
-
-                    return (
-                        calculateStorySimilarity(
-                            article,
-                            published
-                        ) >= 0.90
-                    );
+                    return isDuplicateStory(article, published);
                 });
 
             if (duplicate) {
@@ -942,33 +995,15 @@ function removePreviouslyPublishedTopics(
 function removeObviousStoryDuplicates(articles) {
     const kept = [];
 
-    let entityEventRemoved = 0;
-    let similarityRemoved = 0;
+    let duplicateRemoved = 0;
 
     for (const article of articles) {
         let duplicate = false;
 
         for (const existing of kept) {
-            const sameEntityAndEvent =
-                isSameEntityAndEvent(
-                    article,
-                    existing
-                );
-
-            if (sameEntityAndEvent) {
+            if (isDuplicateStory(article, existing)) {
                 duplicate = true;
-                entityEventRemoved++;
-                break;
-            }
-
-            if (
-                calculateStorySimilarity(
-                    article,
-                    existing
-                ) >= 0.80
-            ) {
-                duplicate = true;
-                similarityRemoved++;
+                duplicateRemoved++;
                 break;
             }
         }
@@ -979,11 +1014,7 @@ function removeObviousStoryDuplicates(articles) {
     }
 
     console.log(
-        `Entity/event duplicate removals: ${entityEventRemoved}`
-    );
-
-    console.log(
-        `Similarity duplicate removals: ${similarityRemoved}`
+        `Story duplicate removals: ${duplicateRemoved}`
     );
 
     return kept;
@@ -1095,42 +1126,7 @@ function sortArticles(articles) {
 
 function conflictsWithSelected(article, selected) {
     return selected.some(existing => {
-        /*
-         * Exact same URL is always a conflict.
-         */
-        if (
-            article.link &&
-            existing.link &&
-            article.link === existing.link
-        ) {
-            return true;
-        }
-
-        /*
-         * Same category + same story.
-         */
-        if (
-            article.category ===
-                existing.category &&
-            isSameEntityAndEvent(
-                article,
-                existing
-            )
-        ) {
-            return true;
-        }
-
-        /*
-         * Same underlying story even across categories.
-         * This is intentionally a little stricter only
-         * at final selection time.
-         */
-        return (
-            calculateStorySimilarity(
-                article,
-                existing
-            ) >= 0.90
-        );
+        return isDuplicateStory(article, existing);
     });
 }
 
