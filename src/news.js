@@ -1378,14 +1378,37 @@ function decodeXml(value = "") {
 }
 
 async function fetchGoogleNews(query) {
-    const url =
+    const googleUrl =
         `https://news.google.com/rss/search?q=${encodeURIComponent(query)}` +
         `&hl=en-US&gl=US&ceid=US:en`;
 
-    const response =
-        await axios.get(url, {
-            timeout: 20000
+    let response;
+
+    try {
+        response = await axios.get(googleUrl, {
+            timeout: 15000,
+            headers: {
+                "User-Agent": "Mozilla/5.0 (compatible; AI-News-Automation/1.0)"
+            }
         });
+    } catch (error) {
+        const status = error.response?.status;
+
+        if (status !== 429 && status !== 503) {
+            throw error;
+        }
+
+        const bingUrl =
+            `https://www.bing.com/news/search?q=${encodeURIComponent(query)}` +
+            "&format=rss&setlang=en-us";
+
+        response = await axios.get(bingUrl, {
+            timeout: 15000,
+            headers: {
+                "User-Agent": "Mozilla/5.0 (compatible; AI-News-Automation/1.0)"
+            }
+        });
+    }
 
     const xml = response.data;
 
