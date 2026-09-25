@@ -77,6 +77,7 @@ async function searchImage(query, page = 1) {
             headers: {
                 Authorization: apiKey
             },
+            timeout: 30000,
             params: {
                 query: query.trim(),
                 per_page: perPage,

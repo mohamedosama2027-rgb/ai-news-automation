@@ -1,4 +1,8 @@
-name: Daily AI News Automation
+name: Manual AI News Automation
+
+concurrency:
+  group: ai-news-page-publishing
+  cancel-in-progress: false
 
 on:
   workflow_dispatch:
@@ -9,6 +13,7 @@ permissions:
 jobs:
   run-automation:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

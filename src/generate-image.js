@@ -5,8 +5,13 @@ const path = require("path");
 const { GoogleGenAI } = require("@google/genai");
 
 const ai = new GoogleGenAI({
-    apiKey: process.env.GEMINI_API_KEY
+    apiKey: process.env.GEMINI_API_KEY,
+    httpOptions: {
+        timeout: 60000
+    }
 });
+
+const IMAGE_MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-3.1-flash-lite-image";
 
 async function generateImage(article) {
     if (!article || !article.title) {
@@ -22,8 +27,15 @@ Create a professional editorial-style image for an AI technology news article.
 ARTICLE TITLE:
 ${article.title}
 
+ARTICLE DESCRIPTION:
+${article.description || "No description available"}
+
+FACEBOOK POST:
+${article.post || "No post provided"}
+
 IMPORTANT:
-- Create a visually relevant image based ONLY on the article title.
+- Create a visually relevant image based only on the article title and description.
+- Use the Facebook post only to understand the intended editorial angle.
 - Do not invent specific events, locations, quotes, statistics, or details that are not supported by the title.
 - If the article mentions a specific person, visually represent that person only when appropriate.
 - If an exact person cannot be reliably represented, create a symbolic editorial illustration instead.
@@ -35,13 +47,34 @@ IMPORTANT:
 - Landscape composition.
 `;
 
-    const interaction = await ai.interactions.create({
-        model: "gemini-3.1-flash-image",
-        input: prompt
-    });
+    let interaction;
+    try {
+        interaction = await ai.interactions.create({
+            model: IMAGE_MODEL,
+            input: prompt,
+            response_format: {
+                type: "image",
+                mime_type: "image/png",
+                aspect_ratio: "16:9",
+                image_size: "1K"
+            }
+        });
+    } catch (error) {
+        const errorMessage = error.message || "";
+        if (
+            error.status === 429 ||
+            errorMessage.includes("limit: 0 requests per day") ||
+            errorMessage.includes("RESOURCE_EXHAUSTED")
+        ) {
+            throw new Error(
+                `Gemini image generation is not enabled for ${IMAGE_MODEL} on this API key's current quota. Enable billing/pay-as-you-go for the Google AI Studio project, or use IMAGE_PROVIDER=pexels. Original error: ${errorMessage}`
+            );
+        }
+        throw error;
+    }
 
-    const imageOutput = interaction.outputs?.find(
-        (output) => output.type === "image"
+    const imageOutput = interaction.output_image || interaction.outputs?.find(
+        output => output.type === "image"
     );
 
     if (!imageOutput || !imageOutput.data) {

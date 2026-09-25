@@ -21,13 +21,20 @@ const configuredNewsAgeHours = Number(
 const NEWS_MAX_AGE_HOURS = Number.isFinite(configuredNewsAgeHours)
     ? Math.max(6, configuredNewsAgeHours)
     : 24;
+const configuredWorkflowAgeHours = Number(
+    process.env.AI_WORKFLOW_MAX_AGE_HOURS || 168
+);
+const AI_WORKFLOW_MAX_AGE_HOURS = Number.isFinite(configuredWorkflowAgeHours)
+    ? Math.max(24, configuredWorkflowAgeHours)
+    : 168;
 
 /*
- * These categories get first opportunity during
- * the diversity pass so useful research and agent
- * stories do not disappear behind company/model news.
+ * Practical AI workflows and research get first opportunity
+ * so they do not disappear behind company/model news.
  */
 const CATEGORY_PRIORITY = [
+     "AI_DEV_TOOLS",
+     "AI_CREATOR_TOOLS",
     "AI_RESEARCH",
     "AI_AGENTS",
     "AI_SECURITY",
@@ -56,6 +63,10 @@ const CATEGORY_PRIORITY = [
 ];
 
 const CATEGORIES = {
+    AI_DEV_TOOLS:
+        'AI coding plugin OR IDE extension OR coding agent skill OR MCP server OR GitHub AI developer tool OR coding assistant workflow OR AI token reduction OR AGENTS.md OR CLAUDE.md OR Codex OR Claude Code',
+    AI_CREATOR_TOOLS:
+        'AI content creator tool OR AI video editing workflow OR AI image editing plugin OR AI audio creator tool OR AI social media content workflow OR AI creator extension OR AI content repurposing tool OR prompt library for creators',
     AI_MODELS: "AI model OR LLM OR generative AI model",
     AI_TOOLS: "AI tool OR AI product OR AI software",
     AI_PROJECTS: "AI project OR AI application OR AI startup product",
@@ -776,7 +787,8 @@ function isSameHeadline(articleA, articleB) {
     return (
         meaningfulA.size >= 3 &&
         meaningfulB.size >= 3 &&
-        overlap(meaningfulA, meaningfulB) >= 0.72
+        intersectionSize(meaningfulA, meaningfulB) >= 3 &&
+        overlap(meaningfulA, meaningfulB) >= 0.62
     );
 }
 
@@ -787,6 +799,23 @@ function isDuplicateStory(articleA, articleB) {
             canonicalizeUrl(articleB.link)
     ) {
         return true;
+    }
+
+    const workflowCategories = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"];
+    if (
+        workflowCategories.includes(articleA.category) ||
+        workflowCategories.includes(articleB.category)
+    ) {
+        const resourceLinksA = new Set(
+            (articleA.resourceLinks || []).map(canonicalizeUrl).filter(Boolean)
+        );
+        if (
+            (articleB.resourceLinks || []).some(link =>
+                resourceLinksA.has(canonicalizeUrl(link))
+            )
+        ) {
+            return true;
+        }
     }
 
     if (isSameHeadline(articleA, articleB)) {
@@ -961,7 +990,7 @@ function isLowQualityArticle(article) {
     return false;
 }
 
-function readPublishedNews() {
+function readPublishedRecords() {
     if (!fs.existsSync(PUBLISHED_FILE)) {
         return [];
     }
@@ -978,17 +1007,7 @@ function readPublishedNews() {
             return [];
         }
 
-        const unique = [];
-
-        for (let index = data.length - 1; index >= 0; index--) {
-            const article = data[index];
-
-            if (!unique.some(existing => isDuplicateStory(article, existing))) {
-                unique.push(article);
-            }
-        }
-
-        return unique.reverse();
+        return data;
     } catch (error) {
         console.error(
             "Could not read published-news.json:",
@@ -999,8 +1018,103 @@ function readPublishedNews() {
     }
 }
 
+function readPublishedNews() {
+    const records = readPublishedRecords();
+    const unique = [];
+
+    for (let index = records.length - 1; index >= 0; index--) {
+        const article = records[index];
+
+        if (!unique.some(existing => isDuplicateStory(article, existing))) {
+            unique.push(article);
+        }
+    }
+
+    return unique.reverse();
+}
+
 function getPublishedNews() {
     return readPublishedNews();
+}
+
+function getPublishedImageHistory() {
+    return readPublishedRecords();
+}
+
+function getPostsNeedingPerformanceRefresh() {
+    const now = Date.now();
+    const refreshIntervalMs = 24 * 60 * 60 * 1000;
+    const maxAgeMs = 14 * 24 * 60 * 60 * 1000;
+
+    return readPublishedRecords()
+        .filter(record => {
+            if (!record.facebookPostId) {
+                return false;
+            }
+
+            const publishedAt = new Date(
+                record.facebookPublishedAt || record.publishedAt
+            ).getTime();
+            const lastCheckedAt = record.performanceCheckedAt
+                ? new Date(record.performanceCheckedAt).getTime()
+                : 0;
+
+            return Number.isFinite(publishedAt) &&
+                now - publishedAt <= maxAgeMs &&
+                now - lastCheckedAt >= refreshIntervalMs;
+        })
+        .slice(-3);
+}
+
+function updatePostPerformance(postId, metrics) {
+    const records = readPublishedRecords();
+    const record = records.find(item => item.facebookPostId === postId);
+    if (!record) {
+        return false;
+    }
+
+    record.performance = metrics;
+    record.performanceCheckedAt = new Date().toISOString();
+    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records.slice(-100), null, 2), "utf8");
+    return true;
+}
+
+function markPostPerformanceChecked(postId) {
+    const records = readPublishedRecords();
+    const record = records.find(item => item.facebookPostId === postId);
+    if (!record) {
+        return;
+    }
+
+    record.performanceCheckedAt = new Date().toISOString();
+    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records.slice(-100), null, 2), "utf8");
+}
+
+function getCategoryPerformanceSummary() {
+    const totals = new Map();
+
+    for (const record of readPublishedRecords()) {
+        if (!record.category || !record.performance) {
+            continue;
+        }
+
+        const reactions = Number(record.performance.reactions || 0);
+        const comments = Number(record.performance.comments || 0);
+        const shares = Number(record.performance.shares || 0);
+        const entry = totals.get(record.category) || { posts: 0, interactions: 0 };
+        entry.posts++;
+        entry.interactions += reactions + comments + shares;
+        totals.set(record.category, entry);
+    }
+
+    return [...totals.entries()]
+        .filter(([, entry]) => entry.posts >= 2)
+        .map(([category, entry]) => ({
+            category,
+            posts: entry.posts,
+            averageInteractions: Number((entry.interactions / entry.posts).toFixed(1))
+        }))
+        .sort((first, second) => second.averageInteractions - first.averageInteractions);
 }
 
 function isSameUrl(article, published) {
@@ -1138,6 +1252,22 @@ function scoreArticle(article) {
             )
         ) {
             score += 3;
+        }
+    }
+
+    if (article.category === "AI_DEV_TOOLS") {
+        if (/\b(plugin|extension|mcp|skill|agent|codex|claude\.md|agents\.md)\b/i.test(text)) {
+            score += 8;
+        }
+
+        if (/\b(token|context window|prompt caching|token usage|token cost)\b/i.test(text)) {
+            score += 4;
+        }
+    }
+
+    if (article.category === "AI_CREATOR_TOOLS") {
+        if (/\b(video|image|audio|editing|creator|content|caption|thumbnail|voiceover)\b/i.test(text)) {
+            score += 8;
         }
     }
 
@@ -1456,6 +1586,35 @@ function decodeXml(value = "") {
         .trim();
 }
 
+function extractResourceLinks(value = "", sourceUrl = "") {
+    const markup = value
+        .replace(/<!\[CDATA\[/g, "")
+        .replace(/\]\]>/g, "")
+        .replace(/&amp;/g, "&")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">");
+    const sourceHostname = getHostname(sourceUrl);
+    const links = new Set();
+
+    for (const match of markup.matchAll(/https?:\/\/[^\s"'<>]+/gi)) {
+        const link = match[0].replace(/[),.;]+$/, "");
+        const hostname = getHostname(link);
+
+        if (
+            hostname &&
+            hostname !== sourceHostname &&
+            hostname !== "news.google.com" &&
+            hostname !== "bing.com"
+        ) {
+            links.add(link);
+        }
+    }
+
+    return [...links].slice(0, 8);
+}
+
 async function fetchGoogleNews(query) {
     const googleUrl =
         `https://news.google.com/rss/search?q=${encodeURIComponent(query)}` +
@@ -1545,7 +1704,8 @@ async function fetchGoogleNews(query) {
             description: decodeXml(description),
             videoUrl: decodeXml(mediaUrl),
             sourceUrl: decodeXml(sourceUrl),
-            sourceName: decodeXml(sourceName)
+            sourceName: decodeXml(sourceName),
+            resourceLinks: extractResourceLinks(description, sourceUrl)
         });
     }
 
@@ -1554,6 +1714,123 @@ async function fetchGoogleNews(query) {
 
 function getMaxPostsPerRun() {
     return MAX_POSTS_PER_RUN;
+}
+
+async function fetchWorkflowDiscovery() {
+    const createdAfter = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
+        .toISOString()
+        .slice(0, 10);
+    const categories = [
+        {
+            category: "AI_DEV_TOOLS",
+            githubQuery: `("MCP server" OR "AI coding agent" OR "AI developer tool") created:>${createdAfter}`,
+            hackerQuery: "MCP server OR AI coding agent OR Claude Code OR Codex",
+            matcher: /\b(mcp|coding|developer|agent|claude|codex|copilot|token|plugin|extension)\b/i
+        },
+        {
+            category: "AI_CREATOR_TOOLS",
+            githubQuery: `("AI creator tool" OR "AI video" OR "AI content creation") created:>${createdAfter}`,
+            hackerQuery: "AI video tool OR AI content creation OR AI creator",
+            matcher: /\b(ai|creator|content|video|image|audio|editing|caption|voice|prompt)\b/i
+        }
+    ];
+
+    const requests = categories.map(async config => {
+        const [githubResult, hackerNewsResult] = await Promise.allSettled([
+            axios.get("https://api.github.com/search/repositories", {
+                params: {
+                    q: config.githubQuery,
+                    sort: "stars",
+                    order: "desc",
+                    per_page: 15
+                },
+                headers: {
+                    Accept: "application/vnd.github+json",
+                    "User-Agent": "AI-News-Automation"
+                },
+                timeout: 12000
+            }),
+            axios.get("https://hn.algolia.com/api/v1/search_by_date", {
+                params: {
+                    query: config.hackerQuery,
+                    tags: "story",
+                    hitsPerPage: 30
+                },
+                timeout: 12000
+            })
+        ]);
+
+        const articles = [];
+
+        if (githubResult.status === "fulfilled") {
+            for (const repo of githubResult.value.data.items || []) {
+                const details = `${repo.full_name} ${repo.description || ""}`;
+                if (!config.matcher.test(details) || repo.stargazers_count < 5) {
+                    continue;
+                }
+
+                articles.push({
+                    title: repo.full_name,
+                    description: [
+                        repo.description,
+                        repo.language && `Primary language: ${repo.language}`,
+                        `GitHub stars: ${repo.stargazers_count}`
+                    ].filter(Boolean).join(". "),
+                    link: repo.html_url,
+                    publishedAt: repo.pushed_at || repo.created_at,
+                    category: config.category,
+                    sourceUrl: "https://github.com",
+                    sourceName: "GitHub",
+                    resourceLinks: [repo.html_url]
+                });
+            }
+        } else {
+            console.warn(`GitHub workflow search failed for ${config.category}: ${githubResult.reason.message}`);
+        }
+
+        if (hackerNewsResult.status === "fulfilled") {
+            for (const hit of hackerNewsResult.value.data.hits || []) {
+                if (!hit.url || !config.matcher.test(hit.title || "")) {
+                    continue;
+                }
+
+                const hostname = getHostname(hit.url);
+                const knownNewsSource = Object.keys(SOURCE_SCORES).some(domain =>
+                    hostname === domain || hostname.endsWith(`.${domain}`)
+                );
+                const directResourceHosts = [
+                    "github.com",
+                    "gitlab.com",
+                    "codeberg.org",
+                    "huggingface.co",
+                    "npmjs.com",
+                    "pypi.org",
+                    "producthunt.com"
+                ];
+                const isDirectResource = directResourceHosts.some(domain =>
+                    hostname === domain || hostname.endsWith(`.${domain}`)
+                );
+
+                articles.push({
+                    title: hit.title,
+                    description: hit.story_text || "",
+                    link: hit.url,
+                    publishedAt: hit.created_at,
+                    category: config.category,
+                    sourceUrl: hit.url,
+                    sourceName: knownNewsSource ? hostname : `Hacker News / ${hostname}`,
+                    resourceLinks: isDirectResource ? [hit.url] : []
+                });
+            }
+        } else {
+            console.warn(`Hacker News workflow search failed for ${config.category}: ${hackerNewsResult.reason.message}`);
+        }
+
+        return articles;
+    });
+
+    const results = await Promise.all(requests);
+    return results.flat();
 }
 
 function isRecent(article) {
@@ -1579,9 +1856,13 @@ function isRecent(article) {
         ) /
         (1000 * 60 * 60);
 
+    const maxAgeHours = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"].includes(article.category)
+        ? AI_WORKFLOW_MAX_AGE_HOURS
+        : NEWS_MAX_AGE_HOURS;
+
     return (
         ageHours >= -2 &&
-        ageHours <= NEWS_MAX_AGE_HOURS
+        ageHours <= maxAgeHours
     );
 }
 
@@ -1617,6 +1898,14 @@ async function getLatestAINews() {
                 error.message
             );
         }
+    }
+
+    try {
+        const workflowArticles = await fetchWorkflowDiscovery();
+        allArticles.push(...workflowArticles);
+        console.log(`Direct workflow sources: ${workflowArticles.length} candidate(s).`);
+    } catch (error) {
+        console.warn("Direct workflow discovery failed:", error.message);
     }
 
     console.log(
@@ -1676,7 +1965,7 @@ async function getLatestAINews() {
     );
 
     const publishedNews =
-        readPublishedNews();
+        readPublishedRecords();
 
     allArticles =
         removePreviouslyPublishedTopics(
@@ -1755,14 +2044,17 @@ async function getLatestAINews() {
     return allArticles;
 }
 
-function markNewsAsPublished(article, selectedImage = null) {
-    const publishedNews =
-        readPublishedNews();
+function markNewsAsPublished(article, selectedImage = null, facebookPostId = null) {
+    const publishedNews = readPublishedRecords();
 
     const record = {
         title: article.title,
+        description: article.description || "",
         link: article.link,
+        resourceLinks: article.resourceLinks || [],
         category: article.category,
+        facebookPostId,
+        facebookPublishedAt: new Date().toISOString(),
         publishedAt:
             article.publishedAt ||
             new Date().toISOString(),
@@ -1772,8 +2064,14 @@ function markNewsAsPublished(article, selectedImage = null) {
             article.sourceName || "",
         imageId:
             selectedImage?.id || null,
+        imageUrl:
+            selectedImage?.url || null,
         imagePexelsUrl:
             selectedImage?.pexelsUrl || null,
+        imageSource:
+            selectedImage?.source || null,
+        imageScore:
+            selectedImage?.evaluationScore ?? null,
         topicFingerprint:
             createTopicFingerprint(
                 article
@@ -1808,6 +2106,11 @@ function markNewsAsPublished(article, selectedImage = null) {
 module.exports = {
     getLatestAINews,
     getPublishedNews,
+    getPublishedImageHistory,
+    getPostsNeedingPerformanceRefresh,
+    updatePostPerformance,
+    markPostPerformanceChecked,
+    getCategoryPerformanceSummary,
     markNewsAsPublished,
     getMaxPostsPerRun
 };

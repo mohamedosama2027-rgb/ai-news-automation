@@ -1,23 +1,46 @@
 require("dotenv").config();
 
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
 const { GoogleGenAI } = require("@google/genai");
+const { generateImage } = require("./generate-image");
 const {
     searchImage,
     searchArticleImage
 } = require("./image-search");
-const { getPublishedNews } = require("./news");
+const { getPublishedImageHistory } = require("./news");
 
 const ai = new GoogleGenAI({
-    apiKey: process.env.GEMINI_API_KEY
+    apiKey: process.env.GEMINI_API_KEY,
+    httpOptions: {
+        timeout: 60000
+    }
 });
 
 async function downloadImage(url) {
     const response = await axios.get(url, {
-        responseType: "arraybuffer"
+        responseType: "arraybuffer",
+        timeout: 30000
     });
 
     return Buffer.from(response.data);
+}
+
+function normalizeImageUrl(value = "") {
+    if (typeof value !== "string" || !value.trim()) {
+        return "";
+    }
+
+    try {
+        const url = new URL(value);
+        url.hostname = url.hostname.replace(/^www\./, "").toLowerCase();
+        url.search = "";
+        url.hash = "";
+        return url.toString().replace(/\/$/, "");
+    } catch (_) {
+        return value.trim().replace(/[?#].*$/, "").replace(/\/$/, "").toLowerCase();
+    }
 }
 
 async function evaluateImages(article, images) {
@@ -53,12 +76,13 @@ async function evaluateImages(article, images) {
         "IMPORTANT RULES:\n" +
         "1. Judge the actual visual content of the image.\n" +
         "2. Do not rely only on the image description.\n" +
-        "3. The image does not need to be an exact representation of the article event.\n" +
-        "4. Conceptual AI, cybersecurity, robotics, government, leadership, or technology imagery may be suitable when related to the article.\n" +
-        "5. Do not assume a generic image represents a specific real-world event or person.\n" +
-        "6. Do not invent information about the image.\n" +
-        "7. Avoid images that could make readers believe the image is an actual photograph of the reported event when it is not.\n" +
-        "8. Prefer clean, professional, visually strong editorial images.\n\n" +
+        "3. Judge image quality without favoring stock photos or illustrations.\n" +
+        "4. The image does not need to be an exact representation of the article event.\n" +
+        "5. Conceptual AI, cybersecurity, robotics, government, leadership, or technology imagery may be suitable when related to the article.\n" +
+        "6. Do not assume a generic image represents a specific real-world event or person.\n" +
+        "7. Do not invent information about the image.\n" +
+        "8. Avoid images that could make readers believe the image is an actual photograph of the reported event when it is not.\n" +
+        "9. Prefer clean, professional, visually strong editorial images.\n\n" +
 
         "ACCEPTANCE RULES:\n" +
         "An image is ACCEPTABLE only if:\n" +
@@ -92,8 +116,9 @@ async function evaluateImages(article, images) {
             images.length
         );
 
-        const imageBuffer =
-            await downloadImage(image.url);
+        const imageBuffer = image.imagePath
+            ? fs.readFileSync(image.imagePath)
+            : await downloadImage(image.url);
 
         parts.push({
             text:
@@ -105,7 +130,7 @@ async function evaluateImages(article, images) {
 
         parts.push({
             inlineData: {
-                mimeType: "image/jpeg",
+                mimeType: image.mimeType || "image/jpeg",
                 data: imageBuffer.toString("base64")
             }
         });
@@ -171,7 +196,8 @@ async function evaluateImages(article, images) {
                 misleading,
                 finalScore,
                 accept,
-                reason
+                reason,
+                source: images[index - 1].source || "Unknown"
             });
         }
     }
@@ -232,23 +258,40 @@ async function evaluateImages(article, images) {
     };
 }
 
-async function selectImage(article, imageQuery) {
-
-    console.log("\n🔎 Searching Pexels...");
-    console.log("Query:", imageQuery);
-
-    let images =
-        await searchImage(imageQuery);
-
-    const articleImage =
-        await searchArticleImage(article.link);
-
-    if (articleImage) {
-        console.log("📰 Original article image found and added for evaluation.");
-        images = [articleImage, ...images];
+async function selectImage(article, imageQuery, post = "") {
+    const provider = (process.env.IMAGE_PROVIDER || "pexels").toLowerCase();
+    if (!["compare", "gemini", "pexels"].includes(provider)) {
+        throw new Error(
+            `Unsupported IMAGE_PROVIDER "${provider}". Use compare, gemini, or pexels.`
+        );
     }
 
-    const publishedImages = getPublishedNews();
+    const usePexels = provider !== "gemini";
+    const useGemini = provider !== "pexels";
+    let images = [];
+
+    if (usePexels) {
+        console.log("\n🔎 Searching Pexels...");
+        console.log("Query:", imageQuery);
+
+        try {
+            images = (await searchImage(imageQuery))
+                .map(image => ({ ...image, source: "Pexels" }));
+
+            const articleImage = await searchArticleImage(article.link);
+            if (articleImage) {
+                console.log("📰 Original article image found and added for evaluation.");
+                images.unshift({ ...articleImage, source: "Article" });
+            }
+        } catch (error) {
+            if (provider === "pexels") {
+                throw error;
+            }
+            console.warn(`⚠️ Pexels unavailable; continuing with Gemini: ${error.message}`);
+        }
+    }
+
+    const publishedImages = getPublishedImageHistory();
     const usedImageIds = new Set(
         publishedImages
             .map(item => String(item.imageId || ""))
@@ -256,23 +299,65 @@ async function selectImage(article, imageQuery) {
     );
     const usedImageUrls = new Set(
         publishedImages
-            .map(item => item.imagePexelsUrl || "")
+            .flatMap(item => [
+                item.imageUrl,
+                item.imagePexelsUrl,
+                String(item.imageId || "").startsWith("article:")
+                    ? String(item.imageId).slice("article:".length)
+                    : ""
+            ])
+            .map(normalizeImageUrl)
             .filter(Boolean)
     );
 
     const filterUnusedImages = candidates =>
-        candidates.filter(image =>
-            !usedImageIds.has(String(image.id)) &&
-            !usedImageUrls.has(image.pexelsUrl)
-        );
+        candidates.filter(image => {
+            const imageUrls = [image.url, image.pexelsUrl]
+                .map(normalizeImageUrl)
+                .filter(Boolean);
+
+            return !usedImageIds.has(String(image.id)) &&
+                !imageUrls.some(url => usedImageUrls.has(url));
+        });
 
     images = filterUnusedImages(images);
 
-    if (!images.length) {
-        console.log("⚠️ First Pexels page contains only previously used images. Trying page 2...");
-        images = filterUnusedImages(
-            await searchImage(imageQuery, 2)
-        );
+    if (usePexels && !images.some(image => image.source === "Pexels")) {
+        try {
+            console.log("⚠️ No unused images on Pexels page 1. Trying page 2...");
+            images.push(...filterUnusedImages(
+                (await searchImage(imageQuery, 2))
+                    .map(image => ({ ...image, source: "Pexels" }))
+            ));
+        } catch (error) {
+            if (provider === "pexels") {
+                throw error;
+            }
+            console.warn(`⚠️ Pexels page 2 unavailable: ${error.message}`);
+        }
+    }
+
+    if (useGemini) {
+        try {
+            console.log("\n🎨 Generating a Gemini image for comparison...");
+            const imagePath = await generateImage({
+                ...article,
+                post
+            });
+            const generatedImage = {
+                id: `gemini:${article.link}`,
+                imagePath,
+                mimeType: "image/png",
+                source: "Gemini",
+                alt: `Editorial illustration for: ${article.title}`
+            };
+            images.push(...filterUnusedImages([generatedImage]));
+        } catch (error) {
+            if (provider === "gemini") {
+                throw error;
+            }
+            console.warn(`⚠️ Gemini image generation failed; continuing with available images: ${error.message}`);
+        }
     }
 
     if (!images.length) {
@@ -294,6 +379,17 @@ async function selectImage(article, imageQuery) {
             images
         );
 
+    const bestScoreBySource = new Map();
+    for (const evaluation of selection.evaluations) {
+        const previous = bestScoreBySource.get(evaluation.source);
+        if (!previous || evaluation.finalScore > previous.finalScore) {
+            bestScoreBySource.set(evaluation.source, evaluation);
+        }
+    }
+    for (const [source, evaluation] of bestScoreBySource) {
+        console.log(`${source} best score: ${evaluation.finalScore}/10`);
+    }
+
     if (!selection.selectedImage) {
         return {
             ...selection,
@@ -306,6 +402,7 @@ async function selectImage(article, imageQuery) {
 
     const evaluation =
         selection.selectedEvaluation;
+    console.log(`Selected image source: ${image.source || "Unknown"}`);
 
     console.log("\n=================================");
     console.log("FINAL IMAGE SELECTION");
@@ -345,38 +442,18 @@ async function selectImage(article, imageQuery) {
         evaluation.reason
     );
 
-    console.log(
-        "\nPexels URL:",
-        image.pexelsUrl || image.photographerUrl
-    );
+    let imagePath = image.imagePath;
+    if (!imagePath) {
+        console.log("\nDownloading selected image...");
+        const imageBuffer = await downloadImage(image.url);
+        imagePath = path.join(__dirname, "..", "data", "selected-news-image.jpg");
+        fs.writeFileSync(imagePath, imageBuffer);
+    }
 
-    console.log(
-        "Photographer:",
-        image.photographer
-    );
-
-    console.log(
-        "\nDownloading selected image..."
-    );
-
-    const imageBuffer =
-        await downloadImage(image.url);
-
-    const path = require("path");
-    const fs = require("fs");
-
-    const imagePath =
-        path.join(
-            __dirname,
-            "..",
-            "data",
-            "selected-news-image.jpg"
-        );
-
-    fs.writeFileSync(
-        imagePath,
-        imageBuffer
-    );
+    const selectedImage = {
+        ...image,
+        evaluationScore: evaluation.finalScore
+    };
 
     console.log(
         "\n✅ Selected image saved to:"
@@ -386,6 +463,7 @@ async function selectImage(article, imageQuery) {
 
     return {
         ...selection,
+        selectedImage,
         imagePath
     };
 }

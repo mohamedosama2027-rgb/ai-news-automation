@@ -9,6 +9,10 @@ const {
 } = require("./facebook-auth");
 
 const GRAPH_VERSION = process.env.FACEBOOK_GRAPH_VERSION || "v23.0";
+const configuredTimeoutMs = Number(process.env.FACEBOOK_REQUEST_TIMEOUT_MS);
+const REQUEST_TIMEOUT_MS = Number.isSafeInteger(configuredTimeoutMs) && configuredTimeoutMs > 0
+    ? Math.min(configuredTimeoutMs, 300000)
+    : 30000;
 
 async function publishWithToken(request) {
     if (!process.env.FACEBOOK_PAGE_ACCESS_TOKEN) {
@@ -59,7 +63,8 @@ async function publishToFacebook(message, imagePath, videoUrl) {
                         file_url: videoUrl,
                         description: message,
                         access_token: token
-                    }
+                    },
+                    timeout: REQUEST_TIMEOUT_MS
                 }
             );
 
@@ -85,7 +90,8 @@ async function publishToFacebook(message, imagePath, videoUrl) {
                         ...uploadForm.getHeaders()
                     },
                     maxContentLength: Infinity,
-                    maxBodyLength: Infinity
+                    maxBodyLength: Infinity,
+                    timeout: REQUEST_TIMEOUT_MS
                 }
             );
 
@@ -112,6 +118,32 @@ async function publishToFacebook(message, imagePath, videoUrl) {
     }
 }
 
+async function getPostPerformance(postId) {
+    if (!postId) {
+        throw new Error("Facebook post ID is missing.");
+    }
+
+    return publishWithToken(async token => {
+        const response = await axios.get(
+            `https://graph.facebook.com/${GRAPH_VERSION}/${postId}`,
+            {
+                params: {
+                    fields: "likes.summary(true),comments.summary(true),shares",
+                    access_token: token
+                },
+                timeout: REQUEST_TIMEOUT_MS
+            }
+        );
+
+        return {
+            reactions: response.data.likes?.summary?.total_count ?? null,
+            comments: response.data.comments?.summary?.total_count ?? null,
+            shares: response.data.shares?.count ?? 0
+        };
+    });
+}
+
 module.exports = {
-    publishToFacebook
+    publishToFacebook,
+    getPostPerformance
 };

@@ -36,18 +36,6 @@
     "publishedAtSystem": "2026-09-24T04:16:29.693Z"
   },
   {
-    "title": "OpenAI: Agent hacked Australian government website, says PM Anthony Albanese - BBC",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3N0QjhfNEVoRFZvN3Y5TlplSWhzdno0Q0YwSDhad2ZfaXhTbFdhTktTVzlhSW5HaWd6YmtUWm5kSHpwbDdNU1ZqNU92VkltdmxZQlVR?oc=5",
-    "publishedAt": "Thu, 24 Sep 2026 02:04:01 GMT",
-    "publishedAtSystem": "2026-09-24T04:24:53.936Z"
-  },
-  {
-    "title": "OpenAI model breaches Australian government websites - Politico",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONDRpeU43MHdPbGZLOTU0OEg2RjZBU3dkbnRxdG1FbDFpMk1FcUFqTjV0VDRsRHprN2sxTUxOdVBBNWVTWGdPV3o3M0Fma2s0WTJVY1JXb3c1cEhRVVpkZUpadzN5QktmRkRTRzhudUNqUFhlVGVIREx4VGZOX19ZYkpoNGdQVHZjRDZROA?oc=5",
-    "publishedAt": "Wed, 23 Sep 2026 23:43:00 GMT",
-    "publishedAtSystem": "2026-09-24T04:55:11.724Z"
-  },
-  {
     "title": "OpenAI’s A.I. Tried Breaching Four Other Targets, With No Prompting - The New York Times",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZmdNdEU4T2dVMHUwV05rNkZjM0hrcWZRWUlLOTBoOU9BLVl1VTVCR3c5MkQ5QTRkSHFTb0dFUU1lUW56S2R5X3ZRaUR3UFViaGJuTm5FRk5LTmJXanFoUWVEbklfdVI3azB6dEMzbXdwUnhNZUd0UFJDWjFVS21wOXdzRQ?oc=5",
     "publishedAt": "Thu, 24 Sep 2026 02:28:53 GMT",
@@ -68,38 +56,6 @@
     "source": "The Washington Post",
     "publishedAt": "Thu, 24 Sep 2026 04:56:02 GMT",
     "publishedAtSystem": "2026-09-24T05:28:45.887Z"
-  },
-  {
-    "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later - WIRED",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlJCOTJCX1F5ZDh3NkQxRDktY2t0QzJ2X3lNZkVucHBpTldzLUNZbHN5SGZoSG5tVjlaei1tMnVzVnhtNDBVd2JXdnY2WFlkOTVRc0dUbmh6dGt5LXpsMEF0TnFHSkxJQW1GWnpRYjRDQVRxbUcxckMtZ0pHOHYweFM4dzhadmJ3NUhzMk10VW1TY2tHOEJQTEVWS3dwNHY3NjVxRFl5N0hJSzNIM21NVVVMdEg?oc=5",
-    "category": "AI_SECURITY",
-    "publishedAt": "Thu, 24 Sep 2026 10:46:00 GMT",
-    "sourceUrl": "https://www.wired.com",
-    "sourceName": "WIRED",
-    "topicFingerprint": {
-      "entities": [
-        "australia",
-        "openai"
-      ],
-      "events": [
-        "HACK",
-        "POLICY"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "agent",
-        "australia",
-        "blank",
-        "color",
-        "found",
-        "government",
-        "hacked",
-        "health",
-        "later",
-        "months",
-        "openai"
-      ]
-    }
   },
   {
     "title": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model - the-decoder.com",
@@ -423,37 +379,6 @@
     }
   },
   {
-    "title": "Toyota Sees AI, Automation Playing Bigger Role In Future Manufacturing - 6.4 Billion Dollars, 40,000 Robots - NDTV",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVWZ2WVNLczRWUnhJV1Q5VzB1WEZrNUhGR0x6QzdvVUhpNE5PMEE0TG4yMHVEZzNfODhxUjliT2RhV1dXQlkxdXVTTG5LN1Y5QWU3ZkY4NWdtM054QkcwOFNJdGxpdXpSTmZpMnZTV3J5b2plb2R2N0FhY0xCYjVDdUozS1BuMHh4d2lOdi1YbVFmOWJiSDlVdWtqZ0Rjam16X0htTUlsYUdjQmY5aDd4R3lPdTVBNlFvdHF5OVBJd1g4Z3NfU29BckpncXlvVEVWeS1QZXlUWXo1QQ?oc=5",
-    "category": "AI_MANUFACTURING",
-    "publishedAt": "Thu, 24 Sep 2026 05:32:39 GMT",
-    "sourceUrl": "https://www.ndtv.com",
-    "sourceName": "NDTV",
-    "topicFingerprint": {
-      "entities": [
-        "toyota"
-      ],
-      "events": [
-        "POLICY",
-        "ROBOT"
-      ],
-      "specificWords": [
-        "000",
-        "6f6f6f",
-        "automation",
-        "bigger",
-        "billion",
-        "blank",
-        "color",
-        "dollars",
-        "manufacturing",
-        "playing",
-        "robots",
-        "target"
-      ]
-    }
-  },
-  {
     "title": "Kodiak AI and DTL Transport Complete First Autonomous Trucking Deliveries Under New California DMV Permit - Taiwan News",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44dm00RHRnOG9vbE5mS2hOQjBiNVFwSXI1R1VWamg0bERjODE4Vl80TWFJXzZTVW9YNTd0SFRrb3Fac0ZsQ0RiTlE1UzJKdmdZRFNMa2diRFc?oc=5",
     "category": "AI_TRANSPORT",
@@ -573,38 +498,6 @@
     }
   },
   {
-    "title": "Google Nears Release of Flagship Gemini 4 AI Model - The Information",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNXh3OWdvQ3NBQ240aUxVR2NOd0hsMTZITHFpQjFuZlhQMU5ZeWpfaHdNd21lZVlyRzZzcUo5OUhJVEcwVnlFWjkwSENSdkdqb1NMMUFMaWE0a2lwbkw2Z25rMFBUYXZWOTk4VEU0dnRhTWk5YkQ5bkx3VmROWV9pYm5FRVZ0MnlKV0Rqell0LWU?oc=5",
-    "category": "AI_MODELS",
-    "publishedAt": "Thu, 24 Sep 2026 02:15:00 GMT",
-    "sourceUrl": "https://www.theinformation.com",
-    "sourceName": "The Information",
-    "imageId": 34804017,
-    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-computer-screen-with-code-and-menu-options-34804017/",
-    "topicFingerprint": {
-      "entities": [
-        "google"
-      ],
-      "events": [
-        "LAUNCH",
-        "MODEL"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "blank",
-        "color",
-        "flagship",
-        "gemini",
-        "google",
-        "information",
-        "model",
-        "nears",
-        "release",
-        "target"
-      ]
-    }
-  },
-  {
     "title": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model — benchmarks show open-weight contender is competitive with OpenAI and Meta image models - Tom's Hardware",
     "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQYmZsbFl0SWdUX2Ytb1NjZ2tHV3NYSmZEb1pzUkozSUktWFhwSzAwUlY2a0c2VGVSY2dtNVJvYTFHV1FNOGpzYTVjTjRpS085SU9qQlk4UzRWdnYxX2Q3Ul9jMU54bVROOG9KLVZobW5xeWZNUVVHa1BMUkxTVTBubUtqSHF6Xzdrek5Mamtjd2xFelVNYUpjY1NtWUtyM0hubC12QTZrYmVuTnZidHM2cTYwSE1hMVZaZkhDYWYwNUhPTXJDa25EelZYSjNBX1JhYWRteERZSU9wR1htQ3RZWGIydVl2SnVlLWpKZ2M2V21SY1RVUDBfMm91dTZqRVRLemJLZzNTZDE3eVp5MVJvSzdObDNud0NHbXNva1lyTUhsY2k1X3Y0OVlhSHBWelZsbFpqOGRUd2FDeTNMalhwUjVBR2NRVHJGSG41WDdQUV9hRzVuRlJaclpvNEZnancwMGhnZlQyVy14X1lMcGJVOFpBeW5OUQ?oc=5",
     "category": "AI_MODELS",
@@ -669,6 +562,651 @@
         "physical",
         "robots",
         "south"
+      ]
+    }
+  },
+  {
+    "title": "Labor-scarce Japan counts on AI-powered robots - Japan Today",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZjFfYU9idlpRMkk5SEZVV3A2VHlkMTRnVGxtY0NXSS0wQmkycURzU25aYnBrQTA5ZW0tS281ZHUxTXNlV0dTcVE3ZVNTVGQyTnRTclVIWXJLV1IwQmFKVXQxWTQ4Z0JtTmdzdHZoaF9FWUN6YVJCSHhTMnVaVFhZMFBaZUlKdGItSEVfd19aMzVqV25GTlVoaHFlTWppLWI1SFVRSWRZWkdUeUN0YllreERHcw?oc=5",
+    "category": "AI_TOOLS",
+    "publishedAt": "Thu, 24 Sep 2026 21:36:00 GMT",
+    "sourceUrl": "https://japantoday.com",
+    "sourceName": "Japan Today",
+    "imageId": 19233057,
+    "imagePexelsUrl": "https://www.pexels.com/photo/assembling-machines-in-factory-19233057/",
+    "topicFingerprint": {
+      "entities": [
+        "japan"
+      ],
+      "events": [
+        "RESEARCH",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "ai-powered",
+        "blank",
+        "color",
+        "counts",
+        "japan",
+        "labor-scarce",
+        "robots",
+        "target",
+        "today"
+      ]
+    }
+  },
+  {
+    "title": "QC Healthcare and Sanguina collaborate for AI blood health tools - Medical Device Network",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPODlxTHY4eFV4azFQTzljN09rMjJnRHNJRXI5VzV1OWdyeDNSRjktekdablJ6S2dOWVZESjFzcEJfOUlvN1M2a0VqRkRMdmxNaEVGNGpHOHlDSjBQbXhqLVNjUXRvcFNwamllc2U2YTg5ZU1LaHNhRHgyQ05TSjlTaF9hSUZyNnJxTkhkV1NrMzQwZw?oc=5",
+    "category": "AI_HEALTH",
+    "publishedAt": "Wed, 23 Sep 2026 11:14:39 GMT",
+    "sourceUrl": "https://www.medicaldevice-network.com",
+    "sourceName": "Medical Device Network",
+    "imageId": 8439008,
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-man-and-a-woman-wearing-white-coats-and-protective-goggles-8439008/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "PARTNERSHIP",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "blood",
+        "collaborate",
+        "color",
+        "device",
+        "health",
+        "healthcare",
+        "medical",
+        "network",
+        "sanguina",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Nvidia launches Israel AI lab to develop drugs and drive medical breakthroughs - Ynetnews",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9FOTV0UDRWVWJoaV9YZmhrdjI1QWFSaUxOR0lCdFZZWFdBd1RzMHRUcnZTU00ya0dXcy1rci1PaENUV3NKQkNWY2NwcnlVRFdKX242dTRfTVpEM2ZLbkpIeHJDdl9udUZpdG1GQQ?oc=5",
+    "category": "AI_SCIENCE",
+    "publishedAt": "Tue, 22 Sep 2026 18:56:00 GMT",
+    "sourceUrl": "https://www.ynetnews.com",
+    "sourceName": "Ynetnews",
+    "imageId": 9574338,
+    "imagePexelsUrl": "https://www.pexels.com/photo/scientists-working-in-a-lab-9574338/",
+    "topicFingerprint": {
+      "entities": [
+        "nvidia"
+      ],
+      "events": [
+        "LAUNCH",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "breakthroughs",
+        "color",
+        "develop",
+        "drive",
+        "drugs",
+        "israel",
+        "launches",
+        "medical",
+        "nvidia",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Samsung centralizes its robotics efforts under a high-level RX division to accelerate commercialization - Global Sources",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZWc5OWE5MWFxU05kOGJUZDRsbHIxLW5RbDJWYjA0bmNaLUtUMy1JSzZDbnFoZ0hnZFl6SlRlX2dTRXBsZzU3dHFzU1hrZXduLWNja213Q25qNVNYT19oZjlrZk9aSG1TaThQNGktSFp5UTdtekQ4bUptVXNsdUZPU0dITWhkcXJ3RzR6dEo1YUdrS0ZfLXJfR2hfYUd1LUNBZFhtSU5HenBielFMbGJVR1M2bXVKSUNzS0RENUFETFVJMk10aUJhSDZ2dmlQeTN2TmNPWHE4OHRza0djYkg1SjNNZ1RVbmRKVklEZGF3?oc=5",
+    "category": "AI_MANUFACTURING",
+    "publishedAt": "Thu, 24 Sep 2026 11:48:49 GMT",
+    "sourceUrl": "https://www.globalsources.com",
+    "sourceName": "Global Sources",
+    "imageId": 214488,
+    "imagePexelsUrl": "https://www.pexels.com/photo/silver-samsung-galaxy-smartphone-on-top-of-brown-wooden-table-214488/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "accelerate",
+        "blank",
+        "centralizes",
+        "color",
+        "commercialization",
+        "division",
+        "efforts",
+        "high-level",
+        "robotics",
+        "samsung",
+        "sources"
+      ]
+    }
+  },
+  {
+    "title": "As AI Transforms Science and Research, Indiana University Cybersecurity Experts Protect Against Hidden Risks | Newswise - Newswise",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZHdKWTRHbG9qMnkzX2x1bUJIZEg0aGxWeE10WXRlSjhwT0lRNHlMQ2JrNms5ZnlDMTFtYmpzYzdrQWtTaVRXbEhadlhpWXZSblBTSEx4U1U5TlpWbnlFYTZGSEpvanJqUTNJV0xGdEcyUUFjUkI3U2YtcWM5aktfSjdzc24tN1RON1JCM1RJakRiZHltc0JMQm42dG04Ti12R1pIaThGdnp6WFEtMURwR01mYTZma0NhRkE5d0JrdUQ3dDQ?oc=5",
+    "category": "AI_SCIENCE",
+    "publishedAt": "Wed, 23 Sep 2026 22:30:00 GMT",
+    "sourceUrl": "https://www.newswise.com",
+    "sourceName": "Newswise",
+    "imageId": 38486967,
+    "imagePexelsUrl": "https://www.pexels.com/photo/cyber-threats-text-on-dark-background-38486967/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH",
+        "WARNING"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "against",
+        "blank",
+        "color",
+        "cybersecurity",
+        "experts",
+        "hidden",
+        "indiana",
+        "newswise",
+        "protect",
+        "research",
+        "risks"
+      ]
+    }
+  },
+  {
+    "title": "Claude finds novel enzyme in DNA: Could AI be entering the gene-editing discovery race? - Business Today",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWVY2WXlVekZXZDBMVzZaVnU4QWpQaVBjcGlKbDludEZQaExpNDZDU3h3QndLbWlCRFJnd1ZBUjFhcTBUaW1fZENILXRIcTZEZExwanRkeEtKRU1fM25McDlMdkhEVnFWYWNSeVE4Z0ZXS2cxYXJvMDYtYnBvOFRpLU91eWVXSWp5MUhwV2ZSQXpDaUFsa1Q5d0c1emN5em9DTVNtYWpwVGgtTnZmMWh3Qm9kYnNlUUhRQkdmX3ZxcDFNTms2RGRiclRrWHpuaVZkdU5IaW1NbExnZjMyVUNPRUFyTQ?oc=5",
+    "category": "AI_SCIENCE",
+    "publishedAt": "Thu, 24 Sep 2026 02:53:00 GMT",
+    "sourceUrl": "https://www.businesstoday.in",
+    "sourceName": "Business Today",
+    "imageId": 25626515,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-abstract-shapes-25626515/",
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "claude",
+        "color",
+        "discovery",
+        "entering",
+        "enzyme",
+        "finds",
+        "gene-editing",
+        "novel",
+        "target",
+        "today"
+      ]
+    }
+  },
+  {
+    "title": "Oracle Health rolls out AI solutions for RCM, oncology as part of broader healthcare, life sciences strategy - Fierce Healthcare",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdUtVZl9DX3NCWkgyQXFxUXoyY0lFeVlNMlNzUUVFY1VQamVNMGZabjlyNXpNQWMtVE5BWmVxRHpjbVVGVWlXRExiOFlUa2VsVk5rX0dwM3NYdl9KMDViUlo3aHo5Z1BSUTJIMjVLMW1KSE5yLWU0RTlRT04tNGpEWnhlaVdVbUctaEZ4dkJxWEVpelE?oc=5",
+    "category": "AI_HEALTH",
+    "publishedAt": "Thu, 24 Sep 2026 11:00:00 GMT",
+    "sourceUrl": "https://www.fiercehealthcare.com",
+    "sourceName": "Fierce Healthcare",
+    "imageId": 8438983,
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-robot-holding-a-flower-8438983/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "broader",
+        "color",
+        "fierce",
+        "health",
+        "healthcare",
+        "oncology",
+        "oracle",
+        "rolls",
+        "sciences",
+        "strategy"
+      ]
+    }
+  },
+  {
+    "title": "Dextr AI banks $6.7M seed to scale hotel automation agents - app.dealroom.co",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMDJxbDBpc2RfcE1RdFh4MW8tdzVjTXZpTWhuMlQyenNTdnVuOUVMT1VpOC1ZOHpCSU1BMDNMOHZFb2x4dmxwZWh3bjluNnV4NGZrZE1RdWJFbG5BU210andPNkdqNDdpdjNHSzl4ZFJSVHRUZnRrQnZreURVSjBmck5hNHRJSWlEWVc0TnE3QlF3dExoV2c?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Thu, 24 Sep 2026 14:26:56 GMT",
+    "sourceUrl": "https://app.dealroom.co",
+    "sourceName": "app.dealroom.co",
+    "imageId": 30641386,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-smart-light-switch-and-door-handle-30641386/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "automation",
+        "banks",
+        "blank",
+        "color",
+        "dealroom",
+        "dextr",
+        "hotel",
+        "scale",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Anthropic’s New AI Lets Lab Machines Talk To Each Other To Automate Research: Report - NDTV Profit",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSkMwT2FfVzIwZFYxRTZ0Q1RvM1BHRFc2Q1M1dHR4SWthaFRqOWx4Zl9EOFdqMFhlVmdZY00waS1udzN3OFNtR0ZYODBBUjhOQml4SHlpbUNVTFRzbkFqbFplN1NXN0t4clBOYjI2YUZQZ2RkSVlmcXMzZEVOWXNxYklZR0ZFU3BmVnpfM0JOM01rRHJJenFidlpuRF9URnlFVDExdmo0NXU0eUNKWFU3Z3ZoTUhURnhYY2laTGJPUjhBTEhWQzgxT0h3?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Fri, 25 Sep 2026 10:52:09 GMT",
+    "sourceUrl": "https://www.ndtvprofit.com",
+    "sourceName": "NDTV Profit",
+    "imageId": 8439001,
+    "imagePexelsUrl": "https://www.pexels.com/photo/scientists-testing-a-device-8439001/",
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "anthropic",
+        "automate",
+        "blank",
+        "color",
+        "machines",
+        "other",
+        "profit",
+        "research",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "China Telecom AI Releases Agentic Model for Single-GPU Deployment - HPCwire",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbkhPanJvWmVyam1kc3BOZ0Y1UmtuUFhKYy1LTExUSDlPV1k0S1p1cEI2eFdkZmZrdmdNeEwtZi1VOENJZmUyNkJfME1yWGdSOWJ2ZFZnSldFLVV5V1hnSm9TREVWLV8yc0h6ME9lTkg1a1daUzcyWFp4YlFvd1FrTHVlOUlZdmliWGhoZG1DTmhvc2ZtR3lneG5SV2VJSUdTYUpTZV9LR0NHWG1u?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Fri, 25 Sep 2026 19:22:55 GMT",
+    "sourceUrl": "https://www.hpcwire.com",
+    "sourceName": "HPCwire",
+    "imageId": 37605910,
+    "imagePexelsUrl": "https://www.pexels.com/photo/server-rack-in-modern-data-center-37605910/",
+    "topicFingerprint": {
+      "entities": [
+        "china"
+      ],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agentic",
+        "blank",
+        "china",
+        "color",
+        "deployment",
+        "hpcwire",
+        "model",
+        "releases",
+        "single-gpu",
+        "target",
+        "telecom"
+      ]
+    }
+  },
+  {
+    "title": "Tutor Launches Automated Humanoid Robots for Warehouses - Supply & Demand Chain Executive",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdVJ6eXlRR0UzQWQyWUxDUWhlRHZwaThGRS1xZ0RfVWV6Ql9DWVhrZmtpVGl2REFpaXZVYUtZUEJhTlZXVUl1amZNNTNRTWkyRXZYRE93TUhKVlJDMnBZRFVmNVZSb0xaUXdJcXkteUhpbjJIdUF1bjNvdWxaOXFaMl9KNDN5dTZmSUkxQU41RWJDanBVbDhFbzJFNkRPVFY4WWRlWHNaay1SYzdWVnpfUy1hdHcyTFJBRWx5bw?oc=5",
+    "category": "AI_ROBOTICS",
+    "publishedAt": "Fri, 25 Sep 2026 14:37:30 GMT",
+    "sourceUrl": "https://www.sdcexec.com",
+    "sourceName": "Supply & Demand Chain Executive",
+    "imageId": 36522028,
+    "imagePexelsUrl": "https://www.pexels.com/photo/automated-warehouse-robotic-system-with-blue-crates-36522028/",
+    "topicFingerprint": {
+      "entities": [
+        "ema"
+      ],
+      "events": [
+        "LAUNCH",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "automated",
+        "blank",
+        "chain",
+        "color",
+        "demand",
+        "executive",
+        "humanoid",
+        "launches",
+        "robots",
+        "supply",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Perplexity AI sued by startup for allegedly stealing 'wake word' technology - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRy1RVlJsY0c5TXRRZGdvTjBvdUN0NTh6RGFicnZnQTJNd1h0ZjEyQzJIWm1CdjlSVXp6eS1fb3BvVnZmS2pUM1o4eUFHN05iZ1hDc1pLZG9IYjlPZjNrRGRVUHRENVhjZlFPSjF0clE5b3NmU0MtTWxfaWxHeHU5UWtEaHJwUEpEZmUzQzdkS3g4SVBraVNKb3N5UV9hQktPQk5QbUY4bTliQ2k2V3JMMDM5VjNVZXgtLXZYNmNveUVCWEU?oc=5",
+    "category": "AI_BUSINESS",
+    "publishedAt": "Fri, 25 Sep 2026 18:21:31 GMT",
+    "sourceUrl": "https://www.reuters.com",
+    "sourceName": "Reuters",
+    "imageId": 6964149,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-a-woman-speaking-to-the-mobile-phone-microphone-6964149/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "allegedly",
+        "blank",
+        "color",
+        "perplexity",
+        "reuters",
+        "stealing",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Feather Launches $29,990 Humanoid Robot. Small Teams Are Rewriting The Economics Of Humanoids - forbes.com",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT0JxeElwZ1N3VkhGa1RyOF9nWUVqd1BDendQNnpmNmFiMW1MWHBPcGpvUVpDU2R2dUZmaTZ0UEtfUjNKT1dORzF2WGs3WERja1RDNjMtb3hHbS1FWGVKZDJXQ1h5TjI4czNTV3p3LUN4UFVmeURBRm5CS1hBTk8xSGsxQTZ5dWJjUFpEMTZfSEhVekcyb0o4RHl0RzhvUm9yeHdNQ1pUWWJHUjVpM091a2R5QTZqUFlqUFNGZ0prSzRDaXpyeGJYYl84ZHkyZW54cTluWFJZdDk1S0Fl?oc=5\" target=\"_blank\">Feather Launches $29,990 Humanoid Robot. Small Teams Are Rewriting The Economics Of Humanoids</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">forbes.com</font>",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT0JxeElwZ1N3VkhGa1RyOF9nWUVqd1BDendQNnpmNmFiMW1MWHBPcGpvUVpDU2R2dUZmaTZ0UEtfUjNKT1dORzF2WGs3WERja1RDNjMtb3hHbS1FWGVKZDJXQ1h5TjI4czNTV3p3LUN4UFVmeURBRm5CS1hBTk8xSGsxQTZ5dWJjUFpEMTZfSEhVekcyb0o4RHl0RzhvUm9yeHdNQ1pUWWJHUjVpM091a2R5QTZqUFlqUFNGZ0prSzRDaXpyeGJYYl84ZHkyZW54cTluWFJZdDk1S0Fl?oc=5",
+    "resourceLinks": [],
+    "category": "AI_ROBOTICS",
+    "facebookPostId": "1277980028738225_122101273965487454",
+    "facebookPublishedAt": "2026-09-25T23:21:47.951Z",
+    "publishedAt": "Fri, 25 Sep 2026 22:20:29 GMT",
+    "sourceUrl": "https://www.forbes.com",
+    "sourceName": "forbes.com",
+    "imageId": 12499181,
+    "imageUrl": "https://images.pexels.com/photos/12499181/pexels-photo-12499181.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/men-fixing-the-robot-12499181/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "990",
+        "blank",
+        "color",
+        "economics",
+        "feather",
+        "forbes",
+        "humanoid",
+        "humanoids",
+        "launches",
+        "rewriting",
+        "robot"
+      ]
+    }
+  },
+  {
+    "title": "Dextr AI Raises $6.7 Mn To Build AI Agents For Hospitality Industry - Inc42",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFZPeEhYcDVBTkRKTTEtTG1Ka3ByQ1RONnBkUlFNZkVGcDZvLTdNQmp4YThxZVpxODdhSmt0UldVcF91a3E3cVdvYzJEWnZDbU9xcko2bEZQSGtvcjdFSzM4RVpzcTczRTI5WEE5ZV8ycmcxU0NJM0pSSTlkOUpPbGpFc2Y5OXpzWm9HcVA1TWVlWC1u?oc=5\" target=\"_blank\">Dextr AI Raises $6.7 Mn To Build AI Agents For Hospitality Industry</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Inc42</font>",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFZPeEhYcDVBTkRKTTEtTG1Ka3ByQ1RONnBkUlFNZkVGcDZvLTdNQmp4YThxZVpxODdhSmt0UldVcF91a3E3cVdvYzJEWnZDbU9xcko2bEZQSGtvcjdFSzM4RVpzcTczRTI5WEE5ZV8ycmcxU0NJM0pSSTlkOUpPbGpFc2Y5OXpzWm9HcVA1TWVlWC1u?oc=5",
+    "resourceLinks": [],
+    "category": "AI_AGENTS",
+    "facebookPostId": "1277980028738225_122101274319487454",
+    "facebookPublishedAt": "2026-09-25T23:22:05.668Z",
+    "publishedAt": "Fri, 25 Sep 2026 10:33:24 GMT",
+    "sourceUrl": "https://inc42.com",
+    "sourceName": "Inc42",
+    "imageId": 12935078,
+    "imageUrl": "https://images.pexels.com/photos/12935078/pexels-photo-12935078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/touchscreen-to-make-orders-at-restaurant-12935078/",
+    "imageSource": "Pexels",
+    "imageScore": 6,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "FUNDING"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "blank",
+        "build",
+        "color",
+        "dextr",
+        "hospitality",
+        "inc42",
+        "raises",
+        "target"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:25:47.596Z"
+  },
+  {
+    "title": "MaaseAI Introduces Security AI Model to Build Safer and More Reliable Enterprise AI Applications - Benzinga",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbmVHQVgyOU5MU2V0cU5oVC1sS1F0MXhmTGxObTZhME1aeHIxQ2NJZnBZS3doUENzX2ZTckN6NlJWOXdENFVSTHR3ZHR3dzJzWkJXdmdITE1Ed1YzdGZOaHd3MXBveFpkcUNIMU1aclFXdjNLZ3hwdGlJVlZCbUdteGFsV3hyTXp2QzNQY2FsZDVvRW5FY2d1UFVVdjl1aGFFaXV6dGVmUmVGTTRsZzY1S2xzYWNyNnFUT1dsZFNVQ01jOWFPSmhnU0lsQjVGQ1FB?oc=5\" target=\"_blank\">MaaseAI Introduces Security AI Model to Build Safer and More Reliable Enterprise AI Applications</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Benzinga</font>",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbmVHQVgyOU5MU2V0cU5oVC1sS1F0MXhmTGxObTZhME1aeHIxQ2NJZnBZS3doUENzX2ZTckN6NlJWOXdENFVSTHR3ZHR3dzJzWkJXdmdITE1Ed1YzdGZOaHd3MXBveFpkcUNIMU1aclFXdjNLZ3hwdGlJVlZCbUdteGFsV3hyTXp2QzNQY2FsZDVvRW5FY2d1UFVVdjl1aGFFaXV6dGVmUmVGTTRsZzY1S2xzYWNyNnFUT1dsZFNVQ01jOWFPSmhnU0lsQjVGQ1FB?oc=5",
+    "resourceLinks": [],
+    "category": "AI_MODELS",
+    "facebookPostId": "1277980028738225_122101274841487454",
+    "facebookPublishedAt": "2026-09-25T23:22:22.979Z",
+    "publishedAt": "Fri, 25 Sep 2026 07:24:31 GMT",
+    "sourceUrl": "https://www.benzinga.com",
+    "sourceName": "Benzinga",
+    "imageId": 5380618,
+    "imageUrl": "https://images.pexels.com/photos/5380618/pexels-photo-5380618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-view-of-system-hacking-5380618/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "applications",
+        "benzinga",
+        "blank",
+        "build",
+        "color",
+        "enterprise",
+        "introduces",
+        "maaseai",
+        "model",
+        "reliable",
+        "safer"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:25:47.586Z"
+  },
+  {
+    "title": "Laos government advances 10-year strategies for AI, satellite development - Asia News Network",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPRWw0amdoRlZjVUhUSXpkcGJ2ZFRzN0R0Z2cxM2xjbVZ5Uk1yY1pmOV9JUENOTEpwWmNBeTRuVGR6RkxRVlc4bzNXbTRrLVByaDlqMEdfcEM5T1dFcDY1X00wN0FmRU4tVE1DeVd5TWxXWmNQOWlTbWRSeVZHLXBCMFIxa2xBS1l5TXoyVTlsREsyUWJ3TEZ3RWtJcDZ0MWs?oc=5\" target=\"_blank\">Laos government advances 10-year strategies for AI, satellite development</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Asia News Network</font>",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRWw0amdoRlZjVUhUSXpkcGJ2ZFRzN0R0Z2cxM2xjbVZ5Uk1yY1pmOV9JUENOTEpwWmNBeTRuVGR6RkxRVlc4bzNXbTRrLVByaDlqMEdfcEM5T1dFcDY1X00wN0FmRU4tVE1DeVd5TWxXWmNQOWlTbWRSeVZHLXBCMFIxa2xBS1l5TXoyVTlsREsyUWJ3TEZ3RWtJcDZ0MWs?oc=5",
+    "resourceLinks": [],
+    "category": "AI_GOVERNMENT",
+    "facebookPostId": "1277980028738225_122101275333487454",
+    "facebookPublishedAt": "2026-09-25T23:23:12.417Z",
+    "publishedAt": "Fri, 25 Sep 2026 02:28:42 GMT",
+    "sourceUrl": "https://asianews.network",
+    "sourceName": "Asia News Network",
+    "imageId": 586056,
+    "imageUrl": "https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/white-outer-space-satellite-586056/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "POLICY"
+      ],
+      "specificWords": [
+        "10-year",
+        "6f6f6f",
+        "advances",
+        "blank",
+        "color",
+        "development",
+        "government",
+        "network",
+        "satellite",
+        "strategies",
+        "target"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-25T23:25:47.592Z"
+  },
+  {
+    "title": "Assort Health, Jon Wang's healthcare AI startup, hits $1.2B valuation in three years - bizjournals.com",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPQkxfVGNUbmkwZVplQ1VaS0VIOVRCbThhcC0tckJtbWlodElYRk5BdnpHdWMzaG5EZ0lqZWl0TTVxTEFHZGJ1ekNXXzJIOEFzNTd1dTBtejdRNWlkRlFmajF5TTE5NFhGLWZCckE4dGRBd1dtdjRuU0JBTDluVlpiQlVaTnp3ZWpoX0QzamFfaHVhSFItMjVDVVpwaEw0a1NB?oc=5\" target=\"_blank\">Assort Health, Jon Wang's healthcare AI startup, hits $1.2B valuation in three years</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">bizjournals.com</font>",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQkxfVGNUbmkwZVplQ1VaS0VIOVRCbThhcC0tckJtbWlodElYRk5BdnpHdWMzaG5EZ0lqZWl0TTVxTEFHZGJ1ekNXXzJIOEFzNTd1dTBtejdRNWlkRlFmajF5TTE5NFhGLWZCckE4dGRBd1dtdjRuU0JBTDluVlpiQlVaTnp3ZWpoX0QzamFfaHVhSFItMjVDVVpwaEw0a1NB?oc=5",
+    "resourceLinks": [],
+    "category": "AI_BUSINESS",
+    "facebookPostId": "1277980028738225_122101277919487454",
+    "facebookPublishedAt": "2026-09-25T23:27:50.805Z",
+    "publishedAt": "Fri, 25 Sep 2026 12:03:00 GMT",
+    "sourceUrl": "https://www.bizjournals.com",
+    "sourceName": "bizjournals.com",
+    "imageId": 18799047,
+    "imageUrl": "https://images.pexels.com/photos/18799047/pexels-photo-18799047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-in-a-robot-costume-18799047/",
+    "imageSource": "Pexels",
+    "imageScore": 5.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "assort",
+        "bizjournals",
+        "blank",
+        "color",
+        "health",
+        "healthcare",
+        "target",
+        "three",
+        "valuation",
+        "years"
+      ]
+    }
+  },
+  {
+    "title": "How OpenAI’s Rogue A.I. Agents Tried to Trick a Robot Detector - The New York Times",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOVG9HSV92eUxmd0dtSEZBaDRKcDFwRUhYQTVXaWZKelk3ZEFRVVg5NmdfMS1rMmlvVVNpakNuZ2VLU2lZa01KckQ1TjlTaEYxelY0ci1Ia3F0cXdUSEtaRkJOOGptbC1CUzkzeDdvYnBnTWtkQlBlOGY0SU1QNU5mMw?oc=5\" target=\"_blank\">How OpenAI’s Rogue A.I. Agents Tried to Trick a Robot Detector</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New York Times</font>",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVG9HSV92eUxmd0dtSEZBaDRKcDFwRUhYQTVXaWZKelk3ZEFRVVg5NmdfMS1rMmlvVVNpakNuZ2VLU2lZa01KckQ1TjlTaEYxelY0ci1Ia3F0cXdUSEtaRkJOOGptbC1CUzkzeDdvYnBnTWtkQlBlOGY0SU1QNU5mMw?oc=5",
+    "resourceLinks": [],
+    "category": "AI_TOOLS",
+    "facebookPostId": "1277980028738225_122101278075487454",
+    "facebookPublishedAt": "2026-09-25T23:28:07.683Z",
+    "publishedAt": "Fri, 25 Sep 2026 20:01:21 GMT",
+    "sourceUrl": "https://www.nytimes.com",
+    "sourceName": "The New York Times",
+    "imageId": 5380603,
+    "imageUrl": "https://images.pexels.com/photos/5380603/pexels-photo-5380603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-using-computer-5380603/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "openai"
+      ],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "blank",
+        "color",
+        "detector",
+        "openai",
+        "robot",
+        "rogue",
+        "target",
+        "times",
+        "trick",
+        "tried"
+      ]
+    }
+  },
+  {
+    "title": "Aikido Security Releases Altar-1: An Open-Weight Security Model Pruned From GLM-5.3 to 328 GB - MarkTechPost",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNS3daWVZmWTRDVmxmaVYyNmVfUW9NajI2aE1MdUxkdmRUMUp5bGgyZGpnaHVwTktQcnhFanB6VEctTC1aSmNvOU1sZF96LTcwUl80T3pBdm9tNF9DbnNRNzhwMzNfNV9ENjhfdkFyS1FtN3B4aEowSHltX3lLTnByWjJ6UWdGQXpZcnc4ZWdzMnFLVG94OEtrdlJhVzg0d1R0NVhNci1BYndYMGw5YnZuWEJQZHR5RE9MdjBEUTBTSU1HakVhMl9YTDRqQ3NZUQ?oc=5\" target=\"_blank\">Aikido Security Releases Altar-1: An Open-Weight Security Model Pruned From GLM-5.3 to 328 GB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MarkTechPost</font>",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNS3daWVZmWTRDVmxmaVYyNmVfUW9NajI2aE1MdUxkdmRUMUp5bGgyZGpnaHVwTktQcnhFanB6VEctTC1aSmNvOU1sZF96LTcwUl80T3pBdm9tNF9DbnNRNzhwMzNfNV9ENjhfdkFyS1FtN3B4aEowSHltX3lLTnByWjJ6UWdGQXpZcnc4ZWdzMnFLVG94OEtrdlJhVzg0d1R0NVhNci1BYndYMGw5YnZuWEJQZHR5RE9MdjBEUTBTSU1HakVhMl9YTDRqQ3NZUQ?oc=5",
+    "resourceLinks": [],
+    "category": "AI_MODELS",
+    "facebookPostId": "1277980028738225_122101278459487454",
+    "facebookPublishedAt": "2026-09-25T23:28:26.842Z",
+    "publishedAt": "Fri, 25 Sep 2026 15:14:45 GMT",
+    "sourceUrl": "https://www.marktechpost.com",
+    "sourceName": "MarkTechPost",
+    "imageId": 5380792,
+    "imageUrl": "https://images.pexels.com/photos/5380792/pexels-photo-5380792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-view-of-system-hacking-5380792/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "328",
+        "6f6f6f",
+        "aikido",
+        "altar-1",
+        "blank",
+        "color",
+        "glm-5",
+        "marktechpost",
+        "model",
+        "open-weight",
+        "pruned",
+        "releases"
       ]
     }
   }
