@@ -304,5 +304,96 @@
         "mammogram"
       ]
     }
+  },
+  {
+    "title": "OpenAI agents attack the 'first' government hack by autonomous AI, researchers say - ABC News & Headlines – Australian Broadcasting Corporation",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZE9MeXh6UXNMWFNoRkVZMzd0UGQ2Q3RDSWI2bFpkQ3l6cE1ha21RdzNaamRMRmdWRnJJU2E2TTNwTV82Mkl6em93TWF5eHBUdTVRQW9FczdqYkZGcm13ckxzTTEyY1dWLVhsLUVOS1pvUXQ5VTJVME16RjgzWGxfb3dGRDQtMUxCd1dINUE1SHQxUWVwVE9JM3p6QnBIcFRhdkp6bm83bw?oc=5",
+    "category": "AI_SECURITY",
+    "publishedAt": "Thu, 24 Sep 2026 00:42:50 GMT",
+    "sourceUrl": "https://www.abc.net.au",
+    "sourceName": "ABC News & Headlines – Australian Broadcasting Corporation",
+    "topicFingerprint": {
+      "entities": [
+        "australia",
+        "openai"
+      ],
+      "events": [
+        "HACK",
+        "POLICY",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "attack",
+        "australian",
+        "autonomous",
+        "blank",
+        "broadcasting",
+        "color",
+        "corporation",
+        "first",
+        "government",
+        "headlines"
+      ]
+    }
+  },
+  {
+    "title": "Closing the Gap Between Advanced Robotics and AI Research for Real-World Deployment - Robotics Tomorrow",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQY1g5QmdkWWJ6YTl0dE1vak0zSFA4LXVzd2JXRXZRWW9mQTZ5elpZVW1xcHF4SnpJMVkwb29LNEdjZjEzajBIclpKMHdtekxJc3Jzc2VHOHl3OWJEdS04OW84a19XR0o1Z1RZQnlBNUZiekhrLUc5RHFXWnJOUVQyWjJJT3dEYklyTEsxOEhtVms5SnpaUkdDWnQ0elY1YUJWbk5TVlkxckRQYjVud3BDZy0wNnNmamVKSXU4NWlWOW5xMllUTVlZWDNFS2VFSzRVLTh3dw?oc=5",
+    "category": "AI_MANUFACTURING",
+    "publishedAt": "Tue, 22 Sep 2026 12:39:38 GMT",
+    "sourceUrl": "https://www.roboticstomorrow.com",
+    "sourceName": "Robotics Tomorrow",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "advanced",
+        "between",
+        "blank",
+        "closing",
+        "color",
+        "deployment",
+        "real-world",
+        "research",
+        "robotics",
+        "target",
+        "tomorrow"
+      ]
+    }
+  },
+  {
+    "title": "Bird.com secures $450m financing as it launches communications infrastructure for AI agents - BeBeez International",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMC1YN3ZmcE04SzRUZzNwVmxIRENGQTFjVWFXQlZ2SUxrckotWWdwQmk5eTBLbWd4U2wydTJCb0dfWXppM0V0SHFpeGhyeC1RazZ2NDRKa0Q3SWY5dUJjZG5oa21ybDQtQlJPUmwzeDNlS0JZYzh1VlM3THJKUHJJenpCTEI0dmUtVHJhaFJmekNERG9JaWg1cG81QWkwVzlhZnNKa2wydG5uakFFVGZNTWI1MFlfcnFQRFlFNw?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Wed, 23 Sep 2026 15:37:47 GMT",
+    "sourceUrl": "https://bebeez.eu",
+    "sourceName": "BeBeez International",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "FUNDING",
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "450m",
+        "6f6f6f",
+        "agents",
+        "bebeez",
+        "blank",
+        "color",
+        "communications",
+        "financing",
+        "infrastructure",
+        "international",
+        "launches",
+        "secures"
+      ]
+    }
   }
 ]
