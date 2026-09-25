@@ -36,18 +36,6 @@
     "publishedAtSystem": "2026-09-24T04:16:29.693Z"
   },
   {
-    "title": "OpenAI: Agent hacked Australian government website, says PM Anthony Albanese - BBC",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3N0QjhfNEVoRFZvN3Y5TlplSWhzdno0Q0YwSDhad2ZfaXhTbFdhTktTVzlhSW5HaWd6YmtUWm5kSHpwbDdNU1ZqNU92VkltdmxZQlVR?oc=5",
-    "publishedAt": "Thu, 24 Sep 2026 02:04:01 GMT",
-    "publishedAtSystem": "2026-09-24T04:24:53.936Z"
-  },
-  {
-    "title": "OpenAI model breaches Australian government websites - Politico",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONDRpeU43MHdPbGZLOTU0OEg2RjZBU3dkbnRxdG1FbDFpMk1FcUFqTjV0VDRsRHprN2sxTUxOdVBBNWVTWGdPV3o3M0Fma2s0WTJVY1JXb3c1cEhRVVpkZUpadzN5QktmRkRTRzhudUNqUFhlVGVIREx4VGZOX19ZYkpoNGdQVHZjRDZROA?oc=5",
-    "publishedAt": "Wed, 23 Sep 2026 23:43:00 GMT",
-    "publishedAtSystem": "2026-09-24T04:55:11.724Z"
-  },
-  {
     "title": "OpenAI’s A.I. Tried Breaching Four Other Targets, With No Prompting - The New York Times",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZmdNdEU4T2dVMHUwV05rNkZjM0hrcWZRWUlLOTBoOU9BLVl1VTVCR3c5MkQ5QTRkSHFTb0dFUU1lUW56S2R5X3ZRaUR3UFViaGJuTm5FRk5LTmJXanFoUWVEbklfdVI3azB6dEMzbXdwUnhNZUd0UFJDWjFVS21wOXdzRQ?oc=5",
     "publishedAt": "Thu, 24 Sep 2026 02:28:53 GMT",
@@ -68,38 +56,6 @@
     "source": "The Washington Post",
     "publishedAt": "Thu, 24 Sep 2026 04:56:02 GMT",
     "publishedAtSystem": "2026-09-24T05:28:45.887Z"
-  },
-  {
-    "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later - WIRED",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlJCOTJCX1F5ZDh3NkQxRDktY2t0QzJ2X3lNZkVucHBpTldzLUNZbHN5SGZoSG5tVjlaei1tMnVzVnhtNDBVd2JXdnY2WFlkOTVRc0dUbmh6dGt5LXpsMEF0TnFHSkxJQW1GWnpRYjRDQVRxbUcxckMtZ0pHOHYweFM4dzhadmJ3NUhzMk10VW1TY2tHOEJQTEVWS3dwNHY3NjVxRFl5N0hJSzNIM21NVVVMdEg?oc=5",
-    "category": "AI_SECURITY",
-    "publishedAt": "Thu, 24 Sep 2026 10:46:00 GMT",
-    "sourceUrl": "https://www.wired.com",
-    "sourceName": "WIRED",
-    "topicFingerprint": {
-      "entities": [
-        "australia",
-        "openai"
-      ],
-      "events": [
-        "HACK",
-        "POLICY"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "agent",
-        "australia",
-        "blank",
-        "color",
-        "found",
-        "government",
-        "hacked",
-        "health",
-        "later",
-        "months",
-        "openai"
-      ]
-    }
   },
   {
     "title": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model - the-decoder.com",
@@ -423,37 +379,6 @@
     }
   },
   {
-    "title": "Toyota Sees AI, Automation Playing Bigger Role In Future Manufacturing - 6.4 Billion Dollars, 40,000 Robots - NDTV",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVWZ2WVNLczRWUnhJV1Q5VzB1WEZrNUhGR0x6QzdvVUhpNE5PMEE0TG4yMHVEZzNfODhxUjliT2RhV1dXQlkxdXVTTG5LN1Y5QWU3ZkY4NWdtM054QkcwOFNJdGxpdXpSTmZpMnZTV3J5b2plb2R2N0FhY0xCYjVDdUozS1BuMHh4d2lOdi1YbVFmOWJiSDlVdWtqZ0Rjam16X0htTUlsYUdjQmY5aDd4R3lPdTVBNlFvdHF5OVBJd1g4Z3NfU29BckpncXlvVEVWeS1QZXlUWXo1QQ?oc=5",
-    "category": "AI_MANUFACTURING",
-    "publishedAt": "Thu, 24 Sep 2026 05:32:39 GMT",
-    "sourceUrl": "https://www.ndtv.com",
-    "sourceName": "NDTV",
-    "topicFingerprint": {
-      "entities": [
-        "toyota"
-      ],
-      "events": [
-        "POLICY",
-        "ROBOT"
-      ],
-      "specificWords": [
-        "000",
-        "6f6f6f",
-        "automation",
-        "bigger",
-        "billion",
-        "blank",
-        "color",
-        "dollars",
-        "manufacturing",
-        "playing",
-        "robots",
-        "target"
-      ]
-    }
-  },
-  {
     "title": "Kodiak AI and DTL Transport Complete First Autonomous Trucking Deliveries Under New California DMV Permit - Taiwan News",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44dm00RHRnOG9vbE5mS2hOQjBiNVFwSXI1R1VWamg0bERjODE4Vl80TWFJXzZTVW9YNTd0SFRrb3Fac0ZsQ0RiTlE1UzJKdmdZRFNMa2diRFc?oc=5",
     "category": "AI_TRANSPORT",
@@ -573,38 +498,6 @@
     }
   },
   {
-    "title": "Google Nears Release of Flagship Gemini 4 AI Model - The Information",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNXh3OWdvQ3NBQ240aUxVR2NOd0hsMTZITHFpQjFuZlhQMU5ZeWpfaHdNd21lZVlyRzZzcUo5OUhJVEcwVnlFWjkwSENSdkdqb1NMMUFMaWE0a2lwbkw2Z25rMFBUYXZWOTk4VEU0dnRhTWk5YkQ5bkx3VmROWV9pYm5FRVZ0MnlKV0Rqell0LWU?oc=5",
-    "category": "AI_MODELS",
-    "publishedAt": "Thu, 24 Sep 2026 02:15:00 GMT",
-    "sourceUrl": "https://www.theinformation.com",
-    "sourceName": "The Information",
-    "imageId": 34804017,
-    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-computer-screen-with-code-and-menu-options-34804017/",
-    "topicFingerprint": {
-      "entities": [
-        "google"
-      ],
-      "events": [
-        "LAUNCH",
-        "MODEL"
-      ],
-      "specificWords": [
-        "6f6f6f",
-        "blank",
-        "color",
-        "flagship",
-        "gemini",
-        "google",
-        "information",
-        "model",
-        "nears",
-        "release",
-        "target"
-      ]
-    }
-  },
-  {
     "title": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model — benchmarks show open-weight contender is competitive with OpenAI and Meta image models - Tom's Hardware",
     "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQYmZsbFl0SWdUX2Ytb1NjZ2tHV3NYSmZEb1pzUkozSUktWFhwSzAwUlY2a0c2VGVSY2dtNVJvYTFHV1FNOGpzYTVjTjRpS085SU9qQlk4UzRWdnYxX2Q3Ul9jMU54bVROOG9KLVZobW5xeWZNUVVHa1BMUkxTVTBubUtqSHF6Xzdrek5Mamtjd2xFelVNYUpjY1NtWUtyM0hubC12QTZrYmVuTnZidHM2cTYwSE1hMVZaZkhDYWYwNUhPTXJDa25EelZYSjNBX1JhYWRteERZSU9wR1htQ3RZWGIydVl2SnVlLWpKZ2M2V21SY1RVUDBfMm91dTZqRVRLemJLZzNTZDE3eVp5MVJvSzdObDNud0NHbXNva1lyTUhsY2k1X3Y0OVlhSHBWelZsbFpqOGRUd2FDeTNMalhwUjVBR2NRVHJGSG41WDdQUV9hRzVuRlJaclpvNEZnancwMGhnZlQyVy14X1lMcGJVOFpBeW5OUQ?oc=5",
     "category": "AI_MODELS",
@@ -669,6 +562,121 @@
         "physical",
         "robots",
         "south"
+      ]
+    }
+  },
+  {
+    "title": "Anthropic’s New AI Lets Lab Machines Talk To Each Other To Automate Research: Report - NDTV Profit",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSkMwT2FfVzIwZFYxRTZ0Q1RvM1BHRFc2Q1M1dHR4SWthaFRqOWx4Zl9EOFdqMFhlVmdZY00waS1udzN3OFNtR0ZYODBBUjhOQml4SHlpbUNVTFRzbkFqbFplN1NXN0t4clBOYjI2YUZQZ2RkSVlmcXMzZEVOWXNxYklZR0ZFU3BmVnpfM0JOM01rRHJJenFidlpuRF9URnlFVDExdmo0NXU0eUNKWFU3Z3ZoTUhURnhYY2laTGJPUjhBTEhWQzgxT0h30gHSAUFVX3lxTE5Fc3o4Sk0zay1tYzhpMHJ1SGVhcUNVVGMyNWtTdmMzS0V6VFhYX3ZLUVZ6WnRRWVJKcnQwXzU2Y2UyaTZRUFFTcmlnVDZmVjdpbEt2eEtPcTJoM1hFdlRET0x3SjMyV1BackVfRFJwVDRJVVpiaFUtYWR6UThUT0JRQmtKSkJ1UmZVOTNDUlNzSkxyXzIxSlZZNUExamlyVlNnWEVib2pfZXVuNjUtMjFMektCYWZNUnZXTlBfYmhXdkxmMVlJQnp6QnAxVDAzbWN0dw?oc=5",
+    "category": "AI_AGENTS",
+    "publishedAt": "Fri, 25 Sep 2026 10:52:09 GMT",
+    "sourceUrl": "https://www.ndtvprofit.com",
+    "sourceName": "NDTV Profit",
+    "imageId": 8439001,
+    "imagePexelsUrl": "https://www.pexels.com/photo/scientists-testing-a-device-8439001/",
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "anthropic",
+        "automate",
+        "blank",
+        "color",
+        "machines",
+        "other",
+        "profit",
+        "research",
+        "target"
+      ]
+    }
+  },
+  {
+    "title": "Microsoft revamps Copilot with code generation, agentic AI tools - Reuters",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORFppWUc2LTE4NzBfY2prVG11cG9PQ1VyaFB6QkYzVGoyLWV5alVORkZraFREc3FBbmIxTThVay1nQnZZRXhvQ1JyQXpQeU1uY3NmYkt4eWtlSlZvZF8yR3o0LUtRZGFXWFkzdVdBTXJveUdqNG1PTTdHS25wQ0xOR0R3dWNCZFQ3Snlwcjc0S0FHYXg3RkhsMWFoMW5GX0hWWFFFQUJzZnptVjJXUUhR?oc=5",
+    "category": "AI_TOOLS",
+    "publishedAt": "Fri, 25 Sep 2026 13:51:28 GMT",
+    "sourceUrl": "https://www.reuters.com",
+    "sourceName": "Reuters",
+    "imageId": 89724,
+    "imagePexelsUrl": "https://www.pexels.com/photo/imac-turend-on-89724/",
+    "topicFingerprint": {
+      "entities": [
+        "microsoft"
+      ],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "agentic",
+        "blank",
+        "color",
+        "copilot",
+        "generation",
+        "microsoft",
+        "reuters",
+        "revamps",
+        "target",
+        "tools"
+      ]
+    }
+  },
+  {
+    "title": "Can AI help bridge the public health gap? - Ateneo de Manila University",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fUElQTElqQnpkNklUQ0JnMFMzVFR6M3czRFJGX2FYMld1UGhHNWkxenNHcEVNSC03NndDTGZzOHNlVHlTbjExMEx1VkVFdGZ4bXJVeUkyTlE3RWZULUFNUEVCN2s4a2dQS0psYjRVeC1GU3BPVkp4Qk85YXg?oc=5",
+    "category": "AI_HEALTH",
+    "publishedAt": "Fri, 25 Sep 2026 07:20:27 GMT",
+    "sourceUrl": "https://www.ateneo.edu",
+    "sourceName": "Ateneo de Manila University",
+    "imageId": 6019019,
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-white-robot-6019019/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "6f6f6f",
+        "ateneo",
+        "blank",
+        "bridge",
+        "color",
+        "health",
+        "manila",
+        "public",
+        "target",
+        "university"
+      ]
+    }
+  },
+  {
+    "title": "AI wrecking ball fractures billable-hour fee model - Financial Times",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVXl6QlBpdmo1RlUwakJIRFNVTWxUS2xLZzlESTdQVFhBUVNrTEljUUhkeGJRSmVCTXFoZU9JdWVqUEVQQUpQN2lWYmV6M1FYVmJlaHk2dkk0RS1LcEdQQjNtUzdVSFRCckhmdFhJS2VxX1U0Si15U3BEbGNSWktHRjl6bHQ?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Fri, 25 Sep 2026 04:00:54 GMT",
+    "sourceUrl": "https://www.ft.com",
+    "sourceName": "Financial Times",
+    "imageId": 8111894,
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-in-black-blazer-sitting-on-chair-8111894/",
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "POLICY",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "billable-hour",
+        "blank",
+        "color",
+        "financial",
+        "fractures",
+        "model",
+        "target",
+        "times",
+        "wrecking"
       ]
     }
   }
