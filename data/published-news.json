@@ -18,12 +18,6 @@
     "publishedAtSystem": "2026-09-24T01:37:48.110Z"
   },
   {
-    "title": "Artificial Intelligence CEOs Brief the U.N. Security Council on the Risks of AI - C-SPAN",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNjBaTGNkVjhLUlROMm9tVlRsVnVZMFFVWk5KOTBsMDQyaWFYR25FWmFFWlVVTEJtM3FvVVUtVnd4OUxUVHZ1OV9BaFc1bjNRbUx3eFBLVl94ay1nR2MtSVJWYl9NN2ZIcW1WbWYyYUdyYm4xRmFWcXdjMXV4UG9SeHc3VEJxNTAzRTFNOTZGRDlvVG1RMGNSeHB2TW81c3MxMm9ZdXhWV1p6MnlGZHVYRWFhU1ZwN3JhS0FjckNqV29zQVlwMHlJ?oc=5",
-    "publishedAt": "Wed, 23 Sep 2026 04:00:00 GMT",
-    "publishedAtSystem": "2026-09-24T03:48:27.541Z"
-  },
-  {
     "title": "Meta Debuts Dedicated ‘Charm’ Device for Using Muse AI - Bloomberg.com",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMThMd2ZURlVmOTRpS0dzNmNSSFVfZ1dzNDZrd19YTUprcTA5dHM3NkFRekJsemdBd2hmak9INnpYSWlncXRVd1VpVkM0TnQ4OXFET3Jpb2xxd054cVJWLUt4WFlQSmxYTU5VdEJXbEhHbzRILTRuQUY1LWtKMmZwRF9VdzZCRUN4UVpoZmtBMF92dWRCUm5Pbkt5OHlnNXpQeHpzcWpkZWU2QngxNWJMWWNMS2pCd1BqeXZXYno4cms?oc=5",
     "publishedAt": "Wed, 23 Sep 2026 23:57:28 GMT",
@@ -607,6 +601,74 @@
         "nears",
         "release",
         "target"
+      ]
+    }
+  },
+  {
+    "title": "Alibaba claims new Qwen Image 2.1 AI model beats Google Nano Banana 2.0 with minuscule 7B parameter model — benchmarks show open-weight contender is competitive with OpenAI and Meta image models - Tom's Hardware",
+    "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQYmZsbFl0SWdUX2Ytb1NjZ2tHV3NYSmZEb1pzUkozSUktWFhwSzAwUlY2a0c2VGVSY2dtNVJvYTFHV1FNOGpzYTVjTjRpS085SU9qQlk4UzRWdnYxX2Q3Ul9jMU54bVROOG9KLVZobW5xeWZNUVVHa1BMUkxTVTBubUtqSHF6Xzdrek5Mamtjd2xFelVNYUpjY1NtWUtyM0hubC12QTZrYmVuTnZidHM2cTYwSE1hMVZaZkhDYWYwNUhPTXJDa25EelZYSjNBX1JhYWRteERZSU9wR1htQ3RZWGIydVl2SnVlLWpKZ2M2V21SY1RVUDBfMm91dTZqRVRLemJLZzNTZDE3eVp5MVJvSzdObDNud0NHbXNva1lyTUhsY2k1X3Y0OVlhSHBWelZsbFpqOGRUd2FDeTNMalhwUjVBR2NRVHJGSG41WDdQUV9hRzVuRlJaclpvNEZnancwMGhnZlQyVy14X1lMcGJVOFpBeW5OUQ?oc=5",
+    "category": "AI_MODELS",
+    "publishedAt": "Wed, 23 Sep 2026 15:34:36 GMT",
+    "sourceUrl": "https://www.tomshardware.com",
+    "sourceName": "Tom's Hardware",
+    "imageId": 17279852,
+    "imagePexelsUrl": "https://www.pexels.com/photo/photo-of-an-eagle-on-a-laptop-screen-17279852/",
+    "topicFingerprint": {
+      "entities": [
+        "alibaba",
+        "google",
+        "meta",
+        "openai"
+      ],
+      "events": [
+        "MODEL",
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "alibaba",
+        "banana",
+        "beats",
+        "benchmarks",
+        "blank",
+        "claims",
+        "color",
+        "competitive",
+        "contender",
+        "google",
+        "hardware"
+      ]
+    }
+  },
+  {
+    "title": "China’s Hygon expands into physical AI with new chips for robots and factories - South China Morning Post",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMkpaRFpiZFZ4Tkh6aS14U3lRMWQtTm9tbU9rWE56SEFQQ01WQ1dhN2p5U2hkYm15dThrVk9ESDUxeGplRWRZMU9LVThaOWRqbUV4UDFJVlh4RjNUWmtoNF9GZkJoOGZ6WWdKX3F1WDNhdjJ4LTBHa1NweEZJeUVWVVNUeE94U2V1Q0RBSFRpcjcwaDlSclMtWWJUY0FNdF9ieVdMY2NUT3pRLVZlUUlmV1lIQnNaTF9yRzlfVDJxX1ZSbDIxOUlXcQ?oc=5",
+    "category": "AI_MANUFACTURING",
+    "publishedAt": "Tue, 22 Sep 2026 14:30:09 GMT",
+    "sourceUrl": "https://www.scmp.com",
+    "sourceName": "South China Morning Post",
+    "imageId": 33433724,
+    "imagePexelsUrl": "https://www.pexels.com/photo/futuristic-workspace-with-coding-on-monitor-33433724/",
+    "topicFingerprint": {
+      "entities": [
+        "china"
+      ],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "china",
+        "chips",
+        "color",
+        "expands",
+        "factories",
+        "hygon",
+        "morning",
+        "physical",
+        "robots",
+        "south"
       ]
     }
   }

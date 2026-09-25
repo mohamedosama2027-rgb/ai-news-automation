@@ -787,6 +787,23 @@ function isDuplicateStory(articleA, articleB) {
         return true;
     }
 
+    const textA = `${articleA.title || ""} ${articleA.description || ""}`;
+    const textB = `${articleB.title || ""} ${articleB.description || ""}`;
+    const entitiesA = getCanonicalEntities(textA);
+    const entitiesB = getCanonicalEntities(textB);
+    const eventsA = getEventTypes(textA);
+    const eventsB = getEventTypes(textB);
+    const titleSpecificA = getSpecificTopicWords(articleA.title || "");
+    const titleSpecificB = getSpecificTopicWords(articleB.title || "");
+
+    if (
+        overlap(entitiesA, entitiesB) >= 0.5 &&
+        overlap(eventsA, eventsB) >= 0.5 &&
+        intersectionSize(titleSpecificA, titleSpecificB) >= 2
+    ) {
+        return true;
+    }
+
     const fingerprintA = articleA.topicFingerprint ||
         createTopicFingerprint(articleA);
     const fingerprintB = articleB.topicFingerprint ||
