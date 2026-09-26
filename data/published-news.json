@@ -2069,7 +2069,13 @@
         "listed",
         "never"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T17:43:39.394Z"
   },
   {
     "title": "Somnus",
@@ -2113,6 +2119,55 @@
         "frontier",
         "gemini",
         "listed"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T17:43:39.406Z"
+  },
+  {
+    "title": "BoostMyAgents",
+    "productIdentity": "boostmyagents",
+    "description": "AI capacity for open-source developers, funded by users. BoostMyAgents gives open-source developers a page and README badge where people can buy restricted Anthropic API capacity for their work. Developers use the capacity through an Anthropic-compatible gateway with Claude Code or SDKs. A boost becomes metered API credit rather than a cash payout. Prompt contents stay private. The beta is deliberately narrow: Anthropic only, fixed packs, and one key per recipient. Product Hunt topics: Open Source, Developer Tools, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/boostmyagents?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/OLZZPU2XU3XW7N?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122101979709487454",
+    "facebookPublishedAt": "2026-09-26T17:45:53.308Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/boostmyagents?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 37880001,
+    "imageUrl": "https://images.pexels.com/photos/37880001/pexels-photo-37880001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/programming-code-on-laptop-with-developer-hands-37880001/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "ACQUISITION",
+        "FUNDING"
+      ],
+      "specificWords": [
+        "anthropic",
+        "anthropic-compatible",
+        "badge",
+        "becomes",
+        "boost",
+        "boostmyagents",
+        "capacity",
+        "claude",
+        "contents",
+        "credit",
+        "deliberately",
+        "developer"
       ]
     }
   }
