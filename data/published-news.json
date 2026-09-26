@@ -2215,6 +2215,53 @@
         "local",
         "macos"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T19:56:16.469Z"
+  },
+  {
+    "title": "Heads of OpenAI and Anthropic called to face Senate inquiry after rogue agent incidents - The Guardian",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSmpnZ1ZWU05sZ0hWOVFnUGJqb0hRbTVTcWNodWI3ak5zcm5fRXFsaElYMERvUzJIaTJmNnlGdDkwOGFmUWJZNjBMQU9ER3dET0VkNExpakxZcDJRdkptdUxnaTVqcTJZSDB5cjNfZ2hYYzNVVzZid1htOUwxVm1vdnI5REJLTEhTMHNKY1RtMENtdkdfbWxnN3hFcXN0VXJCVzhJaUNPU3dnMjZaWTVjdTlzRnlWLTJKN2hnaHlGOHJ5Q096anJuMVhXT0FIVlMySFFpUGQ2eU5odGls?oc=5\" target=\"_blank\">Heads of OpenAI and Anthropic called to face Senate inquiry after rogue agent incidents</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Guardian</font>",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSmpnZ1ZWU05sZ0hWOVFnUGJqb0hRbTVTcWNodWI3ak5zcm5fRXFsaElYMERvUzJIaTJmNnlGdDkwOGFmUWJZNjBMQU9ER3dET0VkNExpakxZcDJRdkptdUxnaTVqcTJZSDB5cjNfZ2hYYzNVVzZid1htOUwxVm1vdnI5REJLTEhTMHNKY1RtMENtdkdfbWxnN3hFcXN0VXJCVzhJaUNPU3dnMjZaWTVjdTlzRnlWLTJKN2hnaHlGOHJ5Q096anJuMVhXT0FIVlMySFFpUGQ2eU5odGls?oc=5",
+    "resourceLinks": [],
+    "category": "AI_COMPANIES",
+    "facebookPostId": "1277980028738225_122102078391487454",
+    "facebookPublishedAt": "2026-09-26T19:58:50.876Z",
+    "publishedAt": "Sat, 26 Sep 2026 15:52:00 GMT",
+    "sourceUrl": "https://www.theguardian.com",
+    "sourceName": "The Guardian",
+    "imageId": 6950205,
+    "imageUrl": "https://images.pexels.com/photos/6950205/pexels-photo-6950205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/holding-a-speach-from-a-tribune-6950205/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "openai"
+      ],
+      "events": [
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agent",
+        "anthropic",
+        "blank",
+        "called",
+        "color",
+        "guardian",
+        "heads",
+        "incidents",
+        "inquiry",
+        "openai",
+        "rogue"
+      ]
     }
   }
 ]
