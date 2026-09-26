@@ -1627,6 +1627,51 @@
         "legal",
         "target"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T12:18:14.950Z"
+  },
+  {
+    "title": "Light Origins Launches Light-O1 Foundation Model for Robot Learning - AI Insider",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxONWppdnlUWHBSLTRad09vTFp0R0JKOUNHdlRrOTVUM3JoQzlKamwxWHFBV2hsUTRkMDUxZHE1R01VbXR0bDF6UkRQQkdhQkh2bVZXYjVDeXNnMXBxT0J6Yi04OHZXWmpkSGN1VzZGVERxUWVmZktUTWlYYzJ2M3Z6cWZWRVdERVdlS2NNaTdPckc4YUtCT01YX3dmU0pSUUdDaGgweEdEMjI?oc=5\" target=\"_blank\">Light Origins Launches Light-O1 Foundation Model for Robot Learning</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AI Insider</font>",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONWppdnlUWHBSLTRad09vTFp0R0JKOUNHdlRrOTVUM3JoQzlKamwxWHFBV2hsUTRkMDUxZHE1R01VbXR0bDF6UkRQQkdhQkh2bVZXYjVDeXNnMXBxT0J6Yi04OHZXWmpkSGN1VzZGVERxUWVmZktUTWlYYzJ2M3Z6cWZWRVdERVdlS2NNaTdPckc4YUtCT01YX3dmU0pSUUdDaGgweEdEMjI?oc=5",
+    "resourceLinks": [],
+    "category": "AI_ROBOTICS",
+    "facebookPostId": "1277980028738225_122101786341487454",
+    "facebookPublishedAt": "2026-09-26T12:19:55.852Z",
+    "publishedAt": "Sat, 26 Sep 2026 11:48:45 GMT",
+    "sourceUrl": "https://theaiinsider.tech",
+    "sourceName": "AI Insider",
+    "imageId": 8294792,
+    "imageUrl": "https://images.pexels.com/photos/8294792/pexels-photo-8294792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-white-and-black-robot-with-illuminated-blue-eyes-8294792/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "MODEL",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "foundation",
+        "insider",
+        "launches",
+        "learning",
+        "light",
+        "light-o1",
+        "model",
+        "origins",
+        "robot"
+      ]
     }
   }
 ]
