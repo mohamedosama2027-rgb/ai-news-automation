@@ -6,7 +6,25 @@ concurrency:
 
 on:
   schedule:
-    - cron: "32 4 * * *"
+    - cron: "17 8 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "23 9 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "29 10 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "37 11 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "43 13 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "49 15 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "7 17 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "13 18 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "19 20 * * *"
+      timezone: "Africa/Cairo"
+    - cron: "31 22 * * *"
       timezone: "Africa/Cairo"
   workflow_dispatch:
 
@@ -41,6 +59,25 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Choose topic focus for this time slot
+        env:
+          SCHEDULE_CRON: ${{ github.event.schedule }}
+        run: |
+          case "$SCHEDULE_CRON" in
+            "17 8 * * *") topic="AI_HEALTH,AI_SCIENCE" ;;
+            "23 9 * * *") topic="AI_FINANCE,AI_BUSINESS" ;;
+            "29 10 * * *") topic="AI_MANUFACTURING,AI_ROBOTICS" ;;
+            "37 11 * * *") topic="AI_DEV_TOOLS" ;;
+            "43 13 * * *") topic="AI_CREATOR_TOOLS" ;;
+            "49 15 * * *") topic="AI_EDUCATION,AI_SCIENCE" ;;
+            "7 17 * * *") topic="AI_RESEARCH,AI_MODELS" ;;
+            "13 18 * * *") topic="AI_AGENTS,AI_SECURITY" ;;
+            "19 20 * * *") topic="AI_COMPANIES,AI_POLICY" ;;
+            "31 22 * * *") topic="AI_TOOLS,AI_PROJECTS" ;;
+            *) topic="" ;;
+          esac
+          echo "POST_TOPIC_CATEGORIES=$topic" >> "$GITHUB_ENV"
 
       - name: Run automation
         run: npm start

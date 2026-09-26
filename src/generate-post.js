@@ -11,6 +11,17 @@ const {
     getMaxPostsPerRun
 } = require("./news");
 
+const POST_EMOJI_PALETTES = [
+    { facts: "🔹", analysis: "🔎", human: "💬", practical: "🛠️" },
+    { facts: "📌", analysis: "📈", human: "👀", practical: "🚀" },
+    { facts: "🧩", analysis: "⚖️", human: "🌱", practical: "🔧" },
+    { facts: "📊", analysis: "🧭", human: "🎯", practical: "📲" },
+    { facts: "⚙️", analysis: "🧠", human: "🗣️", practical: "🧰" },
+    { facts: "🔬", analysis: "🌐", human: "💭", practical: "✅" },
+    { facts: "🤖", analysis: "🪄", human: "🧑‍💻", practical: "🔋" },
+    { facts: "🚨", analysis: "🧭", human: "💬", practical: "🧪" }
+];
+
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY,
     httpOptions: {
@@ -154,6 +165,14 @@ async function generatePost() {
     // Give Gemini a broad editorial pool instead of only the first 15.
     const latestNews = news.slice(0, 80);
     const requestedPosts = getMaxPostsPerRun();
+    const topicFocusCategories = (process.env.POST_TOPIC_CATEGORIES || "")
+        .split(",")
+        .map(category => category.trim())
+        .filter(Boolean);
+    const topicFocusAvailable = latestNews.some(item =>
+        topicFocusCategories.includes(item.category) &&
+        (!["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"].includes(item.category) || item.resourceLinks?.length)
+    );
     const workflowCategories = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"];
     const targetWorkflowPosts = requestedPosts >= 1 && latestNews.some(item =>
         workflowCategories.includes(item.category) && item.resourceLinks?.length
@@ -194,6 +213,7 @@ Link: ${item.link}`;
             .map(item => `${item.category}: ${item.averageInteractions} average interactions across ${item.posts} measured post(s)`)
             .join("\n")
         : "Not enough measured posts yet.";
+    const emojiPalette = POST_EMOJI_PALETTES[publishedNews.length % POST_EMOJI_PALETTES.length];
 
     const prompt = `
 You are the editorial engine of a professional Egyptian AI technology news page.
@@ -328,6 +348,18 @@ Do not choose weak content just to satisfy category diversity.
 Quality and usefulness remain more important than artificial rotation.
 
 ==================================================
+SCHEDULED TOPIC FOCUS
+==================================================
+
+This time slot is assigned to these categories: ${topicFocusCategories.join(", ") || "No fixed category (manual run)"}.
+
+${topicFocusAvailable
+        ? "At least one usable candidate exists in the assigned categories. Select from those categories unless every such candidate is substantially duplicated, weak, or promotional."
+        : "No usable candidate was found in the assigned categories. Choose the strongest useful candidate from another category and avoid repeating recent topics."}
+
+When this slot has a usable assigned-category candidate, do not choose an unrelated category.
+
+==================================================
 USEFULNESS
 ==================================================
 
@@ -447,16 +479,16 @@ Start with one standalone headline-like sentence. It must be specific to the sto
 Use one or two substantial paragraphs to explain what happened and why the reader should care. Introduce the people, organization, product, research, or event using only facts in the title and description.
 
 3. FACTUAL BULLETS:
-Use one or more lines beginning with ✴️ for the concrete details, numbers, capabilities, sequence of events, or direct outcomes that are supported by the source. Each line must add a different fact. Do not use ✴️ as decoration or repeat the same sentence.
+Use one or more lines beginning with ${emojiPalette.facts} for the concrete details, numbers, capabilities, sequence of events, or direct outcomes that are supported by the source. Each line must add a different fact. Do not use the emoji as decoration or repeat the same sentence.
 
 4. ANALYSIS:
-Use lines beginning with ⏺️ when the source provides broader context, comparison, trend, limitation, or implication. Explain why the details matter without inventing consequences. For a short story where no supported analysis exists, omit ⏺️ rather than speculate.
+Use lines beginning with ${emojiPalette.analysis} when the source provides broader context, comparison, trend, limitation, or implication. Explain why the details matter without inventing consequences. For a short story where no supported analysis exists, omit the marker rather than speculate.
 
 5. HUMAN CONCLUSION:
-Use a paragraph beginning with 👋 to explain the central lesson or tension in a thoughtful human voice. It must be an evidence-based interpretation of the provided facts and must not become generic motivational writing.
+Use a paragraph beginning with ${emojiPalette.human} to explain the central lesson or tension in a thoughtful human voice. It must be an evidence-based interpretation of the provided facts and must not become generic motivational writing.
 
 6. PRACTICAL RESULT:
-Use a paragraph beginning with ✅ when the source mentions a solution, tool, method, response, next step, or practical consequence. Omit it if the source does not support one.
+Use a paragraph beginning with ${emojiPalette.practical} when the source mentions a solution, tool, method, response, next step, or practical consequence. Omit it if the source does not support one.
 
 7. ENDING:
 End the editorial text with 3 to 5 relevant hashtags. Do NOT write a source link, "المصدر", or "الرابط في التعليقات" inside POST. The program adds the source link exactly once after the post.
@@ -466,7 +498,7 @@ The first line must feel like the examples: a news hook with a clear subject and
 
 The post should feel like a smart Egyptian technology creator explaining an important story in depth. It must not feel like a press release, a newspaper translation, an AI summary, corporate marketing, or generic filler.
 
-Use the symbols as editorial labels with the exact visual characters ✴️ ⏺️ ✅ 👋. Do not replace them with bullets, hyphens, or other emoji.
+Use this run's emoji palette as editorial labels: facts ${emojiPalette.facts} / analysis ${emojiPalette.analysis} / human takeaway ${emojiPalette.human} / practical result ${emojiPalette.practical}. The palette rotates with each saved post so the visual markers change from one publication to the next. Use only the markers needed by the story and do not add decorative emoji to every paragraph.
 
 Arabic should remain the main language. Naturally mix official English technology names and technical terms without transliterating them.
 
@@ -555,15 +587,15 @@ Use this structure as a template, not as text to copy:
 
 [What happened and the essential context in a complete paragraph]
 
-✴️ [Concrete fact or number]
-✴️ [Another concrete fact]
-✴️ [Another supported detail]
+${emojiPalette.facts} [Concrete fact or number]
+${emojiPalette.facts} [Another concrete fact]
+${emojiPalette.facts} [Another supported detail]
 
-⏺️ [Why the facts matter or what broader context the source supports]
+${emojiPalette.analysis} [Why the facts matter or what broader context the source supports]
 
-👋 [The human and technical meaning of the story based on the facts]
+${emojiPalette.human} [The human and technical meaning of the story based on the facts]
 
-✅ [The practical response or solution when the source provides one]
+${emojiPalette.practical} [The practical response or solution when the source provides one]
 
 #[relevant hashtag]
 #[relevant hashtag]
@@ -862,7 +894,7 @@ Do not add anything after the last SELECTED_INDEX_N.
                     throw new Error(`Gemini generated ${hashtags.length} hashtags in post ${number}.`);
                 }
 
-                if (!post.includes("✴️") || !post.includes("👋")) {
+                if (!post.includes(emojiPalette.facts) || !post.includes(emojiPalette.human)) {
                     throw new Error(
                         `Gemini did not follow the required editorial markers in post ${number}.`
                     );
@@ -884,6 +916,11 @@ Do not add anything after the last SELECTED_INDEX_N.
                 }
 
                 const article = latestNews[selectedIndex - 1];
+                if (topicFocusAvailable && !topicFocusCategories.includes(article.category)) {
+                    throw new Error(
+                        `Gemini selected ${article.category} instead of this run's scheduled topic focus.`
+                    );
+                }
                 let resourceUrl = requestedResourceUrl.toUpperCase() === "NONE"
                     ? null
                     : requestedResourceUrl;
