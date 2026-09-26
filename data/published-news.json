@@ -1716,6 +1716,224 @@
         "opinions",
         "target"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T14:05:12.118Z"
+  },
+  {
+    "title": "Google Just Made Free 1080p AI Video Generation Available to Anyone - Decrypt",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE9HeHkxM254VTVfNkVhS0hOUEI3ZUtHYWxSUkVfdjhTNTFWbnhXbmN1M3lCWGJHYjJKc290dkFqc0tzb0lPZndtazh4N1ZaSThSdmZ1djhnQkpYdjZlU3MwMl91M1ktMDlwSEdnZDJiWWE?oc=5\" target=\"_blank\">Google Just Made Free 1080p AI Video Generation Available to Anyone</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Decrypt</font>",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9HeHkxM254VTVfNkVhS0hOUEI3ZUtHYWxSUkVfdjhTNTFWbnhXbmN1M3lCWGJHYjJKc290dkFqc0tzb0lPZndtazh4N1ZaSThSdmZ1djhnQkpYdjZlU3MwMl91M1ktMDlwSEdnZDJiWWE?oc=5",
+    "resourceLinks": [],
+    "category": "AI_COMPANIES",
+    "facebookPostId": "1277980028738225_122101852335487454",
+    "facebookPublishedAt": "2026-09-26T14:06:48.776Z",
+    "publishedAt": "Sat, 26 Sep 2026 13:01:03 GMT",
+    "sourceUrl": "https://decrypt.co",
+    "sourceName": "Decrypt",
+    "imageId": 8102676,
+    "imageUrl": "https://images.pexels.com/photos/8102676/pexels-photo-8102676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/man-sitting-at-the-desk-and-editing-footage-on-a-computer-8102676/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [
+        "google"
+      ],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "1080p",
+        "6f6f6f",
+        "anyone",
+        "available",
+        "blank",
+        "color",
+        "decrypt",
+        "generation",
+        "google",
+        "target",
+        "video"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T14:08:13.469Z"
+  },
+  {
+    "title": "AI agents hacked test environment to cheat, Darktrace finds - The Cryptonomist",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE8tcXJiQnY3LWEwc2N4eU1JQ0U4dXJPTXA5SXhRS1JEZEhEMUJxdTRqRG9IWlRVaUxxX0NSMW9sU0FFdEsyd2NidnNxczNYQnk2MF9hZ1dkeXViSHlDUW1RbU1saFY2Y0FDSTcxWjByUFg2OU9fc3o4Sjd0N3g4QQ?oc=5\" target=\"_blank\">AI agents hacked test environment to cheat, Darktrace finds</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Cryptonomist</font>",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8tcXJiQnY3LWEwc2N4eU1JQ0U4dXJPTXA5SXhRS1JEZEhEMUJxdTRqRG9IWlRVaUxxX0NSMW9sU0FFdEsyd2NidnNxczNYQnk2MF9hZ1dkeXViSHlDUW1RbU1saFY2Y0FDSTcxWjByUFg2OU9fc3o4Sjd0N3g4QQ?oc=5",
+    "resourceLinks": [],
+    "category": "AI_COMPANIES",
+    "facebookPostId": "1277980028738225_122101854513487454",
+    "facebookPublishedAt": "2026-09-26T14:09:49.242Z",
+    "publishedAt": "Sat, 26 Sep 2026 12:39:26 GMT",
+    "sourceUrl": "https://en.cryptonomist.ch",
+    "sourceName": "The Cryptonomist",
+    "imageId": 18545010,
+    "imageUrl": "https://images.pexels.com/photos/18545010/pexels-photo-18545010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-red-glowing-city-with-neon-lights-18545010/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "HACK"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "agents",
+        "blank",
+        "cheat",
+        "color",
+        "cryptonomist",
+        "darktrace",
+        "environment",
+        "finds",
+        "hacked",
+        "target"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T14:14:24.411Z"
+  },
+  {
+    "title": "Hackers hijack AI accounts and servers to fuel new cyber crime boom - Financial Times",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOVDI0d2VKaVhhMjhjQ3dwcXo3UVlyejRrVWZoS212dWp6NENmRkswblZnbHdCSWlBU01VMmowRDk1dVhVRkF4Ny0zR1NSMWxOVUJBVU1BX1FxMmNuZURGcXpvejhUREJCZUwzV2lXSEJXNzRTeFFNQ05fTWZQR3JEMVZFVGw?oc=5\" target=\"_blank\">Hackers hijack AI accounts and servers to fuel new cyber crime boom</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Financial Times</font>",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVDI0d2VKaVhhMjhjQ3dwcXo3UVlyejRrVWZoS212dWp6NENmRkswblZnbHdCSWlBU01VMmowRDk1dVhVRkF4Ny0zR1NSMWxOVUJBVU1BX1FxMmNuZURGcXpvejhUREJCZUwzV2lXSEJXNzRTeFFNQ05fTWZQR3JEMVZFVGw?oc=5",
+    "resourceLinks": [],
+    "category": "AI_COMPANIES",
+    "facebookPostId": "1277980028738225_122101858293487454",
+    "facebookPublishedAt": "2026-09-26T14:16:06.620Z",
+    "publishedAt": "Sat, 26 Sep 2026 10:00:04 GMT",
+    "sourceUrl": "https://www.ft.com",
+    "sourceName": "Financial Times",
+    "imageId": 11063291,
+    "imageUrl": "https://images.pexels.com/photos/11063291/pexels-photo-11063291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/grayscale-photo-of-person-sitting-on-chair-in-front-of-computer-11063291/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "HACK"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "accounts",
+        "blank",
+        "color",
+        "crime",
+        "cyber",
+        "financial",
+        "hackers",
+        "hijack",
+        "servers",
+        "target",
+        "times"
+      ]
+    },
+    "performanceCheckedAt": "2026-09-26T14:27:18.499Z"
+  },
+  {
+    "title": "WishRIg",
+    "productIdentity": "wishrig",
+    "description": "Turn your phone into a full computer. AI. 24/7.. Use AI like a pro. A 24/7 computer, a home for ChatGPT, Claude, and your favorite software, with built-in agents, video generation, outreach, skills, and automations. No more paying for 20 different AI subscriptions. We mentor our premium users to help them get the best results, even with no prior AI experience. If you are building software or a business, feel free to send us a message and see how we can work together. Product Hunt topics: Productivity, Artificial Intelligence, Tech Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/wishrig?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/GUWT4V5P3GH6U4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122101863003487454",
+    "facebookPublishedAt": "2026-09-26T14:28:32.509Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/wishrig?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": "producthunt-image:https://ph-files.imgix.net/0a1b163b-31f6-47ce-bd1e-aeb76ff04feb.png?auto=format",
+    "imageUrl": "https://ph-files.imgix.net/0a1b163b-31f6-47ce-bd1e-aeb76ff04feb.png?auto=format",
+    "imagePexelsUrl": null,
+    "imageSource": "Product Hunt",
+    "imageScore": null,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "agents",
+        "automations",
+        "building",
+        "built-in",
+        "chatgpt",
+        "claude",
+        "computer",
+        "different",
+        "experience",
+        "favorite",
+        "generation",
+        "listed"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T14:29:25.152Z"
+  },
+  {
+    "title": "SafeAuto",
+    "productIdentity": "safeauto",
+    "description": "Spot hidden costs and red flags on car listings with AI. SafeAuto analyzes your used car listings for free using AI: reliability score, hidden costs, red flags, and negotiation support, right in your browser. Product Hunt topics: Analytics, Developer Tools, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/safeauto?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/FTML3SBS7LGD5R?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122101863789487454",
+    "facebookPublishedAt": "2026-09-26T14:30:37.593Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/safeauto?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": "producthunt-image:https://ph-files.imgix.net/e6f51beb-101e-4a6c-8e7f-5c586cb70bc1.png?auto=format",
+    "imageUrl": "https://ph-files.imgix.net/e6f51beb-101e-4a6c-8e7f-5c586cb70bc1.png?auto=format",
+    "imagePexelsUrl": null,
+    "imageSource": "Product Hunt",
+    "imageScore": null,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "analytics",
+        "analyzes",
+        "browser",
+        "costs",
+        "developer",
+        "flags",
+        "hidden",
+        "listed",
+        "listings",
+        "negotiation",
+        "product",
+        "reliability"
+      ]
     }
   }
 ]

@@ -155,7 +155,7 @@ async function validateResourceUrl(value, redirectsRemaining = 4) {
 async function generatePost() {
     const news = await getLatestAINews();
 
-    const contentMode = (process.env.POST_CONTENT_MODE || "NEWS").trim().toUpperCase();
+    const contentMode = (process.env.POST_CONTENT_MODE || "TOOLS").trim().toUpperCase();
     if (!["NEWS", "TOOLS"].includes(contentMode)) {
         throw new Error(`Invalid POST_CONTENT_MODE: ${contentMode}`);
     }
@@ -468,6 +468,10 @@ Do NOT invent information.
 
 Do NOT infer missing facts.
 
+When the selected article's title or description names a specific AI product, tool, model, or feature, name it explicitly in the post using its official spelling from the source. Do not describe it only as a generic "new Google tool" or "new AI model". State the company and the named product clearly, preferably in the hook or the first context paragraph. Never guess a name that the source does not provide.
+
+For a Product Hunt candidate, PRODUCT_NAME must be the product's exact name from the candidate title, never NONE, and that same name must appear in POST.
+
 Do NOT invent:
 
 numbers
@@ -778,20 +782,22 @@ Before returning silently verify:
 
 17. English technology names are preserved correctly.
 
-18. The writing sounds human and Egyptian.
+18. If the source names the specific product, tool, model, or feature, that official name appears in POST; the post does not refer to it only generically.
 
-19. There are no generic repetitive AI phrases.
+19. The writing sounds human and Egyptian.
 
-20. The CTA is specific to the actual story.
+20. There are no generic repetitive AI phrases.
 
-21. There are 3 to 5 relevant hashtags.
+21. The CTA is specific to the actual story.
 
-22. POST contains ZERO English comma characters.
+22. There are 3 to 5 relevant hashtags.
 
-23. POST contains ZERO Arabic comma characters.
+23. POST contains ZERO English comma characters.
 
-24. IMAGE_QUERY contains 3 to 8 English words.
-25. For tool candidates, RESOURCE_URL must exactly match one direct resource link supplied with the candidate, not the source article URL. If no direct link is supplied, do not select that candidate.
+24. POST contains ZERO Arabic comma characters.
+
+25. IMAGE_QUERY contains 3 to 8 English words.
+26. For tool candidates, RESOURCE_URL must exactly match one direct resource link supplied with the candidate, not the source article URL. If no direct link is supplied, do not select that candidate.
 
 If any condition fails then rewrite before returning.
 
@@ -824,6 +830,9 @@ Return ONLY this exact format for each selected article. Number blocks consecuti
 POST_1:
 [Arabic Facebook post]
 
+PRODUCT_NAME_1:
+[exact product, tool, model, or feature name copied from the selected title or description, or NONE if the source gives no specific name]
+
 IMAGE_QUERY_1:
 [English Pexels search query]
 
@@ -833,7 +842,7 @@ SELECTED_INDEX_1:
 RESOURCE_URL_1:
 [one exact direct resource URL supplied with the selected article, or NONE]
 
-Repeat all four fields for POST_2, POST_3 and so on when selecting more than one article.
+Repeat all five fields for POST_2, POST_3 and so on when selecting more than one article.
 
 Do not add explanations.
 
@@ -841,7 +850,7 @@ Do not add analysis.
 
 Do not add anything before POST.
 
-Do not add anything after the last SELECTED_INDEX_N.
+Do not add anything after the last RESOURCE_URL_N.
 `;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -865,7 +874,10 @@ Do not add anything after the last SELECTED_INDEX_N.
 
             for (let number = 1; number <= requestedPosts; number++) {
                 const postMatch = text.match(
-                    new RegExp(`POST_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*IMAGE_QUERY_${number}:)`, "i")
+                    new RegExp(`POST_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*PRODUCT_NAME_${number}:)`, "i")
+                );
+                const productNameMatch = text.match(
+                    new RegExp(`PRODUCT_NAME_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*IMAGE_QUERY_${number}:)`, "i")
                 );
                 const imageQueryMatch = text.match(
                     new RegExp(`IMAGE_QUERY_${number}:\\s*([\\s\\S]*?)(?=\\n\\s*SELECTED_INDEX_${number}:)`, "i")
@@ -881,12 +893,13 @@ Do not add anything after the last SELECTED_INDEX_N.
                     continue;
                 }
 
-                if (!postMatch || !imageQueryMatch || !selectedMatch || !resourceUrlMatch) {
+                if (!postMatch || !productNameMatch || !imageQueryMatch || !selectedMatch || !resourceUrlMatch) {
                     throw new Error(`Gemini returned an incomplete post block ${number}.`);
                 }
 
                 const selectedIndex = Number(selectedMatch[1]);
                 const post = postMatch[1].trim();
+                const productName = productNameMatch[1].trim();
                 const imageQuery = imageQueryMatch[1].trim();
                 const requestedResourceUrl = resourceUrlMatch[1].trim();
 
@@ -933,6 +946,28 @@ Do not add anything after the last SELECTED_INDEX_N.
                 }
 
                 const article = latestNews[selectedIndex - 1];
+                if (
+                    article.sourceName === "Product Hunt" &&
+                    productName.toUpperCase() === "NONE"
+                ) {
+                    throw new Error(`Product Hunt post ${number} is missing its product name.`);
+                }
+                if (productName.toUpperCase() !== "NONE") {
+                    const normalizeName = value =>
+                        value.toLocaleLowerCase("en").replace(/\s+/g, " ").trim();
+                    const sourceText = normalizeName(`${article.title || ""} ${article.description || ""}`);
+                    const normalizedProductName = normalizeName(productName);
+                    if (!sourceText.includes(normalizedProductName)) {
+                        throw new Error(
+                            `Gemini returned a product name not present in the source for post ${number}.`
+                        );
+                    }
+                    if (!normalizeName(post).includes(normalizedProductName)) {
+                        throw new Error(
+                            `Post ${number} omitted the product name verified from its source.`
+                        );
+                    }
+                }
                 if (topicFocusAvailable && !topicFocusCategories.includes(article.category)) {
                     throw new Error(
                         `Gemini selected ${article.category} instead of this run's scheduled topic focus.`
