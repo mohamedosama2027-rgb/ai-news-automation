@@ -2031,7 +2031,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T15:00:31.058Z"
+    "performanceCheckedAt": "2026-09-26T15:02:50.909Z"
   },
   {
     "title": "Cutout",
@@ -2068,6 +2068,51 @@
         "image",
         "listed",
         "never"
+      ]
+    }
+  },
+  {
+    "title": "Somnus",
+    "productIdentity": "somnus",
+    "description": "Claude, GPT, Gemini and more in one desktop AI agent. Somnus is a Windows AI agent with every frontier model built in: Claude, GPT, Gemini, Grok, DeepSeek and more. One prepaid balance, no subscription. Every top-up is doubled, so you pay about half the official API price. Start with $5 free. Product Hunt topics: Productivity, Developer Tools, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/somnus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/DQW2DECSJ2TEUK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122101884513487454",
+    "facebookPublishedAt": "2026-09-26T15:04:17.852Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/somnus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 34803987,
+    "imageUrl": "https://images.pexels.com/photos/34803987/pexels-photo-34803987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/laptop-displaying-code-with-colorful-lighting-34803987/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "deepseek",
+        "google",
+        "xai"
+      ],
+      "events": [
+        "MODEL"
+      ],
+      "specificWords": [
+        "agent",
+        "balance",
+        "built",
+        "claude",
+        "deepseek",
+        "desktop",
+        "developer",
+        "doubled",
+        "every",
+        "frontier",
+        "gemini",
+        "listed"
       ]
     }
   }
