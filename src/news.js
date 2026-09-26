@@ -10,11 +10,11 @@ const MAX_TOTAL_CANDIDATES = 60;
 const MAX_PER_CATEGORY = 8;
 const MIN_PER_CATEGORY = 2;
 const configuredMaxPosts = Number(
-    process.env.MAX_POSTS_PER_RUN || 4
+    process.env.MAX_POSTS_PER_RUN || 1
 );
 const MAX_POSTS_PER_RUN = Number.isFinite(configuredMaxPosts)
     ? Math.max(1, Math.floor(configuredMaxPosts))
-    : 4;
+    : 1;
 const configuredNewsAgeHours = Number(
     process.env.NEWS_MAX_AGE_HOURS || 24
 );
@@ -1009,12 +1009,9 @@ function readPublishedRecords() {
 
         return data;
     } catch (error) {
-        console.error(
-            "Could not read published-news.json:",
-            error.message
+        throw new Error(
+            `Could not read published-news.json; stopping to protect duplicate history: ${error.message}`
         );
-
-        return [];
     }
 }
 
@@ -1075,7 +1072,7 @@ function updatePostPerformance(postId, metrics) {
 
     record.performance = metrics;
     record.performanceCheckedAt = new Date().toISOString();
-    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records.slice(-100), null, 2), "utf8");
+    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records, null, 2), "utf8");
     return true;
 }
 
@@ -1087,7 +1084,7 @@ function markPostPerformanceChecked(postId) {
     }
 
     record.performanceCheckedAt = new Date().toISOString();
-    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records.slice(-100), null, 2), "utf8");
+    fs.writeFileSync(PUBLISHED_FILE, JSON.stringify(records, null, 2), "utf8");
 }
 
 function getCategoryPerformanceSummary() {
@@ -2089,13 +2086,10 @@ function markNewsAsPublished(article, selectedImage = null, facebookPostId = nul
         publishedNews.push(record);
     }
 
-    const trimmed =
-        publishedNews.slice(-100);
-
     fs.writeFileSync(
         PUBLISHED_FILE,
         JSON.stringify(
-            trimmed,
+            publishedNews,
             null,
             2
         ),

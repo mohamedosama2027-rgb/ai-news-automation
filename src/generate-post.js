@@ -155,7 +155,7 @@ async function generatePost() {
     const latestNews = news.slice(0, 80);
     const requestedPosts = getMaxPostsPerRun();
     const workflowCategories = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"];
-    const targetWorkflowPosts = requestedPosts >= 3 && latestNews.some(item =>
+    const targetWorkflowPosts = requestedPosts >= 1 && latestNews.some(item =>
         workflowCategories.includes(item.category) && item.resourceLinks?.length
     ) ? 1 : 0;
 
@@ -315,6 +315,11 @@ AI business
 AI robotics
 AI security
 AI policy
+
+Because this run publishes one post, give preference to a useful story from a
+different category than the most recently published post when quality is comparable.
+Never reuse a previously published story or image, and do not force a weak story
+just to change categories.
 
 Do not force a category if there is no useful story.
 
