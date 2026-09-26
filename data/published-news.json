@@ -1463,5 +1463,41 @@
       ]
     },
     "performanceCheckedAt": "2026-09-26T01:08:28.684Z"
+  },
+  {
+    "title": "Tesla ramps Optimus to hundreds a week, but the robots can’t generalize - electrek.co",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNMDI3NVZBVWstYkFmTjVYM0MwN1Mya2ZHNkxKWjhlcFBPT3VBTC1sR2lNSnprQlBPTk9RTWkyRlZTQU43dFNiczZFZEFYNGdlci1xLVFlU2JmRXg0Vzg2SEt6NXBscjVQMFFSVkZ4cndleHgyd1hPNXZGR0hFbE9pejZac2dLRC1PN25RSkRYMzZubXU1Ym9aY0xR?oc=5\" target=\"_blank\">Tesla ramps Optimus to hundreds a week, but the robots can’t generalize</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">electrek.co</font>",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMDI3NVZBVWstYkFmTjVYM0MwN1Mya2ZHNkxKWjhlcFBPT3VBTC1sR2lNSnprQlBPTk9RTWkyRlZTQU43dFNiczZFZEFYNGdlci1xLVFlU2JmRXg0Vzg2SEt6NXBscjVQMFFSVkZ4cndleHgyd1hPNXZGR0hFbE9pejZac2dLRC1PN25RSkRYMzZubXU1Ym9aY0xR?oc=5",
+    "resourceLinks": [],
+    "category": "AI_ROBOTICS",
+    "facebookPostId": "1277980028738225_122101328439487454",
+    "facebookPublishedAt": "2026-09-26T01:24:43.961Z",
+    "publishedAt": "Fri, 25 Sep 2026 14:45:00 GMT",
+    "sourceUrl": "https://electrek.co",
+    "sourceName": "electrek.co",
+    "imageId": 8294662,
+    "imageUrl": "https://images.pexels.com/photos/8294662/pexels-photo-8294662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-white-toy-robot-on-blue-and-pink-background-8294662/",
+    "imageSource": "Pexels",
+    "imageScore": 7,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "electrek",
+        "generalize",
+        "hundreds",
+        "optimus",
+        "ramps",
+        "robots",
+        "target",
+        "tesla"
+      ]
+    }
   }
 ]
