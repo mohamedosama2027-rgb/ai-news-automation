@@ -6,7 +6,7 @@ concurrency:
 
 on:
   schedule:
-    - cron: "22 4 * * *"
+    - cron: "32 4 * * *"
       timezone: "Africa/Cairo"
   workflow_dispatch:
 
