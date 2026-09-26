@@ -39,6 +39,7 @@ jobs:
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PRODUCT_HUNT_API_TOKEN: ${{ secrets.PRODUCT_HUNT_API_TOKEN }}
       FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
       FACEBOOK_APP_ID: ${{ secrets.FACEBOOK_APP_ID }}
       FACEBOOK_APP_SECRET: ${{ secrets.FACEBOOK_APP_SECRET }}
@@ -60,23 +61,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Choose topic focus for this time slot
+      - name: Choose content mode and focus for this time slot
         env:
           SCHEDULE_CRON: ${{ github.event.schedule }}
         run: |
           case "$SCHEDULE_CRON" in
-            "17 8 * * *") topic="AI_HEALTH,AI_SCIENCE" ;;
-            "23 9 * * *") topic="AI_FINANCE,AI_BUSINESS" ;;
-            "29 10 * * *") topic="AI_MANUFACTURING,AI_ROBOTICS" ;;
-            "37 11 * * *") topic="AI_DEV_TOOLS" ;;
-            "43 13 * * *") topic="AI_CREATOR_TOOLS" ;;
-            "49 15 * * *") topic="AI_EDUCATION,AI_SCIENCE" ;;
-            "7 17 * * *") topic="AI_RESEARCH,AI_MODELS" ;;
-            "13 18 * * *") topic="AI_AGENTS,AI_SECURITY" ;;
-            "19 20 * * *") topic="AI_COMPANIES,AI_POLICY" ;;
-            "31 22 * * *") topic="AI_TOOLS,AI_PROJECTS" ;;
+            "17 8 * * *") mode="NEWS"; topic="AI_HEALTH,AI_SCIENCE" ;;
+            "23 9 * * *") mode="NEWS"; topic="AI_FINANCE,AI_BUSINESS" ;;
+            "29 10 * * *") mode="NEWS"; topic="AI_MANUFACTURING,AI_ROBOTICS" ;;
+            "37 11 * * *") mode="TOOLS"; topic="AI_DEV_TOOLS,AI_DATA_TOOLS,AI_SECURITY_TOOLS,AI_ROBOTICS_TOOLS" ;;
+            "43 13 * * *") mode="TOOLS"; topic="AI_IMAGE_TOOLS,AI_VIDEO_TOOLS,AI_AUDIO_TOOLS,AI_WRITING_TOOLS,AI_CREATOR_TOOLS" ;;
+            "49 15 * * *") mode="NEWS"; topic="AI_EDUCATION,AI_SCIENCE" ;;
+            "7 17 * * *") mode="TOOLS"; topic="AI_BUSINESS_TOOLS,AI_MARKETING_TOOLS,AI_PRODUCTIVITY_TOOLS,AI_FINANCE_TOOLS,AI_RETAIL_TOOLS,AI_HR_TOOLS" ;;
+            "13 18 * * *") mode="TOOLS"; topic="AI_EDUCATION_TOOLS,AI_HEALTH_TOOLS,AI_RESEARCH_TOOLS,AI_LEGAL_TOOLS,AI_AGRICULTURE_TOOLS,AI_CLIMATE_TOOLS,AI_GOVERNMENT_TOOLS" ;;
+            "19 20 * * *") mode="NEWS"; topic="AI_COMPANIES,AI_POLICY" ;;
+            "31 22 * * *") mode="TOOLS"; topic="AI_CUSTOMER_SUPPORT_TOOLS,AI_GENERAL_TOOLS,AI_TRAVEL_TOOLS,AI_GAMING_TOOLS,AI_REAL_ESTATE_TOOLS" ;;
             *) topic="" ;;
           esac
+          echo "POST_CONTENT_MODE=${mode:-NEWS}" >> "$GITHUB_ENV"
           echo "POST_TOPIC_CATEGORIES=$topic" >> "$GITHUB_ENV"
 
       - name: Run automation

@@ -155,15 +155,28 @@ async function validateResourceUrl(value, redirectsRemaining = 4) {
 async function generatePost() {
     const news = await getLatestAINews();
 
-    if (!news.length) {
-        throw new Error("No new AI news found.");
+    const contentMode = (process.env.POST_CONTENT_MODE || "NEWS").trim().toUpperCase();
+    if (!["NEWS", "TOOLS"].includes(contentMode)) {
+        throw new Error(`Invalid POST_CONTENT_MODE: ${contentMode}`);
+    }
+
+    const modeCandidates = news.filter(article =>
+        contentMode === "TOOLS"
+            ? article.sourceName === "Product Hunt"
+            : article.sourceName !== "Product Hunt"
+    );
+
+    if (!modeCandidates.length) {
+        throw new Error(contentMode === "TOOLS"
+            ? "No eligible Product Hunt AI tools found for this tool run."
+            : "No new AI news found for this news run.");
     }
 
     const publishedNews = getPublishedNews();
     const categoryPerformance = getCategoryPerformanceSummary();
 
     // Give Gemini a broad editorial pool instead of only the first 15.
-    const latestNews = news.slice(0, 80);
+    const latestNews = modeCandidates.slice(0, 80);
     const requestedPosts = getMaxPostsPerRun();
     const topicFocusCategories = (process.env.POST_TOPIC_CATEGORIES || "")
         .split(",")
@@ -171,12 +184,11 @@ async function generatePost() {
         .filter(Boolean);
     const topicFocusAvailable = latestNews.some(item =>
         topicFocusCategories.includes(item.category) &&
-        (!["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"].includes(item.category) || item.resourceLinks?.length)
+        (item.sourceName !== "Product Hunt" || item.resourceLinks?.length)
     );
-    const workflowCategories = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"];
-    const targetWorkflowPosts = requestedPosts >= 1 && latestNews.some(item =>
-        workflowCategories.includes(item.category) && item.resourceLinks?.length
-    ) ? 1 : 0;
+    const targetWorkflowPosts = contentMode === "TOOLS" && requestedPosts >= 1
+        ? 1
+        : 0;
 
     if (latestNews.length < requestedPosts) {
         throw new Error(
@@ -191,7 +203,7 @@ async function generatePost() {
 Title: ${item.title}
 Description: ${item.description || "No description available"}
 Published: ${item.publishedAt}
-Source: ${item.source || "Unknown"}
+Source: ${item.sourceName || item.source || "Unknown"}
 Link: ${item.link}
 Direct tool/resource links found in the feed: ${item.resourceLinks?.join(" | ") || "None"}`;
         })
@@ -214,13 +226,18 @@ Link: ${item.link}`;
             .join("\n")
         : "Not enough measured posts yet.";
     const emojiPalette = POST_EMOJI_PALETTES[publishedNews.length % POST_EMOJI_PALETTES.length];
+    const contentModeInstructions = contentMode === "TOOLS"
+        ? `THIS IS A PRODUCT HUNT TOOL RUN. Select only from the supplied Product Hunt products. Explain what the tool does and which AI field or task it supports, using only the candidate facts. The product was included because Product Hunt text indicates a free option or open-source availability; describe the free status cautiously and do not invent pricing limits.`
+        : `THIS IS AN AI NEWS RUN. Select only news stories from the supplied news sources. Do not select a product listing or write a tool spotlight.`;
 
     const prompt = `
 You are the editorial engine of a professional Egyptian AI technology news page.
 
+${contentModeInstructions}
+
 Your job is NOT simply to choose the most dramatic headline.
 
-Your job is to examine the full candidate list and choose up to ${requestedPosts} stories that give the page useful information while avoiding repetition.
+Your job is to examine the full candidate list and choose exactly ${requestedPosts} useful and non-repetitive ${contentMode === "TOOLS" ? "tools" : "news stories"}.
 
 The page should feel like a smart AI news source that continuously discovers different useful developments.
 
@@ -363,7 +380,7 @@ When this slot has a usable assigned-category candidate, do not choose an unrela
 USEFULNESS
 ==================================================
 
-Prefer stories that teach the audience something or keep them meaningfully updated.
+Prefer items that teach the audience something or keep them meaningfully updated.
 
 Strong candidates usually contain:
 
@@ -492,7 +509,7 @@ Use a paragraph beginning with ${emojiPalette.practical} when the source mention
 
 7. ENDING:
 End the editorial text with 3 to 5 relevant hashtags. Do NOT write a source link, "المصدر", or "الرابط في التعليقات" inside POST. The program adds the source link exactly once after the post.
-For AI_DEV_TOOLS or AI_CREATOR_TOOLS, explain the practical value. Do not put URLs in POST; the program adds a direct resource link only if that exact URL was supplied with the candidate.
+For tool candidates, explain the practical value and the AI field or task they support. Do not put URLs in POST; the program adds a direct resource link only if that exact URL was supplied with the candidate.
 
 The first line must feel like the examples: a news hook with a clear subject and a memorable detail. The middle must be information-dense rather than a short summary. Preserve the progression from what happened to the details to why it matters.
 
@@ -774,7 +791,7 @@ Before returning silently verify:
 23. POST contains ZERO Arabic comma characters.
 
 24. IMAGE_QUERY contains 3 to 8 English words.
-25. For AI_DEV_TOOLS and AI_CREATOR_TOOLS, RESOURCE_URL must exactly match one direct resource link supplied with the candidate, not the news article URL. If no direct link is supplied, do not select that candidate.
+25. For tool candidates, RESOURCE_URL must exactly match one direct resource link supplied with the candidate, not the source article URL. If no direct link is supplied, do not select that candidate.
 
 If any condition fails then rewrite before returning.
 
@@ -793,7 +810,7 @@ ${performanceText}
 Use this only as a light tie-breaker between equally useful stories. Do not select a weak story because of past interaction counts. These are raw reactions/comments/shares, not reach-normalized rates.
 
 ==================================================
-CURRENT CANDIDATE NEWS
+CURRENT CANDIDATES FOR THIS RUN
 ==================================================
 
 ${newsText}
@@ -935,7 +952,7 @@ Do not add anything after the last SELECTED_INDEX_N.
                 }
 
                 if (
-                    ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"].includes(article.category) &&
+                    article.sourceName === "Product Hunt" &&
                     !resourceUrl
                 ) {
                     throw new Error(
@@ -988,7 +1005,7 @@ Do not add anything after the last SELECTED_INDEX_N.
             }
 
             const selectedWorkflowPosts = posts.filter(post =>
-                workflowCategories.includes(post.article.category) && post.resourceUrl
+                post.article.sourceName === "Product Hunt" && post.resourceUrl
             ).length;
             if (selectedWorkflowPosts < targetWorkflowPosts) {
                 throw new Error(

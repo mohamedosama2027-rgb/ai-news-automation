@@ -27,6 +27,59 @@ async function downloadImage(url) {
     return Buffer.from(response.data);
 }
 
+async function selectProductHuntImage(article) {
+    if (!article?.productImageUrl) {
+        throw new Error("Product Hunt did not provide a product image.");
+    }
+
+    const imageUrl = new URL(article.productImageUrl);
+    if (imageUrl.protocol !== "https:") {
+        throw new Error("Product Hunt image URL must use HTTPS.");
+    }
+
+    const response = await axios.get(imageUrl.toString(), {
+        responseType: "arraybuffer",
+        timeout: 20000,
+        maxContentLength: 12 * 1024 * 1024,
+        headers: {
+            "User-Agent": "Mozilla/5.0 (compatible; AI-News-Automation/1.0)"
+        }
+    });
+
+    const mimeType = String(response.headers["content-type"] || "")
+        .split(";")[0]
+        .trim()
+        .toLowerCase();
+    const extensionByMimeType = {
+        "image/jpeg": ".jpg",
+        "image/jpg": ".jpg",
+        "image/png": ".png"
+    };
+    const extension = extensionByMimeType[mimeType];
+    if (!extension) {
+        throw new Error(`Unsupported Product Hunt image type: ${mimeType || "unknown"}`);
+    }
+
+    const imagePath = path.join(
+        __dirname,
+        "..",
+        "data",
+        `product-hunt-tool-image${extension}`
+    );
+    fs.writeFileSync(imagePath, Buffer.from(response.data));
+
+    return {
+        selectedImage: {
+            id: `producthunt-image:${imageUrl.toString()}`,
+            url: imageUrl.toString(),
+            mimeType,
+            source: "Product Hunt",
+            alt: `Product image for ${article.title}`
+        },
+        imagePath
+    };
+}
+
 function normalizeImageUrl(value = "") {
     if (typeof value !== "string" || !value.trim()) {
         return "";
@@ -470,6 +523,7 @@ async function selectImage(article, imageQuery, post = "") {
 
 module.exports = {
     selectImage,
+    selectProductHuntImage,
     evaluateImages,
     downloadImage
 };

@@ -34,7 +34,32 @@ const AI_WORKFLOW_MAX_AGE_HOURS = Number.isFinite(configuredWorkflowAgeHours)
  */
 const CATEGORY_PRIORITY = [
      "AI_DEV_TOOLS",
+    "AI_IMAGE_TOOLS",
+    "AI_VIDEO_TOOLS",
+    "AI_AUDIO_TOOLS",
+    "AI_WRITING_TOOLS",
      "AI_CREATOR_TOOLS",
+    "AI_DATA_TOOLS",
+    "AI_SECURITY_TOOLS",
+    "AI_LEGAL_TOOLS",
+    "AI_AGRICULTURE_TOOLS",
+    "AI_CLIMATE_TOOLS",
+    "AI_GOVERNMENT_TOOLS",
+    "AI_ROBOTICS_TOOLS",
+    "AI_TRAVEL_TOOLS",
+    "AI_GAMING_TOOLS",
+    "AI_RETAIL_TOOLS",
+    "AI_HR_TOOLS",
+    "AI_REAL_ESTATE_TOOLS",
+    "AI_BUSINESS_TOOLS",
+    "AI_MARKETING_TOOLS",
+    "AI_PRODUCTIVITY_TOOLS",
+    "AI_EDUCATION_TOOLS",
+    "AI_HEALTH_TOOLS",
+    "AI_RESEARCH_TOOLS",
+    "AI_FINANCE_TOOLS",
+    "AI_CUSTOMER_SUPPORT_TOOLS",
+    "AI_GENERAL_TOOLS",
     "AI_RESEARCH",
     "AI_AGENTS",
     "AI_SECURITY",
@@ -63,10 +88,6 @@ const CATEGORY_PRIORITY = [
 ];
 
 const CATEGORIES = {
-    AI_DEV_TOOLS:
-        'AI coding plugin OR IDE extension OR coding agent skill OR MCP server OR GitHub AI developer tool OR coding assistant workflow OR AI token reduction OR AGENTS.md OR CLAUDE.md OR Codex OR Claude Code',
-    AI_CREATOR_TOOLS:
-        'AI content creator tool OR AI video editing workflow OR AI image editing plugin OR AI audio creator tool OR AI social media content workflow OR AI creator extension OR AI content repurposing tool OR prompt library for creators',
     AI_MODELS: "AI model OR LLM OR generative AI model",
     AI_TOOLS: "AI tool OR AI product OR AI software",
     AI_PROJECTS: "AI project OR AI application OR AI startup product",
@@ -793,6 +814,16 @@ function isSameHeadline(articleA, articleB) {
 }
 
 function isDuplicateStory(articleA, articleB) {
+    const productNameKey = article =>
+        article.sourceName === "Product Hunt"
+            ? normalizeText(article.productIdentity || article.title || "")
+            : "";
+    const productNameA = productNameKey(articleA);
+    const productNameB = productNameKey(articleB);
+    if (productNameA && productNameA === productNameB) {
+        return true;
+    }
+
     if (
         canonicalizeUrl(articleA.link) &&
         canonicalizeUrl(articleA.link) ===
@@ -801,7 +832,35 @@ function isDuplicateStory(articleA, articleB) {
         return true;
     }
 
-    const workflowCategories = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"];
+    const workflowCategories = [
+        "AI_DEV_TOOLS",
+        "AI_IMAGE_TOOLS",
+        "AI_VIDEO_TOOLS",
+        "AI_AUDIO_TOOLS",
+        "AI_WRITING_TOOLS",
+        "AI_CREATOR_TOOLS",
+        "AI_DATA_TOOLS",
+        "AI_SECURITY_TOOLS",
+        "AI_LEGAL_TOOLS",
+        "AI_AGRICULTURE_TOOLS",
+        "AI_CLIMATE_TOOLS",
+        "AI_GOVERNMENT_TOOLS",
+        "AI_ROBOTICS_TOOLS",
+        "AI_TRAVEL_TOOLS",
+        "AI_GAMING_TOOLS",
+        "AI_RETAIL_TOOLS",
+        "AI_HR_TOOLS",
+        "AI_REAL_ESTATE_TOOLS",
+        "AI_BUSINESS_TOOLS",
+        "AI_MARKETING_TOOLS",
+        "AI_PRODUCTIVITY_TOOLS",
+        "AI_EDUCATION_TOOLS",
+        "AI_HEALTH_TOOLS",
+        "AI_RESEARCH_TOOLS",
+        "AI_FINANCE_TOOLS",
+        "AI_CUSTOMER_SUPPORT_TOOLS",
+        "AI_GENERAL_TOOLS"
+    ];
     if (
         workflowCategories.includes(articleA.category) ||
         workflowCategories.includes(articleB.category)
@@ -975,6 +1034,7 @@ function isLowQualityArticle(article) {
      * clearly describes a concrete event.
      */
     if (
+        article.sourceName !== "Product Hunt" &&
         description.trim().length < 70 &&
         !events.has("HACK") &&
         !events.has("FUNDING") &&
@@ -1262,6 +1322,22 @@ function scoreArticle(article) {
         }
     }
 
+    if (article.category === "AI_IMAGE_TOOLS" && /\b(image|photo|art|illustration|visual|design)\b/i.test(text)) {
+        score += 8;
+    }
+
+    if (article.category === "AI_VIDEO_TOOLS" && /\b(video|film|clip|animation|avatar)\b/i.test(text)) {
+        score += 8;
+    }
+
+    if (article.category === "AI_AUDIO_TOOLS" && /\b(audio|music|voice|speech|podcast|sound)\b/i.test(text)) {
+        score += 8;
+    }
+
+    if (article.category === "AI_WRITING_TOOLS" && /\b(writing|writer|copywriting|text|content|document|blog)\b/i.test(text)) {
+        score += 8;
+    }
+
     if (article.category === "AI_CREATOR_TOOLS") {
         if (/\b(video|image|audio|editing|creator|content|caption|thumbnail|voiceover)\b/i.test(text)) {
             score += 8;
@@ -1378,6 +1454,8 @@ function selectCategoryMinimums(
             const source =
                 getSourceHostname(article);
 
+            const sourceLimit = source === "producthunt.com" ? 30 : 6;
+
             const text =
                 `${article.title || ""} ${article.description || ""}`;
 
@@ -1398,7 +1476,7 @@ function selectCategoryMinimums(
             }
 
             if (
-                (sourceCounts[source] || 0) >= 6
+                (sourceCounts[source] || 0) >= sourceLimit
             ) {
                 continue;
             }
@@ -1487,8 +1565,10 @@ function selectDiverseCandidates(articles) {
         const source =
             getSourceHostname(article);
 
+        const sourceLimit = source === "producthunt.com" ? 30 : 6;
+
         if (
-            (sourceCounts[source] || 0) >= 6
+            (sourceCounts[source] || 0) >= sourceLimit
         ) {
             continue;
         }
@@ -1713,121 +1793,148 @@ function getMaxPostsPerRun() {
     return MAX_POSTS_PER_RUN;
 }
 
-async function fetchWorkflowDiscovery() {
-    const createdAfter = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
-        .toISOString()
-        .slice(0, 10);
-    const categories = [
-        {
-            category: "AI_DEV_TOOLS",
-            githubQuery: `("MCP server" OR "AI coding agent" OR "AI developer tool") created:>${createdAfter}`,
-            hackerQuery: "MCP server OR AI coding agent OR Claude Code OR Codex",
-            matcher: /\b(mcp|coding|developer|agent|claude|codex|copilot|token|plugin|extension)\b/i
-        },
-        {
-            category: "AI_CREATOR_TOOLS",
-            githubQuery: `("AI creator tool" OR "AI video" OR "AI content creation") created:>${createdAfter}`,
-            hackerQuery: "AI video tool OR AI content creation OR AI creator",
-            matcher: /\b(ai|creator|content|video|image|audio|editing|caption|voice|prompt)\b/i
+async function fetchProductHuntTools() {
+    const token = process.env.PRODUCT_HUNT_API_TOKEN;
+    if (!token) {
+        console.warn('PRODUCT_HUNT_API_TOKEN is not set; skipping Product Hunt tool discovery.');
+        return [];
+    }
+
+    const postedAfter = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
+    const query = `query LatestAITools($postedAfter: DateTime!, $after: String) {
+        posts(first: 20, order: NEWEST, postedAfter: $postedAfter, after: $after) {
+            edges {
+                node {
+                    name
+                    tagline
+                    description
+                    url
+                    website
+                    createdAt
+                    votesCount
+                    thumbnail { url }
+                    media { url type }
+                    topics(first: 10) { edges { node { name } } }
+                }
+            }
+            pageInfo { endCursor hasNextPage }
         }
+    }`;
+
+    const products = [];
+    let after = null;
+    for (let page = 0; page < 5; page++) {
+        const response = await axios.post(
+            'https://api.producthunt.com/v2/api/graphql',
+            { query, variables: { postedAfter, after } },
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                timeout: 15000
+            }
+        );
+
+        if (response.data.errors?.length) {
+            throw new Error(`Product Hunt API: ${response.data.errors.map(error => error.message).join('; ')}`);
+        }
+
+        const posts = response.data.data?.posts;
+        products.push(...(posts?.edges || []).map(edge => edge.node));
+        if (!posts?.pageInfo?.hasNextPage || !posts.pageInfo.endCursor) {
+            break;
+        }
+        after = posts.pageInfo.endCursor;
+    }
+
+    const aiPattern = /\b(ai|artificial intelligence|llm|generative|machine learning|chatgpt|claude|gemini|copilot|neural)\b/i;
+    const freePattern = /\b(free(?:\s+(?:plan|tier|forever|to use|and open source|open[- ]source))?|open[- ]source|completely free|100% free)\b/i;
+    const paidTrialPattern = /\b(free trial|trial for free)\b/i;
+    const toolCategories = [
+        { category: 'AI_DEV_TOOLS', pattern: /\b(coder|coding|developer|programming|software|code review|repository|ide|terminal|mcp)\b/i },
+        { category: 'AI_IMAGE_TOOLS', pattern: /\b(image|photo|art|illustration|visual|design)\b/i },
+        { category: 'AI_VIDEO_TOOLS', pattern: /\b(video|film|clip|animation|avatar)\b/i },
+        { category: 'AI_AUDIO_TOOLS', pattern: /\b(audio|music|voice|speech|podcast|sound)\b/i },
+        { category: 'AI_WRITING_TOOLS', pattern: /\b(writing|writer|copywriting|text|document|blog)\b/i },
+        { category: 'AI_DATA_TOOLS', pattern: /\b(data|analytics|database|spreadsheet|bi|visualization)\b/i },
+        { category: 'AI_SECURITY_TOOLS', pattern: /\b(security|cybersecurity|privacy|compliance|fraud)\b/i },
+        { category: 'AI_HEALTH_TOOLS', pattern: /\b(health|healthcare|medical|clinical|wellness|fitness)\b/i },
+        { category: 'AI_EDUCATION_TOOLS', pattern: /\b(education|learning|teaching|student|tutor|school|course)\b/i },
+        { category: 'AI_RESEARCH_TOOLS', pattern: /\b(research|science|scientific|paper|literature|experiment)\b/i },
+        { category: 'AI_FINANCE_TOOLS', pattern: /\b(finance|financial|accounting|budget|invest|banking|tax)\b/i },
+        { category: 'AI_CUSTOMER_SUPPORT_TOOLS', pattern: /\b(customer support|customer service|helpdesk|support agent|crm)\b/i },
+        { category: 'AI_LEGAL_TOOLS', pattern: /\b(legal|law|lawyer|contract|litigation|compliance)\b/i },
+        { category: 'AI_AGRICULTURE_TOOLS', pattern: /\b(agriculture|farming|crop|livestock|agtech)\b/i },
+        { category: 'AI_CLIMATE_TOOLS', pattern: /\b(climate|environment|sustainability|carbon|energy|weather)\b/i },
+        { category: 'AI_GOVERNMENT_TOOLS', pattern: /\b(government|public sector|civic|municipal)\b/i },
+        { category: 'AI_ROBOTICS_TOOLS', pattern: /\b(robot|robotics|manufacturing|industrial|autonomous vehicle)\b/i },
+        { category: 'AI_TRAVEL_TOOLS', pattern: /\b(travel|tourism|hospitality|hotel|restaurant)\b/i },
+        { category: 'AI_GAMING_TOOLS', pattern: /\b(game|gaming|gameplay|game development)\b/i },
+        { category: 'AI_RETAIL_TOOLS', pattern: /\b(retail|e-commerce|ecommerce|shopping|merchant)\b/i },
+        { category: 'AI_HR_TOOLS', pattern: /\b(human resources|recruiting|recruitment|hiring|talent acquisition)\b/i },
+        { category: 'AI_REAL_ESTATE_TOOLS', pattern: /\b(real estate|property|housing|construction|architecture)\b/i },
+        { category: 'AI_MARKETING_TOOLS', pattern: /\b(marketing|seo|advertising|campaign|social media|sales)\b/i },
+        { category: 'AI_BUSINESS_TOOLS', pattern: /\b(business|operations|workflow|enterprise|automation|project management)\b/i },
+        { category: 'AI_PRODUCTIVITY_TOOLS', pattern: /\b(productivity|meeting|calendar|task|note taking|knowledge management)\b/i },
+        { category: 'AI_CREATOR_TOOLS', pattern: /\b(creator|content|publishing|podcast|storytelling)\b/i }
     ];
 
-    const requests = categories.map(async config => {
-        const [githubResult, hackerNewsResult] = await Promise.allSettled([
-            axios.get("https://api.github.com/search/repositories", {
-                params: {
-                    q: config.githubQuery,
-                    sort: "stars",
-                    order: "desc",
-                    per_page: 15
-                },
-                headers: {
-                    Accept: "application/vnd.github+json",
-                    "User-Agent": "AI-News-Automation"
-                },
-                timeout: 12000
-            }),
-            axios.get("https://hn.algolia.com/api/v1/search_by_date", {
-                params: {
-                    query: config.hackerQuery,
-                    tags: "story",
-                    hitsPerPage: 30
-                },
-                timeout: 12000
-            })
-        ]);
-
-        const articles = [];
-
-        if (githubResult.status === "fulfilled") {
-            for (const repo of githubResult.value.data.items || []) {
-                const details = `${repo.full_name} ${repo.description || ""}`;
-                if (!config.matcher.test(details) || repo.stargazers_count < 5) {
-                    continue;
-                }
-
-                articles.push({
-                    title: repo.full_name,
-                    description: [
-                        repo.description,
-                        repo.language && `Primary language: ${repo.language}`,
-                        `GitHub stars: ${repo.stargazers_count}`
-                    ].filter(Boolean).join(". "),
-                    link: repo.html_url,
-                    publishedAt: repo.pushed_at || repo.created_at,
-                    category: config.category,
-                    sourceUrl: "https://github.com",
-                    sourceName: "GitHub",
-                    resourceLinks: [repo.html_url]
-                });
+    return products
+        .filter(product => {
+            const text = [
+                product.name,
+                product.tagline,
+                product.description,
+                ...(product.topics?.edges || []).map(edge => edge.node?.name || '')
+            ].filter(Boolean).join(' ');
+            return aiPattern.test(text) && freePattern.test(text) && !paidTrialPattern.test(text);
+        })
+        .filter(product => {
+            try {
+                const directUrl = new URL(product.website);
+                const hostname = directUrl.hostname.toLowerCase();
+                const isProductHuntHost =
+                    hostname === 'producthunt.com' || hostname.endsWith('.producthunt.com');
+                const isProductHuntRedirect =
+                    isProductHuntHost && directUrl.pathname.startsWith('/r/');
+                return directUrl.protocol === 'https:' &&
+                    (!isProductHuntHost || isProductHuntRedirect);
+            } catch (_) {
+                return false;
             }
-        } else {
-            console.warn(`GitHub workflow search failed for ${config.category}: ${githubResult.reason.message}`);
-        }
+        })
+        .map(product => {
+            const description = [product.tagline, product.description]
+                .filter(Boolean)
+                .join('. ');
+            const topicNames = (product.topics?.edges || [])
+                .map(edge => edge.node?.name)
+                .filter(Boolean);
+            const productText = `${product.name} ${description} ${topicNames.join(' ')}`;
+            const category = toolCategories.find(item => item.pattern.test(productText))?.category || 'AI_GENERAL_TOOLS';
 
-        if (hackerNewsResult.status === "fulfilled") {
-            for (const hit of hackerNewsResult.value.data.hits || []) {
-                if (!hit.url || !config.matcher.test(hit.title || "")) {
-                    continue;
-                }
-
-                const hostname = getHostname(hit.url);
-                const knownNewsSource = Object.keys(SOURCE_SCORES).some(domain =>
-                    hostname === domain || hostname.endsWith(`.${domain}`)
-                );
-                const directResourceHosts = [
-                    "github.com",
-                    "gitlab.com",
-                    "codeberg.org",
-                    "huggingface.co",
-                    "npmjs.com",
-                    "pypi.org",
-                    "producthunt.com"
-                ];
-                const isDirectResource = directResourceHosts.some(domain =>
-                    hostname === domain || hostname.endsWith(`.${domain}`)
-                );
-
-                articles.push({
-                    title: hit.title,
-                    description: hit.story_text || "",
-                    link: hit.url,
-                    publishedAt: hit.created_at,
-                    category: config.category,
-                    sourceUrl: hit.url,
-                    sourceName: knownNewsSource ? hostname : `Hacker News / ${hostname}`,
-                    resourceLinks: isDirectResource ? [hit.url] : []
-                });
-            }
-        } else {
-            console.warn(`Hacker News workflow search failed for ${config.category}: ${hackerNewsResult.reason.message}`);
-        }
-
-        return articles;
-    });
-
-    const results = await Promise.all(requests);
-    return results.flat();
+            return {
+                title: product.name,
+                productIdentity: normalizeText(product.name),
+                description: [
+                    description,
+                    topicNames.length ? `Product Hunt topics: ${topicNames.join(', ')}` : '',
+                    'Listed on Product Hunt as free or open source.'
+                ].filter(Boolean).join(' '),
+                link: product.url,
+                publishedAt: product.createdAt,
+                category,
+                sourceUrl: product.url,
+                sourceName: 'Product Hunt',
+                resourceLinks: [product.website],
+                productImageUrl: product.thumbnail?.url ||
+                    product.media?.find(item => item.type === 'image')?.url || '',
+                votesCount: product.votesCount
+            };
+        })
+        .sort((a, b) => (b.votesCount || 0) - (a.votesCount || 0));
 }
 
 function isRecent(article) {
@@ -1853,7 +1960,7 @@ function isRecent(article) {
         ) /
         (1000 * 60 * 60);
 
-    const maxAgeHours = ["AI_DEV_TOOLS", "AI_CREATOR_TOOLS"].includes(article.category)
+    const maxAgeHours = article.sourceName === "Product Hunt"
         ? AI_WORKFLOW_MAX_AGE_HOURS
         : NEWS_MAX_AGE_HOURS;
 
@@ -1898,11 +2005,11 @@ async function getLatestAINews() {
     }
 
     try {
-        const workflowArticles = await fetchWorkflowDiscovery();
+        const workflowArticles = await fetchProductHuntTools();
         allArticles.push(...workflowArticles);
-        console.log(`Direct workflow sources: ${workflowArticles.length} candidate(s).`);
+        console.log(`Product Hunt free AI tools: ${workflowArticles.length} candidate(s).`);
     } catch (error) {
-        console.warn("Direct workflow discovery failed:", error.message);
+        console.warn("Product Hunt discovery failed:", error.message);
     }
 
     console.log(
@@ -2046,6 +2153,7 @@ function markNewsAsPublished(article, selectedImage = null, facebookPostId = nul
 
     const record = {
         title: article.title,
+        productIdentity: article.productIdentity || null,
         description: article.description || "",
         link: article.link,
         resourceLinks: article.resourceLinks || [],
