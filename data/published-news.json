@@ -1672,6 +1672,50 @@
         "origins",
         "robot"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T13:25:43.198Z"
+  },
+  {
+    "title": "AI Turns Conflicting Opinions Into a Feature: New Model Weighs Disagreement to Make Group Decisions Trustworthy - Bioengineer.org",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaEU1ZllqWjF2b1VvZVQtZ3JlMk5zTl9oYThTelEybmVpY0NZNEtlU2RvQVlzWmN6Y0NiVEVSOC1hNUhfV1NvUWp0UjlkTEZwSTBVNzJpSlk0LUlzdHBDYVJCT19DdkNLUmJ5RU5WWEVtcUx4UDBleFpBaGx2dHo5UkxKTW1sZFpqYTB4cURqYVNVRHotcmtBSnUyN1VsLWR1TncyR3RfWWFVRVlaNXJmbGpiYzA4YTMwZ1hpcGR4ZjJYQnFrTDNfdTg0UDRsTENn?oc=5\" target=\"_blank\">AI Turns Conflicting Opinions Into a Feature: New Model Weighs Disagreement to Make Group Decisions Trustworthy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bioengineer.org</font>",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaEU1ZllqWjF2b1VvZVQtZ3JlMk5zTl9oYThTelEybmVpY0NZNEtlU2RvQVlzWmN6Y0NiVEVSOC1hNUhfV1NvUWp0UjlkTEZwSTBVNzJpSlk0LUlzdHBDYVJCT19DdkNLUmJ5RU5WWEVtcUx4UDBleFpBaGx2dHo5UkxKTW1sZFpqYTB4cURqYVNVRHotcmtBSnUyN1VsLWR1TncyR3RfWWFVRVlaNXJmbGpiYzA4YTMwZ1hpcGR4ZjJYQnFrTDNfdTg0UDRsTENn?oc=5",
+    "resourceLinks": [],
+    "category": "AI_MODELS",
+    "facebookPostId": "1277980028738225_122101828971487454",
+    "facebookPublishedAt": "2026-09-26T13:26:34.322Z",
+    "publishedAt": "Sat, 26 Sep 2026 09:53:02 GMT",
+    "sourceUrl": "https://bioengineer.org",
+    "sourceName": "Bioengineer.org",
+    "imageId": 5833305,
+    "imageUrl": "https://images.pexels.com/photos/5833305/pexels-photo-5833305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-in-blue-long-sleeve-shirt-using-black-digital-tablet-5833305/",
+    "imageSource": "Pexels",
+    "imageScore": 6,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "PARTNERSHIP"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "bioengineer",
+        "blank",
+        "color",
+        "conflicting",
+        "decisions",
+        "disagreement",
+        "feature",
+        "group",
+        "model",
+        "opinions",
+        "target"
+      ]
     }
   }
 ]
