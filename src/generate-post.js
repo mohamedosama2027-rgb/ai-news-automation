@@ -160,6 +160,25 @@ async function validateResourceUrl(value, redirectsRemaining = 4) {
     return url.toString();
 }
 
+function stripTrackingParameters(value) {
+    try {
+        const url = new URL(value);
+        const trackingParameters = new Set([
+            "fbclid", "gclid", "dclid", "msclkid", "mc_cid", "mc_eid", "oc",
+            "igshid", "ref_src", "ref_url", "vero_id", "hss_channel"
+        ]);
+        for (const key of [...url.searchParams.keys()]) {
+            if (key.toLowerCase().startsWith("utm_") || trackingParameters.has(key.toLowerCase())) {
+                url.searchParams.delete(key);
+            }
+        }
+        url.hash = "";
+        return url.toString();
+    } catch (_) {
+        return value;
+    }
+}
+
 async function generatePost() {
     const news = await getLatestAINews();
 
@@ -1004,7 +1023,9 @@ Do not add anything after the last RESOURCE_URL_N.
                 }
 
                 if (resourceUrl) {
-                    resourceUrl = await validateResourceUrl(resourceUrl);
+                    resourceUrl = stripTrackingParameters(
+                        await validateResourceUrl(stripTrackingParameters(resourceUrl))
+                    );
                 }
 
                 if (selectedCategories.has(article.category)) {
@@ -1025,10 +1046,20 @@ Do not add anything after the last RESOURCE_URL_N.
                 const postBody = postWithoutSourceLine
                     .replace(/#[^\s#]+/g, "")
                     .trim();
+                let sourceUrl = article.link;
+                if (sourceUrl) {
+                    try {
+                        sourceUrl = stripTrackingParameters(
+                            await validateResourceUrl(sourceUrl)
+                        );
+                    } catch (error) {
+                        console.warn(`Could not resolve the direct news source; keeping its original URL: ${error.message}`);
+                    }
+                }
                 const resourceLinkBlock = resourceUrl
                     ? `\n\n🔗 لينك الأداة:\n${resourceUrl}`
                     : "";
-                const finalPost = `${postBody}${resourceLinkBlock}\n\nالمصدر:\n${article.link}\n\n${hashtags.join(" ")}`;
+                const finalPost = `${postBody}${resourceLinkBlock}\n\nالمصدر:\n${sourceUrl}\n\n${hashtags.join(" ")}`;
 
                 selectedIndexes.add(selectedIndex);
                 selectedCategories.add(article.category);
@@ -1108,5 +1139,7 @@ Do not add anything after the last RESOURCE_URL_N.
 }
 
 module.exports = {
-    generatePost
+    generatePost,
+    validateResourceUrl,
+    stripTrackingParameters
 };

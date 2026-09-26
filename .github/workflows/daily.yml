@@ -6,25 +6,9 @@ concurrency:
 
 on:
   schedule:
-    - cron: "17 8 * * *"
-      timezone: "Africa/Cairo"
     - cron: "23 9 * * *"
       timezone: "Africa/Cairo"
-    - cron: "29 10 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "37 11 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "43 13 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "49 15 * * *"
-      timezone: "Africa/Cairo"
     - cron: "7 17 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "13 18 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "19 20 * * *"
-      timezone: "Africa/Cairo"
-    - cron: "31 22 * * *"
       timezone: "Africa/Cairo"
   workflow_dispatch:
     inputs:
@@ -76,16 +60,8 @@ jobs:
           DISPATCH_MODE: ${{ inputs.content_mode }}
         run: |
           case "$SCHEDULE_CRON" in
-            "17 8 * * *") mode="NEWS"; topic="AI_HEALTH,AI_SCIENCE" ;;
             "23 9 * * *") mode="NEWS"; topic="AI_FINANCE,AI_BUSINESS" ;;
-            "29 10 * * *") mode="NEWS"; topic="AI_MANUFACTURING,AI_ROBOTICS" ;;
-            "37 11 * * *") mode="TOOLS"; topic="AI_DEV_TOOLS,AI_DATA_TOOLS,AI_SECURITY_TOOLS,AI_ROBOTICS_TOOLS" ;;
-            "43 13 * * *") mode="TOOLS"; topic="AI_IMAGE_TOOLS,AI_VIDEO_TOOLS,AI_AUDIO_TOOLS,AI_WRITING_TOOLS,AI_CREATOR_TOOLS" ;;
-            "49 15 * * *") mode="NEWS"; topic="AI_EDUCATION,AI_SCIENCE" ;;
             "7 17 * * *") mode="TOOLS"; topic="AI_BUSINESS_TOOLS,AI_MARKETING_TOOLS,AI_PRODUCTIVITY_TOOLS,AI_FINANCE_TOOLS,AI_RETAIL_TOOLS,AI_HR_TOOLS" ;;
-            "13 18 * * *") mode="TOOLS"; topic="AI_EDUCATION_TOOLS,AI_HEALTH_TOOLS,AI_RESEARCH_TOOLS,AI_LEGAL_TOOLS,AI_AGRICULTURE_TOOLS,AI_CLIMATE_TOOLS,AI_GOVERNMENT_TOOLS" ;;
-            "19 20 * * *") mode="NEWS"; topic="AI_COMPANIES,AI_POLICY" ;;
-            "31 22 * * *") mode="TOOLS"; topic="AI_CUSTOMER_SUPPORT_TOOLS,AI_GENERAL_TOOLS,AI_TRAVEL_TOOLS,AI_GAMING_TOOLS,AI_REAL_ESTATE_TOOLS" ;;
             "")
               mode="$DISPATCH_MODE"
               topic=""
