@@ -27,6 +27,15 @@ on:
     - cron: "31 22 * * *"
       timezone: "Africa/Cairo"
   workflow_dispatch:
+    inputs:
+      content_mode:
+        description: Content type for a manual run
+        required: true
+        default: TOOLS
+        type: choice
+        options:
+          - TOOLS
+          - NEWS
 
 permissions:
   contents: write
@@ -64,6 +73,7 @@ jobs:
       - name: Choose content mode and focus for this time slot
         env:
           SCHEDULE_CRON: ${{ github.event.schedule }}
+          DISPATCH_MODE: ${{ inputs.content_mode }}
         run: |
           case "$SCHEDULE_CRON" in
             "17 8 * * *") mode="NEWS"; topic="AI_HEALTH,AI_SCIENCE" ;;
@@ -76,9 +86,18 @@ jobs:
             "13 18 * * *") mode="TOOLS"; topic="AI_EDUCATION_TOOLS,AI_HEALTH_TOOLS,AI_RESEARCH_TOOLS,AI_LEGAL_TOOLS,AI_AGRICULTURE_TOOLS,AI_CLIMATE_TOOLS,AI_GOVERNMENT_TOOLS" ;;
             "19 20 * * *") mode="NEWS"; topic="AI_COMPANIES,AI_POLICY" ;;
             "31 22 * * *") mode="TOOLS"; topic="AI_CUSTOMER_SUPPORT_TOOLS,AI_GENERAL_TOOLS,AI_TRAVEL_TOOLS,AI_GAMING_TOOLS,AI_REAL_ESTATE_TOOLS" ;;
-            *) topic="" ;;
+            "")
+              mode="$DISPATCH_MODE"
+              topic=""
+              ;;
+            *) echo "Unknown schedule: $SCHEDULE_CRON" >&2; exit 1 ;;
           esac
-          echo "POST_CONTENT_MODE=${mode:-NEWS}" >> "$GITHUB_ENV"
+          if [[ "$mode" != "NEWS" && "$mode" != "TOOLS" ]]; then
+            echo "Invalid content mode: $mode" >&2
+            exit 1
+          fi
+          echo "Selected content mode: $mode"
+          echo "POST_CONTENT_MODE=$mode" >> "$GITHUB_ENV"
           echo "POST_TOPIC_CATEGORIES=$topic" >> "$GITHUB_ENV"
 
       - name: Run automation
