@@ -1379,7 +1379,8 @@
         "researchers",
         "target"
       ]
-    }
+    },
+    "performanceCheckedAt": "2026-09-26T01:08:28.640Z"
   },
   {
     "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal - TechCrunch",
@@ -1417,7 +1418,13 @@
         "techcrunch",
         "years"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T01:08:28.802Z"
   },
   {
     "title": "Hacks by autonomous AI agents raise thorny questions of legal accountability - PBS",
@@ -1454,6 +1461,7 @@
         "target",
         "thorny"
       ]
-    }
+    },
+    "performanceCheckedAt": "2026-09-26T01:08:28.684Z"
   }
 ]
