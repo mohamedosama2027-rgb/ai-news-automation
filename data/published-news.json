@@ -1934,6 +1934,53 @@
         "product",
         "reliability"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T14:43:49.728Z"
+  },
+  {
+    "title": "AdCreator AI",
+    "productIdentity": "adcreator ai",
+    "description": "Turn Shopify product photos into finished ads in 60 seconds. AdCreator AI is a Shopify app that turns product photos into finished ads for Facebook, Instagram, TikTok and Google in about 60 seconds, without design skills. Pick a product, get the ad image and channel-specific copy. Free plan: 6 image ads a month. Product Hunt topics: Advertising, Artificial Intelligence, E-Commerce Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/adcreator-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/Y6YDCHPQKE6KGD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_IMAGE_TOOLS",
+    "facebookPostId": "1277980028738225_122101873131487454",
+    "facebookPublishedAt": "2026-09-26T14:44:30.773Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/adcreator-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": "producthunt-image:https://ph-files.imgix.net/d4b829cf-6bac-4abe-b605-61c3097bb282.png?auto=format",
+    "imageUrl": "https://ph-files.imgix.net/d4b829cf-6bac-4abe-b605-61c3097bb282.png?auto=format",
+    "imagePexelsUrl": null,
+    "imageSource": "Product Hunt",
+    "imageScore": null,
+    "topicFingerprint": {
+      "entities": [
+        "google",
+        "meta"
+      ],
+      "events": [],
+      "specificWords": [
+        "adcreator",
+        "advertising",
+        "channel-specific",
+        "design",
+        "e-commerce",
+        "facebook",
+        "finished",
+        "google",
+        "image",
+        "instagram",
+        "listed",
+        "month"
+      ]
     }
   }
 ]
