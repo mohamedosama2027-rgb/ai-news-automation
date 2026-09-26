@@ -56,17 +56,4 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          if [ -f data/published-news.json ]; then
-            git add -f data/published-news.json
-
-            if git diff --cached --quiet; then
-              echo "No changes to data/published-news.json"
-            else
-              git commit -m "Update published news"
-              git pull --rebase origin main
-              git push
-            fi
-          else
-            echo "data/published-news.json does not exist"
-          fi
+          node scripts/sync-published-news.js
