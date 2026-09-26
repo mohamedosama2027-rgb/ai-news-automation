@@ -59,95 +59,95 @@ async function main() {
         let publicationInProgress = false;
 
         try {
-        console.log("=================================");
-        console.log("🚀 AI NEWS AUTOMATION STARTED");
-        console.log("=================================\n");
+            console.log("=================================");
+            console.log("🚀 AI NEWS AUTOMATION STARTED");
+            console.log("=================================\n");
 
-        await refreshPostPerformance();
+            await refreshPostPerformance();
 
-        // =================================
-        // STEP 1: Generate article + post
-        // =================================
+            // =================================
+            // STEP 1: Generate article + post
+            // =================================
 
-        console.log("🤖 Step 1: Generating Facebook post...");
+            console.log("🤖 Step 1: Generating Facebook post...");
 
-        const result = await generatePost();
+            const result = await generatePost();
 
-        console.log("\n📰 Generated post:\n");
-        const posts = result.posts || [result];
-        let publishedCount = 0;
-        const delayMs = Math.max(0, Number(process.env.POST_DELAY_MS || 0));
+            console.log("\n📰 Generated post:\n");
+            const posts = result.posts || [result];
+            let publishedCount = 0;
+            const delayMs = Math.max(0, Number(process.env.POST_DELAY_MS || 0));
 
-        for (let index = 0; index < posts.length; index++) {
-            const current = posts[index];
+            for (let index = 0; index < posts.length; index++) {
+                const current = posts[index];
 
-            console.log(`\n📰 Post ${index + 1}/${posts.length}: ${current.article.title}`);
-            console.log("🔎 Image query:", current.imageQuery);
+                console.log(`\n📰 Post ${index + 1}/${posts.length}: ${current.article.title}`);
+                console.log("🔎 Image query:", current.imageQuery);
 
-            let imageSelection = { selectedImage: null, imagePath: null };
-            if (!current.article.videoUrl) {
-                console.log(current.article.sourceName === "Product Hunt"
-                    ? "\n🖼️ Selecting a unique Pexels image for this tool..."
-                    : "\n🖼️ Selecting an editorial image...");
-                imageSelection = await selectImage(
-                    current.article,
-                    current.imageQuery,
+                let imageSelection = { selectedImage: null, imagePath: null };
+                if (!current.article.videoUrl) {
+                    console.log(current.article.sourceName === "Product Hunt"
+                        ? "\n🖼️ Selecting a unique Pexels image for this tool..."
+                        : "\n🖼️ Selecting an editorial image...");
+                    imageSelection = await selectImage(
+                        current.article,
+                        current.imageQuery,
+                        current.post,
+                        { pexelsOnly: current.article.sourceName === "Product Hunt" }
+                    );
+                } else {
+                    console.log("🎥 Related video found. Giving it priority.");
+                }
+
+                if (!current.article.videoUrl && !imageSelection.selectedImage) {
+                    console.log("❌ No acceptable media found. Skipping article.");
+                    continue;
+                }
+
+                publicationInProgress = true;
+                const facebookResult = await publishToFacebook(
                     current.post,
-                    { pexelsOnly: current.article.sourceName === "Product Hunt" }
+                    imageSelection.imagePath,
+                    current.article.videoUrl
                 );
-            } else {
-                console.log("🎥 Related video found. Giving it priority.");
+
+                console.log("✅ Published successfully!", facebookResult);
+                const facebookPostId = facebookResult.post_id || facebookResult.id || null;
+                markNewsAsPublished(
+                    current.article,
+                    imageSelection.selectedImage,
+                    facebookPostId
+                );
+                publishedCount++;
+                publicationInProgress = false;
+
+                if (delayMs > 0 && index < posts.length - 1) {
+                    console.log(`⏳ Waiting ${delayMs / 1000} seconds before next post...`);
+                    await wait(delayMs);
+                }
             }
 
-            if (!current.article.videoUrl && !imageSelection.selectedImage) {
-                console.log("❌ No acceptable media found. Skipping article.");
-                continue;
+            if (publishedCount === 0) {
+                throw new Error(
+                    "No Facebook post was published: no generated post had acceptable media."
+                );
             }
 
-            publicationInProgress = true;
-            const facebookResult = await publishToFacebook(
-                current.post,
-                imageSelection.imagePath,
-                current.article.videoUrl
+            // =================================
+            // FINISHED
+            // =================================
+
+            console.log(
+                "\n================================="
             );
 
-            console.log("✅ Published successfully!", facebookResult);
-            const facebookPostId = facebookResult.post_id || facebookResult.id || null;
-            markNewsAsPublished(
-                current.article,
-                imageSelection.selectedImage,
-                facebookPostId
+            console.log(
+                "🎉 AUTOMATION FINISHED"
             );
-            publishedCount++;
-            publicationInProgress = false;
 
-            if (delayMs > 0 && index < posts.length - 1) {
-                console.log(`⏳ Waiting ${delayMs / 1000} seconds before next post...`);
-                await new Promise(resolve => setTimeout(resolve, delayMs));
-            }
-        }
-
-        if (publishedCount === 0) {
-            throw new Error(
-                "No Facebook post was published: no generated post had acceptable media."
+            console.log(
+                "================================="
             );
-        }
-
-        // =================================
-        // FINISHED
-        // =================================
-
-        console.log(
-            "\n================================="
-        );
-
-        console.log(
-            "🎉 AUTOMATION FINISHED"
-        );
-
-        console.log(
-            "================================="
-        );
 
             return;
         } catch (error) {
