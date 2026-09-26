@@ -2025,6 +2025,50 @@
         "handed",
         "included"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T15:00:31.058Z"
+  },
+  {
+    "title": "Cutout",
+    "productIdentity": "cutout",
+    "description": "Free background remover for Chrome that never uploads. Remove image backgrounds in one click. Cutout is a free Chrome extension that runs on your device: no uploads, no sign-up, no watermark, works offline. Product Hunt topics: Chrome Extensions, Artificial Intelligence, Photo editing Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/cutout-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/FO5LB47JURS53Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_IMAGE_TOOLS",
+    "facebookPostId": "1277980028738225_122101883169487454",
+    "facebookPublishedAt": "2026-09-26T15:01:16.865Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/cutout-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 1181449,
+    "imageUrl": "https://images.pexels.com/photos/1181449/pexels-photo-1181449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-sitting-near-table-using-macbook-1181449/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "background",
+        "backgrounds",
+        "chrome",
+        "click",
+        "cutout",
+        "device",
+        "editing",
+        "extension",
+        "extensions",
+        "image",
+        "listed",
+        "never"
+      ]
     }
   }
 ]
