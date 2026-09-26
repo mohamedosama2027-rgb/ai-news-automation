@@ -1583,6 +1583,50 @@
         "target",
         "valuation"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T11:33:30.294Z"
+  },
+  {
+    "title": "Legal AI startup Intelligent AF launches, acquires TechnoCat to build fluency ecosystem - Dealroom",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNbjdJeEltbGhmTURaWE5tTXA4VWNOdVFJOUF0WFVCOW1DMk9WLUlMQkVKR3YwVzNPLUZBY0dKQ2g4MU9QeHZkRWVKSXFkeHFDZ1ZfTGxvODU3dnVZc1BKNmRzT0Vnc2VfeUpVR0RlRHBybVN2TGRWa0VjeHRYdW5MZXdndVRHbW83TEZnNWlLaGZfZmZyX2xTbXYwWUpta3hzYjN4U25yY1oyWW9DVEdZTXpzNGVBU1ZpdkRSaA?oc=5\" target=\"_blank\">Legal AI startup Intelligent AF launches, acquires TechnoCat to build fluency ecosystem</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Dealroom</font>",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbjdJeEltbGhmTURaWE5tTXA4VWNOdVFJOUF0WFVCOW1DMk9WLUlMQkVKR3YwVzNPLUZBY0dKQ2g4MU9QeHZkRWVKSXFkeHFDZ1ZfTGxvODU3dnVZc1BKNmRzT0Vnc2VfeUpVR0RlRHBybVN2TGRWa0VjeHRYdW5MZXdndVRHbW83TEZnNWlLaGZfZmZyX2xTbXYwWUpta3hzYjN4U25yY1oyWW9DVEdZTXpzNGVBU1ZpdkRSaA?oc=5",
+    "resourceLinks": [],
+    "category": "AI_BUSINESS",
+    "facebookPostId": "1277980028738225_122101759341487454",
+    "facebookPublishedAt": "2026-09-26T11:34:22.392Z",
+    "publishedAt": "Fri, 25 Sep 2026 14:47:47 GMT",
+    "sourceUrl": "https://app.dealroom.co",
+    "sourceName": "Dealroom",
+    "imageId": 5668807,
+    "imageUrl": "https://images.pexels.com/photos/5668807/pexels-photo-5668807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/ethnic-male-lawyer-showing-document-on-laptop-to-young-female-colleague-5668807/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "ACQUISITION",
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "acquires",
+        "blank",
+        "build",
+        "color",
+        "dealroom",
+        "ecosystem",
+        "fluency",
+        "intelligent",
+        "launches",
+        "legal",
+        "target"
+      ]
     }
   }
 ]
