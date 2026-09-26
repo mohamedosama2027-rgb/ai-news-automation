@@ -145,6 +145,14 @@ async function validateResourceUrl(value, redirectsRemaining = 4) {
         );
     }
 
+    // Some public product sites deny automated HEAD/Range requests while
+    // remaining reachable to real visitors. Keep the vetted HTTPS link in
+    // that case; the URL has already passed protocol, DNS, and SSRF checks.
+    if (checkedResponse.status === 403) {
+        console.warn(`The tool site denied automated link validation (HTTP 403): ${url.hostname}`);
+        return url.toString();
+    }
+
     if (checkedResponse.status < 200 || checkedResponse.status >= 300) {
         throw new Error(`The tool link returned HTTP ${checkedResponse.status}.`);
     }
