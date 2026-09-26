@@ -75,6 +75,7 @@ async function main() {
 
         console.log("\n📰 Generated post:\n");
         const posts = result.posts || [result];
+        let publishedCount = 0;
         const delayMs = Math.max(0, Number(process.env.POST_DELAY_MS || 0));
 
         for (let index = 0; index < posts.length; index++) {
@@ -114,12 +115,19 @@ async function main() {
                 imageSelection.selectedImage,
                 facebookPostId
             );
+            publishedCount++;
             publicationInProgress = false;
 
             if (delayMs > 0 && index < posts.length - 1) {
                 console.log(`⏳ Waiting ${delayMs / 1000} seconds before next post...`);
                 await new Promise(resolve => setTimeout(resolve, delayMs));
             }
+        }
+
+        if (publishedCount === 0) {
+            throw new Error(
+                "No Facebook post was published: no generated post had acceptable media."
+            );
         }
 
         // =================================
