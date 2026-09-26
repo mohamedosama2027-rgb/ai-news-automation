@@ -1541,6 +1541,48 @@
         "washington",
         "websites"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-26T09:51:30.526Z"
+  },
+  {
+    "title": "ByteDance’s Anew Labs Emerges With $1.5B Valuation, Stirring New Questions Over AI Drug Discovery - NAI500",
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxORDUxalFmX1NvSE50bVg1RXluRWxWbVp4UHhINnJKRmtnbFgtY2ZMclVHNlpGNWtkT1FWOXlldmI0UjBpMHYzVmx4NkVmZkl5ZXRaSk9MbFAwMGU3UHNZMlp2ajM1b0ZpM1FXeWpBWFZSSERWc0RqQWpOTkZNVVR0aDBqS1JNdmd6X3NITlFmbm9kZjVydTlfeTNWeVg4NWZIdjM3dDQxRGhlTHlydHQxLUNOSnRRWWRfVHBUMHVmR19YY3pvNnc?oc=5\" target=\"_blank\">ByteDance’s Anew Labs Emerges With $1.5B Valuation, Stirring New Questions Over AI Drug Discovery</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NAI500</font>",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORDUxalFmX1NvSE50bVg1RXluRWxWbVp4UHhINnJKRmtnbFgtY2ZMclVHNlpGNWtkT1FWOXlldmI0UjBpMHYzVmx4NkVmZkl5ZXRaSk9MbFAwMGU3UHNZMlp2ajM1b0ZpM1FXeWpBWFZSSERWc0RqQWpOTkZNVVR0aDBqS1JNdmd6X3NITlFmbm9kZjVydTlfeTNWeVg4NWZIdjM3dDQxRGhlTHlydHQxLUNOSnRRWWRfVHBUMHVmR19YY3pvNnc?oc=5",
+    "resourceLinks": [],
+    "category": "AI_SCIENCE",
+    "facebookPostId": "1277980028738225_122101693887487454",
+    "facebookPublishedAt": "2026-09-26T09:52:42.860Z",
+    "publishedAt": "Sat, 26 Sep 2026 02:05:13 GMT",
+    "sourceUrl": "https://nai500.com",
+    "sourceName": "NAI500",
+    "imageId": 8539653,
+    "imageUrl": "https://images.pexels.com/photos/8539653/pexels-photo-8539653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/empty-test-tubes-on-racks-8539653/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "bytedance",
+        "color",
+        "discovery",
+        "emerges",
+        "nai500",
+        "questions",
+        "stirring",
+        "target",
+        "valuation"
+      ]
     }
   }
 ]
