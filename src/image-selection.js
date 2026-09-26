@@ -311,7 +311,7 @@ async function evaluateImages(article, images) {
     };
 }
 
-async function selectImage(article, imageQuery, post = "") {
+async function selectImage(article, imageQuery, post = "", options = {}) {
     const provider = (process.env.IMAGE_PROVIDER || "pexels").toLowerCase();
     if (!["compare", "gemini", "pexels"].includes(provider)) {
         throw new Error(
@@ -319,8 +319,9 @@ async function selectImage(article, imageQuery, post = "") {
         );
     }
 
-    const usePexels = provider !== "gemini";
-    const useGemini = provider !== "pexels";
+    const pexelsOnly = options.pexelsOnly === true;
+    const usePexels = pexelsOnly || provider !== "gemini";
+    const useGemini = !pexelsOnly && provider !== "pexels";
     let images = [];
 
     if (usePexels) {
@@ -331,13 +332,15 @@ async function selectImage(article, imageQuery, post = "") {
             images = (await searchImage(imageQuery))
                 .map(image => ({ ...image, source: "Pexels" }));
 
-            const articleImage = await searchArticleImage(article.link);
-            if (articleImage) {
-                console.log("📰 Original article image found and added for evaluation.");
-                images.unshift({ ...articleImage, source: "Article" });
+            if (!pexelsOnly) {
+                const articleImage = await searchArticleImage(article.link);
+                if (articleImage) {
+                    console.log("📰 Original article image found and added for evaluation.");
+                    images.unshift({ ...articleImage, source: "Article" });
+                }
             }
         } catch (error) {
-            if (provider === "pexels") {
+            if (provider === "pexels" || pexelsOnly) {
                 throw error;
             }
             console.warn(`⚠️ Pexels unavailable; continuing with Gemini: ${error.message}`);
@@ -383,7 +386,7 @@ async function selectImage(article, imageQuery, post = "") {
                     .map(image => ({ ...image, source: "Pexels" }))
             ));
         } catch (error) {
-            if (provider === "pexels") {
+            if (provider === "pexels" || pexelsOnly) {
                 throw error;
             }
             console.warn(`⚠️ Pexels page 2 unavailable: ${error.message}`);

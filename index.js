@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const { generatePost } = require("./src/generate-post");
-const { selectImage, selectProductHuntImage } = require("./src/image-selection");
+const { selectImage } = require("./src/image-selection");
 const { publishToFacebook, getPostPerformance } = require("./src/facebook");
 const {
     markNewsAsPublished,
@@ -86,23 +86,15 @@ async function main() {
 
             let imageSelection = { selectedImage: null, imagePath: null };
             if (!current.article.videoUrl) {
-                if (current.article.sourceName === "Product Hunt" && current.article.productImageUrl) {
-                    try {
-                        console.log("\n🖼️ Using the product image from Product Hunt...");
-                        imageSelection = await selectProductHuntImage(current.article);
-                    } catch (error) {
-                        console.warn(`⚠️ Product Hunt image unavailable; falling back to the configured image source: ${error.message}`);
-                    }
-                }
-
-                if (!imageSelection.selectedImage) {
-                    console.log("\n🖼️ Selecting a fallback editorial image...");
-                    imageSelection = await selectImage(
-                        current.article,
-                        current.imageQuery,
-                        current.post
-                    );
-                }
+                console.log(current.article.sourceName === "Product Hunt"
+                    ? "\n🖼️ Selecting a unique Pexels image for this tool..."
+                    : "\n🖼️ Selecting an editorial image...");
+                imageSelection = await selectImage(
+                    current.article,
+                    current.imageQuery,
+                    current.post,
+                    { pexelsOnly: current.article.sourceName === "Product Hunt" }
+                );
             } else {
                 console.log("🎥 Related video found. Giving it priority.");
             }
