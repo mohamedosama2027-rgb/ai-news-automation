@@ -2075,7 +2075,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T17:43:39.394Z"
+    "performanceCheckedAt": "2026-09-27T18:17:52.028Z"
   },
   {
     "title": "Somnus",
@@ -2126,7 +2126,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T17:43:39.406Z"
+    "performanceCheckedAt": "2026-09-27T18:17:52.043Z"
   },
   {
     "title": "BoostMyAgents",
@@ -2308,6 +2308,50 @@
         "investment",
         "kevin",
         "nvidia"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-27T18:17:52.023Z"
+  },
+  {
+    "title": "KASA ATS Resume Checker",
+    "productIdentity": "kasa ats resume checker",
+    "description": "Free AI ATS Resume Checker with Instant Resume Feedback. KASA ATS Resume Checker helps job seekers improve their resumes before applying for jobs. Upload your PDF or DOCX resume to get an ATS compatibility score, identify missing keywords, review formatting, grammar and skills, and receive AI-powered suggestions. Generate a detailed PDF report with practical recommendations to increase your chances of passing Applicant Tracking Systems. No signup required and completely free to use. Product Hunt topics: Hiring, Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/kasa-ats-resume-checker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/EI5LWCPO7DACAA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122103094749487454",
+    "facebookPublishedAt": "2026-09-27T18:18:47.549Z",
+    "publishedAt": "2026-09-27T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/kasa-ats-resume-checker?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 590044,
+    "imageUrl": "https://images.pexels.com/photos/590044/pexels-photo-590044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/white-ceramic-cup-on-brown-wooden-surface-590044/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "ai-powered",
+        "applicant",
+        "applying",
+        "chances",
+        "checker",
+        "compatibility",
+        "completely",
+        "detailed",
+        "feedback",
+        "formatting",
+        "generate",
+        "grammar"
       ]
     }
   }
