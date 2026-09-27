@@ -1547,7 +1547,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T09:51:30.526Z"
+    "performanceCheckedAt": "2026-09-27T12:12:21.524Z"
   },
   {
     "title": "ByteDance’s Anew Labs Emerges With $1.5B Valuation, Stirring New Questions Over AI Drug Discovery - NAI500",
@@ -1589,7 +1589,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T11:33:30.294Z"
+    "performanceCheckedAt": "2026-09-27T12:12:21.489Z"
   },
   {
     "title": "Legal AI startup Intelligent AF launches, acquires TechnoCat to build fluency ecosystem - Dealroom",
@@ -2261,6 +2261,53 @@
         "inquiry",
         "openai",
         "rogue"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-27T12:12:21.466Z"
+  },
+  {
+    "title": "Kevin Durant started with a $100,000 investment in this AI startup eight years ago; Nvidia’s $12.9 billion - economictimes.com",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiwgJBVV95cUxObTRSbVdrYmlzTzQwUXl1TFhRSGMwVjd1NzJscHpSblNTSzJ6MDRkMlpyQkJsRkdXU05MMl81MUlXNnkyYmZBUzA5bzFPVmNmaEpOZl8zMFlHNm1oWkp0ZmI4QVZFZ1dyUEhkYkZxWTdxclJaRDE2YWltTHIwcXUyamYtWElLdEtidXpPeDdhVHloekVIV3EyYjA5Q3NVMmUwRHdvNzV6eXFXX3RDbVdsd1VRMXhwUi1HcFFHQUdwcEQxVUZZdDNZUzd0UW03M0xnVVhNdW5qd1dGTEExOWNCZ3lKTTVuMEpMeHRvY3FVc29Qa1pFZ3JUQlo3S1pCZlY2UHBibkFGU3lxZDJGbGM2QWp2Mng2S3JOTWlZanZUeDlUY2FUNEFXZUllVi1aZDA4UU1hZ2hLSHRUWlF5VUd4MWlB0gHHAkFVX3lxTE00UWN5XzlfVGpHdzd5TGdRRG5IYWl3ZUNpOTl4c2l3ejUwNndRQng1Tm9JT0lIbFdkSjRLZGdEaHBGNVhwX05qRWtMU3hEQmdWemNudDJSQk1Ob3dYcTBBSEpxcHVRQnhZc0ZvTkplanR6VHpzQ2pRNkFqYUNBcVFyLWlicTFZT1p4Nm44WDhsU1dBN2hUQ0FZVzNJQ2lHVEVWLXRMMkItSlE0NGM5MGh6QnJtZnllYW56OEs4ZS1IWkpidTUzaEFpSTFFeGdLQjh5dWJEYVROM1hiR2NoS0R0R0R1YjV1RGt4YlpXekdxZ0JWRmZYNUUzcFNsX2JiajBPdEZWb1dnZGxtX2YxaDFHaDlYWmJKaGZaM3R2Z21TaFUxX1pxQk41MTh6M3lCZTFGUGxpcWFzZXpLQzJmSHFhYkNSX0V3TQ?oc=5\" target=\"_blank\">Kevin Durant started with a $100,000 investment in this AI startup eight years ago; Nvidia’s $12.9 billion</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">economictimes.com</font>",
+    "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxObTRSbVdrYmlzTzQwUXl1TFhRSGMwVjd1NzJscHpSblNTSzJ6MDRkMlpyQkJsRkdXU05MMl81MUlXNnkyYmZBUzA5bzFPVmNmaEpOZl8zMFlHNm1oWkp0ZmI4QVZFZ1dyUEhkYkZxWTdxclJaRDE2YWltTHIwcXUyamYtWElLdEtidXpPeDdhVHloekVIV3EyYjA5Q3NVMmUwRHdvNzV6eXFXX3RDbVdsd1VRMXhwUi1HcFFHQUdwcEQxVUZZdDNZUzd0UW03M0xnVVhNdW5qd1dGTEExOWNCZ3lKTTVuMEpMeHRvY3FVc29Qa1pFZ3JUQlo3S1pCZlY2UHBibkFGU3lxZDJGbGM2QWp2Mng2S3JOTWlZanZUeDlUY2FUNEFXZUllVi1aZDA4UU1hZ2hLSHRUWlF5VUd4MWlB0gHHAkFVX3lxTE00UWN5XzlfVGpHdzd5TGdRRG5IYWl3ZUNpOTl4c2l3ejUwNndRQng1Tm9JT0lIbFdkSjRLZGdEaHBGNVhwX05qRWtMU3hEQmdWemNudDJSQk1Ob3dYcTBBSEpxcHVRQnhZc0ZvTkplanR6VHpzQ2pRNkFqYUNBcVFyLWlicTFZT1p4Nm44WDhsU1dBN2hUQ0FZVzNJQ2lHVEVWLXRMMkItSlE0NGM5MGh6QnJtZnllYW56OEs4ZS1IWkpidTUzaEFpSTFFeGdLQjh5dWJEYVROM1hiR2NoS0R0R0R1YjV1RGt4YlpXekdxZ0JWRmZYNUUzcFNsX2JiajBPdEZWb1dnZGxtX2YxaDFHaDlYWmJKaGZaM3R2Z21TaFUxX1pxQk41MTh6M3lCZTFGUGxpcWFzZXpLQzJmSHFhYkNSX0V3TQ?oc=5",
+    "resourceLinks": [],
+    "category": "AI_BUSINESS",
+    "facebookPostId": "1277980028738225_122102840241487454",
+    "facebookPublishedAt": "2026-09-27T12:13:04.159Z",
+    "publishedAt": "Sun, 27 Sep 2026 05:48:34 GMT",
+    "sourceUrl": "https://m.economictimes.com",
+    "sourceName": "economictimes.com",
+    "imageId": 7567208,
+    "imageUrl": "https://images.pexels.com/photos/7567208/pexels-photo-7567208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/man-in-black-jacket-using-digital-tablet-7567208/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "nvidia"
+      ],
+      "events": [
+        "FUNDING",
+        "POLICY"
+      ],
+      "specificWords": [
+        "000",
+        "100",
+        "6f6f6f",
+        "billion",
+        "blank",
+        "color",
+        "durant",
+        "economictimes",
+        "eight",
+        "investment",
+        "kevin",
+        "nvidia"
       ]
     }
   }
