@@ -165,7 +165,9 @@ function stripTrackingParameters(value) {
         const url = new URL(value);
         const trackingParameters = new Set([
             "fbclid", "gclid", "dclid", "msclkid", "mc_cid", "mc_eid", "oc",
-            "igshid", "ref_src", "ref_url", "vero_id", "hss_channel"
+            "igshid", "ref_src", "ref_url", "vero_id", "hss_channel",
+            "yclid", "gbraid", "wbraid", "_ga", "_gl", "mkt_tok",
+            "oly_anon_id", "oly_enc_id", "rb_clickid", "s_cid"
         ]);
         for (const key of [...url.searchParams.keys()]) {
             if (key.toLowerCase().startsWith("utm_") || trackingParameters.has(key.toLowerCase())) {
@@ -173,6 +175,11 @@ function stripTrackingParameters(value) {
             }
         }
         url.hash = "";
+        // www is commonly an alias; keep the destination while trimming the printed URL.
+        url.hostname = url.hostname.replace(/^www\./i, "");
+        if (url.pathname.length > 1) {
+            url.pathname = url.pathname.replace(/\/+$/, "");
+        }
         return url.toString();
     } catch (_) {
         return value;
