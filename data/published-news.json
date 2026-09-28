@@ -1767,7 +1767,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:08:13.469Z"
+    "performanceCheckedAt": "2026-09-28T20:33:31.930Z"
   },
   {
     "title": "AI agents hacked test environment to cheat, Darktrace finds - The Cryptonomist",
@@ -1810,7 +1810,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:14:24.411Z"
+    "performanceCheckedAt": "2026-09-28T20:33:31.877Z"
   },
   {
     "title": "Hackers hijack AI accounts and servers to fuel new cyber crime boom - Financial Times",
@@ -1849,7 +1849,7 @@
         "times"
       ]
     },
-    "performanceCheckedAt": "2026-09-26T14:27:18.499Z"
+    "performanceCheckedAt": "2026-09-28T20:33:31.972Z"
   },
   {
     "title": "WishRIg",
@@ -1896,7 +1896,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:29:25.152Z"
+    "performanceCheckedAt": "2026-09-28T20:32:20.346Z"
   },
   {
     "title": "SafeAuto",
@@ -1940,7 +1940,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:43:49.728Z"
+    "performanceCheckedAt": "2026-09-28T20:32:20.350Z"
   },
   {
     "title": "AdCreator AI",
@@ -1987,7 +1987,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:50:29.190Z"
+    "performanceCheckedAt": "2026-09-28T20:32:20.349Z"
   },
   {
     "title": "What to Order",
@@ -2031,7 +2031,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T15:02:50.909Z"
+    "performanceCheckedAt": "2026-09-28T20:31:00.027Z"
   },
   {
     "title": "Cutout",
@@ -2315,7 +2315,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-27T18:17:52.023Z"
+    "performanceCheckedAt": "2026-09-28T20:31:00.401Z"
   },
   {
     "title": "KASA ATS Resume Checker",
@@ -2353,7 +2353,13 @@
         "generate",
         "grammar"
       ]
-    }
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-28T20:31:00.281Z"
   },
   {
     "title": "Verzeta Studio",
@@ -2400,5 +2406,50 @@
       "shares": 0
     },
     "performanceCheckedAt": "2026-09-28T15:19:43.558Z"
+  },
+  {
+    "title": "Bevizio",
+    "productIdentity": "bevizio",
+    "description": "See if AI recommends you — or your competitor. Right now, someone is asking ChatGPT for a tool exactly like yours — does it say your name, or your competitor's? Bevizio asks ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews the real questions your buyers type, 8 times a week, and shows you named in k of n answers — never a single snapshot dressed up as a score. See who gets named instead, and which pages AI is citing. Free check in 60 seconds, no signup: bevizio.com Product Hunt topics: Marketing Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/bevizio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/H37UTZQ4HCSVTY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122104180047487454",
+    "facebookPublishedAt": "2026-09-28T20:35:07.609Z",
+    "publishedAt": "2026-09-28T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/bevizio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 38808473,
+    "imageUrl": "https://images.pexels.com/photos/38808473/pexels-photo-38808473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/dynamic-financial-data-visualization-and-analysis-38808473/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "google",
+        "openai",
+        "united_nations"
+      ],
+      "events": [
+        "ACQUISITION"
+      ],
+      "specificWords": [
+        "answers",
+        "asking",
+        "bevizio",
+        "buyers",
+        "chatgpt",
+        "check",
+        "citing",
+        "claude",
+        "competitor",
+        "dressed",
+        "exactly",
+        "gemini"
+      ]
+    }
   }
 ]
