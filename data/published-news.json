@@ -2075,7 +2075,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-27T18:17:52.028Z"
+    "performanceCheckedAt": "2026-09-28T15:22:06.018Z"
   },
   {
     "title": "Somnus",
@@ -2126,7 +2126,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-27T18:17:52.043Z"
+    "performanceCheckedAt": "2026-09-28T15:22:06.096Z"
   },
   {
     "title": "BoostMyAgents",
@@ -2175,7 +2175,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T18:35:56.439Z"
+    "performanceCheckedAt": "2026-09-28T15:22:05.999Z"
   },
   {
     "title": "Cockpit — one harness to rule them all",
@@ -2221,7 +2221,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T19:56:16.469Z"
+    "performanceCheckedAt": "2026-09-28T15:19:43.549Z"
   },
   {
     "title": "Heads of OpenAI and Anthropic called to face Senate inquiry after rogue agent incidents - The Guardian",
@@ -2268,7 +2268,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-27T12:12:21.466Z"
+    "performanceCheckedAt": "2026-09-28T15:19:43.565Z"
   },
   {
     "title": "Kevin Durant started with a $100,000 investment in this AI startup eight years ago; Nvidia’s $12.9 billion - economictimes.com",
@@ -2354,5 +2354,51 @@
         "grammar"
       ]
     }
+  },
+  {
+    "title": "Verzeta Studio",
+    "productIdentity": "verzeta studio",
+    "description": "Your AI team, running on your machine, in one chat. . Verzeta Studio is an open source desktop app where several AI models work together as a team in one conversation. Each agent has its own provider, model, system prompt and tools, and they hand work to each other by name. Everything runs on your machine, with local or cloud models, no account and no telemetry. Native Qt 6, with Android and VS Code clients. Product Hunt topics: Open Source, Developer Tools, Artificial Intelligence, GitHub Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/verzeta-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/V2HV6NPPEFOH55?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122102195361487454",
+    "facebookPublishedAt": "2026-09-26T21:33:12.654Z",
+    "publishedAt": "2026-09-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/verzeta-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 18935831,
+    "imageUrl": "https://images.pexels.com/photos/18935831/pexels-photo-18935831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/programmer-working-at-desk-18935831/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL"
+      ],
+      "specificWords": [
+        "account",
+        "agent",
+        "android",
+        "clients",
+        "cloud",
+        "conversation",
+        "desktop",
+        "developer",
+        "everything",
+        "github",
+        "listed",
+        "local"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-28T15:19:43.558Z"
   }
 ]
