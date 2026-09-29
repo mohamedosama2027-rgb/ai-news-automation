@@ -1678,7 +1678,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T13:25:43.198Z"
+    "performanceCheckedAt": "2026-09-29T13:04:13.811Z"
   },
   {
     "title": "AI Turns Conflicting Opinions Into a Feature: New Model Weighs Disagreement to Make Group Decisions Trustworthy - Bioengineer.org",
@@ -1722,7 +1722,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-26T14:05:12.118Z"
+    "performanceCheckedAt": "2026-09-29T13:04:13.791Z"
   },
   {
     "title": "Google Just Made Free 1080p AI Video Generation Available to Anyone - Decrypt",
@@ -2449,6 +2449,51 @@
         "dressed",
         "exactly",
         "gemini"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-29T13:04:13.797Z"
+  },
+  {
+    "title": "India readies $25 billion for Deep Tech investment as U.S. and China race ahead - CNBC",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGlZbkRnLVIxY1JlNTFFMTRPRjA2V3FGRW9mT0pqNHhBeFVuTm1lbWNrNUJUb1VRdDkxd3dqNVp1Mm9Yd2JwTVpQTms4NW80elRVMW9aa1REeUtES2Fxd0VUc0FXbnloakVHN19sdzdJRXNLUURzWVQyQV9hYWJ3ZDRNOENnZw?oc=5\" target=\"_blank\">India readies $25 billion for Deep Tech investment as U.S. and China race ahead</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGlZbkRnLVIxY1JlNTFFMTRPRjA2V3FGRW9mT0pqNHhBeFVuTm1lbWNrNUJUb1VRdDkxd3dqNVp1Mm9Yd2JwTVpQTms4NW80elRVMW9aa1REeUtES2Fxd0VUc0FXbnloakVHN19sdzdJRXNLUURzWVQyQV9hYWJ3ZDRNOENnZw?oc=5",
+    "resourceLinks": [],
+    "category": "AI_BUSINESS",
+    "facebookPostId": "1277980028738225_122104822659487454",
+    "facebookPublishedAt": "2026-09-29T13:05:20.076Z",
+    "publishedAt": "Tue, 29 Sep 2026 05:12:10 GMT",
+    "sourceUrl": "https://www.cnbc.com",
+    "sourceName": "CNBC",
+    "imageId": 8919508,
+    "imageUrl": "https://images.pexels.com/photos/8919508/pexels-photo-8919508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/to-invest-or-to-sell-question-on-tablet-touchscreen-8919508/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [
+        "china"
+      ],
+      "events": [
+        "FUNDING",
+        "POLICY"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "ahead",
+        "billion",
+        "blank",
+        "china",
+        "color",
+        "india",
+        "investment",
+        "readies",
+        "target"
       ]
     }
   }
