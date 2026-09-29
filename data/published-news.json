@@ -2268,7 +2268,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-28T15:19:43.565Z"
+    "performanceCheckedAt": "2026-09-29T19:19:54.588Z"
   },
   {
     "title": "Kevin Durant started with a $100,000 investment in this AI startup eight years ago; Nvidia’s $12.9 billion - economictimes.com",
@@ -2405,7 +2405,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-28T15:19:43.558Z"
+    "performanceCheckedAt": "2026-09-29T19:19:54.556Z"
   },
   {
     "title": "Bevizio",
@@ -2494,6 +2494,50 @@
         "investment",
         "readies",
         "target"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-29T19:19:54.591Z"
+  },
+  {
+    "title": "Hand-E AI Discounts",
+    "productIdentity": "hand-e ai discounts",
+    "description": "Describe a Shopify discount in one sentence, AI builds it. Volume tiers, bundles, cart value tiers, a free gift above an order value and bulk codes for Shopify, created by AI from one sentence. You review every suggestion before it goes live. Widgets show the tiers on the product page, and a progress bar in the cart shows how far it is to the next goal. Built on Shopify Functions, it runs on every Shopify plan without Plus. Free plan for stores up to 50 orders a month. Product Hunt topics: Marketing, Artificial Intelligence, E-Commerce Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/hand-e-ai-discounts?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/L6NZ5FEY4ZE2N3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_RETAIL_TOOLS",
+    "facebookPostId": "1277980028738225_122105099187487454",
+    "facebookPublishedAt": "2026-09-29T19:21:22.741Z",
+    "publishedAt": "2026-09-29T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/hand-e-ai-discounts?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 17485352,
+    "imageUrl": "https://images.pexels.com/photos/17485352/pexels-photo-17485352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/biurko-z-laptopem-na-ktorym-otwarty-jest-edytor-graficzny-sklepu-internetowego-na-platformie-shoper-17485352/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "above",
+        "builds",
+        "built",
+        "bundles",
+        "codes",
+        "created",
+        "describe",
+        "discount",
+        "discounts",
+        "e-commerce",
+        "every",
+        "functions"
       ]
     }
   }
