@@ -2315,7 +2315,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-28T20:31:00.401Z"
+    "performanceCheckedAt": "2026-09-30T12:45:52.485Z"
   },
   {
     "title": "KASA ATS Resume Checker",
@@ -2359,7 +2359,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-28T20:31:00.281Z"
+    "performanceCheckedAt": "2026-09-30T12:45:52.484Z"
   },
   {
     "title": "Verzeta Studio",
@@ -2538,6 +2538,51 @@
         "e-commerce",
         "every",
         "functions"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-30T12:45:52.482Z"
+  },
+  {
+    "title": "‘Next wave of AI will be physical’: warehouse robotics startup Destro AI bags $8 million in seed funding - Retail Technology Innovation Hub",
+    "productIdentity": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbTZraTd0TWJCREFGRlY0c2lRRWplaDllanlBZ2xubVVXZ2dZXzBfekYyT29XNkNTb2tWOUtBMnEtdzBucDkxZFNodFZnemVKdWxaeEVCbEM4SllBdVBrS2o0My1RMy1lUHNJQUJBajZjLVBqaWJxcnVTdDJnc0d3Z0lfWXpja3UzYk1EbWZKSW5ocFN4VU4zcUk5WmFsMGxLbE5jQnh2REdGSFQtMjdzTTYtUFhwTTE2ZTJlUFFrVFhxeUZsY0dwdUFtNzV3NVprNnVNMG0tWEVFc2loN3lfT1Zma053QQ?oc=5\" target=\"_blank\">‘Next wave of AI will be physical’: warehouse robotics startup Destro AI bags $8 million in seed funding</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Retail Technology Innovation Hub</font>",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbTZraTd0TWJCREFGRlY0c2lRRWplaDllanlBZ2xubVVXZ2dZXzBfekYyT29XNkNTb2tWOUtBMnEtdzBucDkxZFNodFZnemVKdWxaeEVCbEM4SllBdVBrS2o0My1RMy1lUHNJQUJBajZjLVBqaWJxcnVTdDJnc0d3Z0lfWXpja3UzYk1EbWZKSW5ocFN4VU4zcUk5WmFsMGxLbE5jQnh2REdGSFQtMjdzTTYtUFhwTTE2ZTJlUFFrVFhxeUZsY0dwdUFtNzV3NVprNnVNMG0tWEVFc2loN3lfT1Zma053QQ?oc=5",
+    "resourceLinks": [],
+    "category": "AI_BUSINESS",
+    "facebookPostId": "1277980028738225_122105708337487454",
+    "facebookPublishedAt": "2026-09-30T12:47:19.334Z",
+    "publishedAt": "Wed, 30 Sep 2026 03:38:06 GMT",
+    "sourceUrl": "https://retailtechinnovationhub.com",
+    "sourceName": "Retail Technology Innovation Hub",
+    "imageId": 8566566,
+    "imageUrl": "https://images.pexels.com/photos/8566566/pexels-photo-8566566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/delivery-robots-parked-beside-glass-window-8566566/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "FUNDING",
+        "ROBOT"
+      ],
+      "specificWords": [
+        "6f6f6f",
+        "blank",
+        "color",
+        "destro",
+        "funding",
+        "innovation",
+        "million",
+        "physical",
+        "retail",
+        "robotics",
+        "target",
+        "warehouse"
       ]
     }
   }
