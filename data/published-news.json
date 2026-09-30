@@ -2221,7 +2221,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-28T15:19:43.549Z"
+    "performanceCheckedAt": "2026-09-30T19:09:29.615Z"
   },
   {
     "title": "Heads of OpenAI and Anthropic called to face Senate inquiry after rogue agent incidents - The Guardian",
@@ -2456,7 +2456,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-29T13:04:13.797Z"
+    "performanceCheckedAt": "2026-09-30T19:09:29.613Z"
   },
   {
     "title": "India readies $25 billion for Deep Tech investment as U.S. and China race ahead - CNBC",
@@ -2583,6 +2583,52 @@
         "robotics",
         "target",
         "warehouse"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-09-30T19:09:29.612Z"
+  },
+  {
+    "title": "Quaryan",
+    "productIdentity": "quaryan",
+    "description": "One AI hub for SEO, ChatGPT answers, ads and app stores. Paste your website or app link and Quaryan writes a full marketing plan: SEO fixes, ChatGPT visibility, ads for 7 platforms and app store listings. Publish everywhere in one click; every Monday the AI tunes your ads. Free plan, no card. Product Hunt topics: Marketing, Advertising, SEO Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/quaryan?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/RYZLSMKFVXVHM3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122106005991487454",
+    "facebookPublishedAt": "2026-09-30T19:11:03.116Z",
+    "publishedAt": "2026-09-30T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/quaryan?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 106344,
+    "imageUrl": "https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/black-samsung-tablet-computer-106344/",
+    "imageSource": "Pexels",
+    "imageScore": 6,
+    "topicFingerprint": {
+      "entities": [
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "advertising",
+        "answers",
+        "chatgpt",
+        "click",
+        "every",
+        "everywhere",
+        "fixes",
+        "listed",
+        "listings",
+        "marketing",
+        "monday",
+        "paste"
       ]
     }
   }
