@@ -6,8 +6,6 @@ concurrency:
 
 on:
   schedule:
-    - cron: "23 9 * * *"
-      timezone: "Africa/Cairo"
     - cron: "7 17 * * *"
       timezone: "Africa/Cairo"
   workflow_dispatch:
@@ -60,7 +58,6 @@ jobs:
           DISPATCH_MODE: ${{ inputs.content_mode }}
         run: |
           case "$SCHEDULE_CRON" in
-            "23 9 * * *") mode="NEWS"; topic="AI_FINANCE,AI_BUSINESS" ;;
             "7 17 * * *") mode="TOOLS"; topic="AI_BUSINESS_TOOLS,AI_MARKETING_TOOLS,AI_PRODUCTIVITY_TOOLS,AI_FINANCE_TOOLS,AI_RETAIL_TOOLS,AI_HR_TOOLS" ;;
             "")
               mode="$DISPATCH_MODE"

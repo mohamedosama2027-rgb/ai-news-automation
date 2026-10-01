@@ -102,10 +102,8 @@ npm run test:syntax
 
 بعد نجاح التشغيل يحفظ workflow سجل النشر في `data/published-news.json` ويعمل commit تلقائيًا.
 
-يعمل `daily.yml` يوميًا مرتين بتوقيت القاهرة (`Africa/Cairo`) وينشر منشورًا واحدًا في كل موعد:
+`daily.yml` runs once per day at 5:07 PM Cairo time (`Africa/Cairo`) and publishes one Product Hunt tool. Daily news publishing is disabled; news remains available for manual runs through `automation.yml` or `workflow_dispatch`.
 
-- **أخبار AI (1):** 9:23 صباحًا.
-- **أدوات Product Hunt (1):** 5:07 مساءً.
 
 تتنوع بؤر الأدوات بين البرمجة والبيانات والأمن والروبوتات، وصناعة الصور والفيديو والصوت والكتابة، والأعمال والإنتاجية، والتعليم والصحة والبحث، والتمويل والقانون والزراعة والمناخ والحكومة، وخدمة العملاء والسفر والألعاب والتجارة والعقارات، وغيرها. إذا لم يتوفر منتج من مجال الموعد، يختار النظام أداة أخرى من Product Hunt ولا يستبدلها بخبر. أما `automation.yml` فهو للتشغيل اليدوي ويعمل بوضع الأخبار افتراضيًا. يستخدم الـworkflowان مجموعة concurrency واحدة لمنع تشغيل نشرين بالتوازي، ولكل تشغيل حد أقصى 30 دقيقة.
 
