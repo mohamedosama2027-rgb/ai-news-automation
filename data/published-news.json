@@ -2541,11 +2541,11 @@
       ]
     },
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-30T12:45:52.482Z"
+    "performanceCheckedAt": "2026-10-01T19:28:08.725Z"
   },
   {
     "title": "‘Next wave of AI will be physical’: warehouse robotics startup Destro AI bags $8 million in seed funding - Retail Technology Innovation Hub",
@@ -2586,11 +2586,11 @@
       ]
     },
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-30T19:09:29.612Z"
+    "performanceCheckedAt": "2026-10-01T19:28:08.750Z"
   },
   {
     "title": "Quaryan",
@@ -2629,6 +2629,53 @@
         "marketing",
         "monday",
         "paste"
+      ]
+    },
+    "performance": {
+      "reactions": 1,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-01T19:28:08.723Z"
+  },
+  {
+    "title": "Midheaven",
+    "productIdentity": "midheaven",
+    "description": "Astrology for founder decisions, with the math shown. Midheaven reads your birth chart against one real business decision: when to launch, which model to test first, how to price, when to hire. Each Decision Brief gives a direct answer, the dates, the chart factors behind it, what it can't establish, and one measurable test to run next. Charts are calculated with the Swiss Ephemeris from your exact birth time and place. Your first Decision Brief is free, no card needed. Product Hunt topics: Productivity, Artificial Intelligence, Spirituality Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/midheaven?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/K4HPPM724CVHG7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122107038567487454",
+    "facebookPublishedAt": "2026-10-01T19:29:31.994Z",
+    "publishedAt": "2026-10-01T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/midheaven?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7222054,
+    "imageUrl": "https://images.pexels.com/photos/7222054/pexels-photo-7222054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/horoscope-cards-and-laptop-on-a-table-7222054/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "against",
+        "answer",
+        "astrology",
+        "behind",
+        "birth",
+        "brief",
+        "calculated",
+        "chart",
+        "charts",
+        "dates",
+        "decision",
+        "decisions"
       ]
     }
   }
