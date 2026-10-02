@@ -2315,7 +2315,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-30T12:45:52.485Z"
+    "performanceCheckedAt": "2026-10-02T19:13:48.336Z"
   },
   {
     "title": "KASA ATS Resume Checker",
@@ -2355,11 +2355,11 @@
       ]
     },
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-30T12:45:52.484Z"
+    "performanceCheckedAt": "2026-10-02T19:13:48.338Z"
   },
   {
     "title": "Verzeta Studio",
@@ -2405,7 +2405,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-29T19:19:54.556Z"
+    "performanceCheckedAt": "2026-10-02T19:13:48.334Z"
   },
   {
     "title": "Bevizio",
@@ -2452,11 +2452,11 @@
       ]
     },
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-30T19:09:29.613Z"
+    "performanceCheckedAt": "2026-10-02T19:11:54.984Z"
   },
   {
     "title": "India readies $25 billion for Deep Tech investment as U.S. and China race ahead - CNBC",
@@ -2497,11 +2497,11 @@
       ]
     },
     "performance": {
-      "reactions": 0,
+      "reactions": 1,
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-09-29T19:19:54.591Z"
+    "performanceCheckedAt": "2026-10-02T19:11:54.982Z"
   },
   {
     "title": "Hand-E AI Discounts",
@@ -2676,6 +2676,50 @@
         "dates",
         "decision",
         "decisions"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-02T19:11:54.811Z"
+  },
+  {
+    "title": "Redline",
+    "productIdentity": "redline",
+    "description": "Tailor your resume to any job post with AI. Most resumes get rejected because the bullets describe duties instead of results. Redline compares your resume against the job post, shows a match score, and flags lines with no numbers. It then suggests one stronger line at a time, and you approve each change. Resumes tailored with Redline pass ATS screening 89.4 percent of the time, compared with 28.3 percent for untailored resumes. It also sorts your Gmail application updates for you. Your first resume is free. No card required. Product Hunt topics: Productivity, Artificial Intelligence, Career Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/redline-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/YV2CH6LJ5B7TO6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122108088963487454",
+    "facebookPublishedAt": "2026-10-02T19:14:50.740Z",
+    "publishedAt": "2026-10-02T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/redline-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 8374275,
+    "imageUrl": "https://images.pexels.com/photos/8374275/pexels-photo-8374275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-of-person-sitting-on-table-taking-notes-on-paper-8374275/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "against",
+        "application",
+        "approve",
+        "because",
+        "bullets",
+        "career",
+        "change",
+        "compared",
+        "compares",
+        "describe",
+        "duties",
+        "first"
       ]
     }
   }
