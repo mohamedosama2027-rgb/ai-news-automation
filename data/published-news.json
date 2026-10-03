@@ -2590,7 +2590,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-01T19:28:08.750Z"
+    "performanceCheckedAt": "2026-10-03T17:53:32.253Z"
   },
   {
     "title": "Quaryan",
@@ -2636,7 +2636,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-01T19:28:08.723Z"
+    "performanceCheckedAt": "2026-10-03T17:53:32.255Z"
   },
   {
     "title": "Midheaven",
@@ -2720,6 +2720,50 @@
         "describe",
         "duties",
         "first"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-03T17:53:32.209Z"
+  },
+  {
+    "title": "NoCorp",
+    "productIdentity": "nocorp",
+    "description": "Resumes for real careers, not the corporate ladder. Build ATS-friendly resumes and AI cover letters in minutes. 20 pro templates, AI rewriting, and instant PDF export. Free to start, no credit card. Product Hunt topics: Productivity, SaaS, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/nocorp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/VLLFALDYDXSVRU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122108716935487454",
+    "facebookPublishedAt": "2026-10-03T17:54:15.146Z",
+    "publishedAt": "2026-10-03T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/nocorp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 34804016,
+    "imageUrl": "https://images.pexels.com/photos/34804016/pexels-photo-34804016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/modern-workspace-with-laptop-and-code-display-34804016/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "ats-friendly",
+        "build",
+        "careers",
+        "corporate",
+        "cover",
+        "credit",
+        "export",
+        "instant",
+        "ladder",
+        "letters",
+        "listed",
+        "minutes"
       ]
     }
   }
