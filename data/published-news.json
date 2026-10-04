@@ -2683,7 +2683,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-02T19:11:54.811Z"
+    "performanceCheckedAt": "2026-10-04T18:06:07.493Z"
   },
   {
     "title": "Redline",
@@ -2727,7 +2727,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-03T17:53:32.209Z"
+    "performanceCheckedAt": "2026-10-04T18:06:07.758Z"
   },
   {
     "title": "NoCorp",
@@ -2764,6 +2764,50 @@
         "letters",
         "listed",
         "minutes"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-04T18:06:07.498Z"
+  },
+  {
+    "title": "RnG AI Recruiter",
+    "productIdentity": "rng ai recruiter",
+    "description": "An AI that recruits TikTok LIVE creators for your agency. An AI recruiter for TikTok LIVE agencies and creator networks (MCN): finds creators free to join, opens the conversation on Backstage, answers in their language, sends the invitation and hands them to your manager. 24/7. Product Hunt topics: Hiring, Social Media, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/rng-ai-recruiter?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/MSTKUXWP746CXU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122109337317487454",
+    "facebookPublishedAt": "2026-10-04T18:07:19.954Z",
+    "publishedAt": "2026-10-04T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/rng-ai-recruiter?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 30688591,
+    "imageUrl": "https://images.pexels.com/photos/30688591/pexels-photo-30688591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/professional-interview-in-modern-lagos-office-30688591/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "agencies",
+        "agency",
+        "answers",
+        "backstage",
+        "conversation",
+        "creator",
+        "creators",
+        "finds",
+        "hands",
+        "hiring",
+        "invitation",
+        "language"
       ]
     }
   }
