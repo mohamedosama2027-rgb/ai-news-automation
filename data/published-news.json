@@ -2727,7 +2727,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-04T18:06:07.758Z"
+    "performanceCheckedAt": "2026-10-05T21:27:41.169Z"
   },
   {
     "title": "NoCorp",
@@ -2771,7 +2771,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-04T18:06:07.498Z"
+    "performanceCheckedAt": "2026-10-05T21:27:41.208Z"
   },
   {
     "title": "RnG AI Recruiter",
@@ -2808,6 +2808,45 @@
         "hiring",
         "invitation",
         "language"
+      ]
+    },
+    "performanceCheckedAt": "2026-10-05T21:27:41.065Z"
+  },
+  {
+    "title": "PlanBrix",
+    "productIdentity": "planbrix",
+    "description": "Run your creator business, all in one place.. PlanBrix is an all-in-one business workspace for creators and freelancers. Manage clients, projects, rate cards, brand deals, quotes, invoices, payments and reminders from one place. With built-in tools and an AI assistant to help you stay organized, PlanBrix takes care of the business side so you can focus on your creative work. Start free. Product Hunt topics: Productivity, Freelance, User Experience Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/planbrix?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/DNAY4H7WABIUED?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122109936555487454",
+    "facebookPublishedAt": "2026-10-05T21:28:57.013Z",
+    "publishedAt": "2026-10-05T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/planbrix?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7013070,
+    "imageUrl": "https://images.pexels.com/photos/7013070/pexels-photo-7013070.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-using-black-laptop-7013070/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "all-in-one",
+        "assistant",
+        "brand",
+        "built-in",
+        "cards",
+        "clients",
+        "creative",
+        "creator",
+        "creators",
+        "deals",
+        "experience",
+        "focus"
       ]
     }
   }
