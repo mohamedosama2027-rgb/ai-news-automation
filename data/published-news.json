@@ -2359,7 +2359,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-02T19:13:48.338Z"
+    "performanceCheckedAt": "2026-10-06T19:31:22.016Z"
   },
   {
     "title": "Verzeta Studio",
@@ -2405,7 +2405,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-02T19:13:48.334Z"
+    "performanceCheckedAt": "2026-10-06T19:31:21.972Z"
   },
   {
     "title": "Bevizio",
@@ -2456,7 +2456,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-02T19:11:54.984Z"
+    "performanceCheckedAt": "2026-10-06T19:31:22.022Z"
   },
   {
     "title": "India readies $25 billion for Deep Tech investment as U.S. and China race ahead - CNBC",
@@ -2501,7 +2501,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-02T19:11:54.982Z"
+    "performanceCheckedAt": "2026-10-06T19:29:41.119Z"
   },
   {
     "title": "Hand-E AI Discounts",
@@ -2545,7 +2545,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-01T19:28:08.725Z"
+    "performanceCheckedAt": "2026-10-06T19:29:41.122Z"
   },
   {
     "title": "‘Next wave of AI will be physical’: warehouse robotics startup Destro AI bags $8 million in seed funding - Retail Technology Innovation Hub",
@@ -2590,7 +2590,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-03T17:53:32.253Z"
+    "performanceCheckedAt": "2026-10-06T19:29:41.120Z"
   },
   {
     "title": "Quaryan",
@@ -2636,7 +2636,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-03T17:53:32.255Z"
+    "performanceCheckedAt": "2026-10-06T19:27:53.490Z"
   },
   {
     "title": "Midheaven",
@@ -2683,7 +2683,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-04T18:06:07.493Z"
+    "performanceCheckedAt": "2026-10-06T19:27:53.354Z"
   },
   {
     "title": "Redline",
@@ -2847,6 +2847,53 @@
         "deals",
         "experience",
         "focus"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-06T19:27:53.365Z"
+  },
+  {
+    "title": "RepFix — AI Advisor for ORM and PR",
+    "productIdentity": "repfix ai advisor for orm and pr",
+    "description": "Someone searched your name. You already know what they found. RepFix.ai is a self-serve marketplace for online reputation management with Free AI ORM Advisor. Instead of hiring an agency and waiting weeks for a quote, browse ORM services across Google and every major social platform, each listed with a clear price, turnaround time and success rate. Need press coverage? Choose from 2,000+ media outlets across digital, print and TV, with prices shown upfront. Not sure what you need? Our built-in AI agent explains your problem with Solutions. Product Hunt topics: Public Relations, Marketing, Social Networking Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/repfix-ai-advisor-for-orm-and-pr?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/Z6VBSCG5EXEUZT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122110390419487454",
+    "facebookPublishedAt": "2026-10-06T19:32:41.393Z",
+    "publishedAt": "2026-10-06T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/repfix-ai-advisor-for-orm-and-pr?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7013100,
+    "imageUrl": "https://images.pexels.com/photos/7013100/pexels-photo-7013100.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-person-using-laptop-with-graph-on-screen-7013100/",
+    "imageSource": "Pexels",
+    "imageScore": 8.2,
+    "topicFingerprint": {
+      "entities": [
+        "google",
+        "united_nations"
+      ],
+      "events": [],
+      "specificWords": [
+        "000",
+        "across",
+        "advisor",
+        "agency",
+        "agent",
+        "already",
+        "browse",
+        "built-in",
+        "choose",
+        "clear",
+        "coverage",
+        "digital"
       ]
     }
   }
