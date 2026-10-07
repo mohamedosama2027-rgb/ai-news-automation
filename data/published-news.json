@@ -2810,7 +2810,7 @@
         "language"
       ]
     },
-    "performanceCheckedAt": "2026-10-05T21:27:41.065Z"
+    "performanceCheckedAt": "2026-10-07T19:55:04.822Z"
   },
   {
     "title": "PlanBrix",
@@ -2854,7 +2854,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-06T19:27:53.365Z"
+    "performanceCheckedAt": "2026-10-07T19:55:04.957Z"
   },
   {
     "title": "RepFix — AI Advisor for ORM and PR",
@@ -2894,6 +2894,56 @@
         "clear",
         "coverage",
         "digital"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-07T19:55:04.959Z"
+  },
+  {
+    "title": "Proofsource",
+    "productIdentity": "proofsource",
+    "description": "AI search visibility, with agents that fix the gaps . When a buyer asks ChatGPT for the best tool in your category, it names five or six companies and stops. Proofsource shows whether you're one of them. It asks your buyers' questions on ChatGPT, Claude, Perplexity and Google AI Overviews every day, shows who gets named instead and why, maps the pages AI trusts, and drafts the fixes. You approve; our agents publish, verify the answers changed, and learn from every change. Start free: 25 questions, 4 engines, no card. Product Hunt topics: Marketing, SEO, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/proofsource?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/F5QQULHBBA7JUG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122110864737487454",
+    "facebookPublishedAt": "2026-10-07T19:56:32.782Z",
+    "publishedAt": "2026-10-07T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/proofsource?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 577195,
+    "imageUrl": "https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/turned-on-laptop-computer-577195/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "google",
+        "openai"
+      ],
+      "events": [
+        "ACQUISITION"
+      ],
+      "specificWords": [
+        "agents",
+        "answers",
+        "approve",
+        "buyer",
+        "buyers",
+        "category",
+        "change",
+        "changed",
+        "chatgpt",
+        "claude",
+        "drafts",
+        "engines"
       ]
     }
   }
