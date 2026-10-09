@@ -2727,7 +2727,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-05T21:27:41.169Z"
+    "performanceCheckedAt": "2026-10-09T19:30:15.605Z"
   },
   {
     "title": "NoCorp",
@@ -2771,7 +2771,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-05T21:27:41.208Z"
+    "performanceCheckedAt": "2026-10-09T19:30:15.612Z"
   },
   {
     "title": "RnG AI Recruiter",
@@ -2810,7 +2810,7 @@
         "language"
       ]
     },
-    "performanceCheckedAt": "2026-10-07T19:55:04.822Z"
+    "performanceCheckedAt": "2026-10-09T19:30:15.837Z"
   },
   {
     "title": "PlanBrix",
@@ -2854,7 +2854,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-07T19:55:04.957Z"
+    "performanceCheckedAt": "2026-10-09T19:28:42.752Z"
   },
   {
     "title": "RepFix — AI Advisor for ORM and PR",
@@ -2901,7 +2901,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-07T19:55:04.959Z"
+    "performanceCheckedAt": "2026-10-09T19:28:42.722Z"
   },
   {
     "title": "Proofsource",
@@ -2944,6 +2944,50 @@
         "claude",
         "drafts",
         "engines"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-09T19:28:42.734Z"
+  },
+  {
+    "title": "Aupply",
+    "productIdentity": "aupply",
+    "description": "Automate your job search with an AI agent. Aupply is an AI job application agent for LinkedIn. A Chrome extension that finds Easy Apply jobs that fit your resume and applies for you. Free early access. Product Hunt topics: Hiring, Career Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/aupply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/YQ6VG4Y5CETAZR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122111800323487454",
+    "facebookPublishedAt": "2026-10-09T19:31:21.963Z",
+    "publishedAt": "2026-10-09T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/aupply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 9830817,
+    "imageUrl": "https://images.pexels.com/photos/9830817/pexels-photo-9830817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/part-of-a-body-of-an-elderly-man-and-behind-screen-with-information-that-he-is-not-needed-anymore-9830817/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "access",
+        "agent",
+        "application",
+        "applies",
+        "apply",
+        "aupply",
+        "automate",
+        "career",
+        "chrome",
+        "early",
+        "extension",
+        "finds"
       ]
     }
   }
