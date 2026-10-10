@@ -2636,7 +2636,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-06T19:27:53.490Z"
+    "performanceCheckedAt": "2026-10-10T18:29:22.037Z"
   },
   {
     "title": "Midheaven",
@@ -2683,7 +2683,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-06T19:27:53.354Z"
+    "performanceCheckedAt": "2026-10-10T18:29:21.941Z"
   },
   {
     "title": "Redline",
@@ -2988,6 +2988,55 @@
         "early",
         "extension",
         "finds"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-10T18:29:21.904Z"
+  },
+  {
+    "title": "Claude Monitor",
+    "productIdentity": "claude monitor",
+    "description": "Never get cut off by a Claude usage limit again. Since the June launch: Free plan support (Claude stopped showing usage to Free accounts in August, so Claude Monitor reads the limits that every reply still carries), an optional bar right above claude.ai's chat box, and an interface in 8 languages. Plus the core: live 5-hour session and weekly limits, per-model caps, extra usage credits, a countdown to every reset, alerts at 80% and 95%, and 30 days of history. Open source, no account, nothing leaves your browser. Product Hunt topics: Chrome Extensions, Productivity, Developer Tools, GitHub Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/claude-usage-monitor-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/JQXBAPQZJ2FYPT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122112282579487454",
+    "facebookPublishedAt": "2026-10-10T18:30:16.866Z",
+    "publishedAt": "2026-10-10T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/claude-usage-monitor-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 2764993,
+    "imageUrl": "https://images.pexels.com/photos/2764993/pexels-photo-2764993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/codes-on-a-computer-monitor-2764993/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic"
+      ],
+      "events": [
+        "LAUNCH",
+        "MODEL"
+      ],
+      "specificWords": [
+        "5-hour",
+        "above",
+        "account",
+        "accounts",
+        "again",
+        "alerts",
+        "august",
+        "browser",
+        "carries",
+        "chrome",
+        "claude",
+        "countdown"
       ]
     }
   }
