@@ -2951,7 +2951,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-09T19:28:42.734Z"
+    "performanceCheckedAt": "2026-10-11T18:48:17.054Z"
   },
   {
     "title": "Aupply",
@@ -2995,7 +2995,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-10T18:29:21.904Z"
+    "performanceCheckedAt": "2026-10-11T18:48:17.051Z"
   },
   {
     "title": "Claude Monitor",
@@ -3037,6 +3037,52 @@
         "chrome",
         "claude",
         "countdown"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-11T18:48:17.049Z"
+  },
+  {
+    "title": "OnThreads",
+    "productIdentity": "onthreads",
+    "description": "Stop scrolling Threads. Start landing customers. OnThreads monitors Threads for your business keywords, like \"need a wedding photographer\" or \"looking for office catering\". AI filters out sellers, job seekers and spam, so only people who actually want to buy or hire reach you. Each lead lands in Telegram with a short summary, the post link and a ready-to-send reply. Works for any industry. Free scan to try, plans from Rp99K (~$6)/month, no auto-renewal. Product Hunt topics: Telegram, Marketing Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/onthreads?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/LSUEFUZX4ISXNN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122112751431487454",
+    "facebookPublishedAt": "2026-10-11T18:49:06.011Z",
+    "publishedAt": "2026-10-11T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/onthreads?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 8636589,
+    "imageUrl": "https://images.pexels.com/photos/8636589/pexels-photo-8636589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/computer-and-laptop-over-white-table-8636589/",
+    "imageSource": "Pexels",
+    "imageScore": 4.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "ACQUISITION"
+      ],
+      "specificWords": [
+        "actually",
+        "auto-renewal",
+        "catering",
+        "customers",
+        "filters",
+        "keywords",
+        "landing",
+        "lands",
+        "listed",
+        "looking",
+        "marketing",
+        "monitors"
       ]
     }
   }
