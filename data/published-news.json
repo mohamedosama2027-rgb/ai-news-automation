@@ -2995,7 +2995,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-11T18:48:17.051Z"
+    "performanceCheckedAt": "2026-10-12T22:05:16.297Z"
   },
   {
     "title": "Claude Monitor",
@@ -3044,7 +3044,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-11T18:48:17.049Z"
+    "performanceCheckedAt": "2026-10-12T22:05:16.301Z"
   },
   {
     "title": "OnThreads",
@@ -3083,6 +3083,50 @@
         "looking",
         "marketing",
         "monitors"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-12T22:05:16.299Z"
+  },
+  {
+    "title": "Bemmoly",
+    "productIdentity": "bemmoly",
+    "description": "Your work. Your platform.. Bemmoly is an open-source alternative to Jira and Confluence: your team's issues and docs in one app, on your own server. Boards, backlogs, sprints and a roadmap view. Automation rules and signed webhooks. A real-time docs editor with live issue links. Import from Jira, Confluence or CSV, plus SSO. Optional AI with your own provider, off until you turn it on. 100% open source (MIT). No subscription. No in-app purchases. Try the live demo with no sign-up, or install it with one command. Product Hunt topics: Productivity, Task Management, Open Source, GitHub Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/bemmoly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/S4Y435D5HTBFUW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122113277667487454",
+    "facebookPublishedAt": "2026-10-12T22:06:45.604Z",
+    "publishedAt": "2026-10-12T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/bemmoly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 38984817,
+    "imageUrl": "https://images.pexels.com/photos/38984817/pexels-photo-38984817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/business-workflow-dashboard-with-tablet-and-monitors-38984817/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "100",
+        "alternative",
+        "automation",
+        "backlogs",
+        "bemmoly",
+        "boards",
+        "command",
+        "confluence",
+        "editor",
+        "github",
+        "import",
+        "in-app"
       ]
     }
   }
