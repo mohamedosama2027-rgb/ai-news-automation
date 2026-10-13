@@ -2901,7 +2901,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-09T19:28:42.722Z"
+    "performanceCheckedAt": "2026-10-13T20:12:27.265Z"
   },
   {
     "title": "Proofsource",
@@ -2951,7 +2951,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-11T18:48:17.054Z"
+    "performanceCheckedAt": "2026-10-13T20:12:27.361Z"
   },
   {
     "title": "Aupply",
@@ -3127,6 +3127,50 @@
         "github",
         "import",
         "in-app"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-13T20:12:27.177Z"
+  },
+  {
+    "title": "QualifyLoop",
+    "productIdentity": "qualifyloop",
+    "description": "Turn B2B website visitors into booked meetings with AI. QualifyLoop identifies the companies on your site, qualifies visitors with an AI agent that books real meetings mid-chat, routes hot accounts to a rep, and syncs with HubSpot + Salesforce. A self-serve, usage-priced alternative to Qualified and Drift: free to start, one script tag. Product Hunt topics: Artificial Intelligence, Marketing automation Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/qualifyloop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/LYXGENPAVLZCHB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122113633227487454",
+    "facebookPublishedAt": "2026-10-13T20:13:33.536Z",
+    "publishedAt": "2026-10-13T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/qualifyloop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 97080,
+    "imageUrl": "https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/blue-and-green-pie-chart-97080/",
+    "imageSource": "Pexels",
+    "imageScore": 6,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "accounts",
+        "agent",
+        "alternative",
+        "automation",
+        "b2b",
+        "booked",
+        "books",
+        "drift",
+        "hubspot",
+        "identifies",
+        "listed",
+        "marketing"
       ]
     }
   }
