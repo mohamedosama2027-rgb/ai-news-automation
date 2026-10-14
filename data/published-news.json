@@ -3044,7 +3044,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-12T22:05:16.301Z"
+    "performanceCheckedAt": "2026-10-14T18:31:41.773Z"
   },
   {
     "title": "OnThreads",
@@ -3090,7 +3090,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-12T22:05:16.299Z"
+    "performanceCheckedAt": "2026-10-14T18:31:41.775Z"
   },
   {
     "title": "Bemmoly",
@@ -3171,6 +3171,50 @@
         "identifies",
         "listed",
         "marketing"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-14T18:31:41.800Z"
+  },
+  {
+    "title": "Aftercall",
+    "productIdentity": "aftercall",
+    "description": "Meeting notes that write themselves, privately on your Mac. Aftercall notices when a Zoom, Teams, Meet or WhatsApp call starts, transcribes both sides on your Mac, and writes the notes: a topic-by-topic summary with source links, action items, your own notes and the full transcript. Free; speaks English and Hebrew. Product Hunt topics: Mac, Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/aftercall?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/CF4RTA4U4WT5PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122113962063487454",
+    "facebookPublishedAt": "2026-10-14T18:33:03.097Z",
+    "publishedAt": "2026-10-14T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/aftercall?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 839465,
+    "imageUrl": "https://images.pexels.com/photos/839465/pexels-photo-839465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-touching-open-macbook-on-table-839465/",
+    "imageSource": "Pexels",
+    "imageScore": 4.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "action",
+        "aftercall",
+        "english",
+        "hebrew",
+        "items",
+        "links",
+        "listed",
+        "meeting",
+        "notes",
+        "notices",
+        "privately",
+        "product"
       ]
     }
   }
