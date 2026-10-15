@@ -2995,7 +2995,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-12T22:05:16.297Z"
+    "performanceCheckedAt": "2026-10-15T18:13:25.987Z"
   },
   {
     "title": "Claude Monitor",
@@ -3134,7 +3134,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-13T20:12:27.177Z"
+    "performanceCheckedAt": "2026-10-15T18:13:25.990Z"
   },
   {
     "title": "QualifyLoop",
@@ -3215,6 +3215,57 @@
         "notices",
         "privately",
         "product"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-15T18:13:26.127Z"
+  },
+  {
+    "title": "AI Operator's LinkedIn Content Engine",
+    "productIdentity": "ai operator s linkedin content engine",
+    "description": "24 AI prompts that turn your expertise into LinkedIn posts. A 24-prompt playbook that turns a busy professional's real expertise into a week of LinkedIn content in about 90 minutes. Covers hooks, story/lesson/hot-take/how-to posts, carousels, visibility-building comments, headline and About-section rewrites, plus a batching system — with a \"De-Robotizer\" checklist so posts read like you, not AI. Copy-paste ready for the free tiers of ChatGPT, Claude, or Gemini, with fill-in-the-blank fields and \"why it works\" notes. Product Hunt topics: Productivity, Marketing, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/ai-operator-s-linkedin-content-engine?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/R5K3DAPPDEPWSB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122114312553487454",
+    "facebookPublishedAt": "2026-10-15T18:15:30.583Z",
+    "publishedAt": "2026-10-15T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/ai-operator-s-linkedin-content-engine?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 34225004,
+    "imageUrl": "https://images.pexels.com/photos/34225004/pexels-photo-34225004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/young-woman-working-from-home-with-laptop-34225004/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "google",
+        "openai",
+        "united_nations"
+      ],
+      "events": [
+        "ROBOT"
+      ],
+      "specificWords": [
+        "24-prompt",
+        "about-section",
+        "batching",
+        "carousels",
+        "chatgpt",
+        "checklist",
+        "claude",
+        "comments",
+        "content",
+        "copy-paste",
+        "covers",
+        "de-robotizer"
       ]
     }
   }
