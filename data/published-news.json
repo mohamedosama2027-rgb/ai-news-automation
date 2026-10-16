@@ -2771,7 +2771,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-09T19:30:15.612Z"
+    "performanceCheckedAt": "2026-10-16T18:02:27.914Z"
   },
   {
     "title": "RnG AI Recruiter",
@@ -2810,7 +2810,7 @@
         "language"
       ]
     },
-    "performanceCheckedAt": "2026-10-09T19:30:15.837Z"
+    "performanceCheckedAt": "2026-10-16T18:02:28.125Z"
   },
   {
     "title": "PlanBrix",
@@ -2854,7 +2854,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-09T19:28:42.752Z"
+    "performanceCheckedAt": "2026-10-16T18:02:27.890Z"
   },
   {
     "title": "RepFix — AI Advisor for ORM and PR",
@@ -2901,7 +2901,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-13T20:12:27.265Z"
+    "performanceCheckedAt": "2026-10-16T18:00:18.896Z"
   },
   {
     "title": "Proofsource",
@@ -2951,7 +2951,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-13T20:12:27.361Z"
+    "performanceCheckedAt": "2026-10-16T18:00:18.894Z"
   },
   {
     "title": "Aupply",
@@ -3044,7 +3044,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-14T18:31:41.773Z"
+    "performanceCheckedAt": "2026-10-16T18:00:18.898Z"
   },
   {
     "title": "OnThreads",
@@ -3090,7 +3090,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-14T18:31:41.775Z"
+    "performanceCheckedAt": "2026-10-16T17:58:01.858Z"
   },
   {
     "title": "Bemmoly",
@@ -3178,7 +3178,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-14T18:31:41.800Z"
+    "performanceCheckedAt": "2026-10-16T17:58:01.899Z"
   },
   {
     "title": "Aftercall",
@@ -3266,6 +3266,55 @@
         "copy-paste",
         "covers",
         "de-robotizer"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-16T17:58:01.883Z"
+  },
+  {
+    "title": "Ortive Studio",
+    "productIdentity": "ortive studio",
+    "description": "Turn an AI product idea into a plan you can build and sell . Ortive Studio is a guided workspace for people launching an AI product without a full team. Ten steps take you from idea to launch plan. Build: product type, blueprint, capabilities, workflow and a deployment manual that prices both a coded and a no-code stack. Monetize: offer and tiers, a full sales page you can preview and download, a three-email cold sequence and twelve-month revenue estimates. It is available in both English and French, Start with 100 free credits. Product Hunt topics: Productivity, Artificial Intelligence, No-Code Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/ortive-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/PCDEQSSHIFCOJ6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122114665911487454",
+    "facebookPublishedAt": "2026-10-16T18:04:11.912Z",
+    "publishedAt": "2026-10-16T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/ortive-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 1181343,
+    "imageUrl": "https://images.pexels.com/photos/1181343/pexels-photo-1181343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/man-wearing-blue-dress-shirt-facing-whiteboard-1181343/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [
+        "ema"
+      ],
+      "events": [
+        "LAUNCH",
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "100",
+        "available",
+        "blueprint",
+        "build",
+        "capabilities",
+        "coded",
+        "credits",
+        "deployment",
+        "download",
+        "english",
+        "estimates",
+        "french"
       ]
     }
   }
