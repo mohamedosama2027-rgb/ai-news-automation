@@ -3134,7 +3134,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-15T18:13:25.990Z"
+    "performanceCheckedAt": "2026-10-17T17:03:18.529Z"
   },
   {
     "title": "QualifyLoop",
@@ -3222,7 +3222,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-15T18:13:26.127Z"
+    "performanceCheckedAt": "2026-10-17T17:03:18.533Z"
   },
   {
     "title": "AI Operator's LinkedIn Content Engine",
@@ -3315,6 +3315,52 @@
         "english",
         "estimates",
         "french"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-17T17:03:18.536Z"
+  },
+  {
+    "title": "Ultracite v8",
+    "productIdentity": "ultracite v8",
+    "description": "The linter and formatter for agentic development. Agents write most of the code now. Ultracite is the linter and formatter for agentic development, a zero-config preset for Oxlint, Biome, and ESLint that keeps agent-written code consistent and type-safe. Ultracite checks every edit agents make against hundreds of strict rules in under half a second, so what reaches review is consistent, type-safe code instead of slop. Used by engineering teams at OpenAI, Vercel, Mintlify, and thousands of open source projects: ultracite.ai Product Hunt topics: Open Source, Developer Tools, GitHub Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/ultracite?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/E3YR3RCT4JCACA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122114971461487454",
+    "facebookPublishedAt": "2026-10-17T17:04:17.448Z",
+    "publishedAt": "2026-10-17T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/ultracite?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 36571389,
+    "imageUrl": "https://images.pexels.com/photos/36571389/pexels-photo-36571389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/html-code-on-computer-screen-in-dark-mode-36571389/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "against",
+        "agent-written",
+        "agentic",
+        "agents",
+        "biome",
+        "checks",
+        "consistent",
+        "developer",
+        "development",
+        "engineering",
+        "eslint",
+        "every"
       ]
     }
   }
