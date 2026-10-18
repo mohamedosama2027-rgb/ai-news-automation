@@ -3273,7 +3273,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-16T17:58:01.883Z"
+    "performanceCheckedAt": "2026-10-18T17:16:36.079Z"
   },
   {
     "title": "Ortive Studio",
@@ -3322,7 +3322,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-17T17:03:18.536Z"
+    "performanceCheckedAt": "2026-10-18T17:16:36.060Z"
   },
   {
     "title": "Ultracite v8",
@@ -3361,6 +3361,53 @@
         "engineering",
         "eslint",
         "every"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-18T17:16:36.065Z"
+  },
+  {
+    "title": "Granite",
+    "productIdentity": "granite",
+    "description": "Encrypted second brain your AI tools can actually use. Granite is a Markdown second brain, encrypted with a separate key for every vault and synced across phone, tablet, desktop and web. A built-in MCP server lets Claude, ChatGPT and Cursor search, read and update your notes, only in the vaults you allow, with answers that cite the exact note. Wikilinks, backlinks, graph, offline search, live co-editing, and SSO, SCIM and audit logs for teams. Never used to train AI. Free forever; Pro $3.99/mo, no AI surcharge. Product Hunt topics: Android, Notes, Privacy, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/granite-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/I6DN5ZRKO2KDQT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_DEV_TOOLS",
+    "facebookPostId": "1277980028738225_122115291873487454",
+    "facebookPublishedAt": "2026-10-18T17:17:21.847Z",
+    "publishedAt": "2026-10-18T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/granite-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 3949100,
+    "imageUrl": "https://images.pexels.com/photos/3949100/pexels-photo-3949100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-using-macbook-pro-3949100/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "across",
+        "actually",
+        "allow",
+        "android",
+        "answers",
+        "audit",
+        "backlinks",
+        "brain",
+        "built-in",
+        "chatgpt",
+        "claude",
+        "co-editing"
       ]
     }
   }
