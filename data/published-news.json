@@ -3322,7 +3322,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-18T17:16:36.060Z"
+    "performanceCheckedAt": "2026-10-19T19:49:01.556Z"
   },
   {
     "title": "Ultracite v8",
@@ -3368,7 +3368,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-18T17:16:36.065Z"
+    "performanceCheckedAt": "2026-10-19T19:49:01.587Z"
   },
   {
     "title": "Granite",
@@ -3408,6 +3408,49 @@
         "chatgpt",
         "claude",
         "co-editing"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-19T19:49:01.596Z"
+  },
+  {
+    "title": "Moat Check",
+    "productIdentity": "moat check",
+    "description": "Find out who will copy your startup, before they do. Describe your startup idea. Get its real competitors, the company most likely to copy you and how fast, and a moat score from 10 tests. Free. Product Hunt topics: Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/moat-check?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/VQ5BPQUGFEAWF5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122115632931487454",
+    "facebookPublishedAt": "2026-10-19T19:50:48.679Z",
+    "publishedAt": "2026-10-19T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/moat-check?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7413996,
+    "imageUrl": "https://images.pexels.com/photos/7413996/pexels-photo-7413996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/stick-pads-notes-over-business-data-printout-7413996/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "check",
+        "competitors",
+        "describe",
+        "likely",
+        "listed",
+        "product",
+        "productivity",
+        "score",
+        "source",
+        "tests",
+        "topics"
       ]
     }
   }
