@@ -3222,7 +3222,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-17T17:03:18.533Z"
+    "performanceCheckedAt": "2026-10-20T18:25:51.686Z"
   },
   {
     "title": "AI Operator's LinkedIn Content Engine",
@@ -3273,7 +3273,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-18T17:16:36.079Z"
+    "performanceCheckedAt": "2026-10-20T18:25:51.692Z"
   },
   {
     "title": "Ortive Studio",
@@ -3451,6 +3451,55 @@
         "source",
         "tests",
         "topics"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-20T18:25:51.683Z"
+  },
+  {
+    "title": "Lifeable",
+    "productIdentity": "lifeable",
+    "description": "Your whole life in one app — and your AI can read it. Lifeable keeps your tasks, bills, habits, family dates, trips, people and things in one place, and shows what matters today. Connect Claude or ChatGPT and just say it: “rent 18,000 on the 1st”. Free. Web + Android. Product Hunt topics: Android, Productivity, Task Management, Personal Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/lifeable?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/KALTRYIDFLYJGF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122115923613487454",
+    "facebookPublishedAt": "2026-10-20T18:29:07.990Z",
+    "publishedAt": "2026-10-20T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/lifeable?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 6473738,
+    "imageUrl": "https://images.pexels.com/photos/6473738/pexels-photo-6473738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-person-holding-a-smartphone-with-app-on-the-screen-6473738/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "openai"
+      ],
+      "events": [
+        "POLICY"
+      ],
+      "specificWords": [
+        "000",
+        "1st",
+        "android",
+        "bills",
+        "chatgpt",
+        "claude",
+        "connect",
+        "dates",
+        "family",
+        "finance",
+        "habits",
+        "keeps"
       ]
     }
   }
