@@ -3415,7 +3415,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-19T19:49:01.596Z"
+    "performanceCheckedAt": "2026-10-22T18:28:41.368Z"
   },
   {
     "title": "Moat Check",
@@ -3458,7 +3458,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-20T18:25:51.683Z"
+    "performanceCheckedAt": "2026-10-22T18:28:41.314Z"
   },
   {
     "title": "Lifeable",
@@ -3500,6 +3500,52 @@
         "finance",
         "habits",
         "keeps"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-22T18:28:41.350Z"
+  },
+  {
+    "title": "Finanxy",
+    "productIdentity": "finanxy",
+    "description": "Offline-first expense tracker, built on 6 years of real use. Finanxy is a native Kotlin offline-first finance tracker. Record anything from coffee to crypto, keep Personal/Couple/Family/Business money in separate journals, auto-capture from notifications, and ask an AI about your money. Free backups - local + Drive - forever. Product Hunt topics: Android, Fintech, Accounting, Personal Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/finanxy?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/Q4M7T7DWHGEG3I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122116544349487454",
+    "facebookPublishedAt": "2026-10-22T18:30:26.215Z",
+    "publishedAt": "2026-10-22T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/finanxy?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 6694533,
+    "imageUrl": "https://images.pexels.com/photos/6694533/pexels-photo-6694533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-man-with-wedding-ring-computing-with-a-mobile-app-calculator-6694533/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "accounting",
+        "android",
+        "anything",
+        "auto-capture",
+        "backups",
+        "built",
+        "coffee",
+        "couple",
+        "crypto",
+        "drive",
+        "expense",
+        "family"
       ]
     }
   }
