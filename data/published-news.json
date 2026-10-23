@@ -3322,7 +3322,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-19T19:49:01.556Z"
+    "performanceCheckedAt": "2026-10-23T18:15:23.015Z"
   },
   {
     "title": "Ultracite v8",
@@ -3368,7 +3368,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-19T19:49:01.587Z"
+    "performanceCheckedAt": "2026-10-23T18:15:23.018Z"
   },
   {
     "title": "Granite",
@@ -3546,6 +3546,50 @@
         "drive",
         "expense",
         "family"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-23T18:15:23.022Z"
+  },
+  {
+    "title": "Pitch N Hire",
+    "productIdentity": "pitch n hire",
+    "description": "AI-native ATS + HRMS: from applicant to paycheck. Pitch N Hire is the AI-native ATS and HRMS on one candidate record. AI agents source, screen, schedule and draft offers, then onboarding, attendance and payroll continue on the same record. Nothing is re-entered. Filled in 30 days or the quarter is free. Website: https://www.pitchnhire.com Free sign-up ATS: https://app.pitchnhire.com/sign-up Free sign-up HRMS: https://hrms.pitchnhire.com/signup Product Hunt topics: Hiring, Artificial Intelligence, Human Resources Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/pitch-n-hire?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/NUJS6Z3BA3PAUU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122116838709487454",
+    "facebookPublishedAt": "2026-10-23T18:17:21.105Z",
+    "publishedAt": "2026-10-23T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/pitch-n-hire?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 3184639,
+    "imageUrl": "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/people-near-table-3184639/",
+    "imageSource": "Pexels",
+    "imageScore": 8.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "agents",
+        "ai-native",
+        "applicant",
+        "attendance",
+        "candidate",
+        "continue",
+        "draft",
+        "filled",
+        "hiring",
+        "human",
+        "listed",
+        "nothing"
       ]
     }
   }
