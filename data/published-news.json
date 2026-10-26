@@ -3553,7 +3553,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-23T18:15:23.022Z"
+    "performanceCheckedAt": "2026-10-26T19:52:00.546Z"
   },
   {
     "title": "Pitch N Hire",
@@ -3597,7 +3597,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-24T17:22:32.958Z"
+    "performanceCheckedAt": "2026-10-26T19:52:00.549Z"
   },
   {
     "title": "Nolapso",
@@ -3638,6 +3638,53 @@
         "forwarded",
         "increases",
         "items"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-26T19:52:00.556Z"
+  },
+  {
+    "title": "witnd",
+    "productIdentity": "witnd",
+    "description": "Plan your cash flow. See your future balance.. Plan your income, bills, subscriptions, and installments in one place. See how your balance could change month by month, add plans in a sentence with AI, and spot upcoming costs. Start free. No bank connection needed. Product Hunt topics: Productivity, Artificial Intelligence, Personal Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/witnd?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/T3BMENVFHT6HYZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122117762721487454",
+    "facebookPublishedAt": "2026-10-26T19:53:44.450Z",
+    "publishedAt": "2026-10-26T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/witnd?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 29031562,
+    "imageUrl": "https://images.pexels.com/photos/29031562/pexels-photo-29031562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/euro-and-lei-banknotes-with-calculator-on-desk-29031562/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "MODEL",
+        "POLICY"
+      ],
+      "specificWords": [
+        "balance",
+        "bills",
+        "change",
+        "connection",
+        "costs",
+        "finance",
+        "income",
+        "installments",
+        "listed",
+        "month",
+        "needed",
+        "personal"
       ]
     }
   }
