@@ -3458,7 +3458,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-24T17:22:32.947Z"
+    "performanceCheckedAt": "2026-10-27T19:23:27.771Z"
   },
   {
     "title": "Lifeable",
@@ -3507,7 +3507,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-24T17:22:32.937Z"
+    "performanceCheckedAt": "2026-10-27T19:23:27.747Z"
   },
   {
     "title": "Finanxy",
@@ -3685,6 +3685,52 @@
         "month",
         "needed",
         "personal"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-27T19:23:27.798Z"
+  },
+  {
+    "title": "PMM Sherpa",
+    "productIdentity": "pmm sherpa",
+    "description": "AI marketing assistant for world class GTM.. Generic AI doesn't get go-to-market. PMM Sherpa does. It's an AI advisor trained on the world's best marketing books, podcasts and practitioner blogs from the world's best product marketers. Ask it to pressure-test your positioning, build a launch plan, or draft a battlecard, messaging doc or pitch narrative in one prompt. Projects keep your product context so every answer is specific to you. Used by 400+ PMMs across 100+ companies. 10 free messages a month, no credit card. Product Hunt topics: Sales, Marketing, Marketing automation Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/pmm-sherpa?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/AFOXUTV6JDM74E?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122118068793487454",
+    "facebookPublishedAt": "2026-10-27T19:25:53.957Z",
+    "publishedAt": "2026-10-27T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/pmm-sherpa?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7887816,
+    "imageUrl": "https://images.pexels.com/photos/7887816/pexels-photo-7887816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/mobile-phone-and-clipboard-on-the-keyboard-of-a-laptop-7887816/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "100",
+        "400",
+        "across",
+        "advisor",
+        "answer",
+        "assistant",
+        "automation",
+        "battlecard",
+        "blogs",
+        "books",
+        "build",
+        "class"
       ]
     }
   }
