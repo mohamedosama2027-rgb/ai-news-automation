@@ -3645,7 +3645,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-26T19:52:00.556Z"
+    "performanceCheckedAt": "2026-10-28T19:28:30.027Z"
   },
   {
     "title": "witnd",
@@ -3692,7 +3692,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-27T19:23:27.798Z"
+    "performanceCheckedAt": "2026-10-28T19:28:30.030Z"
   },
   {
     "title": "PMM Sherpa",
@@ -3731,6 +3731,52 @@
         "books",
         "build",
         "class"
+      ]
+    },
+    "performance": {
+      "reactions": 1,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-28T19:28:30.002Z"
+  },
+  {
+    "title": "Maya by OpsAgents AI",
+    "productIdentity": "maya by opsagents ai",
+    "description": "The AI that sells on your website. Maya is an AI sales agent that lives on your website. She greets every visitor, answers from your site's own facts (hours, branches, delivery terms), recommends the right product or service, and captures the lead, confirming name, email and phone back. One snippet on any site; every transcript lands on your admin board. English and Hebrew, desktop and mobile. Free plan: 50 conversations a month, and only conversations where a real person wrote count. Product Hunt topics: Sales, Artificial Intelligence, E-Commerce Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/maya-by-opsagents-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/HR3P22AJEOCPB7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_RETAIL_TOOLS",
+    "facebookPostId": "1277980028738225_122118359619487454",
+    "facebookPublishedAt": "2026-10-28T19:30:24.325Z",
+    "publishedAt": "2026-10-28T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/maya-by-opsagents-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 16380906,
+    "imageUrl": "https://images.pexels.com/photos/16380906/pexels-photo-16380906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/webpage-of-ai-chatbot-a-prototype-ai-smith-open-chatbot-is-seen-on-the-website-of-openai-on-a-apple-smartphone-examples-capabilities-and-limitations-are-shown-16380906/",
+    "imageSource": "Pexels",
+    "imageScore": 6,
+    "topicFingerprint": {
+      "entities": [
+        "ema"
+      ],
+      "events": [],
+      "specificWords": [
+        "admin",
+        "agent",
+        "answers",
+        "board",
+        "branches",
+        "captures",
+        "confirming",
+        "conversations",
+        "count",
+        "delivery",
+        "desktop",
+        "e-commerce"
       ]
     }
   }
