@@ -3692,7 +3692,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-28T19:28:30.030Z"
+    "performanceCheckedAt": "2026-10-29T19:33:27.040Z"
   },
   {
     "title": "PMM Sherpa",
@@ -3738,7 +3738,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-28T19:28:30.002Z"
+    "performanceCheckedAt": "2026-10-29T19:33:27.233Z"
   },
   {
     "title": "Maya by OpsAgents AI",
@@ -3777,6 +3777,50 @@
         "delivery",
         "desktop",
         "e-commerce"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-29T19:33:27.038Z"
+  },
+  {
+    "title": "InvoiceWand",
+    "productIdentity": "invoicewand",
+    "description": "AI invoice generator — free PDF, no signup. Type the job in plain English or start from a trade template. Preview the invoice live, then download a watermark-free PDF. Unlimited free use for 37 trades and 10 countries — no account required. Product Hunt topics: Productivity, Artificial Intelligence, Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/invoicewand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/4ECHMQDYDIOSQC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122118662841487454",
+    "facebookPublishedAt": "2026-10-29T19:35:01.602Z",
+    "publishedAt": "2026-10-29T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/invoicewand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 5900070,
+    "imageUrl": "https://images.pexels.com/photos/5900070/pexels-photo-5900070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/businesswoman-showing-receipt-5900070/",
+    "imageSource": "Pexels",
+    "imageScore": 7.8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "account",
+        "countries",
+        "download",
+        "english",
+        "finance",
+        "generator",
+        "invoice",
+        "invoicewand",
+        "listed",
+        "plain",
+        "preview",
+        "product"
       ]
     }
   }
