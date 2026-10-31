@@ -3645,7 +3645,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-28T19:28:30.027Z"
+    "performanceCheckedAt": "2026-10-31T19:14:28.724Z"
   },
   {
     "title": "witnd",
@@ -3692,7 +3692,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-29T19:33:27.040Z"
+    "performanceCheckedAt": "2026-10-31T19:14:28.707Z"
   },
   {
     "title": "PMM Sherpa",
@@ -3865,6 +3865,54 @@
         "decisions",
         "explicit",
         "founders"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-10-31T19:14:28.673Z"
+  },
+  {
+    "title": "UpBinger",
+    "productIdentity": "upbinger",
+    "description": "Get found on Google, ChatGPT and social media, on autopilot. UpBinger is complete marketing visibility automation. It checks how visible your brand is to Google and AI answers (SEO, AEO, GEO), shows which competitors AI picks instead, and writes SEO + AEO blogs that close the gaps. On social, BingerPilot audits your brand, learns its DNA, creates on-brand posters, carousels and Reels, and auto-posts them to Instagram and Facebook. Approve each post or let it run. Every post's insights shape the next plan. Free to start; paid plans from $5/month. Product Hunt topics: Marketing, SEO, Artificial Intelligence, YouTube Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/upbinger?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/FQWFNDN6DYHVLI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122119254489487454",
+    "facebookPublishedAt": "2026-10-31T19:15:37.996Z",
+    "publishedAt": "2026-10-31T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/upbinger?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 37685036,
+    "imageUrl": "https://images.pexels.com/photos/37685036/pexels-photo-37685036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/businessman-analyzing-data-on-digital-tablet-37685036/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [
+        "google",
+        "meta",
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "answers",
+        "approve",
+        "audits",
+        "auto-posts",
+        "automation",
+        "autopilot",
+        "bingerpilot",
+        "blogs",
+        "brand",
+        "carousels",
+        "chatgpt",
+        "checks"
       ]
     }
   }
