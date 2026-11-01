@@ -3692,7 +3692,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-31T19:14:28.707Z"
+    "performanceCheckedAt": "2026-11-01T19:34:39.959Z"
   },
   {
     "title": "PMM Sherpa",
@@ -3738,7 +3738,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-30T19:54:39.164Z"
+    "performanceCheckedAt": "2026-11-01T19:34:40.017Z"
   },
   {
     "title": "Maya by OpsAgents AI",
@@ -3784,7 +3784,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-30T19:54:39.162Z"
+    "performanceCheckedAt": "2026-11-01T19:34:39.961Z"
   },
   {
     "title": "InvoiceWand",
@@ -3828,7 +3828,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-30T19:54:39.365Z"
+    "performanceCheckedAt": "2026-11-01T19:33:21.794Z"
   },
   {
     "title": "Gathen",
@@ -3872,7 +3872,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-31T19:14:28.673Z"
+    "performanceCheckedAt": "2026-11-01T19:33:21.774Z"
   },
   {
     "title": "UpBinger",
@@ -3913,6 +3913,50 @@
         "carousels",
         "chatgpt",
         "checks"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-01T19:33:21.880Z"
+  },
+  {
+    "title": "IXIGEN",
+    "productIdentity": "ixigen",
+    "description": "Your executive workflow, unified and distraction-free. IXIGEN brings your calendars, capital budgets, and daily priorities into one clean offline workspace designed for focused execution. Product Hunt topics: Productivity, Task Management, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/ixigen?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/XRTMVG6HBJ3YMF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122119538439487454",
+    "facebookPublishedAt": "2026-11-01T19:35:47.386Z",
+    "publishedAt": "2026-11-01T07:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/ixigen?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 9377671,
+    "imageUrl": "https://images.pexels.com/photos/9377671/pexels-photo-9377671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/man-in-white-dress-shirt-using-a-tablet-and-a-laptop-9377671/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "brings",
+        "budgets",
+        "calendars",
+        "capital",
+        "clean",
+        "daily",
+        "designed",
+        "distraction-free",
+        "execution",
+        "executive",
+        "focused",
+        "ixigen"
       ]
     }
   }
