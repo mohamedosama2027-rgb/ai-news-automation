@@ -3872,7 +3872,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:33:21.774Z"
+    "performanceCheckedAt": "2026-11-02T23:04:39.573Z"
   },
   {
     "title": "UpBinger",
@@ -3920,7 +3920,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:33:21.880Z"
+    "performanceCheckedAt": "2026-11-02T23:04:39.554Z"
   },
   {
     "title": "IXIGEN",
@@ -3957,6 +3957,54 @@
         "executive",
         "focused",
         "ixigen"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-02T23:04:39.540Z"
+  },
+  {
+    "title": "Camilla PowerMill",
+    "productIdentity": "camilla powermill",
+    "description": "AI assistance for PowerMill, locally or through ChatGPT Work. An independent free assistant for PowerMill. Work with the current CAM project through supported operations, using a local/server model or a separate ChatGPT Work plugin with a local executor. MES is optional. Engineers review calculations, toolpaths and NC output in PowerMill. Product Hunt topics: Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/camilla-powermill?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/GHVMPR4647IR6V?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122119841835487454",
+    "facebookPublishedAt": "2026-11-02T23:06:47.092Z",
+    "publishedAt": "2026-11-02T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/camilla-powermill?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 8865187,
+    "imageUrl": "https://images.pexels.com/photos/8865187/pexels-photo-8865187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-cnc-machine-8865187/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "openai"
+      ],
+      "events": [
+        "MODEL"
+      ],
+      "specificWords": [
+        "assistance",
+        "assistant",
+        "calculations",
+        "camilla",
+        "chatgpt",
+        "current",
+        "engineers",
+        "executor",
+        "independent",
+        "listed",
+        "local",
+        "locally"
       ]
     }
   }
