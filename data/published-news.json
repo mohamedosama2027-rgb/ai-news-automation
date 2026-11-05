@@ -3645,7 +3645,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-10-31T19:14:28.724Z"
+    "performanceCheckedAt": "2026-11-05T21:31:28.672Z"
   },
   {
     "title": "witnd",
@@ -3692,7 +3692,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:34:39.959Z"
+    "performanceCheckedAt": "2026-11-05T21:31:28.651Z"
   },
   {
     "title": "PMM Sherpa",
@@ -3738,7 +3738,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:34:40.017Z"
+    "performanceCheckedAt": "2026-11-05T21:31:28.658Z"
   },
   {
     "title": "Maya by OpsAgents AI",
@@ -3784,7 +3784,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:34:39.961Z"
+    "performanceCheckedAt": "2026-11-05T21:29:13.039Z"
   },
   {
     "title": "InvoiceWand",
@@ -3828,7 +3828,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-01T19:33:21.794Z"
+    "performanceCheckedAt": "2026-11-05T21:29:13.003Z"
   },
   {
     "title": "Gathen",
@@ -3872,7 +3872,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-02T23:04:39.573Z"
+    "performanceCheckedAt": "2026-11-05T21:29:13.014Z"
   },
   {
     "title": "UpBinger",
@@ -3920,7 +3920,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-02T23:04:39.554Z"
+    "performanceCheckedAt": "2026-11-05T21:26:57.590Z"
   },
   {
     "title": "IXIGEN",
@@ -3964,7 +3964,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-02T23:04:39.540Z"
+    "performanceCheckedAt": "2026-11-05T21:26:57.635Z"
   },
   {
     "title": "Camilla PowerMill",
@@ -4005,6 +4005,55 @@
         "listed",
         "local",
         "locally"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-05T21:26:57.672Z"
+  },
+  {
+    "title": "Rerun",
+    "productIdentity": "rerun",
+    "description": "Turn your AI subscriptions into a team of coworkers. Rerun turns your ChatGPT or Claude subscription into a team of AI coworkers. Each one has tools, a computer and a shared workspace, runs on a schedule or a trigger, and asks before risky actions. Now open-source (AGPL v3) and self-hostable. Product Hunt topics: Productivity, Open Source, Artificial Intelligence, GitHub Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/rerun-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/RMMH5HQHCIQO64?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122120639199487454",
+    "facebookPublishedAt": "2026-11-05T21:33:20.095Z",
+    "publishedAt": "2026-11-05T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/rerun-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 36706459,
+    "imageUrl": "https://images.pexels.com/photos/36706459/pexels-photo-36706459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/focused-developer-at-dual-monitor-setup-36706459/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "openai"
+      ],
+      "events": [
+        "WARNING"
+      ],
+      "specificWords": [
+        "actions",
+        "chatgpt",
+        "claude",
+        "computer",
+        "coworkers",
+        "github",
+        "listed",
+        "open-source",
+        "product",
+        "productivity",
+        "rerun",
+        "risky"
       ]
     }
   }
