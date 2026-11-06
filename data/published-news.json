@@ -4055,6 +4055,54 @@
         "rerun",
         "risky"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-06T20:49:53.450Z"
+  },
+  {
+    "title": "Litehaus",
+    "productIdentity": "litehaus",
+    "description": "AI investor outreach, from your pitch deck to their inbox. Raise money while you sleep. Litehaus turns your pitch deck into personalized investor outreach for any kind of project. Find relevant investors, launch email campaigns with automatic follow-ups, and manage replies in one workspace. AI helps draft answers using your project context, with optional automatic replies and a review window. Upload your PDF, review your campaign, and launch with 250 free emails. Product Hunt topics: Email Marketing, Artificial Intelligence, Fundraising Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/litehaus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/VUNHHE4RVB6NNE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122120877315487454",
+    "facebookPublishedAt": "2026-11-06T20:51:27.537Z",
+    "publishedAt": "2026-11-06T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/litehaus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 8424459,
+    "imageUrl": "https://images.pexels.com/photos/8424459/pexels-photo-8424459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-in-black-suit-presenting-graphs-in-a-meeting-8424459/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [
+        "ema"
+      ],
+      "events": [
+        "LAUNCH"
+      ],
+      "specificWords": [
+        "250",
+        "answers",
+        "automatic",
+        "campaign",
+        "campaigns",
+        "context",
+        "draft",
+        "email",
+        "emails",
+        "follow-ups",
+        "fundraising",
+        "helps"
+      ]
     }
   }
 ]
