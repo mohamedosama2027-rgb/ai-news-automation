@@ -4012,7 +4012,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-05T21:26:57.672Z"
+    "performanceCheckedAt": "2026-11-08T19:32:47.458Z"
   },
   {
     "title": "Rerun",
@@ -4061,7 +4061,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-06T20:49:53.450Z"
+    "performanceCheckedAt": "2026-11-08T19:32:47.483Z"
   },
   {
     "title": "Litehaus",
@@ -4102,6 +4102,50 @@
         "follow-ups",
         "fundraising",
         "helps"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-08T19:32:47.374Z"
+  },
+  {
+    "title": "Moneypet",
+    "productIdentity": "moneypet",
+    "description": "A cozy pet game that does your budgeting along the way. Moneypet turns budgeting into a cozy pet game. Every expense you log earns food for your pet, who comments on your spending, travels to 1,600+ real landmarks and writes you letters, hatches 3,200+ real insects, and battles foes. Free on iOS, Android & Web. Product Hunt topics: Android, Artificial Intelligence, Games, Personal Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/moneypet?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/2XR4J3GMV27EFS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122121367713487454",
+    "facebookPublishedAt": "2026-11-08T19:33:35.638Z",
+    "publishedAt": "2026-11-08T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/moneypet?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 6694952,
+    "imageUrl": "https://images.pexels.com/photos/6694952/pexels-photo-6694952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/hands-of-a-person-holding-a-smartphone-6694952/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "200",
+        "600",
+        "along",
+        "android",
+        "battles",
+        "budgeting",
+        "comments",
+        "earns",
+        "every",
+        "expense",
+        "finance",
+        "games"
       ]
     }
   }
