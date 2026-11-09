@@ -3920,7 +3920,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-05T21:26:57.590Z"
+    "performanceCheckedAt": "2026-11-09T23:47:04.651Z"
   },
   {
     "title": "IXIGEN",
@@ -3964,7 +3964,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-05T21:26:57.635Z"
+    "performanceCheckedAt": "2026-11-09T23:47:04.736Z"
   },
   {
     "title": "Camilla PowerMill",
@@ -4012,7 +4012,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-08T19:32:47.458Z"
+    "performanceCheckedAt": "2026-11-09T23:47:04.653Z"
   },
   {
     "title": "Rerun",
@@ -4061,7 +4061,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-08T19:32:47.483Z"
+    "performanceCheckedAt": "2026-11-09T23:45:05.737Z"
   },
   {
     "title": "Litehaus",
@@ -4109,7 +4109,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-08T19:32:47.374Z"
+    "performanceCheckedAt": "2026-11-09T23:45:05.732Z"
   },
   {
     "title": "Moneypet",
@@ -4146,6 +4146,57 @@
         "expense",
         "finance",
         "games"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-09T23:45:05.608Z"
+  },
+  {
+    "title": "Dageno AI 2.0",
+    "productIdentity": "dageno ai 2 0",
+    "description": "See why AI recommends your competitors instead of you. AI is now choosing brands for your customers. Dageno AI is an AEO/GEO platform that shows whether ChatGPT, Gemini, Perplexity and 7 more AI models recommend you or your competitors, and which sources drive those answers. Look up any market for free, forever: see top brands, buyer questions and cited sources across 12,000+ niche markets and 3M+ brands. Upgrade only when you need to track your own prompts. Built for brands and agencies. Product Hunt topics: Marketing, SEO, Search Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/agent-powered-geo-by-dageno?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/ZUTLEQZYV5KE47?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122121663033487454",
+    "facebookPublishedAt": "2026-11-09T23:48:24.879Z",
+    "publishedAt": "2026-11-09T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/agent-powered-geo-by-dageno?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 27141316,
+    "imageUrl": "https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/options-on-device-screen-27141316/",
+    "imageSource": "Pexels",
+    "imageScore": 5.5,
+    "topicFingerprint": {
+      "entities": [
+        "google",
+        "openai",
+        "united_nations"
+      ],
+      "events": [
+        "ACQUISITION",
+        "MODEL"
+      ],
+      "specificWords": [
+        "000",
+        "across",
+        "agencies",
+        "answers",
+        "brands",
+        "built",
+        "buyer",
+        "chatgpt",
+        "choosing",
+        "cited",
+        "competitors",
+        "customers"
       ]
     }
   }
