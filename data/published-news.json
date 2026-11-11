@@ -4109,7 +4109,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-09T23:45:05.732Z"
+    "performanceCheckedAt": "2026-11-11T21:51:24.057Z"
   },
   {
     "title": "Moneypet",
@@ -4153,7 +4153,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-09T23:45:05.608Z"
+    "performanceCheckedAt": "2026-11-11T21:51:24.077Z"
   },
   {
     "title": "Dageno AI 2.0",
@@ -4197,6 +4197,52 @@
         "cited",
         "competitors",
         "customers"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-11T21:51:24.054Z"
+  },
+  {
+    "title": "Seano",
+    "productIdentity": "seano",
+    "description": "Describe who you need, find Filipino remote professionals. Hiring a Filipino virtual assistant, support rep or bookkeeper? Describe who you need in plain words. Seano's AI agent turns your brief into must-haves, searches a growing talent index of Filipino remote professionals, and shows the proof from each profile for every must-have. Shortlist the people who fit, see their contact details, or send an invite and read the reply in your Inbox. No job posts, no applications. AI search is unlimited, even on Free. Product Hunt topics: Hiring, Artificial Intelligence, Remote Work Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/seano?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/HYCT6GA2O75HZM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122122218603487454",
+    "facebookPublishedAt": "2026-11-11T21:53:21.738Z",
+    "publishedAt": "2026-11-11T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/seano?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 30535630,
+    "imageUrl": "https://images.pexels.com/photos/30535630/pexels-photo-30535630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/business-video-conference-in-modern-office-30535630/",
+    "imageSource": "Pexels",
+    "imageScore": 5,
+    "topicFingerprint": {
+      "entities": [
+        "united_nations"
+      ],
+      "events": [],
+      "specificWords": [
+        "agent",
+        "applications",
+        "assistant",
+        "bookkeeper",
+        "brief",
+        "contact",
+        "describe",
+        "details",
+        "every",
+        "filipino",
+        "growing",
+        "hiring"
       ]
     }
   }
