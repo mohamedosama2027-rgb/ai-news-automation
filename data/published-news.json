@@ -4012,7 +4012,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-09T23:47:04.653Z"
+    "performanceCheckedAt": "2026-11-12T21:49:09.553Z"
   },
   {
     "title": "Rerun",
@@ -4061,7 +4061,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-09T23:45:05.737Z"
+    "performanceCheckedAt": "2026-11-12T21:49:09.537Z"
   },
   {
     "title": "Litehaus",
@@ -4243,6 +4243,50 @@
         "filipino",
         "growing",
         "hiring"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-12T21:49:09.561Z"
+  },
+  {
+    "title": "ResumeFit",
+    "productIdentity": "resumefit",
+    "description": "Tailor your resume to any job. Every line stays true.. Paste a job posting and ResumeFit rebuilds your resume around it, using only your real experience. Every line cites something you wrote, invented claims are rejected, and a match report shows what you can't honestly claim. For job seekers tired of AI tools that add skills they don't have. Try 1 preview free. Product Hunt topics: Hiring, Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/resumefit-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/MQO364JXB7ISKC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122122458969487454",
+    "facebookPublishedAt": "2026-11-12T21:50:58.313Z",
+    "publishedAt": "2026-11-12T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/resumefit-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 4101343,
+    "imageUrl": "https://images.pexels.com/photos/4101343/pexels-photo-4101343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/a-clipboard-near-pen-and-laptop-on-a-marble-surface-4101343/",
+    "imageSource": "Pexels",
+    "imageScore": 9,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "around",
+        "cites",
+        "claim",
+        "claims",
+        "every",
+        "experience",
+        "hiring",
+        "honestly",
+        "invented",
+        "listed",
+        "match",
+        "paste"
       ]
     }
   }
