@@ -4153,7 +4153,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-11T21:51:24.077Z"
+    "performanceCheckedAt": "2026-11-13T21:23:07.130Z"
   },
   {
     "title": "Dageno AI 2.0",
@@ -4204,7 +4204,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-11T21:51:24.054Z"
+    "performanceCheckedAt": "2026-11-13T21:23:07.085Z"
   },
   {
     "title": "Seano",
@@ -4287,6 +4287,50 @@
         "listed",
         "match",
         "paste"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-13T21:23:07.083Z"
+  },
+  {
+    "title": "miingl social",
+    "productIdentity": "miingl social",
+    "description": "Free Intelligent Social Media Management. One system for human and AI content. miingl social learns your brand, schedules, and publishes posts your team or AI creates across 11+ platforms. Mix both per channel, and nothing goes live until you approve it. Product Hunt topics: Social Media, Marketing, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/miingl-social?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/MFSA6TZCSLFMXJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122122747239487454",
+    "facebookPublishedAt": "2026-11-13T21:24:44.606Z",
+    "publishedAt": "2026-11-13T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/miingl-social?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7970817,
+    "imageUrl": "https://images.pexels.com/photos/7970817/pexels-photo-7970817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-person-using-a-laptop-7970817/",
+    "imageSource": "Pexels",
+    "imageScore": 7.7,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "across",
+        "approve",
+        "brand",
+        "channel",
+        "content",
+        "creates",
+        "human",
+        "intelligent",
+        "learns",
+        "listed",
+        "management",
+        "marketing"
       ]
     }
   }
