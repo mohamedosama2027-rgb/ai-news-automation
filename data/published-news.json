@@ -4250,7 +4250,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-12T21:49:09.561Z"
+    "performanceCheckedAt": "2026-11-15T20:20:05.142Z"
   },
   {
     "title": "ResumeFit",
@@ -4294,7 +4294,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-13T21:23:07.083Z"
+    "performanceCheckedAt": "2026-11-15T20:20:05.144Z"
   },
   {
     "title": "miingl social",
@@ -4331,6 +4331,52 @@
         "listed",
         "management",
         "marketing"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-15T20:20:05.413Z"
+  },
+  {
+    "title": "TrueView AI",
+    "productIdentity": "trueview ai",
+    "description": "Clearly labelled AI review summaries for Shopify products. A Shopify app for products with few or no reviews yet. TrueView AI reads what people already say about the product on review sites, forums and communities, and adds a short summary to the product page that says plainly it is AI and how many sources it read. When there isn't enough to say, it publishes nothing. The merchant sees every card as a draft first. Built for Shopify, with a free plan for up to 5 products. Product Hunt topics: Marketing, Artificial Intelligence, E-Commerce Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/trueview-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/J7ZAE5TVFEIN3A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_RETAIL_TOOLS",
+    "facebookPostId": "1277980028738225_122123232387487454",
+    "facebookPublishedAt": "2026-11-15T20:20:59.753Z",
+    "publishedAt": "2026-11-15T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/trueview-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 29502370,
+    "imageUrl": "https://images.pexels.com/photos/29502370/pexels-photo-29502370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/mobile-payment-app-stripe-on-laptop-with-ecommerce-29502370/",
+    "imageSource": "Pexels",
+    "imageScore": 7,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "already",
+        "built",
+        "clearly",
+        "communities",
+        "draft",
+        "e-commerce",
+        "enough",
+        "every",
+        "first",
+        "forums",
+        "labelled",
+        "listed"
       ]
     }
   }
