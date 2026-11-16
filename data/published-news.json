@@ -4061,7 +4061,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-12T21:49:09.537Z"
+    "performanceCheckedAt": "2026-11-16T23:46:21.006Z"
   },
   {
     "title": "Litehaus",
@@ -4109,7 +4109,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-11T21:51:24.057Z"
+    "performanceCheckedAt": "2026-11-16T23:46:21.031Z"
   },
   {
     "title": "Moneypet",
@@ -4153,7 +4153,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-13T21:23:07.130Z"
+    "performanceCheckedAt": "2026-11-16T23:44:47.827Z"
   },
   {
     "title": "Dageno AI 2.0",
@@ -4204,7 +4204,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-13T21:23:07.085Z"
+    "performanceCheckedAt": "2026-11-16T23:44:47.829Z"
   },
   {
     "title": "Seano",
@@ -4250,7 +4250,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-15T20:20:05.142Z"
+    "performanceCheckedAt": "2026-11-16T23:44:47.831Z"
   },
   {
     "title": "ResumeFit",
@@ -4294,7 +4294,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-15T20:20:05.144Z"
+    "performanceCheckedAt": "2026-11-16T23:42:56.768Z"
   },
   {
     "title": "miingl social",
@@ -4338,7 +4338,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-15T20:20:05.413Z"
+    "performanceCheckedAt": "2026-11-16T23:42:56.752Z"
   },
   {
     "title": "TrueView AI",
@@ -4377,6 +4377,50 @@
         "forums",
         "labelled",
         "listed"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-16T23:42:56.754Z"
+  },
+  {
+    "title": "Besim Apply",
+    "productIdentity": "besim apply",
+    "description": "AI job applications from your own computer. Besim Apply scores new job postings 0–100 against your CV and tells you why. You approve the ones you want; the desktop app fills in the applications in your own Chrome, with your own accounts, at a human pace. First 3 applications are free. Product Hunt topics: Hiring, Productivity, Career Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/besim-apply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/GF5CJHUZ5WE7UG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122123500011487454",
+    "facebookPublishedAt": "2026-11-16T23:47:41.787Z",
+    "publishedAt": "2026-11-16T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/besim-apply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 6326177,
+    "imageUrl": "https://images.pexels.com/photos/6326177/pexels-photo-6326177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/man-person-laptop-working-6326177/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "100",
+        "accounts",
+        "against",
+        "applications",
+        "apply",
+        "approve",
+        "besim",
+        "career",
+        "chrome",
+        "computer",
+        "desktop",
+        "fills"
       ]
     }
   }
