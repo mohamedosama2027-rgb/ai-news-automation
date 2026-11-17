@@ -4422,6 +4422,54 @@
         "desktop",
         "fills"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-17T22:50:53.828Z"
+  },
+  {
+    "title": "DialClient",
+    "productIdentity": "dialclient",
+    "description": "Find companies on LinkedIn that need a vendor, today. Every day, companies post on LinkedIn that they need a vendor: a staffing partner, an IT or web agency, laptops, corporate gifts, events. DialClient finds these posts for you. AI keeps only real requirements (no job posts, hotlists or ads) and saves each one with the post link, the poster and any contacts they shared. Get matching leads, scheduled Automation with email + Excel, and instant alerts, so you reply first. Free plan + free Chrome/Edge extension. Product Hunt topics: Chrome Extensions, Sales, LinkedIn Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/dialclient?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/3FRLBZ4IPASKAP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122123784279487454",
+    "facebookPublishedAt": "2026-11-17T22:57:27.891Z",
+    "publishedAt": "2026-11-17T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/dialclient?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 3784295,
+    "imageUrl": "https://images.pexels.com/photos/3784295/pexels-photo-3784295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-using-a-laptop-3784295/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "ema"
+      ],
+      "events": [
+        "PARTNERSHIP"
+      ],
+      "specificWords": [
+        "agency",
+        "alerts",
+        "automation",
+        "chrome",
+        "contacts",
+        "corporate",
+        "dialclient",
+        "email",
+        "events",
+        "every",
+        "excel",
+        "extension"
+      ]
     }
   }
 ]
