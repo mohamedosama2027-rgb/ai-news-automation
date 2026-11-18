@@ -4338,7 +4338,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-16T23:42:56.752Z"
+    "performanceCheckedAt": "2026-11-18T22:33:13.952Z"
   },
   {
     "title": "TrueView AI",
@@ -4384,7 +4384,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-16T23:42:56.754Z"
+    "performanceCheckedAt": "2026-11-18T22:33:14.261Z"
   },
   {
     "title": "Besim Apply",
@@ -4469,6 +4469,50 @@
         "every",
         "excel",
         "extension"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-18T22:33:13.955Z"
+  },
+  {
+    "title": "Cutdeck",
+    "productIdentity": "cutdeck",
+    "description": "Long videos in. Shorts out — a free clipper for Windows. Cutdeck turns long videos into captioned vertical shorts, right on your own PC. Paste a YouTube, Kick or Twitch link (or drop an MP4) — it finds the best moments, frames them vertical following the speaker, burns in word-by-word captions, and deals the clips out as cards: swipe right to keep, left to skip. Kept clips export in clean 1080×1920. No account, no watermark, no credits, no uploads — the AI runs on your own free Groq key. Product Hunt topics: Productivity, Artificial Intelligence, Video Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/cutdeck-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/7IYWVNYDF7EVBQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_VIDEO_TOOLS",
+    "facebookPostId": "1277980028738225_122124038283487454",
+    "facebookPublishedAt": "2026-11-18T22:35:14.080Z",
+    "publishedAt": "2026-11-18T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/cutdeck-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 11063289,
+    "imageUrl": "https://images.pexels.com/photos/11063289/pexels-photo-11063289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/computer-and-a-laptop-with-editing-software-11063289/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "1080",
+        "1920",
+        "account",
+        "burns",
+        "captioned",
+        "captions",
+        "cards",
+        "clean",
+        "clipper",
+        "clips",
+        "credits",
+        "cutdeck"
       ]
     }
   }
