@@ -4560,6 +4560,50 @@
         "credit",
         "double-booking"
       ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-20T22:13:17.687Z"
+  },
+  {
+    "title": "HireFoundry",
+    "productIdentity": "hirefoundry",
+    "description": "AI agents that help recruiters truly understand candidates. HireFoundry pairs recruiters with a suite of specialized AI agents built to work alongside them, not replace them, screening, interviews, and evidence-backed insights, recruiters lead every step. Get a free demo. Product Hunt topics: Hiring, Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/hirefoundry?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/KMNOO2EA5WX42T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_HR_TOOLS",
+    "facebookPostId": "1277980028738225_122124562065487454",
+    "facebookPublishedAt": "2026-11-20T22:14:41.154Z",
+    "publishedAt": "2026-11-20T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/hirefoundry?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 36765734,
+    "imageUrl": "https://images.pexels.com/photos/36765734/pexels-photo-36765734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/business-meeting-in-modern-office-setting-36765734/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "agents",
+        "alongside",
+        "built",
+        "candidates",
+        "every",
+        "evidence-backed",
+        "hirefoundry",
+        "hiring",
+        "insights",
+        "interviews",
+        "listed",
+        "pairs"
+      ]
     }
   }
 ]
