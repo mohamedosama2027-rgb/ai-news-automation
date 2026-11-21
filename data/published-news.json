@@ -4476,7 +4476,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-19T22:38:30.687Z"
+    "performanceCheckedAt": "2026-11-21T20:52:30.309Z"
   },
   {
     "title": "Cutdeck",
@@ -4520,7 +4520,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-19T22:38:31.107Z"
+    "performanceCheckedAt": "2026-11-21T20:52:30.274Z"
   },
   {
     "title": "Zyncal",
@@ -4603,6 +4603,52 @@
         "interviews",
         "listed",
         "pairs"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-21T20:52:30.300Z"
+  },
+  {
+    "title": "Revys",
+    "productIdentity": "revys",
+    "description": "Google reviews in your site's HTML, readable by AI search. Most review widgets load Google reviews with JavaScript or in an iframe, so crawlers that don't run JavaScript, including many AI search bots, never see them. Revys writes your Google reviews into the page's HTML on the server, via a WordPress plugin, a server-side include or a JSON API. It also drafts AI replies to reviews, with your approval rules. Free for one Google profile; Pro from $7.90/month per profile. Product Hunt topics: Marketing, SEO, WordPress Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/revys?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/YXEVBOEWIF5AC6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122124784077487454",
+    "facebookPublishedAt": "2026-11-21T20:53:29.624Z",
+    "publishedAt": "2026-11-21T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/revys?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 374563,
+    "imageUrl": "https://images.pexels.com/photos/374563/pexels-photo-374563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/computer-screen-screengrab-374563/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [
+        "google"
+      ],
+      "events": [],
+      "specificWords": [
+        "approval",
+        "crawlers",
+        "drafts",
+        "google",
+        "iframe",
+        "include",
+        "including",
+        "javascript",
+        "listed",
+        "marketing",
+        "month",
+        "never"
       ]
     }
   }
