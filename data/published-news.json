@@ -4566,7 +4566,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-20T22:13:17.687Z"
+    "performanceCheckedAt": "2026-11-22T21:00:06.096Z"
   },
   {
     "title": "HireFoundry",
@@ -4610,7 +4610,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-21T20:52:30.300Z"
+    "performanceCheckedAt": "2026-11-22T21:00:06.136Z"
   },
   {
     "title": "Revys",
@@ -4649,6 +4649,50 @@
         "marketing",
         "month",
         "never"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-22T21:00:06.075Z"
+  },
+  {
+    "title": "TaxSnap AI",
+    "productIdentity": "taxsnap ai",
+    "description": "Receipt Scanner & Expense Tracker for Self-Employed UK & USA. Free receipt scanner and expense tracker for self-employed in UK and USA. Scan receipts with OCR, track income, mileage and expenses, monthly and annual reports, one-tap backup. Product Hunt topics: Productivity, Tech, Finance Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/taxsnap-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/SMLKKEEV3WKSKN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_FINANCE_TOOLS",
+    "facebookPostId": "1277980028738225_122125093371487454",
+    "facebookPublishedAt": "2026-11-22T21:01:35.833Z",
+    "publishedAt": "2026-11-22T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/taxsnap-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 3570246,
+    "imageUrl": "https://images.pexels.com/photos/3570246/pexels-photo-3570246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/terminal-and-receipts-on-a-desk-3570246/",
+    "imageSource": "Pexels",
+    "imageScore": 7.8,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [],
+      "specificWords": [
+        "annual",
+        "backup",
+        "expense",
+        "expenses",
+        "finance",
+        "income",
+        "listed",
+        "mileage",
+        "monthly",
+        "one-tap",
+        "product",
+        "productivity"
       ]
     }
   }
