@@ -4610,7 +4610,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-22T21:00:06.136Z"
+    "performanceCheckedAt": "2026-11-24T02:08:13.846Z"
   },
   {
     "title": "Revys",
@@ -4656,7 +4656,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-22T21:00:06.075Z"
+    "performanceCheckedAt": "2026-11-24T02:08:13.844Z"
   },
   {
     "title": "TaxSnap AI",
@@ -4693,6 +4693,58 @@
         "one-tap",
         "product",
         "productivity"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-24T02:08:14.001Z"
+  },
+  {
+    "title": "PatchMySEO",
+    "productIdentity": "patchmyseo",
+    "description": "Get recommended by ChatGPT, Gemini & Google's AI. When buyers ask ChatGPT, Gemini, Perplexity, Claude, Grok or Google's AI Overviews what to use, does AI name you? PatchMySEO asks your buyers' questions on autopilot, shows who AI recommends instead of you and the pages it read to decide, then drafts the fix: a new page, an update, or a pitch to the sites AI trusts. You ship it, we check it. We checked 1,437 YC startups. Google's AI recommended only 7% of them. Free to start. Product Hunt topics: Growth Hacking, SEO, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/patchmyseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/WRGNTXYW3AOCGG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122125348353487454",
+    "facebookPublishedAt": "2026-11-24T02:10:36.582Z",
+    "publishedAt": "2026-11-23T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/patchmyseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 12969403,
+    "imageUrl": "https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-laptop-computer-12969403/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "google",
+        "openai",
+        "xai"
+      ],
+      "events": [
+        "ACQUISITION",
+        "HACK"
+      ],
+      "specificWords": [
+        "437",
+        "autopilot",
+        "buyers",
+        "chatgpt",
+        "check",
+        "checked",
+        "claude",
+        "decide",
+        "drafts",
+        "gemini",
+        "google",
+        "growth"
       ]
     }
   }
