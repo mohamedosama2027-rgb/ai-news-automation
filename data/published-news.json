@@ -4656,7 +4656,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-24T02:08:13.844Z"
+    "performanceCheckedAt": "2026-11-25T23:34:28.661Z"
   },
   {
     "title": "TaxSnap AI",
@@ -4700,7 +4700,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-24T02:08:14.001Z"
+    "performanceCheckedAt": "2026-11-25T23:34:28.804Z"
   },
   {
     "title": "PatchMySEO",
@@ -4745,6 +4745,52 @@
         "gemini",
         "google",
         "growth"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-25T23:34:28.659Z"
+  },
+  {
+    "title": "Falcon by Vybe",
+    "productIdentity": "falcon by vybe",
+    "description": "Falcon analyzes your competitors for free, then gets to work. Get a free competitor analysis. Falcon, a Vybe agent, digs into your rivals and delivers a deep report: market landscape, feature parity, momentum, gaps left open, and competitors' go-to-market motions. The whole picture, not just a list of competitors. Want more than the report? Falcon runs on Vybe, so you can let an agent take the wheel, keep you updated on where the market is headed and turn the findings into work. Product Hunt topics: Marketing, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/vybe-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/VKVLMJHZSH7URM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_MARKETING_TOOLS",
+    "facebookPostId": "1277980028738225_122125792671487454",
+    "facebookPublishedAt": "2026-11-25T23:36:49.470Z",
+    "publishedAt": "2026-11-25T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/vybe-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 15096572,
+    "imageUrl": "https://images.pexels.com/photos/15096572/pexels-photo-15096572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/brainstorming-during-presentation-15096572/",
+    "imageSource": "Pexels",
+    "imageScore": 7.5,
+    "topicFingerprint": {
+      "entities": [],
+      "events": [
+        "RESEARCH"
+      ],
+      "specificWords": [
+        "agent",
+        "analysis",
+        "analyzes",
+        "competitor",
+        "competitors",
+        "delivers",
+        "falcon",
+        "feature",
+        "findings",
+        "go-to-market",
+        "headed",
+        "landscape"
       ]
     }
   }
