@@ -4428,7 +4428,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-19T22:38:30.737Z"
+    "performanceCheckedAt": "2026-11-26T23:49:43.063Z"
   },
   {
     "title": "DialClient",
@@ -4476,7 +4476,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-21T20:52:30.309Z"
+    "performanceCheckedAt": "2026-11-26T23:49:43.058Z"
   },
   {
     "title": "Cutdeck",
@@ -4520,7 +4520,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-21T20:52:30.274Z"
+    "performanceCheckedAt": "2026-11-26T23:49:43.061Z"
   },
   {
     "title": "Zyncal",
@@ -4566,7 +4566,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-22T21:00:06.096Z"
+    "performanceCheckedAt": "2026-11-26T23:47:36.395Z"
   },
   {
     "title": "HireFoundry",
@@ -4610,7 +4610,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-24T02:08:13.846Z"
+    "performanceCheckedAt": "2026-11-26T23:47:36.389Z"
   },
   {
     "title": "Revys",
@@ -4656,7 +4656,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-25T23:34:28.661Z"
+    "performanceCheckedAt": "2026-11-26T23:47:36.392Z"
   },
   {
     "title": "TaxSnap AI",
@@ -4700,7 +4700,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-25T23:34:28.804Z"
+    "performanceCheckedAt": "2026-11-26T23:45:34.413Z"
   },
   {
     "title": "PatchMySEO",
@@ -4752,7 +4752,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-25T23:34:28.659Z"
+    "performanceCheckedAt": "2026-11-26T23:45:34.402Z"
   },
   {
     "title": "Falcon by Vybe",
@@ -4791,6 +4791,52 @@
         "go-to-market",
         "headed",
         "landscape"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-26T23:45:34.418Z"
+  },
+  {
+    "title": "CallNexAI AI Receptionist",
+    "productIdentity": "callnexai ai receptionist",
+    "description": "AI Receptionist for 24/7, Ready for Every Business Call. CallNexAI is an AI receptionist that answers your business calls 24/7, books appointments, captures leads and handles customer inquiries. Start free today. Product Hunt topics: Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/callnexai-ai-receptionist?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/2NT55OQQPSUCHG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_BUSINESS_TOOLS",
+    "facebookPostId": "1277980028738225_122126040999487454",
+    "facebookPublishedAt": "2026-11-26T23:51:29.732Z",
+    "publishedAt": "2026-11-26T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/callnexai-ai-receptionist?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 7689734,
+    "imageUrl": "https://images.pexels.com/photos/7689734/pexels-photo-7689734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/woman-working-as-a-call-center-agent-7689734/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "xai"
+      ],
+      "events": [],
+      "specificWords": [
+        "answers",
+        "appointments",
+        "books",
+        "callnexai",
+        "calls",
+        "captures",
+        "customer",
+        "every",
+        "handles",
+        "inquiries",
+        "leads",
+        "listed"
       ]
     }
   }
