@@ -4384,7 +4384,7 @@
       "comments": 0,
       "shares": 0
     },
-    "performanceCheckedAt": "2026-11-19T22:40:06.345Z"
+    "performanceCheckedAt": "2026-11-27T23:23:16.596Z"
   },
   {
     "title": "Besim Apply",
@@ -4837,6 +4837,54 @@
         "inquiries",
         "leads",
         "listed"
+      ]
+    },
+    "performance": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "performanceCheckedAt": "2026-11-27T23:23:16.565Z"
+  },
+  {
+    "title": "Speaky Box",
+    "productIdentity": "speaky box",
+    "description": "Mac dictation that turns your rambles into AI prompts. Most dictation apps type exactly what you said. Speaky Box writes the prompt you meant. Hold a key, talk like you would to a person, and a clean, structured prompt lands in ChatGPT, Claude or Cursor. The Smart key reads which app you're in, so the same ramble becomes an email in Mail or a short message in Slack. Filler words and mid-sentence changes are removed, the mic is only open while the key is held, and your history stays on your computer. Free plan, on Mac and Windows. Product Hunt topics: Mac, Productivity, Artificial Intelligence Listed on Product Hunt as free or open source.",
+    "link": "https://www.producthunt.com/products/speaky-box?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "resourceLinks": [
+      "https://www.producthunt.com/r/ZN4OMTZWJPLCB5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29"
+    ],
+    "category": "AI_PRODUCTIVITY_TOOLS",
+    "facebookPostId": "1277980028738225_122126257803487454",
+    "facebookPublishedAt": "2026-11-27T23:24:37.496Z",
+    "publishedAt": "2026-11-27T08:01:00Z",
+    "sourceUrl": "https://www.producthunt.com/products/speaky-box?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai+news+%28ID%3A+300486%29",
+    "sourceName": "Product Hunt",
+    "imageId": 4476140,
+    "imageUrl": "https://images.pexels.com/photos/4476140/pexels-photo-4476140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "imagePexelsUrl": "https://www.pexels.com/photo/person-reading-a-book-4476140/",
+    "imageSource": "Pexels",
+    "imageScore": 8,
+    "topicFingerprint": {
+      "entities": [
+        "anthropic",
+        "ema",
+        "openai"
+      ],
+      "events": [],
+      "specificWords": [
+        "becomes",
+        "changes",
+        "chatgpt",
+        "claude",
+        "clean",
+        "computer",
+        "cursor",
+        "dictation",
+        "email",
+        "exactly",
+        "filler",
+        "history"
       ]
     }
   }
